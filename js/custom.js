@@ -1,29 +1,48 @@
 $(document).ready(function(){
 
-
-	//$('#eml').focusout(function(){
-		//if ($('#eml').val().length == 0){
-			//$('.validate-email .help-block').text('Please enter a valid e-mail address.');
-			//$(".validate-email").addClass({'has-error'});
-			//$(".validate-email").removeClass({'has-success'});
-		//} else {
-			//$('.validate-email .help-block').text('');
-			//$(".validate-email").addClass({'has-success'});
-			//$(".validate-email").removeClass({'has-error'});
-		//}
-	//}); // end focus out
+	// Require E-mail and Experience Fields
+	$('#eml').focusout(function(){
+		if ($('#eml').val().length == 0){
+			$('.validate-email .help-block').text('Please enter a valid e-mail address.');
+			$(".validate-email").addClass('has-error');
+			$(".validate-email").removeClass('has-success');
+		} else {
+			$('.validate-email .help-block').text('');
+			$(".validate-email").addClass('has-success');
+			$(".validate-email").removeClass('has-error');
+		}
+	}); // end e-mail focus out
 	
-	//$('#form-submit').click(function(submit){
-		//if ($('#eml').val().length == 0){
-			//$('.validate-email .help-block').text('Please enter a valid e-mail address.');
-			//$('.validate-email').addClass({'has-error'});
-			//$('.validate-email').removeClass({'has-success'});
-			//submit.preventDefault();
-		//} else {
-			//$('#contact-form').text('<h5>Thank you for contacting us!</h5><p>You will hear from us shortly.</p>');
-			//submit.preventDefault();	//only needed here because the form does not actually submit
-		//}
-	//}); // end click
+	$('#exp').focusout(function(){
+		if ($('#exp').val() == 'none'){
+			$('.validate-experience .help-block').text('Please choose an experience level.');
+			$(".validate-experience").addClass('has-error');
+			$(".validate-experience").removeClass('has-success');
+		} else {
+			$('.validate-experience .help-block').text('');
+			$(".validate-experience").addClass('has-success');
+			$(".validate-experience").removeClass('has-error');
+		}
+	}); // end experience focus out
+	
+	$('#form-submit').click(function(submit){
+		if ($('#eml').val().length == 0){
+			$('.validate-email .help-block').text('Please enter a valid e-mail address.');
+			$('.validate-email').addClass('has-error');
+			$('.validate-email').removeClass('has-success');
+			submit.preventDefault();
+		} else if ($('#exp').val() == 'none'){
+			$('.validate-experience .help-block').text('Please choose an experience level.');
+			$(".validate-experience").addClass('has-error');
+			$(".validate-experience").removeClass('has-success');
+			submit.preventDefault();
+		} else {
+			$('#contact-form').html('<h4>Thank you for contacting us!</h4><p>You will hear from us shortly.</p>');
+			submit.preventDefault();	//only needed here because the form does not actually submit
+		}
+	}); // end submit click
+	
+	
 	
 	
 	
@@ -46,12 +65,12 @@ $(document).ready(function(){
 	
 	
 	// Change mask image on hover
-	$('#mask-img').hover(function(){
-		$('#mask-img').attr({
+	$('.jumbotron img').hover(function(){
+		$('.jumbotron img').attr({
 			'src' : 'images/mask.jpg'
 		}); // end attr on
 	}, function(){
-		$('#mask-img').attr({
+		$('.jumbotron img').attr({
 			'src' : 'images/enguarde.jpg'
 		}); // end attr off
 	}); // end mask-img hover
