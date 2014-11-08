@@ -28,28 +28,24 @@ $(document).ready(function(){
 	
 	
 	
-	
+	// Hide or Show <aside> ads
 	$('.remove-ads').click(function(){
 		$('aside').hide(500);
-		//$('.remove-ads').text('Show Ads');
-		//$('remove-ads').attr({
-			//class : 'show-ads'
-		//}); // end remove-ads attr
+		$('.remove-ads').addClass('hidden');
+		$('.show-ads').removeClass('hidden');
 	}); // end remove-ads click
 	
-	//$('.show-ads').click(function(){
-		//$('aside').show(500);
-		//$('.show-ads').text('Remove Ads');
-		//$('show-ads').attr({
-			//'class' : 'remove-ads'
-		//}); // end show-ads attr
-	//}); // end show-ads click
+	$('.show-ads').click(function(){
+		$('aside').show(500);
+		$('.show-ads').addClass('hidden');
+		$('.remove-ads').removeClass('hidden');
+	}); // end show-ads click
 	
 	
 	
 	
 	
-	// needs another effect
+	// Change mask image on hover
 	$('#mask-img').hover(function(){
 		$('#mask-img').attr({
 			'src' : 'images/mask.jpg'
@@ -63,26 +59,36 @@ $(document).ready(function(){
 	
 	
 	
-	
-	//finish
+	//***************************************************************
+	// Highlight paragraphs that reference the user's selected sword.
 	$('#fav-null').click(function(){
-		$('p').removeClass('strong')
+		$('p').removeClass('bg-primary')
 	}); // end fav-null click
 	
 	$('#fav-foil').click(function(){
-		$('p').addClass('bg-success');
+		$('p').removeClass('bg-primary')
+		$('p:contains(Foil)').addClass('bg-primary');
 	}); // end fav-foil click
 	
+	$('#fav-epee').click(function(){
+		$('p').removeClass('bg-primary')
+		$('p:contains("&Eacute;p&eacute;e")').addClass('bg-primary');
+	}); // end fav-epee click
+	
+	$('#fav-sabre').click(function(){
+		$('p').removeClass('bg-primary')
+		$('p:contains(Sabre)').addClass('bg-primary');
+	}); // end fav-sabre click
+	//*********************************************************************
 	
 	
-	
+	// Expand and highlight equipment images when the mouse hovers over them
 	$(".equipment img").hover(function(){
 		$(this).height(400);
+		$(this).addClass('thumbnail');
 	}, function(){
 		$(this).height(200);
+		$(this).removeClass('thumbnail');
 	}); // end img hover
 	
-	//$("img").one("click", function(){
-	//	$(this).height(200);
-	//}); // end img one
 }); // end ready
