@@ -78,7 +78,6 @@ $(document).ready(function(){
 	
 	
 	
-	//***************************************************************
 	// Highlight paragraphs that reference the user's selected sword.
 	$('#fav-null').click(function(){
 		$('p').removeClass('bg-primary')
@@ -86,19 +85,18 @@ $(document).ready(function(){
 	
 	$('#fav-foil').click(function(){
 		$('p').removeClass('bg-primary')
-		$('p:contains(Foil)').addClass('bg-primary');
+		$('p:contains(foil)').addClass('bg-primary');
 	}); // end fav-foil click
 	
 	$('#fav-epee').click(function(){
 		$('p').removeClass('bg-primary')
-		$('p:contains("&Eacute;p&eacute;e")').addClass('bg-primary');
+		$('p:contains("epee")').addClass('bg-primary');
 	}); // end fav-epee click
 	
 	$('#fav-sabre').click(function(){
 		$('p').removeClass('bg-primary')
-		$('p:contains(Sabre)').addClass('bg-primary');
+		$('p:contains(sabre)').addClass('bg-primary');
 	}); // end fav-sabre click
-	//*********************************************************************
 	
 	
 	// Expand and highlight equipment images when the mouse hovers over them
