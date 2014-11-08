@@ -1,140 +1,88 @@
 $(document).ready(function(){
-	$('#id-1').click(function(){
-		console.log('Type Message Here'); // adds line to console
-		alert('Type message here'); // alert window
-	}); // end id-1 click
+
+
+	//$('#eml').focusout(function(){
+		//if ($('#eml').val().length == 0){
+			//$('.validate-email .help-block').text('Please enter a valid e-mail address.');
+			//$(".validate-email").addClass({'has-error'});
+			//$(".validate-email").removeClass({'has-success'});
+		//} else {
+			//$('.validate-email .help-block').text('');
+			//$(".validate-email").addClass({'has-success'});
+			//$(".validate-email").removeClass({'has-error'});
+		//}
+	//}); // end focus out
 	
-	
-	
-	$('#id-2').hover(function(){
-		$('#id-2').css({
-			backgroundColor: 'red'
-		}); // end css
-	}, function(){
-		console.log('Type Message Here'); // adds line to console
-	}); // end id-2 hover
-	
-	
-	
-	$('#id-3').click(function(){
-		$('#id-4').hide(1000);	// hides object
-	}); // end id-3 click
-	
-	
-	
-	$('#id-5').click(function(){
-		$('#id-4').show(1000);	// hides object
-	}); // end id-5 click
-	
-	
-	
-	$('#id-6').click(function(){
-		$('#id-7').animate({
-			opacity: '0.25',
-			height: 'toggle'
-		}, 5000, 'swing', function(){
-			$('#id-7').css({
-				opacity: '1'
-			}); // end id-7 css
-			$('#id-6').css({
-				backgroundColor: 'red'
-			}); // end id-6 css
-		}); //end id-7 animate
-	}); // end id-6 click
-	
-	
-	
-	$('#id-8').click(function(){
-		$('#id-9').removeClass('class-1').addClass('class-2');
-		$('.jumbotron h1').text('Your Text or HTML Here'); // inner HTML
-		$('.jumbotron p').prepend('Your Text or HTML Here'); // adds before the the tag
-		$('.jumbotron p').apend('Your Text or HTML Here'); // adds after the tag
-		$('.jumbotron-btn').replaceWith(); // removes object
-		$('.jumbotron-btn').replaceWith('Your Text or HTML Here'); // removes object
-	}); // end id-8 click
+	//$('#form-submit').click(function(submit){
+		//if ($('#eml').val().length == 0){
+			//$('.validate-email .help-block').text('Please enter a valid e-mail address.');
+			//$('.validate-email').addClass({'has-error'});
+			//$('.validate-email').removeClass({'has-success'});
+			//submit.preventDefault();
+		//} else {
+			//$('#contact-form').text('<h5>Thank you for contacting us!</h5><p>You will hear from us shortly.</p>');
+			//submit.preventDefault();	//only needed here because the form does not actually submit
+		//}
+	//}); // end click
 	
 	
 	
 	
-	$('#id-10').hover(function(){
-		$('#id-10').attr({
-			'src' : 'img/id-11.jpg',
-			'class' : 'class1 class2'	// resets class to whatever you declare here, does not add to
+	
+	$('.remove-ads').click(function(){
+		$('aside').hide(500);
+		//$('.remove-ads').text('Show Ads');
+		//$('remove-ads').attr({
+			//class : 'show-ads'
+		//}); // end remove-ads attr
+	}); // end remove-ads click
+	
+	//$('.show-ads').click(function(){
+		//$('aside').show(500);
+		//$('.show-ads').text('Remove Ads');
+		//$('show-ads').attr({
+			//'class' : 'remove-ads'
+		//}); // end show-ads attr
+	//}); // end show-ads click
+	
+	
+	
+	
+	
+	// needs another effect
+	$('#mask-img').hover(function(){
+		$('#mask-img').attr({
+			'src' : 'images/mask.jpg'
 		}); // end attr on
 	}, function(){
-		$('#id-10').attr({
-			'src' : 'img/id-10.jpg',
-			'class' : 'class1'			// resets class to whatever you declare here, does not add to
+		$('#mask-img').attr({
+			'src' : 'images/enguarde.jpg'
 		}); // end attr off
-	}); // end id-10 hover
+	}); // end mask-img hover
 	
-}); // end ready
-
-
-
-
-
-class='search-group'	//surrounds dropdown menu, label and spans
-
-<span class="help-block"></span>
-
-
-
-
-
-
-$(document).ready(function(){
-
-	$('#dropdown<select>id').change(function(){
-		if ($('#dropdown<select>id').val() == 'option1'){
-			$('.search-group .help-block').text('Insert Text');
-		} else if ($('#dropdown<select>id').val() == 'option2'){
-			$('.search-group .help-block').text('Insert Text');
-		} else {
-			$('.search-group .help-block').text('');
-		}
-	}); // end change
-
-}); // end ready
-
-
-
-
-
-
-//required field
-identification class for input group (lable field help span)
-id on field
-
-
-
-$(document).ready(function(){
-
-	$('#id').focusout(function(){
-		if ($('#id').val().length == 0){
-			$('.idclass .help-block').text('Insert Text');
-			$(".idclass").attr({
-				class :	'has-error ...'
-			}); //end attr
-		} else {
-			$('.idclass .help-block').text('');
-			$(".idclass").attr({
-				class :	'has-success ...'
-			}); //end attr
-		}
-	}); // end focus out
 	
-	$('button').click(function(submit){
-		if ($('#id').val().length == 0){
-			$('.idclass .help-block').text('Insert Text');
-			$(".idclass").attr({
-				class :	'has-error ...'
-			}); //end attr
-			submit.preventDefault();
-		} else {
-			$('#modalid').modal();
-			submit.preventDefault();	//only needed here because the form does not actually submitt
-		}
-	}); // end click
-
+	
+	
+	
+	//finish
+	$('#fav-null').click(function(){
+		$('p').removeClass('strong')
+	}); // end fav-null click
+	
+	$('#fav-foil').click(function(){
+		$('p').addClass('bg-success');
+	}); // end fav-foil click
+	
+	
+	
+	
+	$(".equipment img").hover(function(){
+		$(this).height(400);
+	}, function(){
+		$(this).height(200);
+	}); // end img hover
+	
+	//$("img").one("click", function(){
+	//	$(this).height(200);
+	//}); // end img one
 }); // end ready
