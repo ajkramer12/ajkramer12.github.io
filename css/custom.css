@@ -1,0 +1,12 @@
+body {
+	background: linear-gradient(to bottom right, #222, black);
+}
+
+canvas {
+	border: solid 5px black;
+}
+
+.game-canvas {
+	background: url("../images/3.jpg");
+	background-repeat: no-repeat;
+}

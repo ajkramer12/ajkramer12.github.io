@@ -1,0 +1,23 @@
+img {
+	max-width: 100%;
+}
+
+#logo {
+	border-radius: 50%;
+}
+.ui-block-a {
+	padding: 1%;
+}
+.logo-grid  .ui-block-a {
+	width: 25%
+}
+.logo-grid  .ui-block-b {
+	width: 75%
+}
+
+@media all and (max-width: 768px) {
+	.main-grid .ui-block-a, .main-grid .ui-block-b {
+		width: 99%;
+		padding: 1%;
+	}
+}

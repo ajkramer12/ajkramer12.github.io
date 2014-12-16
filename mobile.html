@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fencing: Introduction</title>
+		<link rel="stylesheet" href="css/themes/fencing.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/mobile.css">
+	</head>
+
+	<body>
+		<section data-role="page" id="home">
+			<header class="swipeChangeBar" data-role="header" data-position="fixed">
+				<h1 class="swipeChangeBar">Introduction to Fencing</h1>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn-active">Home</a></li>
+						<li><a href="#rules">Rules</a></li>
+						<li><a href="#equipment">Equipment</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="swipeChangeBody ui-content ui-body-a">
+				<article class="ui-grid-a logo-grid">
+					<div class="ui-block-a ">
+						<img id="logo" src="images/enguarde.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://media-cache-ak0.pinimg.com/236x/d7/84/1c/d7841c0c99aa028044bcbdf665a67f54.jpg"/>
+					</div>
+					<div class="ui-block-b">
+						<p>Fencing is one the oldest skills know to mankind. Literally referring to skills of offence and defence in battle, this skill has evolved throughout the centuries into a sport based on swordplay techniques from the Renaissance and Colonial eras.</p>
+						<p>Read on to find out more!</p>
+					</div>
+				</article>
+				<div>
+					<img src="images/1.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.physicalchess.com (c. 2009)"/>
+				</div>
+				<div>
+					<a class="swipeChangeButton ui-btn ui-corner-all ui-shadow ui-btn-a" href="#contact" data-rel="popup" data-position-to="window" data-transition="pop">Contact Us!</a>
+				</div>
+				
+			</main>
+			<footer data-role="footer" class="swipeChangeBar ui-content">
+				<div class="ui-grid-a">
+					<aside class="ui-block-a ui-corner-all custom-corners">
+						<div class="swipeChangeBar ui-bar ui-bar-a">
+							<h4>Fencing Suppliers</h4>
+						</div>
+						<div class="swipeChangeBody ui-body ui-body-a">
+							<a href="http://shop.fencing.net/"><img src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://shop.fencing.net/"/></a>
+							<a href="http://www.leonpaulusa.com/"><img src="images/lp.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.leonpaulusa.com/"/></a>
+							<a href="http://www.absolutefencinggear.com/shopping/"><img src="images/af.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.absolutefencinggear.com/shopping/"/></a>
+						</div>
+					</aside>
+					<aside class="ui-block-b ui-corner-all custom-corners">
+						<div class="swipeChangeBar ui-bar ui-bar-a">
+							<h4 class="panel-title">Find a Fencing Club</h4>
+						</div>
+						<div class="swipeChangeBody ui-body ui-body-a">
+							<a href="http://www.fencing.net/fencing-clubs/"><img src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.fencing.net/fencing-clubs/"/></a>
+							<a href="http://www.usfencing.org"><img src="images/usf.jpg" data-toggle="popover" alt="" data-placement="bottom" data-trigger="focus" title="http://www.usfencing.org"/></a>
+							<a href="http://fencing.isport.com/fencing-clubs/"><img src="images/isf.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://fencing.isport.com/fencing-clubs/"/></a>
+						</div>
+					</aside>
+				</div>
+				<p class="swipeChangeBar ui-bar ui-bar-a">Copyright &copy; 2014 Andrew Kramer</p>
+			</footer>
+		
+			<!-- Modal Contact Form -->
+			<div id="contact" data-role="popup" data-overlay-theme="b" data-dismissible="false" style="max-width:500px;">
+				<div data-role="header" class="swipeChangeBar">
+					<a class="swipeChangeButton ui-btn ui-btn-a ui-corner-all ui-icon-delete ui-btn-icon-notext"" data-rel="back"></a>
+					<h2>Contact Us</h2>
+				</div>
+				<div id="contact-form" role="main" class="swipeChangeBody ui-content">
+					<h5 class="ui-title">Have a question about fencing? Want more information? We're here for you!</h5>
+					<p>Use the form below to contact us</p>
+					
+					<form role="form">
+						<fieldset>
+							<div class="ui-field-contain">
+								<label for="name">Name</label>
+								<input data-clear-btn="true" type="text" name="name"/>
+							</div>
+							<div class="ui-field-contain">
+								<label for="email">E-mail Address</label>
+								<input data-clear-btn="true" id="eml" type="email" name="email"/>
+							</div>
+							<div class="ui-field-contain">
+								<label for="exp" class="select">Fencing Experience</label>
+								<select id="exp" name="experience">
+									<option checked value="none">Select One</option>
+									<option value="Beginner">Beginner</option>
+									<option value="Intermediate">Intermediate</option>
+									<option value="Advanced">Advanced</option>
+								</select>
+							</div>
+							<div class="ui-field-contain" data-role="controlgroup" data-type="horizontal">
+								<fieldset>
+									<legend>What is your favorite sword</legend>
+									<input id="fav-null" type="radio" name="sword" value="none" checked /> <label for="fav-null">None</label>
+									<input id="fav-foil" type="radio" name="sword" value="foil"/> <label for="fav-foil">Foil</label>
+									<input id="fav-epee" type="radio" name="sword" value="epee"/> <label for="fav-epee">&Eacute;p&eacute;e</label>
+									<input id="fav-sabre" type="radio" name="sword" value="sabre"/> <label for="fav-sabre">Sabre</label>
+								</fieldset>
+							</div>
+							<div class="ui-field-contain">
+								<label for="body">Message</label>
+								<textarea name="body" rows="10"></textarea>
+							</div>
+							<div class="ui-field-contain">
+								<button id="form-submit" type="submit" class="swipeChangeButton ui-btn ui-corner-all ui-shadow ui-btn-a">Submit</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div data-role="footer" class="swipeChangeBar">
+					<a class="swipeChangeButton ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Close</a>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		<!-- Rules Page -->
+		<section data-role="page" id="rules">
+			<header class="swipeChangeBar" data-role="header" data-position="fixed">
+				<h1 class="swipeChangeBar">Introduction to Fencing</h1>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" >Home</a></li>
+						<li><a href="#rules" class="ui-btn-active">Rules</a></li>
+						<li><a href="#equipment">Equipment</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="swipeChangeBody ui-content ui-body-a">
+				<article>
+					<h3>Rules</h3>
+					<p>Though fencing has its roots in mortal combat, it has evolved into a sport that is regulated to ensure the safety and fairness of each bout.</p>
+					<p>The techniques necessary to master fencing are vast and can be complicated, but the basic rules of fencing are actually relatively simple. Sparring bouts are typically very short and end when one opponent touches the other with his or her blade in a manner consistent with the fencing style being used. The steps taken to achieve the touch and to avoid being touched are up to the contestants, though certain techniques have proven most useful over the centuries. However, fencing is not an open-ended brawl, and the following restrictions must be observed by all contestants.</p>
+					<div class="ui-grid-a main-grid">
+						<div class="ui-block-a">
+							<h4>Finesse not Strength</h4>
+							<p>Though a vital trait in historic duels, physical strength is less important in modern fencing. Sparring bouts can be ended with a mere touch of the blade, and contestants that regularly use excessive force in their attacks can be disqualified from competitions. Fencing has become battle of wits fought with a blade rather than a contest to injure an opponent. In fact, modern fencing is sometimes referred to as physical chess.</p>
+						</div>
+						<div class="ui-block-b">
+							<h4>The Fencing Strip</h4>
+							<p>Modern fencing is a linear contest, as all bouts are fought on a narrow strip, and contestants can lose a bout by stepping off of the strip. While more open footwork was an important part of historical fencing, the regulation of the fencing strip allows for a more controlled environment where the focus is on blade control rather than on combat.</p>
+						</div>
+					
+						<div class="ui-block-a">
+							<h4>Right of Attack</h4>
+							<p>Right of attack is a common restriction in modern fencing. This, means that after a contestant's attack is parried (blocked) or dodged, that contestant cannot make another attack until he has parried or dodged an attack by his opponent. Though this may sound like it results in unentertaining bouts where contestants to "take turns" trying to hit one another, the actually effect is much less noticeable: the principle of right of attack is actually the natural flow of a duel, and it is typically followed even in unregulated bouts. The effective result of this regulation is simply that one contestant cannot beat an opponent into submission through rapid successive attacks.</p>
+						</div>
+						<div class="ui-block-b">
+							<h4>Touch Regulation</h4>
+							<p>Only touches made by designated parts of the sword are counted in scoring. Typically this means that only touches made by the tip of the blade count, but in Sabre fencing touches by the edge of the blade count as well. Hits by the pommel (base) of the sword never count in scoring and intentional blows by the pommel or hand guard can lead to disqualification.</p>
+						</div>
+					
+						<div class="ui-block-a">
+							<h4>Target Zones</h4>
+							<p>Finally, in modern fencing, only certain regions of the body are considered viable targets (different styles of fencing have differently defined targets. See below for more details), and touches outside of those accepted regions are ignored in scoring.</p>
+						</div>
+					
+						<div class="ui-block-b">
+							<h3>Types of Fencing</h3>
+							<p>There are three different styles of classical fencing: Foil, &Eacute;p&eacute;e, and Sabre. Though all of them follow the same basic rules of fencing, each has its own distinct focus based on the historical use of each weapon.</p>
+						</div>
+					</div>
+					
+					
+					<div data-role="collapsible">
+						<h4>Foil</h4>
+						<div class="ui-grid-a main-grid">
+							<div class="ui-block-a">
+								<p>Foil fencing is probably what most people think of when they imagine fencing. This fencing style is the most structured, and many fencing studios begin teaching students foil fencing before progressing to the more complex styles. Foil fencing is based on the historical use of smallswords (a.k.a. court swords) in duels. These duels were typically very structured with rules of honourable dueling, and the swords had very thin blades with only the tips of the swords being sharpened.</p>
+								<p>Foil fencing uses right of attack, thus preventing one opponent from beating down another with rapid, successive blows. Foil fencing also limits the target area of each opponent to the torso. Furthermore only the tip of the blade is considered capable of delivering an attack, so only thrust touches count in scoring.</p>
+							</div>
+							<figure class="ui-block-b">
+								<img src="images/ft.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://upload.wikimedia.org/wikipedia/commons/1/14/Fencing_foil_valid_surfaces_2009.svg"/>
+								<figcaption>Foil Fencing Target Area</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div data-role="collapsible">
+						<h4>&Eacute;p&eacute;e</h4>
+						<div class="ui-grid-a main-grid">
+							<div class="ui-block-a">
+								<p>&Eacute;p&eacute;e fencing is based on a slightly older era of fencing, when organized dueling rules were still being developed and sword duels were common. This was the time of rapiers, long, ornate swords whose primary method of attack was thrusting. While foil fencing is considered by many to be the ideal form of combat, &eacute;p&eacute;e fencing is considered to be one of the most complex.</p>
+								<p>The entire body is a valid target in &eacute;p&eacute;e fencing, and this style does not use right of attack. This combination can lead to very fast sparring bouts. Though the essence of &eacute;p&eacute;e fencing is a more open, fluid style, the basic rules of fencing must still be observed, and only thrust touches count in scoring.</p>
+							</div>
+							<figure class="ui-block-b">
+								<img src="images/et.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://upload.wikimedia.org/wikipedia/commons/3/35/Fencing_epee_valid_surfaces.svg"/>
+								<figcaption>&Eacute;p&eacute;e Fencing Target Area</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div data-role="collapsible">
+						<h4>Sabre</h4>
+						<div class="ui-grid-a main-grid">
+							<div class="ui-block-a">
+								<p>Sabre fencing, as its name suggests, is based on the historical use of the saber. Though most commonly remembered for being wielded on horseback, the saber was also used for ground combat. Furthermore, most saber techniques are applicable to any sword of moderately length with a single sharpened edge.</p>
+								<p>Sabre fencing is the only fencing style that allows cuts (touches by the edge of the blade) to count in scoring. Therefore, sabre bouts are more reminiscent of medieval combat than other fencing styles. However, right of attack is observed in sabre fencing, and only touches that land above the waist are counted. This latter rule is due both to this style's equestrian history and due to the prevalence of cautions against leg attacks in historical fight manuals.</p>
+							</div>
+							<figure class="ui-block-b">
+								<img src="images/st.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://upload.wikimedia.org/wikipedia/commons/e/e3/Fencing_saber_valid_surfaces.svg"/>
+								<figcaption>Sabre Fencing Target Area</figcaption>
+							</figure>
+						</div>
+					</div>
+					
+				</article>
+			</main>
+			<footer data-role="footer" class="swipeChangeBar ui-content">
+				<div class="ui-grid-a">
+					<aside class="ui-block-a ui-corner-all custom-corners">
+						<div class="swipeChangeBar ui-bar ui-bar-a">
+							<h4>Fencing Suppliers</h4>
+						</div>
+						<div class="swipeChangeBody ui-body ui-body-a">
+							<a href="http://shop.fencing.net/"><img src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://shop.fencing.net/"/></a>
+							<a href="http://www.leonpaulusa.com/"><img src="images/lp.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.leonpaulusa.com/"/></a>
+							<a href="http://www.absolutefencinggear.com/shopping/"><img src="images/af.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.absolutefencinggear.com/shopping/"/></a>
+						</div>
+					</aside>
+					<aside class="ui-block-b ui-corner-all custom-corners">
+						<div class="swipeChangeBar ui-bar ui-bar-a">
+							<h4 class="panel-title">Find a Fencing Club</h4>
+						</div>
+						<div class="swipeChangeBody ui-body ui-body-a">
+							<a href="http://www.fencing.net/fencing-clubs/"><img src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.fencing.net/fencing-clubs/"/></a>
+							<a href="http://www.usfencing.org"><img src="images/usf.jpg" data-toggle="popover" alt="" data-placement="bottom" data-trigger="focus" title="http://www.usfencing.org"/></a>
+							<a href="http://fencing.isport.com/fencing-clubs/"><img src="images/isf.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://fencing.isport.com/fencing-clubs/"/></a>
+						</div>
+					</aside>
+				</div>
+				<p class="swipeChangeBar ui-bar ui-bar-a">Copyright &copy; 2014 Andrew Kramer</p>
+			</footer>
+		</section>
+		
+		
+		
+		
+		
+		<!-- Equipment Page -->
+		<section data-role="page" id="equipment">
+			<header class="swipeChangeBar" data-role="header" data-position="fixed">
+				<h1 class="swipeChangeBar">Introduction to Fencing</h1>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" >Home</a></li>
+						<li><a href="#rules" >Rules</a></li>
+						<li><a href="#equipment" class="ui-btn-active">Equipment</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="swipeChangeBody ui-content ui-body-a">
+				<article>
+					<h3>Equipment</h3>
+					<p>Throughout the history of fencing protection from the opponent's blade has been important. This protection has evolved from the metal armour and chain mail in medieval times to flowing silk tunics in the Renaissance meant to catch an opponent's blade in its folds, and continues today with fencing uniforms and weapons designed to minimize risk of injury. The result is that, in spite of its brutal beginnings, fencing has become one of the safest sports in existence.</p>
+					<div class="ui-grid-a main-grid">
+						<div class="ui-block-a">
+							<figure>
+								<img src="images/fencing-mask.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://firstsliveone.files.wordpress.com/2010/03/fencing-mask.jpg"/>
+							</figure>
+							<h4>Masks</h4>
+							<p>Though in the Renaissance, bulky helmets were abandoned in favour of greater visibility and mobility, the modern fencing mask has bridged the gap by offering head protection with minimal restrictions. The standard fencing mask consists of a thick wire mesh covering the front of the face, a metal and plastic shell around the sides and top of the head, and cloth and foam padding inside of the mask. The masks also have a bib made of stiff cloth to protect the neck. Because modern fencing requires opponents to always face one another there is no need for protection for the back of the head. The wire mesh offers exceptional visibility and is strong enough that it is impossible for approved fencing blades to bend or puncture it. For advanced fencers that require even greater visibility, Plexiglass mask have also been developed.</p>
+						</div>
+						<div class="ui-block-b">
+							<figure>
+								<img src="images/fencing-jacket.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="https://lh6.googleusercontent.com/-xpvLH29irJQ/VC0YpwQZt0I/AAAAAAAGLfM/BePDfIVWXT4/350n%25252BNylon%25252BFencing%25252BJacket%25252B-%25252BAdult.jpg"/>
+							</figure>
+							<h4>Jackets</h4>
+							<p>Fencing jackets are made of thick cotton or nylon to protect from the impact of the blade while allowing full mobility. (Even in medieval times, thick cloth gambesons were commonly used as protection against swords) The result is protection from scratches or minor cuts that could be inflicted by the flexible blade, though an occasional bruise may occur if a bout gets intense</p>
+						</div>
+					
+						<div class="ui-block-a">
+							<figure>
+								<img src="images/plastron.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://idealfencing.ca/images/Plastron.jpg"/>
+							</figure>
+							<h4>Plastrons</h4>
+							<p>The plastron is an additional cloth piece to protect the underarm of the sword hand, were most touches occur. This extra layer of protection further helps decrease potential bruises.</p>
+						</div>
+						<div class="ui-block-b">
+							<figure>
+								<img src="images/gloves.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.leonpaulusa.com/acatalog/fencing_gloves_g128.jpg"/>
+							</figure>
+							<h4>Gloves</h4>
+							<p>The sword hand of a fencer can receive hard knocks from his opponent's blade or, more commonly, his opponent's sword guard. Therefore fencers wear a padded glove on their sword hand which extend a third of the way up there forearm. Gloves are typically not worn on the opposite hand, because proper fencing techniques call for the non-sword hand to be kept out of reach of the opponent's blade anyway. However, some competitors do choose to wear gloves on both hands.</p>
+						</div>
+					
+						<div class="ui-block-a">
+							<figure>
+								<img src="images/lame.png" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://nationalfencing.com/shop/images/fl1.png"/>
+							</figure>
+							<h4>Lam&eacute;s</h4>
+							<p>Metallic lam&eacute;s are worn over top of the jacket in foil and sabre fencing to indicate the allowed target area and to make electronic scoring possible.</p>
+						</div>
+						<div class="ui-block-b">
+							<figure>
+								<img src="images/knickers.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://ecx.images-amazon.com/images/I/21NI9ShrGiL.jpg"/>
+							</figure>
+							<h4>Knickers</h4>
+							<p>Fencing knickers are made of cotton or nylon like the jackets and are worn over top of the fencer's street clothes. However, since the legs are typically not a target in fencing, fencing knickers are not as thick as the jackets, being primarily used to provide a consistent look to the uniform.</p>
+						</div>
+					
+						<div class="ui-block-a">
+							<figure>
+								<img src="images/shoes.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://nationalfencing.com/shop/images/engardeshoes.jpg"/>
+							</figure>
+							<h4>Shoes</h4>
+							<p>Fencing shoes are essentially sneakers with a flat heel to allow for easier lunges and faster movement. However, they are not necessary for casual bouts; standard sneakers or running shoes are sufficient.</p>
+						</div>
+					</div>
+					
+					<h3>Swords</h3>
+					<p>Modern fencing blades have come a long way from the swords of old. Though still made of high carbon steel like their predecessors, they are blunted, very light, and forged to be highly flexible. The result is a blade that is more comparable to a thick car antenna than to traditional sword. Additionally, in foil and &eacute;p&eacute;e fencing, where the tip of the blade is the only part used for touches, the hand grip has been redesigned to allow for a more ergonomic thrust. This redesigned grip is called the pistol grip. However, some fencers prefer the traditional French grip. Modern fencing swords do retain the pragmatic inclusion of a handguard, different for each of the types of sword used in fencing.</p>
+			
+					<div data-role="collapsible">
+						<h4>Foil</h4>
+						<figure>
+							<img src="images/foil.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://fencing.ge/img/foil.jpg"/>
+						</figure>
+						<p>The fencing foil is based on the historical courtsword or smallsword. Used primarally as a clothing assecory for men in the late Renassiance into the colonial period, the smallsword was exceptionally quick, and could still be a lethal weapon in self defence or in duels. The modern foil retains the small disk handguard meant to deflect thrusts directly in front of the hand.</p>
+					</div>
+					<div data-role="collapsible">
+						<h4>&Eacute;p&eacute;e</h4>
+						<figure>
+							<img src="images/epee.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.medieval-weaponry.co.uk/acatalog/SHECFL02-1000.jpg"/>
+						</figure>
+						<p>The &eacute;p&eacute;e is based on the rapier of the Renaissance. This was the weapon of Romeo and Tybalt, Cyrano de Bergerac, and the Three Musketeers. Used almost exclusively in duels, rapiers were much more ornate that their heavy predecessors. However, one of the most common rapier styles was the Spanish hilt rapier with a bell shaped guard meant to protect the whole hand. This is the handguard style that has evolved into the &eacute;p&eacute;e.</p>
+					</div>
+					<div data-role="collapsible">
+						<h4>Sabre</h4>
+						<figure>
+							<img src="images/sabre.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.medieval-weaponry.co.uk/acatalog/SHSAFL02-1000.jpg"/>
+						</figure>
+						<p>Curved swords used on horseback were used for centuries by many different cultures. However, the modern fencing sabre is based on the sabres used during the colonial period. Though they do not have a curved blade like their predecessors, the do retain the unique handguard shape.</p>
+					</div>
+				</article>
+			</main>
+			<footer data-role="footer" class="swipeChangeBar ui-content">
+				<div class="ui-grid-a">
+					<aside class="ui-block-a ui-corner-all custom-corners">
+						<div class="swipeChangeBar ui-bar ui-bar-a">
+							<h4>Fencing Suppliers</h4>
+						</div>
+						<div class="swipeChangeBody ui-body ui-body-a">
+							<a href="http://shop.fencing.net/"><img src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://shop.fencing.net/"/></a>
+							<a href="http://www.leonpaulusa.com/"><img src="images/lp.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.leonpaulusa.com/"/></a>
+							<a href="http://www.absolutefencinggear.com/shopping/"><img src="images/af.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.absolutefencinggear.com/shopping/"/></a>
+						</div>
+					</aside>
+					<aside class="ui-block-b ui-corner-all custom-corners">
+						<div class="swipeChangeBar ui-bar ui-bar-a">
+							<h4 class="panel-title">Find a Fencing Club</h4>
+						</div>
+						<div class="swipeChangeBody ui-body ui-body-a">
+							<a href="http://www.fencing.net/fencing-clubs/"><img src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.fencing.net/fencing-clubs/"/></a>
+							<a href="http://www.usfencing.org"><img src="images/usf.jpg" data-toggle="popover" alt="" data-placement="bottom" data-trigger="focus" title="http://www.usfencing.org"/></a>
+							<a href="http://fencing.isport.com/fencing-clubs/"><img src="images/isf.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://fencing.isport.com/fencing-clubs/"/></a>
+						</div>
+					</aside>
+				</div>
+				<p class="swipeChangeBar ui-bar ui-bar-a">Copyright &copy; 2014 Andrew Kramer</p>
+			</footer>
+		</section>
+		
+		
+
+		<!-- javascript -->		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('main').bind('swipeleft', function(event){
+					$('.swipeChangeBody').addClass('ui-body-a').removeClass('ui-body-b');
+					$('.swipeChangeBar').addClass('ui-bar-a').removeClass('ui-bar-b');
+					$('.swipeChangeButton').addClass('ui-btn-a').removeClass('ui-btn-b');
+				}); // end swipeleft
+				$('main').bind('swiperight', function(event){
+					$('.swipeChangeBody').addClass('ui-body-b').removeClass('ui-body-a');
+					$('.swipeChangeBar').addClass('ui-bar-b').removeClass('ui-bar-a');
+					$('.swipeChangeButton').addClass('ui-btn-b').removeClass('ui-btn-a');
+				}); // end swiperight
+			}); // end ready
+		</script>
+		<script src="js/mobile.js"></script>
+	</body>
+
+</html>

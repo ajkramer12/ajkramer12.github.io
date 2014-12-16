@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fencing: Video</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="skin/blue.monday/jplayer.blue.monday.css">
+		<link rel ="stylesheet" href="css/custom.css">
+		<script src="js/respond.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<div class="row jumbotron">
+					<img src="images/enguarde.jpg" alt="" class="pull-left hidden-xs hidden-sm img-circle img-responsive" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://media-cache-ak0.pinimg.com/236x/d7/84/1c/d7841c0c99aa028044bcbdf665a67f54.jpg | Background: http://suburbanferndaleark.files.wordpress.com/2012/04/4-14-sabre-mask-blade3.jpg | Hover: http://dailycornet.com/wp-content/uploads/2010/05/mask.jpg"/>
+					<h1>A Brief Introduction to the Sport of Fencing</h1>
+				</div>
+				<nav class="row navbar navbar-default navbar-inverse" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="rules.html">Rules</a></li>
+							<li><a href="equipment.html">Equipment</a></li>
+							<li><a href="#contact" data-toggle="modal">Contact Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<main class="row">
+				<div class="col-xs-12 col-md-8 col-md-push-2">
+					
+					<h3>Watch this Video</h3>
+					
+					<video controls width="640" height="480" preload="none" poster="images/1.jpg">
+						<source src="assets/video.m4v" type="video/mp4">
+						<source src="assets/video.ogv" type="video/ogg">
+						<p>Your browser does not support video streaming. Download the video for playback on your computer <a href="assets/video.m4v">here<a/>.</p>
+					</video>
+					
+					<!-- jPlayer code -->
+					<div id="jp_container_1" class="jp-video" role="application" aria-label="media player">
+						<div class="jp-type-single">
+							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+							<div class="jp-gui">
+								<div class="jp-video-play">
+									<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+								</div>
+								<div class="jp-interface">
+									<div class="jp-progress">
+										<div class="jp-seek-bar">
+											<div class="jp-play-bar"></div>
+										</div>
+									</div>
+									<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+									<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+									<div class="jp-details">
+										<div class="jp-title" aria-label="title">&nbsp;</div>
+									</div>
+									<div class="jp-controls-holder">
+										<div class="jp-volume-controls">
+											<button class="jp-mute" role="button" tabindex="0">mute</button>
+											<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+										</div>
+										<div class="jp-controls">
+											<button class="jp-play" role="button" tabindex="0">play</button>
+											<button class="jp-stop" role="button" tabindex="0">stop</button>
+										</div>
+										<div class="jp-toggles">
+											<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+											<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jp-no-solution">
+								<span>Update Required</span>
+								To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							</div>
+						</div>
+					</div>
+					<!-- end jPlayer code -->
+					
+					<h3>Listen to this music</h3>
+					<audio controls>
+						<source src="assets/audio.mp3" type="audio/mpeg">
+						<source src="assets/audio.ogg" type="audio/ogg">
+						<p>Your browser does not support audio streaming. Download the audio for playback on your computer <a href="assets/audio.mp3">here<a/>.</p>
+					</audio>
+					
+					<!-- jPlayer audio code -->
+					
+					<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+						<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+							<div class="jp-type-single">
+								<div class="jp-gui jp-interface">
+									<div class="jp-volume-controls">
+										<button class="jp-mute" role="button" tabindex="0">mute</button>
+										<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+										<div class="jp-volume-bar">
+											<div class="jp-volume-bar-value"></div>
+										</div>
+									</div>
+									<div class="jp-controls-holder">
+										<div class="jp-controls">
+											<button class="jp-play" role="button" tabindex="0">play</button>
+											<button class="jp-stop" role="button" tabindex="0">stop</button>
+										</div>
+										<div class="jp-progress">
+											<div class="jp-seek-bar">
+												<div class="jp-play-bar"></div>
+											</div>
+										</div>
+										<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+										<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+										<div class="jp-toggles">
+											<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+										</div>
+									</div>
+								</div>
+								<div class="jp-details">
+									<div class="jp-title" aria-label="title">&nbsp;</div>
+								</div>
+								<div class="jp-no-solution">
+									<span>Update Required</span>
+									To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+								</div>
+							</div>
+						</div>
+					
+					<!-- end jPlayer audio code -->
+					
+					<div class="row citation">
+						<a class="remove-ads">Remove Ads</a><a class="show-ads hidden">Show Ads</a>
+					</div>
+				</div>
+				<aside class="col-xs-5 col-md-2 col-md-pull-8 panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Fencing Suppliers</h4>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="http://shop.fencing.net/"><img class="img-responsive" src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://shop.fencing.net/"/></a></li>
+						<li class="list-group-item"><a href="http://www.leonpaulusa.com/"><img class="img-responsive" src="images/lp.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.leonpaulusa.com/"/></a></li>
+						<li class="list-group-item"><a href="http://www.fencingstar.com/"><img class="img-responsive" src="images/fs.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.fencingstar.com/"/></a></li>
+						<li class="list-group-item"><a href="http://www.absolutefencinggear.com/shopping/"><img class="img-responsive" src="images/af.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.absolutefencinggear.com/shopping/"/></a></li>
+					</ul>
+				</aside>
+				<aside class="col-xs-5 col-xs-push-2 col-md-2 panel col-md-push-0 panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Find a Fencing Club</h4>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="http://www.fencing.net/fencing-clubs/"><img class="img-responsive" src="images/fn.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://www.fencing.net/fencing-clubs/"/></a></li>
+						<li class="list-group-item"><a href="http://www.usfencing.org"><img class="img-responsive" src="images/usf.jpg" data-toggle="popover" alt="" data-placement="bottom" data-trigger="focus" title="http://www.usfencing.org"/></a></li>
+						<li class="list-group-item"><a href="http://fencing.isport.com/fencing-clubs/"><img class="img-responsive" src="images/isf.jpg" alt="" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="http://fencing.isport.com/fencing-clubs/"/></a></li>
+					</ul>
+				</aside>
+			</main>
+			<footer class="row">
+				<div class="col-xs-12">
+					<p>Copyright &copy; 2014 Andrew Kramer</p>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Modal Contact Form -->
+		<div id="contact" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+						<h2>Contact Us</h2>
+					</div>
+					<div id="contact-form" class="modal-body">
+						<h5>Have a question about fencing? Want more information? We're here for you!</h5>
+						<p>Use the form below to contact us</p>
+						
+						<form role="form">
+							<fieldset>
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="text" name="name" class="form-control"/>
+								</div>
+								<div class="form-group validate-email">
+									<label for="email">E-mail Address *</label>
+									<input id="eml" type="text" name="email" class="form-control"/>
+									<span class="help-block"></span>
+								</div>
+								<div class="form-group validate-experience">
+									<label for="experience">Fencing Experience *</label>
+									<select id="exp" name="experience" class="form-control">
+										<option checked value="none">Select One</option>
+										<option value="Beginner">Beginner</option>
+										<option value="Intermediate">Intermediate</option>
+										<option value="Advanced">Advanced</option>
+									</select>
+									<span class="help-block"></span>
+								</div>
+								<div class="form-group">
+									<label for="body" class="control=label">Message</label>
+									<textarea name="body" class="form-control" rows="10"></textarea>
+								</div>
+								<div class="form-group">
+									<button id="form-submit" type="submit" class="btn btn-primary">Submit</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Citations -->
+		<div id="citation" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+						<h2>Citations</h2>
+					</div>
+					<div class="modal-body">
+						<p>1: http://www.physicalchess.com (c. 2009)</p>
+						<p>2: http://helenaymca.org/wp-content/uploads/2010/12/fencing.jpg</p>
+						<p>3: http://www.whatisfencing.com/wp-content/uploads/2011/12/Fencing-Match.jpg</p>
+						<p>4: http://upload.wikimedia.org/wikipedia/commons/5/54/Fencing_girl.jpg</p>
+						<p>5: http://upload.wikimedia.org/wikipedia/commons/1/10/Final_2013_Fencing_WCH_SFS-EQ_t210638.jpg</p>
+						<p>6: http://fightplanet.com/wp-content/uploads/2013/04/fencing1.jpg</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.jplayer.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#jquery_jplayer_1").jPlayer({
+					ready: function () {
+						$(this).jPlayer("setMedia", {
+							title: "Sample Video",
+							m4v: "assets/video.m4v",
+							ogv: "assets/video.ogv",
+							poster: "images/1.jpg"
+						});
+					},
+					cssSelectorAncestor: "#jp_container_1",
+					swfPath: "js",
+					supplied: "m4v, ogv",
+					useStateClassSkin: true,
+					autoBlur: false,
+					smoothPlayBar: true,
+					keyEnabled: true,
+					remainingDuration: true,
+					toggleDuration: true
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#jquery_jplayer_2").jPlayer({
+					ready: function () {
+						$(this).jPlayer("setMedia", {
+							title: "Jen",
+							m4a: "assets/audio.mp3",
+							oga: "assets/audio.ogv"
+						});
+					},
+					cssSelectorAncestor: "#jp_container_2",
+					swfPath: "js",
+					supplied: "mp3, oga",
+					useStateClassSkin: true,
+					autoBlur: false,
+					smoothPlayBar: true,
+					keyEnabled: true,
+					remainingDuration: true,
+					toggleDuration: true
+				});
+			});
+		</script>
+		<!-- <script src="js/custom.js"></script> -->
+	</body>
+
+</html>
