@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Cardinal;
+    src: url(../fonts/Cardinal.ttf);
+}
+@font-face {
+    font-family: Imladris;
+    src: url(../fonts/elvencommonspeak.ttf);
+}
+@font-face {
+    font-family: Ringbearer;
+    src: url(../fonts/RINGM__.TTF);
+}
+
+body {
+    background-color: #000;
+    background-image: url("../img/back.jpg"); /* http://eskipaper.com/images/mist-photos-1.jpg */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    background-image: url("../img/container.jpg"); /* Personal Creation */
+    border: 5px #ccc groove;
+    color: #fffafa;
+}
+header {
+    background-color: #111;
+    background-image: url("../img/header.jpg"); /* https://i.ytimg.com/vi/ZISJpRCtFbk/maxresdefault.jpg */
+    border-bottom: 2px #ccc groove;
+}
+
+main {
+    padding: 1%;
+}
+footer {
+    background-color: #111;
+    background-image: url("../img/footer.jpg"); /* http://previews.123rf.com/images/elwynn/elwynn1407/elwynn140700395/30177415-Stone-wall-with-green-moss-background--Stock-Photo.jpg */
+    border-top: 2px #ccc groove;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-family: Cardinal, serif;
+    color: #bd0000
+}
+h3 {
+    font-family: Ringbearer;
+    color: #bd0000;
+}
+li {
+    color: #bd0000;
+}
+a {
+    color: #bd0000;
+}
+a:hover {
+    color: #9b0000;
+}
+a:visited{
+    color: #ac0000;
+}
+
+
+
+#signature {
+    color: #bd0000;
+    font-family: Imladris, serif;
+}
