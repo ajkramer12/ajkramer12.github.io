@@ -31,15 +31,31 @@ header {
     background-color: #111;
     background-image: url("../img/header.jpg"); /* https://i.ytimg.com/vi/ZISJpRCtFbk/maxresdefault.jpg */
     border-bottom: 2px #ccc groove;
+    padding-left: 300px;
+}
+header h3 {
+    padding-left: 50px;
 }
 
 main {
     padding: 1%;
 }
+.intro {
+    background-color: #000;
+}
+.articleHeader {
+    margin: 0;
+}
+article {
+    background-color: #000;
+    padding: 5px 15px 15px 15px;
+    margin: 15px 0 ;
+}
 footer {
     background-color: #111;
     background-image: url("../img/footer.jpg"); /* http://previews.123rf.com/images/elwynn/elwynn1407/elwynn140700395/30177415-Stone-wall-with-green-moss-background--Stock-Photo.jpg */
     border-top: 2px #ccc groove;
+    height: 100px;
     text-align: center;
 }
 
