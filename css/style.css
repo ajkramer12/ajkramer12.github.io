@@ -25,7 +25,7 @@ body {
     background-color: #000;
     background-image: url("../img/container.jpg"); /* Personal Creation */
     border: 5px #ccc groove;
-    color: #fffafa;
+    color: #f0eaea;
 }
 header {
     background-color: #111;
@@ -33,18 +33,49 @@ header {
     border-bottom: 2px #ccc groove;
     padding-left: 300px;
 }
+
 header h3 {
     padding-left: 50px;
 }
+.mainNav {
 
+    height: 356px;
+    margin-bottom: 65px;
+    font-family: Cardinal, serif;
+}
+
+.mainNav ul {
+    margin: 0;
+    padding: 12% 0;
+    text-align: center;
+}
+.mainNav ul li {
+    margin: 5% 0;
+    padding: 20% 5px;
+    list-style: none;
+    /*background-color: #111;*/
+    background-image: url("../img/button.png"); /* http://www.clipartkid.com/images/361/gothic-frames-and-borders-BSNAsO-clipart.jpg */
+    background-size: 100% 100%;
+    /*background: linear-gradient(#000, #111, #000);*/
+}
+.mainNav ul li a {
+    text-decoration: none;
+}
+.subNav {
+    padding-bottom: 15px;
+}
 main {
     padding: 1%;
 }
 .intro {
     background-color: #000;
+    margin-bottom: 50px;
 }
 .articleHeader {
     margin: 0;
+}
+article img {
+    margin-top: 15px;
 }
 article {
     background-color: #000;
@@ -55,7 +86,8 @@ footer {
     background-color: #111;
     background-image: url("../img/footer.jpg"); /* http://previews.123rf.com/images/elwynn/elwynn1407/elwynn140700395/30177415-Stone-wall-with-green-moss-background--Stock-Photo.jpg */
     border-top: 2px #ccc groove;
-    height: 100px;
+    height: 50px;
+    padding-top: 50px;
     text-align: center;
 }
 
