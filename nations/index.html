@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoTimeline</title>
+    <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Personal Creation -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loadScreen"></div>
+    <div id="pageContainer" class="container-fluid">
+        <div id="primaryMapRow" class="row primaryMapContainer">
+            <div id="primaryMapColumn" class="col-xs-12 primaryMapContainer"></div>
+            <svg id="primaryMap"></svg>
+            <button id="panUpTrigger" class="panTrigger hidden"><span class="glyphicon glyphicon-chevron-up"></span></button>
+            <button id="panRightTrigger" class="panTrigger hidden"><span class="glyphicon glyphicon-chevron-right"></span></button>
+            <button id="panDownTrigger" class="panTrigger hidden"><span class="glyphicon glyphicon-chevron-down"></span></button>
+            <button id="panLeftTrigger" class="panTrigger hidden"><span class="glyphicon glyphicon-chevron-left"></span></button>
+        </div>
+        <div id="commandBox" class="row">
+            <div id="miniMapColumn" class="col-sm-2 hidden-xs commandBoxElements">
+                <svg id="miniMap"></svg>
+            </div>
+            <div id="primaryCommand" class="col-sm-7 col-xs-12 commandBoxElements">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="selectedRegionName" regionId="-1"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul id="selectedRegionStats"></ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="selectedRegionDescription"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="statsBox" class="col-sm-3 hidden-xs commandBoxElements">
+                <h4 id="grandEraLabel"></h4>
+                <h5 id="nationRankingHeader">Most Powerful Nations (by size)</h5>
+                <ol id="nationRankingList">
+                    <li id="nationSize0"></li>
+                    <li id="nationSize1"></li>
+                    <li id="nationSize2"></li>
+                    <li id="nationSize3"></li>
+                    <li id="nationSize4"></li>
+                </ol>
+            </div>
+        </div>
+        <div id="eraSummaryBox">
+            <div id="eraSummaryBoxToggle"><span class="glyphicon glyphicon-chevron-up"></span></div>
+            <div id="eraSummary"></div>
+        </div>
+        <div id="characterSummaryBox">
+            <div id="characterSummaryBoxToggle"><span class="glyphicon glyphicon-chevron-left"></span></div>
+        </div>
+        <span id="eraDate"></span>
+    </div>
+
+
+    <!-- Details Modal Window -->
+    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsWindowTitle">
+        <div class="modal-dialog" role="document">
+            <div id="detailsWindow" class="modal-content">
+                <div class="modal-body">
+                    <div id="detailsWindowClose"><img id="detailsWindowCloseButton" src="img/close.png"></div> <!-- https://thumbs.dreamstime.com/m/blank-wax-seal-3094026.jpg -->
+                    <div id="detailsWindowImage"></div>
+                    <div id="detailsWindowTitle"></div>
+                    <div id="detailsWindowSubTitle"></div>
+                    <div id="detailsWindowDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNzTfogg-ylBocZdcO4bU8Uf6iGOBh3qc"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/queue.v1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

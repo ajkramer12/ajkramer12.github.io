@@ -71,6 +71,7 @@ main {
     background-color: #000;
     margin-bottom: 50px;
 }
+
 .articleHeader {
     margin: 0;
 }
@@ -93,7 +94,7 @@ footer {
 
 
 
-h1 {
+h1, h2 {
     font-family: Cardinal, serif;
     color: #bd0000
 }
