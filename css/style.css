@@ -32,46 +32,65 @@ header {
     background-image: url("../img/header.jpg"); /* https://i.ytimg.com/vi/ZISJpRCtFbk/maxresdefault.jpg */
     border-bottom: 2px #ccc groove;
     padding-left: 300px;
+    max-height: 132px;
 }
 
 header h3 {
     padding-left: 50px;
 }
-.mainNav {
 
-    height: 356px;
+
+main {
+    padding: 1%;
+}
+
+.main {
+    margin-left: 0;
+}
+
+.top {
     margin-bottom: 65px;
+}
+
+.mainNav {
+    /*height: 356px;*/
+
     font-family: Cardinal, serif;
 }
 
 .mainNav ul {
     margin: 0;
-    padding: 12% 0;
+    padding: 0 15px 0 15px;
     text-align: center;
 }
 .mainNav ul li {
     margin: 5% 0;
-    padding: 20% 5px;
+    padding: 28px 5px;
     list-style: none;
-    /*background-color: #111;*/
     background-image: url("../img/button.png"); /* http://www.clipartkid.com/images/361/gothic-frames-and-borders-BSNAsO-clipart.jpg */
     background-size: 100% 100%;
-    /*background: linear-gradient(#000, #111, #000);*/
 }
 .mainNav ul li a {
     text-decoration: none;
 }
+
+
+
+
+
+
+.intro {
+    background-color: #000;
+    /*margin-bottom: 50px;*/
+}
+
+
+
+
+
 .subNav {
     padding-bottom: 15px;
 }
-main {
-    padding: 1%;
-}
-.intro {
-    background-color: #000;
-    margin-bottom: 50px;
-}
-
 .articleHeader {
     margin: 0;
 }
@@ -99,7 +118,7 @@ h1, h2 {
     color: #bd0000
 }
 h3 {
-    font-family: Ringbearer;
+    font-family: Ringbearer, serif;
     color: #bd0000;
 }
 li {
@@ -120,4 +139,75 @@ a:visited{
 #signature {
     color: #bd0000;
     font-family: Imladris, serif;
+}
+
+
+
+
+
+
+@media (min-width: 877px) and (max-width: 1044px) {
+    .portrait {
+        height: 250px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 876px) {
+    .mainNav ul li.innerLink {
+        margin: 5% 25%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 876px) {
+    header {
+        padding-left: 50px;
+        background-image: url("../img/headerSmall.jpg");
+    }
+
+    .mainNav {
+        margin: 0 auto;
+    }
+    .mainNav ul {
+        padding: 0;
+    }
+    .mainNav ul li {
+        float: left;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 700px) {
+    .mainNav ul li {
+        width: 20%;
+        padding: 28px 0;
+    }
+    .mainNav ul li.innerLink {
+        margin: 5% 17%;
+    }
+
+    article img {
+        max-width: 49%;
+    }
+}
+
+@media (min-width: 433px) and (max-width: 600px) {
+    header h3 {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .portraitCol {
+        display: none;
+    }
+
+    .intro {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 432px) {
+    header h3 {
+        display: none;
+    }
 }
