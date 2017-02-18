@@ -6,72 +6,65 @@
     <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Personal Creation -->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
-    <div class="container">
-        <header class="row">
-            <div class="col-6-6-6">
-                <h1>eruditus12</h1>
-                <h3>Random thoughts that leaked out of my head</h3>
-            </div>
-        </header>
+<div class="container">
+    <header class="row">
+        <div class="col-6-6-6">
+            <h1>eruditus12</h1>
+            <h3>Random thoughts that leaked out of my head</h3>
+        </div>
+    </header>
 
-        <main class="row">
-            <!-- Blog Navigation -->
-            <nav class="col-1-2-3">
-                <div class="mainNav">
+    <main class="row">
+        <div class="main col-6-6-6">
+            <div class="top row">
+                <nav class="mainNav col-1-6-6">
                     <ul>
                         <li><a href="index.html">Home / Blog</a></li>
-                        <li><a href="nations.html">Tide of Nations</a></li>
+                        <li class="innerLink"><a href="nations.html">Tide of Nations</a></li>
                         <li><a href="celestis.html">The Celestis Project</a></li>
                     </ul>
-                </div>
-                <div class="subNav">
-                    <h4>Dates</h4>
-                    <ul>
-                        <li><a href="#170213">Feb 13</a></li>
-                        <li><a href="#170210">Feb 10</a></li>
-                        <li><a href="#170209">Feb 9</a></li>
-                        <li><a href="#170208">Feb 8</a></li>
-                        <li><a href="#170207">Feb 7</a></li>
-                        <li><a href="#170203">Feb 3</a></li>
-                        <li><a href="#170202">Feb 2</a></li>
-                        <li><a href="#170201">Feb 1</a></li>
-                        <li><a href="#170131">Jan 31</a></li>
-                        <li><a href="#170130">Jan 30</a></li>
-                        <li><a href="#170127">Jan 27</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!--Main Page-->
-            <div class="col-5-6-6">
-                <div class="intro row">
-                    <div class="col-1-2-3">
-                        <img src="img/portrait.jpg"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                    </div>
-                    <div class="col-5-6-6">
-                        <h2 class="title">The Celestis Project</h2>
-                        <p>Okay, so I’m not just a Tolkien nerd; I’m a straight-up nerd when it comes to just about any Sci-Fi or Fantasy work. I also like finding hidden connections between things, whether they were originally intended to be connected or not. (I’m a synesthete, go figure.)</p>
-                        <p>Enter, The Celestis Project.</p>
-                        <p>As is turns out storytellers are not always very creative, and many Sci-Fi and Fantasy works have nearly identical motifs and character archetypes. There is enough similarity that a strong argument can be made that several popular franchises exist in the same universe, our universe. (Think, The Pixar Theory on steroids)</p>
-                        <p>The Celestis Project will be web library written from the perspective of a conspiracy theorist that has stumbled across evidence that Star Wars, Stargate, Lord of the Rings, Assassin’s Creed, and a smattering of other franchises are all historical accounts of real events that took place in within our universe; that human’s originated in another galaxy where they were cared for by a superior race until that race enslaved us and an alien resistance brought us here by way of the Star Wars galaxy, all the while being pursued by mercenaries or betrayed by their own kind.</p>
-                        <p>The glue that holds this concept together is the premise that the Ancients of Stargate, the Celestials of Star Wars, the Valar and Elves of Lord of the Rings, and the Precursors of Assassin’s Creed are all the same species, a superior species that has a natural ability to manipulate energy.</p>
-                        <p>(Don’t believe me? Consider this: They are all highly advanced races that are torn between protecting and enslaving humans, yet even those helping humans typically take an aloof and distant stance; All build technological masterpieces that last for millennia; All show at least some ability of heightened mental awareness and manipulation, including, but not limited to telekinesis; All have some way in which they can remove themselves from the plane of human existence, and All use rings and fire throughout their creations and symbolism.)</p>
-                        <p>I have the primary mental model complete, but I’m still working on finalizing some research and writing down the timeline (Yes, even the timelines mesh, so well it is uncanny). The final product will center around a D3 visualization that allows users to explore the timeline. I hope to have a rudimentary version of the project up by Spring.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6-6-6">
-
+                </nav>
+                <div class="col-5-6-6">
+                    <div class="intro row">
+                        <div class="portraitCol col-1-2-3">
+                            <picture>
+                                <!--[If IE 9]<video style="display: none;"><![endif]-->
+                                <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                <source srcset="img/portraitSmall.jpg" media="(min-width:877px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                <source srcset="img/portrait.jpg" media="(min-width:481px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                <!--[If IE 9]</video><![endif]-->
+                                <img class="portrait" src="img/portraitDark.jpg"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                            </picture>
+                        </div>
+                        <div class="col-5-4-6">
+                            <h2 class="title">The Celestis Project</h2>
+                            <p>Okay, so I’m not just a Tolkien nerd; I’m a straight-up nerd when it comes to just about any Sci-Fi or Fantasy work. I also like finding hidden connections between things, whether they were originally intended to be connected or not. (I’m a synesthete, go figure.)</p>
+                            <p>Enter, The Celestis Project.</p>
+                            <p>As is turns out storytellers are not always very creative, and many Sci-Fi and Fantasy works have nearly identical motifs and character archetypes. There is enough similarity that a strong argument can be made that several popular franchises exist in the same universe, our universe. (Think, The Pixar Theory on steroids)</p>
+                            <p>The Celestis Project will be web library written from the perspective of a conspiracy theorist that has stumbled across evidence that Star Wars, Stargate, Lord of the Rings, Assassin’s Creed, and a smattering of other franchises are all historical accounts of real events that took place in within our universe; that human’s originated in another galaxy where they were cared for by a superior race until that race enslaved us and an alien resistance brought us here by way of the Star Wars galaxy, all the while being pursued by mercenaries or betrayed by their own kind.</p>
+                            <p>The glue that holds this concept together is the premise that the Ancients of Stargate, the Celestials of Star Wars, the Valar and Elves of Lord of the Rings, and the Precursors of Assassin’s Creed are all the same species, a superior species that has a natural ability to manipulate energy.</p>
+                            <p>Don’t believe me? Consider this: They are all highly advanced races that are torn between protecting and enslaving humans, yet even those helping humans typically take an aloof and distant stance; All build technological masterpieces that last for millennia; All show at least some ability of heightened mental awareness and manipulation, including, but not limited to telekinesis; All have some way in which they can remove themselves from the plane of human existence, and All use rings and fire throughout their creations and symbolism.</p>
+                            <p>I have the primary mental model complete, but I’m still working on finalizing some research and writing down the timeline (Yes, even the timelines mesh, so well it is uncanny). The final product will center around a D3 visualization that allows users to explore the timeline. I hope to have a rudimentary version of the project up by Spring.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="row">
-            <div class="col-6-6-6">
-                <p>Copyright &copy; 2017 Andrew Kramer</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer class="row">
+        <div class="col-6-6-6">
+            <p>Copyright &copy; 2017 Andrew Kramer</p>
+        </div>
+    </footer>
+</div>
 </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </html>

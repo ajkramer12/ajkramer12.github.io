@@ -6,6 +6,11 @@
     <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Personal Creation -->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
     <div class="container">
@@ -29,7 +34,14 @@
                     <div class="col-5-6-6">
                         <div class="intro row">
                             <div class="portraitCol col-1-2-3">
-                                <img class="portrait" src="img/portrait.jpg"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                <picture>
+                                    <!--[If IE 9]<video style="display: none;"><![endif]-->
+                                    <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                    <source srcset="img/portraitSmall.jpg" media="(min-width:877px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                    <source srcset="img/portrait.jpg" media="(min-width:481px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                    <!--[If IE 9]</video><![endif]-->
+                                    <img class="portrait" src="img/portraitDark.jpg"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                                </picture>
                             </div>
                             <div class="col-5-4-6">
                                 <h4>Welcome!</h4>
@@ -43,10 +55,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <nav class="col-1-2-3">
-                        <div class="subNav">
-                            <h4>Dates</h4>
+                    <nav class="subNavCol col-1-6-6">
+                        <nav class="subNav">
+                            <div class="subNavTop">
+                                <img id="subNavToggle" src="img/burger.jpg"> <!-- http://www.flydigital.com.au/wp-content/uploads/2013/06/hamb1.png -->
+                                <h4>Dates</h4>
+                            </div>
                             <ul>
+                                <li><a href="#170216">Feb 16</a></li>
+                                <li><a href="#170214">Feb 14</a></li>
                                 <li><a href="#170213">Feb 13</a></li>
                                 <li><a href="#170210">Feb 10</a></li>
                                 <li><a href="#170209">Feb 9</a></li>
@@ -59,13 +76,35 @@
                                 <li><a href="#170130">Jan 30</a></li>
                                 <li><a href="#170127">Jan 27</a></li>
                             </ul>
-                        </div>
+                        </nav>
                     </nav>
                     <div class="col-5-6-6">
                         <div class="row">
                             <div class="col-6-6-6">
+                                <article id="170216" class="row">
+                                    <h3 class="articleHeader">February 16</h3>
+                                    <img src="img/blog/1702160.jpg"> <!-- https://i.ytimg.com/vi/cwnGw2dMJfw/maxresdefault.jpg -->
+                                    <img src="img/blog/1702161.jpg"> <!-- http://weknowyourdreams.com/image.php?pic=/images/viking/viking-08.jpg -->
+                                    <p>If you were born in the Western Hemisphere, chances are, you are related to a Viking. Though the Viking culture originated in Scandinavia, they soon spread to most of Europe. Once the Roman Empire began to crumble, Viking tribes quickly staked their claims in the wake of the dying behemoth.</p>
+                                    <p>The French and Germans are descendants of the Franks and Bavarians. Italians are descendants of the Lombards. Spanish and Portuguese descended from the Visgoths. Even the English (The dominant ancestry of most Americans) came from an assimilation of three Viking tribes: the Angles, the Saxons, and the Normans.</p>
+                                    <p>During the colonial period, most of these Western European countries stayed true to their Viking heritage and boarded their ships once more to sail for new lands. Viking blood spread all across the globe as the conquerors intermarried with the conquered, and settled in their new lands.</p>
+                                    <p>See you in Valhalla.</p>
+
+                                </article>
+                                <article id="170214" class="row">
+                                    <h3 class="articleHeader">February 14</h3>
+                                    <img src="img/blog/1702140.jpg"> <!-- https://alaskabibleteacher.files.wordpress.com/2014/09/apple-tree.jpg -->
+                                    <img src="img/blog/1702141.jpg"> <!-- http://badzoot.com/wp-content/uploads/2014/02/GD10019142RoseBush-1.jpg -->
+                                    <p>Apples and roses are both symbols of American gardening, but did you know that apple trees are essentially - botanically speaking - tree-versions of roses?</p>
+                                    <p>Apples, pears, and roses are all in the family Rosacae. This may seem to be an unusual grouping at first, after all, two are trees and one is a flower! However, most plants have the ability to grow to tree size, but markers in their DNA limit their growth. So size is actually a poor way to group plants.</p>
+                                    <p>If, however, you compare the flowers of the wild rose to the flowers of the apple tree, you will find remarkable similarity. Since flowers are a plants reproductive organs, it actually makes a lot of sense to group plants based on their flowers' reproductive compatibility.</p>
+                                    <p>So then, what part of the rose are we eating when we bite into a Red Delicious? Apples are basically swollen rose hips (The green bulge at the base of a rose). The feathery bits at the base of an apple are where the apple flower was once connected. As it turns out, rose hips are actually edible as well, and a great source of vitamin C. I don't recommend biting into a commercial rose (They are produced with chemicals not suitable for human consumption), but rose hip tea can be purchased at many stores.</p>
+                                    <p>So if you're strapped for cash this Valentine's day, forget the bouquet of roses, and go with a bushel of apples instead. I'm sure your sweetheart won't mind. ;-)</p>
+                                </article>
                                 <article id="170213" class="row">
                                     <h3 class="articleHeader">February 13</h3>
+                                    <img src="img/blog/1702130.jpg"> <!-- http://media.graytvinc.com/images/DRACULA.png -->
+                                    <img src="img/blog/1702131.jpg"> <!-- http://images.gr-assets.com/books/1183752234l/1452319.jpg -->
                                     <p>Early vampire myths were rather varied and contradictory. Bram Stoker is often credited with cannonizing vampire lore with his famous work, Dracula, but this distinction should actually be shared with Sheridan Le Fanu. Le Fanu published his work of Gothic fiction, Carmilla, 26 years before Stoker published Dracula.</p>
                                     <p>Carmilla tells the story of a female vampire that befriends her victims before draining their blood. Stoker pulled much of Dracula's lore from Carmilla, even (unintentionally?) copying themes of the story in his own work.</p>
                                 </article>
@@ -79,17 +118,22 @@
                                 </article>
                                 <article id="170209" class="row">
                                     <h3 class="articleHeader">February 9</h3>
+                                    <img src="img/blog/1702090.jpg"> <!-- http://image.insider-journeys.com/overview/china.jpg -->
+                                    <img src="img/blog/1702091.jpg"> <!-- https://static01.nyt.com/images/2015/06/21/travel/21BRIEFS1/21BRIEFS1-master1050.jpg -->
                                     <p>The Chinese culture is probably the most resilient culture that has ever existed. Throughout China’s 2,000 year history, its core culture has not changed, in spite of being conquered by foreign powers several times. Unlike most cultures, which blend with or become assimilated into the culture of their conquerors after a few generations, China would actually assimilate their conquerors into the Chinese culture. So the question is, Who conquered whom?</p>
                                     <p>Their government may change hands, but the spirit of the Chinese people never dies.</p>
                                 </article>
                                 <article id="170208" class="row">
                                     <h3 class="articleHeader">February 8</h3>
+                                    <img src="img/blog/1702080.jpg"> <!-- https://blogs.discovery.wisc.edu/projects/files/2014/02/LeapMotion.jpg -->
+                                    <img src="img/blog/1702081.jpg"> <!-- https://cdn0.vox-cdn.com/thumbor/AB4U1KQMAgxZVSb_OL3g8vDLjUI=/0x72:778x510/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/50031997/magic-leap.0.jpg -->
                                     <p>Computer interaction is about to get a major overhaul thanks to two new technologies:</p>
                                     <p>Leap Motion is a state-of-the-art gesture control system, meaning you can wave your hands about to interact with digital objects. The device is for sale now, but only a very limited number of applications support it so far.</p>
                                     <p>Magic Leap is still under development, but should be released soon. It creates augmented reality (digital images overlaid on the real-world) by shining precise light beams directly into the eye, rather than projecting an image on glasses. This creates the impression the digital item actually exists in reality rather than seeing the image as a display on top of reality.</p>
                                 </article>
                                 <article id="170207" class="row">
                                     <h3 class="articleHeader">February 7</h3>
+                                    <img src="img/blog/1702070.jpg"> <!-- http://www.oralanswers.com/wp-content/uploads/2011/03/dental_anesthetic_makes_heart_beat_faster_epinephrine.jpg -->
                                     <p>Most of us have either experienced or know someone that has experienced some form of dental anxiety. In fact, it has been said that up to 15% of adults are afraid to go to the dentist, a number reinforced by pop culture. As it turns out, there is a scientific explanation for this fear.</p>
                                     <p>The active ingredient in the numbing shots given by dentist is epinephrine, otherwise known as adrenaline. Epinephrine is produced by the body as a fear response, triggering the fight or flight mechanism. One of the effects of epinephrine is blocking pain (If you’re being chased by wolves, it’s not the time to worry about your sprained ankle), but it also stimulates the regions of the brain that process emotion, instinct, and memory creation.</p>
                                     <p>So from the moment you receive a shot at the dentist your body goes into a fear response (regardless of what you tell yourself about the situation) and your brain starts making detailed memories that are deeply connected to that visceral fear. Even if you don’t specifically remember being afraid (since you weren’t necessarily afraid at an intellectual level), your body still associates the event with fear at an instinctual level and presents emotions to discourage you from letting it happen again (Similar to how people tend to avoid foods that they ate right before contracting a stomach virus, whether the food poisoning was involved or not.)</p>
@@ -107,6 +151,8 @@
                                 </article>
                                 <article id="170202" class="row">
                                     <h3 class="articleHeader">February 2</h3>
+                                    <img src="img/blog/1702020.jpg"> <!-- https://en.wikipedia.org/wiki/File:Kantaro_Suzuki_suit.jpg -->
+                                    <img src="img/blog/1702021.jpg"> <!-- http://i.dailymail.co.uk/i/pix/2014/07/29/article-2710104-201D4D0D00000578-865_634x386.jpg -->
                                     <p>The dropping of the atomic bombs on Hiroshima and Nagasaki may have been the result of the worst translation mistake in history. To understand why, we need to cover a bit of pre-WWII Japanese culture:</p>
                                     <p>Japan’s military had a proud history. Until WWII, no foreign power had ever successfully invaded Japan for its entire 1,500 year history. This led to an arrogant spirit in their military ranks: defeat was not an option; suicide was preferred over surrender. Furthermore, for most of Japan’s history, the government was controlled by the military, and the emperor was merely a puppet ruler. It was only in the mid 1800’s that power began to shift back to the imperial courts. This was a slow process, and by WWII the Japanese government still had to act tactfully in its dealings with the military.</p>
                                     <p>When the Potsdam Ultimatum was made, giving Japan the option of surrender or destruction, this would not have been an easy decision for the Japanese government. The US had gained the upper hand in the Pacific, so the threat was viable, but surrender would not be an option for most of Japan’s military, and a civil war was highly likely if the Japanese government accepted the USA’s terms. Japan’s official response to the States was silence, and their response to the Japanese people was that Japan was treating the ultimatum with mokusatsu, and reminding them that the only alternative to surrender was to continue fighting.</p>
@@ -116,17 +162,20 @@
                                 </article>
                                 <article id="170201" class="row">
                                     <h3 class="articleHeader">February 1</h3>
+                                    <img src="img/blog/1702010.jpg"> <!-- https://www.google.com/search?q=elvish&rlz=1C1TSNP_enUS509US509&source=lnms&tbm=isch&sa=X&ved=0ahUKEwis2fjWzJjSAhXj7oMKHWf7C2oQ_AUICCgB&biw=1600&bih=794#tbm=isch&q=touch+screen+lightning&imgrc=lehb_PqzKLYdEM: -->
                                     <p>Cellphone touchscreens work by sending a tiny current of electricity through your fingertip and measuring where on the screen the electricity returns. This is why it is difficult to use a touchscreen if your fingers are very dry: Skin requires moisture to effectively conduct electricity.</p>
                                 </article>
                                 <article id="170131" class="row">
                                     <h3 class="articleHeader">January 31</h3>
+                                    <img src="img/blog/1701310.jpg"> <!-- http://img00.deviantart.net/7e16/i/2015/073/9/0/elvish_writing_styles_by_nirnaeth_en_ainur-d8lmst9.jpg -->
+                                    <img src="img/blog/1701311.jpg"> <!-- http://eskipaper.com/images/lord-of-the-rings-ring-1.jpg -->
                                     <p>While sitting the trenches during WWI, J.R.R. Tolkien actually invented a complete language for the Elves in The Lord of the Rings and The Hobbit, but he never got around to writing it all down. Now all that fans have to go by are fragments of the language gleaned from Elvish phrases and poems in the books themselves.</p>
                                     <p>The language itself has Welsh and Norse influence, while inspiration for the written characters was draw from Sanskrit and Arabic. Furthermore, much of the Elvish lore has its roots in Norse and Celtic mythology.</p>
                                 </article>
                                 <article id="170130" class="row">
                                     <h3 class="articleHeader">January 30</h3>
-                                    <img src="img/blog/1701301.jpg"> <!-- http://vignette2.wikia.nocookie.net/hashashin/images/5/54/Flag_of_the_knights_templar_several_resolutions_by_jpviktorjokinen-d5pgsdj.jpg/revision/latest?cb=20151129180018 -->
-                                    <img src="img/blog/1701302.jpg"> <!-- http://veryshorthistory.com/wp-content/uploads/2015/04/knights-templar.jpg -->
+                                    <img src="img/blog/1701300.jpg"> <!-- http://vignette2.wikia.nocookie.net/hashashin/images/5/54/Flag_of_the_knights_templar_several_resolutions_by_jpviktorjokinen-d5pgsdj.jpg/revision/latest?cb=20151129180018 -->
+                                    <img src="img/blog/1701301.jpg"> <!-- http://veryshorthistory.com/wp-content/uploads/2015/04/knights-templar.jpg -->
                                     <p>The chivalric order of the Knights Templar is credited with creating the first modern banking system. The order was established during the time of the Crusades, and its primary purpose was to provide protection for Christian pilgrims traveling to the Holy Land. However, as they set up posts along the routes from Europe to Jerusalem an important secondary purpose developed.</p>
                                     <p>All Templars swore an oath of poverty before being initiated into the order, so as European nobles acquired wealth in the Holy Land, they would frequently leave it under the Templars protection. (The same concept as having eunuchs oversee a harem). This eventually led to the Templars being in direct control of vast fortunes that they did not own themselves, fortunes that they would release it to their rightful owners on request.</p>
                                     <p>The system grew in complexity as the problem of highway robbery increased. Nobles traveling to and from the Holy Land were prime targets for thieves, since the nobles would typically be traveling with large sums of money, either returning home with their conquests or setting forth with their capital. The Templars solved this problem by creating the precursor to wire transfers:</p>
@@ -155,4 +204,6 @@
         </footer>
     </div>
 </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </html>
