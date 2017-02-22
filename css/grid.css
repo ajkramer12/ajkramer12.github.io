@@ -19,23 +19,23 @@
 }
 .col-1-2-3,
 .col-1-6-6{
-    width: var(--oneCol);
+    width: 15.67%;
 }
 .col-2-4-6{
-    width: var(--twoCol);
+    width: 32.33%;
 }
 .col-3-6-6{
-    width: var(--thrCol);
+    width: 49%;
 }
 .col-4-6-6{
-    width: var(--forCol);
+    width: 65.67%;
 }
 .col-5-4-6,
 .col-5-6-6{
-    width: var(--fivCol);
+    width: 82.33%;
 }
 .col-6-6-6{
-    width: var(--sixCol);
+    width: 99%;
 }
 
 
@@ -43,24 +43,24 @@
 
 @media (min-width: 401px) and (max-width: 876px) {
     .col-1-2-3 {
-        width: var(--twoCol);
+        width: 32.33%;
     }
     .col-2-4-6,
     .col-5-4-6{
-        width: var(--forCol);
+        width: 65.67%;
     }
     .col-1-6-6,
     .col-3-6-6,
     .col-4-6-6,
     .col-5-6-6,
     .col-6-6-6 {
-        width: var(--sixCol);
+        width: 99%;
     }
 }
 
 @media (max-width: 400px) {
     .col-1-2-3 {
-        width: var(--thrCol);
+        width: 49%;
     }
     .col-1-6-6,
     .col-2-4-6,
@@ -69,6 +69,6 @@
     .col-5-4-6,
     .col-5-6-6,
     .col-6-6-6 {
-        width: var(--sixCol);
+        width: 99%;
     }
 }

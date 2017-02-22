@@ -42,6 +42,7 @@ header h3 {
 
 
 main {
+    display: block;
     padding: 1%;
 }
 
