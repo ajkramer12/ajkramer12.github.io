@@ -101,6 +101,12 @@ main {
 .articleHeader {
     margin: 0;
 }
+.articleTitle{
+    margin-bottom: 0;
+}
+.articleSubtitle{
+    margin: 0 0 32px 0;
+}
 article img {
     margin-top: 15px;
 }
@@ -200,6 +206,7 @@ a:visited{
     .subNav ul {
         display: none;
         list-style: none;
+        list-style-position: inherit;
     }
     .subNav li {
         float: left;
