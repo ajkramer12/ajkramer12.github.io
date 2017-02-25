@@ -1,284 +1,324 @@
 @font-face {
-    font-family: Cardinal;
-    src: url(../fonts/Cardinal.ttf);
+  font-family: Cardinal;
+  src: url(../fonts/Cardinal.ttf);
 }
+
 @font-face {
-    font-family: Imladris;
-    src: url(../fonts/elvencommonspeak.ttf);
+  font-family: Imladris;
+  src: url(../fonts/elvencommonspeak.ttf);
 }
+
 @font-face {
-    font-family: Ringbearer;
-    src: url(../fonts/RINGM__.TTF);
+  font-family: Ringbearer;
+  src: url(../fonts/RINGM__.TTF);
 }
 
-
-
+/* line 24, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 body {
-    background-color: #000;
-    background-image: url("../img/back.jpg"); /* http://eskipaper.com/images/mist-photos-1.jpg */
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-color: #000;
+  background-image: url("../img/back.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+/* line 31, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000;
-    background-image: url("../img/container.jpg"); /* Personal Creation */
-    border: 5px #ccc groove;
-    color: #f0eaea;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  background-image: url("../img/container.jpg");
+  border: 5px #ccc groove;
+  color: #f0eaea;
 }
+
+/* line 40, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 header {
-    background-color: #111;
-    border-bottom: 2px #ccc groove;
-    padding-left: 300px;
-    max-height: 132px;
+  background-color: #111;
+  border-bottom: 2px #ccc groove;
+  padding-left: 300px;
+  max-height: 132px;
 }
 
+/* line 47, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 header h3 {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
-
+/* line 52, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 main {
-    display: block;
-    padding: 1%;
+  display: block;
+  padding: 1%;
 }
 
+/* line 57, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .main {
-    margin-left: 0;
+  margin-left: 0;
 }
 
+/* line 61, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .top {
-    margin-bottom: 65px;
+  margin-bottom: 65px;
 }
 
+/* line 65, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .mainNav {
-    /*height: 356px;*/
-
-    font-family: Cardinal, serif;
+  /*height: 356px*/
+  font-family: Cardinal, serif;
 }
 
+/* line 71, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .mainNav ul {
-    margin: 0;
-    padding: 0 15px 0 15px;
-    text-align: center;
+  margin: 0;
+  padding: 0 15px 0 15px;
+  text-align: center;
 }
+
+/* line 76, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .mainNav ul li {
-    margin: 5% 0;
-    padding: 28px 5px;
-    list-style: none;
-    background-image: url("../img/button.png"); /* http://www.clipartkid.com/images/361/gothic-frames-and-borders-BSNAsO-clipart.jpg */
-    background-size: 100% 100%;
+  margin: 5% 0;
+  padding: 28px 5px;
+  list-style: none;
+  background-image: url("../img/button.png");
+  background-size: 100% 100%;
 }
+
+/* line 83, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .mainNav ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-
-
-
-
+/* line 92, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .intro {
-    background-color: #000;
+  background-color: #000;
 }
 
-
-
-
-
+/* line 100, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .subNav {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
+
+/* line 103, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 #subNavToggle {
-    display: none;
+  display: none;
 }
+
+/* line 106, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .subNav ul {
-    display: block;
+  display: block;
 }
+
+/* line 109, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 .articleHeader {
-    margin: 0;
+  margin: 0;
 }
-.articleTitle{
-    margin-bottom: 0;
+
+/* line 112, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+.articleTitle {
+  margin-bottom: 0;
 }
-.articleSubtitle{
-    margin: 0 0 32px 0;
+
+/* line 115, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+.articleSubtitle {
+  margin: 0 0 32px 0;
 }
+
+/* line 118, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 article img {
-    margin-top: 15px;
+  margin-top: 15px;
 }
+
+/* line 121, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 article {
-    background-color: #000;
-    padding: 5px 15px 15px 15px;
-    margin: 15px 0 ;
+  background-color: #000;
+  padding: 5px 15px 15px 15px;
+  margin: 15px 0;
 }
+
+/* line 126, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 footer {
-    background-color: #111;
-    background-image: url("../img/footer.jpg"); /* http://previews.123rf.com/images/elwynn/elwynn1407/elwynn140700395/30177415-Stone-wall-with-green-moss-background--Stock-Photo.jpg */
-    border-top: 2px #ccc groove;
-    height: 50px;
-    padding-top: 50px;
-    text-align: center;
+  background-color: #111;
+  background-image: url("../img/footer.jpg");
+  border-top: 2px #ccc groove;
+  height: 50px;
+  padding-top: 50px;
+  text-align: center;
 }
 
-
-
+/* line 137, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 h1, h2 {
-    font-family: Cardinal, serif;
-    color: #bd0000
+  font-family: Cardinal, serif;
+  color: #bd0000;
 }
+
+/* line 141, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 h3 {
-    font-family: Ringbearer, serif;
-    color: #bd0000;
+  font-family: Ringbearer, serif;
+  color: #bd0000;
 }
+
+/* line 145, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 li {
-    color: #bd0000;
+  color: #bd0000;
 }
+
+/* line 148, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 a {
-    color: #bd0000;
+  color: #bd0000;
 }
+
+/* line 151, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 a:hover {
-    color: #9b0000;
-}
-a:visited{
-    color: #ac0000;
+  color: #8e0000;
 }
 
+/* line 154, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+a:visited {
+  color: #bd0000;
+}
 
-
+/* line 160, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 #signature {
-    color: #bd0000;
-    font-family: Imladris, serif;
+  color: #bd0000;
+  font-family: Imladris, serif;
 }
 
-
+/* line 166, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 #mapRow {
-    margin: 25px 0;
+  margin: 25px 0;
 }
+
+/* line 169, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
 #mapRow div picture img {
-    width: 100%;
+  width: 100%;
 }
-
-
-
-
 
 @media (min-width: 877px) {
-    header {
-        background-image: url("../img/header.jpg"); /* https://i.ytimg.com/vi/ZISJpRCtFbk/maxresdefault.jpg */
-    }
+  /* line 178, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  header {
+    background-image: url("../img/header.jpg");
+  }
 }
-
-/*@media (min-width: 877px) and (max-width: 1044px) {
-    .portrait {
-        height: 250px;
-    }
-}*/
 
 @media (max-width: 876px) {
-    .mainNav {
-        margin: 0 auto;
-    }
-    .mainNav ul {
-        padding: 0;
-    }
-    .mainNav ul li {
-        float: left;
-    }
-
-    .subNavCol {
-        background-color: #080606;
-    }
-    .subNavTop {
-        height: 40px;
-        background-color: #000;
-    }
-    #subNavToggle {
-        display: inline;
-    }
-    .subNav h4, #subNavToggle {
-        float: right;
-        margin: 0 15px;
-    }
-    .subNav ul {
-        display: none;
-        list-style: none;
-        list-style-position: inherit;
-    }
-    .subNav li {
-        float: left;
-        width: 75px;
-        margin: 6px;
-        padding: 15px;
-        background-color: #111;
-        text-align: center;
-    }
-    .subNav li a {
-        font-size: 125%;
-        text-decoration: none;
-        text-align: center;
-    }
+  /* line 185, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .mainNav {
+    margin: 0 auto;
+  }
+  /* line 188, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .mainNav ul {
+    padding: 0;
+  }
+  /* line 191, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .mainNav ul li {
+    float: left;
+  }
+  /* line 195, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .subNavCol {
+    background-color: #0c0c0c;
+  }
+  /* line 198, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .subNavTop {
+    height: 40px;
+    background-color: #000;
+  }
+  /* line 202, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  #subNavToggle {
+    display: inline;
+  }
+  /* line 205, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .subNav h4, #subNavToggle {
+    float: right;
+    margin: 0 15px;
+  }
+  /* line 209, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .subNav ul {
+    display: none;
+    list-style: none;
+    list-style-position: inherit;
+  }
+  /* line 214, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .subNav li {
+    float: left;
+    width: 75px;
+    margin: 6px;
+    padding: 15px;
+    background-color: #111;
+    text-align: center;
+  }
+  /* line 222, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .subNav li a {
+    font-size: 125%;
+    text-decoration: none;
+    text-align: center;
+  }
 }
 
-
 @media (min-width: 701px) and (max-width: 876px) {
-    .mainNav ul li.innerLink {
-        margin: 5% 25%;
-    }
+  /* line 231, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .mainNav ul li.innerLink {
+    margin: 5% 25%;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 876px) {
-    header {
-        padding-left: 50px;
-        background-image: url("../img/headerSmall.jpg"); /* https://i.ytimg.com/vi/ZISJpRCtFbk/maxresdefault.jpg */
-    }
+  /* line 237, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  header {
+    padding-left: 50px;
+    background-image: url("../img/headerSmall.jpg");
+  }
 }
 
 @media (max-width: 700px) {
-    .mainNav ul li {
-        width: 20%;
-        padding: 28px 0;
-    }
-    .mainNav ul li.innerLink {
-        margin: 5% 17%;
-    }
-
-    article img {
-        max-width: 49%;
-    }
+  /* line 244, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .mainNav ul li {
+    width: 20%;
+    padding: 28px 0;
+  }
+  /* line 248, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .mainNav ul li.innerLink {
+    margin: 5% 17%;
+  }
+  /* line 252, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  article img {
+    max-width: 49%;
+  }
 }
 
 @media (min-width: 433px) and (max-width: 600px) {
-    header h3 {
-        font-size: 75%;
-    }
+  /* line 258, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  header h3 {
+    font-size: 75%;
+  }
 }
 
 @media (max-width: 480px) {
-    .portraitCol {
-        width: 0;
-        margin-left: 0;
-    }
-
-    .intro {
-        padding-left: 10%;
-    }
+  /* line 264, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .portraitCol {
+    width: 0;
+    margin-left: 0;
+  }
+  /* line 269, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  .intro {
+    padding-left: 10%;
+  }
 }
 
 @media (max-width: 432px) {
-    header h3 {
-        display: none;
-    }
+  /* line 275, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  header h3 {
+    display: none;
+  }
 }
-
 
 @media (max-width: 400px) {
-    header {
-        padding-left: 0;
-        background-image: url("../img/headerTiny.jpg"); /* https://i.ytimg.com/vi/ZISJpRCtFbk/maxresdefault.jpg */
-        text-align: center;
-    }
+  /* line 282, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/style.sass */
+  header {
+    padding-left: 0;
+    background-image: url("../img/headerTiny.jpg");
+    text-align: center;
+  }
 }
+
+/*# sourceMappingURL=../css/style.map */
