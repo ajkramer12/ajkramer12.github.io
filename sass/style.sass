@@ -1,3 +1,4 @@
+/* Variables */
 $primaryColor: #000
 $secondaryColor: #111
 $accentColor: #ccc
@@ -17,6 +18,28 @@ $fontColor: #f0eaea
 @font-face
     font-family: Ringbearer
     src: url(../fonts/RINGM__.TTF)
+
+
+/* Mixins */
+@mixin fontStyle($section, $colorModification: 1)
+    @if $section == mainHeader
+        font-family: Cardinal, serif
+        color: $headerColor * $colorModification
+    @else if $section == secondaryHeader
+        font-family: Ringbearer, serif
+        color: $headerColor * $colorModification
+    @else if $section == mainNav
+        font-family: Cardinal, serif
+        color: $headerColor * $colorModification
+    @else if $section == signature
+        font-family: Imladris, serif
+        color: $headerColor * $colorModification
+    @else if $section == accent
+        color: $headerColor * $colorModification
+    @else
+        font-family: sans-serif
+        color: $fontColor * $colorModification
+
 
 
 
@@ -63,9 +86,7 @@ main
 
 
 .mainNav
-    /*height: 356px*/
-
-    font-family: Cardinal, serif
+    @include fontStyle(mainNav)
 
 
 .mainNav ul
@@ -135,31 +156,28 @@ footer
 
 
 h1, h2
-    font-family: Cardinal, serif
-    color: $headerColor
+    @include fontStyle(mainHeader)
 
 h3
-    font-family: Ringbearer, serif
-    color: $headerColor
+    @include fontStyle(secondaryHeader)
 
 li
-    color: $headerColor
+    @include fontStyle(accent)
 
 a
-    color: $headerColor
+    @include fontStyle(accent)
 
 a:hover
-    color: $headerColor * 0.75
+    @include fontStyle(accent, 0.75)
 
 a:visited
-    color: $headerColor
+    @include fontStyle(accent)
 
 
 
 
 #signature
-    color: $headerColor
-    font-family: Imladris, serif
+    @include fontStyle(signature)
 
 
 
