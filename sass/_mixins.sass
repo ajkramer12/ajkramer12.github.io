@@ -1,0 +1,19 @@
+/* Mixins */
+@mixin fontStyle($section, $alpha: 1)
+    @if $section == mainHeader
+        font-family: Cardinal, serif
+        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+    @else if $section == secondaryHeader
+        font-family: Ringbearer, serif
+        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+    @else if $section == mainNav
+        font-family: Cardinal, serif
+        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+    @else if $section == signature
+        font-family: Imladris, serif
+        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+    @else if $section == accent
+        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+    @else
+        font-family: serif
+        color: rgba(red($fontColor), green($fontColor), blue($fontColor), $alpha)
