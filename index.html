@@ -55,49 +55,59 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row scroll-on-page">
                     <nav class="subNavCol col-1-6-6">
                         <nav class="subNav">
                             <div class="subNavTop">
-                                <img id="subNavToggle" src="img/burger.jpg"> <!-- http://www.flydigital.com.au/wp-content/uploads/2013/06/hamb1.png -->
+                                <img id="subNavToggle" src="img/burgerButton.jpg"> <!-- http://www.flydigital.com.au/wp-content/uploads/2013/06/hamb1.png -->
                                 <h4>Dates</h4>
                             </div>
-                            <ul>
-                                <li><a href="#170224">Feb 24</a></li>
-                                <li><a href="#170223">Feb 23</a></li>
-                                <li><a href="#170222">Feb 22</a></li>
-                                <li><a href="#170221">Feb 21</a></li>
-                                <li><a href="#170217">Feb 17</a></li>
-                                <li><a href="#170216">Feb 16</a></li>
-                                <li><a href="#170214">Feb 14</a></li>
-                                <li><a href="#170213">Feb 13</a></li>
-                                <li><a href="#170210">Feb 10</a></li>
-                                <li><a href="#170209">Feb 9</a></li>
-                                <li><a href="#170208">Feb 8</a></li>
-                                <li><a href="#170207">Feb 7</a></li>
-                                <li><a href="#170203">Feb 3</a></li>
-                                <li><a href="#170202">Feb 2</a></li>
-                                <li><a href="#170201">Feb 1</a></li>
-                                <li><a href="#170131">Jan 31</a></li>
-                                <li><a href="#170130">Jan 30</a></li>
-                                <li><a href="#170127">Jan 27</a></li>
-                                <li><a href="#170126">Jan 26</a></li>
-                                <li><a href="#170125">Jan 25</a></li>
-                                <li><a href="#170124">Jan 24</a></li>
-                                <li><a href="#170123">Jan 23</a></li>
-                                <li><a href="#170120">Jan 20</a></li>
-                                <li><a href="#170119">Jan 19</a></li>
+                            <ul id="scroll-on-page-top">
+                                <li><a class="scroll-on-page-link" href="#170224">Feb 24</a></li>
+                                <li><a class="scroll-on-page-link" href="#170223">Feb 23</a></li>
+                                <li><a class="scroll-on-page-link" href="#170222">Feb 22</a></li>
+                                <li><a class="scroll-on-page-link" href="#170221">Feb 21</a></li>
+                                <li><a class="scroll-on-page-link" href="#170217">Feb 17</a></li>
+                                <li><a class="scroll-on-page-link" href="#170216">Feb 16</a></li>
+                                <li><a class="scroll-on-page-link" href="#170214">Feb 14</a></li>
+                                <li><a class="scroll-on-page-link" href="#170213">Feb 13</a></li>
+                                <li><a class="scroll-on-page-link" href="#170210">Feb 10</a></li>
+                                <li><a class="scroll-on-page-link" href="#170209">Feb 9</a></li>
+                                <li><a class="scroll-on-page-link" href="#170208">Feb 8</a></li>
+                                <li><a class="scroll-on-page-link" href="#170207">Feb 7</a></li>
+                                <li><a class="scroll-on-page-link" href="#170203">Feb 3</a></li>
+                                <li><a class="scroll-on-page-link" href="#170202">Feb 2</a></li>
+                                <li><a class="scroll-on-page-link" href="#170201">Feb 1</a></li>
+                                <li><a class="scroll-on-page-link" href="#170131">Jan 31</a></li>
+                                <li><a class="scroll-on-page-link" href="#170130">Jan 30</a></li>
+                                <li><a class="scroll-on-page-link" href="#170127">Jan 27</a></li>
+                                <li><a class="scroll-on-page-link" href="#170126">Jan 26</a></li>
+                                <li><a class="scroll-on-page-link" href="#170125">Jan 25</a></li>
+                                <li><a class="scroll-on-page-link" href="#170124">Jan 24</a></li>
+                                <li><a class="scroll-on-page-link" href="#170123">Jan 23</a></li>
+                                <li><a class="scroll-on-page-link" href="#170120">Jan 20</a></li>
+                                <li><a class="scroll-on-page-link" href="#170119">Jan 19</a></li>
                             </ul>
                         </nav>
                     </nav>
                     <div class="col-5-6-6">
                         <div class="row">
                             <div class="col-6-6-6">
-                                <article id="170224" class="row">
-                                    <h3 class="articleHeader">February 24</h3>
-                                    <h4>Friday Philosophical Musing:</h4>
-                                    <p>If we can never fully know truth, how much information is necessary before we make a decision and take action?</p>
-                                </article>
+                                <!-- This and other .cards based on the Refill: Cards template -->
+                                <div class="cards">
+                                    <div id="170224" class="card">
+                                        <div class="card-image">
+                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <h3 class="articleHeader">February 24</h3>
+                                        </div>
+                                        <div class="card-copy">
+                                            <h4>Friday Philosophical Musing:</h4>
+                                            <p>If we can never fully know truth, how much information is necessary before we make a decision and take action?</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <article id="170223" class="row">
                                     <h3 class="articleHeader">February 23</h3>
                                     <img src="img/blog/1702230.jpg"> <!-- http://clearlyexplained.com/_Media/americium_med_hr.jpeg -->
@@ -124,16 +134,25 @@
                                     <p>Now here is the catch: Dihydrogen Monoxide is the chemical name for water. (Di-hydrogen Mon-oxide = Two Hydrogen One Oxygen = H<sub>2</sub>O) Everything said about water was true (Rusting is a chemical reaction, water vapor is one of many gases that can trap heat in the earth’s atmosphere, consuming gallons of water at a time can be fatal, and pure water can slowly dissolve the metal in the pipes that carry it), but common rhetoric tactics were used to grossly inflate its danger.</p>
                                     <p>The purposes of the petitions have been varied, from simple jokes to calls for a stronger emphasis on critical thinking in schools.</p>
                                 </article>
-                                <article id="170217" class="row">
-                                    <h3 class="articleHeader">February 17</h3>
-                                    <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                    <p class="articleSubtitle">Truth outside of ourselves</p>
-                                    <p>Everything that we know outside of our own personal experiences is based on trust. It is easy to makes claims such as "Most people know...," "Everyone is...," or "...is normal"; but where do we get the evidence for these concepts?</p>
-                                    <p>Statistics are obviously one way that a single person can gain a grasp of the masses, and while this method is likely the best way that we have to gain such information, it is prone to considerable bias if done incorrectly (And the sample sizes and randomness that are necessary to run statistics correctly are frequently impractical).</p>
-                                    <p>Projection is another way the we decide what is true on a large scale. It is very easy to take norms that we have seen in our own personal experience and assume the tiny sliver of life which we have experienced is representative of the whole. Perhaps such projections are accurate, perhaps not.</p>
-                                    <p>Without trusting our projections or trusting statistics, we really can know nothing about the world outside our own life experiences. And as we discussed a few weeks ago, even the memories of our own life experiences are subject to bias.</p>
-                                    <p>This all goes back to Plato. There is absolute truth, but our methods are too inferior to truly grasp it. Instead we content ourselves with shadows of this ideal truth. Shadows that too often are morphed to meet our own biases. This shadow realm is the world of Protagoras where, "Man is the measure of all things."</p>
-                                </article>
+                                <div class="cards">
+                                    <div id="170217" class="card">
+                                        <div class="card-image">
+                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <h3 class="articleHeader">February 17</h3>
+                                        </div>
+                                        <div class="card-copy">
+                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                            <p class="articleSubtitle">Truth outside of ourselves</p>
+                                            <p>Everything that we know outside of our own personal experiences is based on trust. It is easy to makes claims such as "Most people know...," "Everyone is...," or "...is normal"; but where do we get the evidence for these concepts?</p>
+                                            <p>Statistics are obviously one way that a single person can gain a grasp of the masses, and while this method is likely the best way that we have to gain such information, it is prone to considerable bias if done incorrectly (And the sample sizes and randomness that are necessary to run statistics correctly are frequently impractical).</p>
+                                            <p>Projection is another way the we decide what is true on a large scale. It is very easy to take norms that we have seen in our own personal experience and assume the tiny sliver of life which we have experienced is representative of the whole. Perhaps such projections are accurate, perhaps not.</p>
+                                            <p>Without trusting our projections or trusting statistics, we really can know nothing about the world outside our own life experiences. And as we discussed a few weeks ago, even the memories of our own life experiences are subject to bias.</p>
+                                            <p>This all goes back to Plato. There is absolute truth, but our methods are too inferior to truly grasp it. Instead we content ourselves with shadows of this ideal truth. Shadows that too often are morphed to meet our own biases. This shadow realm is the world of Protagoras where, "Man is the measure of all things."</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <article id="170216" class="row">
                                     <h3 class="articleHeader">February 16</h3>
                                     <img src="img/blog/1702160.jpg"> <!-- https://i.ytimg.com/vi/cwnGw2dMJfw/maxresdefault.jpg -->
@@ -160,14 +179,23 @@
                                     <p>Early vampire myths were rather varied and contradictory. Bram Stoker is often credited with cannonizing vampire lore with his famous work, Dracula, but this distinction should actually be shared with Sheridan Le Fanu. Le Fanu published his work of Gothic fiction, Carmilla, 26 years before Stoker published Dracula.</p>
                                     <p>Carmilla tells the story of a female vampire that befriends her victims before draining their blood. Stoker pulled much of Dracula's lore from Carmilla, even (unintentionally?) copying themes of the story in his own work.</p>
                                 </article>
-                                <article id="170210" class="row">
-                                    <h3 class="articleHeader">February 10</h3>
-                                    <h4>Friday Philosophical Musing:</h4>
-                                    <p>The terms valid and sound (e.g valid reasoning, sound logic) tend to get thrown around as if they are synonyms, but actually there is a distinct difference between the two when referring to logic and reasoning.</p>
-                                    <p>Valid simply means that no logical errors were made in an argument, while sound means that no logical errors were made and the starting assumptions are correct. So then, all sound logic is also valid, but not all valid logic is sound. Only sound logic is “correct.” As an example:</p>
-                                    <p>The argument, “Chicken tastes like strawberries; I added chicken to my soup; My soup will taste like strawberries,” is actually a perfectly valid argument since the logic behind it is good. However, we know that chicken does not taste like strawberries, so the premise of the argument is wrong, and the argument is not sound.</p>
-                                    <p>Sound, of course, is a relative term, because accepted starting assumptions may differ from circumstance to circumstance. So a practical, general definition for a sound argument is “an argument that follows valid logic based on starting assumptions that do not contradict one another.”</p>
-                                </article>
+                                <div class="cards">
+                                    <div id="170210" class="card">
+                                        <div class="card-image">
+                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <h3 class="articleHeader">February 10</h3>
+                                        </div>
+                                        <div class="card-copy">
+                                            <h4>Friday Philosophical Musing:</h4>
+                                            <p>The terms valid and sound (e.g valid reasoning, sound logic) tend to get thrown around as if they are synonyms, but actually there is a distinct difference between the two when referring to logic and reasoning.</p>
+                                            <p>Valid simply means that no logical errors were made in an argument, while sound means that no logical errors were made and the starting assumptions are correct. So then, all sound logic is also valid, but not all valid logic is sound. Only sound logic is “correct.” As an example:</p>
+                                            <p>The argument, “Chicken tastes like strawberries; I added chicken to my soup; My soup will taste like strawberries,” is actually a perfectly valid argument since the logic behind it is good. However, we know that chicken does not taste like strawberries, so the premise of the argument is wrong, and the argument is not sound.</p>
+                                            <p>Sound, of course, is a relative term, because accepted starting assumptions may differ from circumstance to circumstance. So a practical, general definition for a sound argument is “an argument that follows valid logic based on starting assumptions that do not contradict one another.”</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <article id="170209" class="row">
                                     <h3 class="articleHeader">February 9</h3>
                                     <img src="img/blog/1702090.jpg"> <!-- http://image.insider-journeys.com/overview/china.jpg -->
@@ -190,17 +218,26 @@
                                     <p>The active ingredient in the numbing shots given by dentist is epinephrine, otherwise known as adrenaline. Epinephrine is produced by the body as a fear response, triggering the fight or flight mechanism. One of the effects of epinephrine <em>is</em> blocking pain (If you’re being chased by wolves, it’s not the time to worry about your sprained ankle), but it also stimulates the regions of the brain that process emotion, instinct, and memory creation.</p>
                                     <p>So from the moment you receive a shot at the dentist your body goes into a fear response (regardless of what you tell yourself about the situation) and your brain starts making detailed memories that are deeply connected to that visceral fear. Even if you don’t specifically remember being afraid (since you weren’t necessarily afraid at an intellectual level), your body still associates the event with fear at an instinctual level and presents emotions to discourage you from letting it happen again (Similar to how people tend to avoid foods that they ate right before contracting a stomach virus, whether the food poisoning was involved or not.)</p>
                                 </article>
-                                <article id="170203" class="row">
-                                    <h3 class="articleHeader">February 3</h3>
-                                    <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                    <p class="articleSubtitle">Parmenides’ Block Universe</p>
-                                    <p>In the 5th century BC, the philosopher Parmenides proposed that that all change was an illusion, that in reality everything was fixed: a single, solid block. Now on the face of it, this sounds totally preposterous, contradicting everything that we see and know. However, as crazy as it sounds, modern physics is beginning to point toward this philosophy.</p>
-                                    <p>Based on our current understanding, when Einstein’s Theory of Relativity is extrapolated out to its fullest, it necessitates the multidimensional universe that we discussed last week, a universe where time is merely another dimension, just as solid and tangible in higher dimensions as height and width are in our familiar three dimensions. If this is the case, then from the perspective of the higher dimensions our reality is a solid, unchanging, incredibly detailed block. Our past, present, and future are all simultaneously in existence when viewed from the higher perspectives, just as the top, middle, and bottom of a three dimensional object are simultaneously in existence from our perspective. Our perception is just moving through time toward a future that already exists.</p>
-                                    <p>Now here is where it gets sticky: If this is true, then what about free will and self-directed choice? If Parmenides and Einstein are correct, it would appear that we are just coasting along on a predetermined path with no say in how we live our lives. However, it is actually possible to have both a set future and a free will; it just all depends on your point of view. The best way to think of this is to think of a book.</p>
-                                    <p>A book is a solid fixed object, with a preset beginning, ending, and complex plot in the middle. Each part of the story exists simultaneously as the book sits on the shelf, and we can open the book to any page to see what is happening in the story at any time, in any order. Now, even though the entire story already exists from our perspective, we still recognize that from the characters’ perspective, the story’s time is very real, and that the characters have no knowledge of future events in their world. The characters are still making choices as their story unfolds; the fact that we know how the story is going to end in no way influences the characters’ free will or the choices they make in their world. We get a glimpse of this when we get totally immersed in a story (essentially putting ourselves in the characters’ dimension): When immersed, we never think that the characters are compelled by an outside force to think or act in a certain way, rather we live their story with them, sometimes even feeling suspense in spite of the fact that we already know how the story ends.</p>
-                                    <p>This is our existence. We are each characters in the story of our universe, whether that story has been authored by a higher being or come together through the laws of physics is another question entirely. We are but specks within the confines of our universe, and our universe is just one book in the vast library of the next dimension, and for all we know, that dimension is just one book in the library of yet a higher dimension.</p>
-                                    <p>Will we ever be able to fully comprehend this? Will we ever be able to transcend this universe and experience a higher dimension? I don’t know, but I do know that the full extent of reality is utterly awe-inspiring.</p>
-                                </article>
+                                <div class="cards">
+                                    <div id="170203" class="card">
+                                        <div class="card-image">
+                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <h3 class="articleHeader">February 3</h3>
+                                        </div>
+                                        <div class="card-copy">
+                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                            <p class="articleSubtitle">Parmenides’ Block Universe</p>
+                                            <p>In the 5th century BC, the philosopher Parmenides proposed that that all change was an illusion, that in reality everything was fixed: a single, solid block. Now on the face of it, this sounds totally preposterous, contradicting everything that we see and know. However, as crazy as it sounds, modern physics is beginning to point toward this philosophy.</p>
+                                            <p>Based on our current understanding, when Einstein’s Theory of Relativity is extrapolated out to its fullest, it necessitates the multidimensional universe that we discussed last week, a universe where time is merely another dimension, just as solid and tangible in higher dimensions as height and width are in our familiar three dimensions. If this is the case, then from the perspective of the higher dimensions our reality is a solid, unchanging, incredibly detailed block. Our past, present, and future are all simultaneously in existence when viewed from the higher perspectives, just as the top, middle, and bottom of a three dimensional object are simultaneously in existence from our perspective. Our perception is just moving through time toward a future that already exists.</p>
+                                            <p>Now here is where it gets sticky: If this is true, then what about free will and self-directed choice? If Parmenides and Einstein are correct, it would appear that we are just coasting along on a predetermined path with no say in how we live our lives. However, it is actually possible to have both a set future and a free will; it just all depends on your point of view. The best way to think of this is to think of a book.</p>
+                                            <p>A book is a solid fixed object, with a preset beginning, ending, and complex plot in the middle. Each part of the story exists simultaneously as the book sits on the shelf, and we can open the book to any page to see what is happening in the story at any time, in any order. Now, even though the entire story already exists from our perspective, we still recognize that from the characters’ perspective, the story’s time is very real, and that the characters have no knowledge of future events in their world. The characters are still making choices as their story unfolds; the fact that we know how the story is going to end in no way influences the characters’ free will or the choices they make in their world. We get a glimpse of this when we get totally immersed in a story (essentially putting ourselves in the characters’ dimension): When immersed, we never think that the characters are compelled by an outside force to think or act in a certain way, rather we live their story with them, sometimes even feeling suspense in spite of the fact that we already know how the story ends.</p>
+                                            <p>This is our existence. We are each characters in the story of our universe, whether that story has been authored by a higher being or come together through the laws of physics is another question entirely. We are but specks within the confines of our universe, and our universe is just one book in the vast library of the next dimension, and for all we know, that dimension is just one book in the library of yet a higher dimension.</p>
+                                            <p>Will we ever be able to fully comprehend this? Will we ever be able to transcend this universe and experience a higher dimension? I don’t know, but I do know that the full extent of reality is utterly awe-inspiring.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <article id="170202" class="row">
                                     <h3 class="articleHeader">February 2</h3>
                                     <img src="img/blog/1702020.jpg"> <!-- https://en.wikipedia.org/wiki/File:Kantaro_Suzuki_suit.jpg -->
@@ -233,16 +270,25 @@
                                     <p>The system grew in complexity as the problem of highway robbery increased. Nobles traveling to and from the Holy Land were prime targets for thieves, since the nobles would typically be traveling with large sums of money, either returning home with their conquests or setting forth with their capital. The Templars solved this problem by creating the precursor to wire transfers:</p>
                                     <p>Before leaving for a journey a noble would deposit a large sum at the local Templar post in exchange for a personalized claim receipt. Once they arrived at their destination, they would visit a Templar post there and exchange their receipt for funds from the local vault.</p>
                                 </article>
-                                <article id="170127" class="row">
-                                    <h3 class="articleHeader">January 27</h3>
-                                    <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                    <p class="articleSubtitle">Eternalism</p>
-                                    <p>We are three dimensional beings that progress through a fourth dimension, time. The people we were ten years ago and the people we will be ten years from now are just as much us as the people that we are now, but we are only able to be aware of ourselves (and the rest of reality) in the part of time that we call the present.</p>
-                                    <p>Now let’s go a step down and imagine a two dimensional universe where there is no tangible concept of height. The beings in this realm exist in width and depth and move through height like we move through time. As an example, imagine a tiny disk in this realm that steadily grows larger during its “life” until it reaches five inches across and then disappears. From our three dimensional perspective we would see this being as a cone. We could see and interact with any part of the cone; we could even touch multiple parts of the cone simultaneously, but as we changed the location of our fingers it would appear to the two dimensional being that we were interacting at different “times.” For instance, we could have a finger at the top and bottom of the cone at the same time, but to the two dimensional being it would appear that we were there at the beginning, then we would disappear as their perception moved through the gap between our fingers, then as their “time” passed and they reached the top, we would suddenly appear again.</p>
-                                    <p>If we could communicate with this world, it would be difficult to convey to them the concept of tangible height and likely impossible to make them understand time as we know it; even if they could grasp the concept, they would probably never fully understand it. Furthermore, we would probably state things that made no sense to them (Try explaining that the spiral running through their two dimensional universe was actually a single, connected shape rather than a series of disconnected ovals). And to top it all off, we could tell them about their “future,” the heights that they had not yet perceived. In short, we would appear godlike to this realm.</p>
-                                    <p>Now imagine that we were able to ascend to a four dimensional realm where the concept of time was just as tangible as height, width, and depth. We could look down on three dimensional beings and see every detail of their lives at a glance while our lives moved through some unknown fifth dimension. We could exist entirely outside of the three dimensional reality, but still reach down and interact with it, though they would only be able to see a facet of our entirety.</p>
-                                    <p>If a being could exist at that level, they would appear to be godlike to our three dimensional minds. If any of the deities described in world religions exist, perhaps they are simply fourth dimensional beings.</p>
-                                </article>
+                                <div class="cards">
+                                    <div id="170127" class="card">
+                                        <div class="card-image">
+                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <h3 class="articleHeader">January 27</h3>
+                                        </div>
+                                        <div class="card-copy">
+                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                            <p class="articleSubtitle">Eternalism</p>
+                                            <p>We are three dimensional beings that progress through a fourth dimension, time. The people we were ten years ago and the people we will be ten years from now are just as much us as the people that we are now, but we are only able to be aware of ourselves (and the rest of reality) in the part of time that we call the present.</p>
+                                            <p>Now let’s go a step down and imagine a two dimensional universe where there is no tangible concept of height. The beings in this realm exist in width and depth and move through height like we move through time. As an example, imagine a tiny disk in this realm that steadily grows larger during its “life” until it reaches five inches across and then disappears. From our three dimensional perspective we would see this being as a cone. We could see and interact with any part of the cone; we could even touch multiple parts of the cone simultaneously, but as we changed the location of our fingers it would appear to the two dimensional being that we were interacting at different “times.” For instance, we could have a finger at the top and bottom of the cone at the same time, but to the two dimensional being it would appear that we were there at the beginning, then we would disappear as their perception moved through the gap between our fingers, then as their “time” passed and they reached the top, we would suddenly appear again.</p>
+                                            <p>If we could communicate with this world, it would be difficult to convey to them the concept of tangible height and likely impossible to make them understand time as we know it; even if they could grasp the concept, they would probably never fully understand it. Furthermore, we would probably state things that made no sense to them (Try explaining that the spiral running through their two dimensional universe was actually a single, connected shape rather than a series of disconnected ovals). And to top it all off, we could tell them about their “future,” the heights that they had not yet perceived. In short, we would appear godlike to this realm.</p>
+                                            <p>Now imagine that we were able to ascend to a four dimensional realm where the concept of time was just as tangible as height, width, and depth. We could look down on three dimensional beings and see every detail of their lives at a glance while our lives moved through some unknown fifth dimension. We could exist entirely outside of the three dimensional reality, but still reach down and interact with it, though they would only be able to see a facet of our entirety.</p>
+                                            <p>If a being could exist at that level, they would appear to be godlike to our three dimensional minds. If any of the deities described in world religions exist, perhaps they are simply fourth dimensional beings.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <article id="170126" class="row">
                                     <h3 class="articleHeader">January 26</h3>
                                     <img src="img/blog/1701260.jpg"> <!-- http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2013/02/Sorry-FINAL--1600x720.jpg -->
@@ -270,21 +316,30 @@
                                     <img src="img/blog/1701230.jpg"> <!-- https://certifiedkit.com/wp-content/uploads/2016/01/silica_fracturing_dust_lung.jpg -->
                                     <p>Pneumonoultramicroscopicsilicovolcanoconiosis (Pneumono-ultra-microscopic-silico-volcano-coniosis) is the longest word found in English dictionaries. It refers to a lung disease caused by inhalation of fine particles of volcanic silica dust.</p>
                                 </article>
-                                <article id="170120" class="row">
-                                    <h3 class="articleHeader">January 20</h3>
-                                    <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                    <p class="articleSubtitle">Socratic debate</p>
-                                    <p>Many times after an argument, neither side changes their stance and each side wonders how the other could be so stupid.</p>
-                                    <p>This occurs because we can see the reasoning behind our stance, so we assume that the other person is being illogical.</p>
-                                    <p>However, an error in logic is only one reason why people disagree. Many times both sides have a completely valid, logical argument. The only reason that they disagree is because their starting assumptions are different.</p>
-                                    <p>These assumptions can be so foundational to each person that they cannot image anyone not having the same assumptions. That is where the misunderstanding truly takes place.</p>
-                                    <p>Most arguments take place over conclusions at the top of each person’s thought tree. Conclusions that make perfect sense assuming that the person’s starting assumptions are true. To successfully resolve an argument while minimizing conflict, it is important to try to dig down to the roots of someone’s stance early on in the disagreement. Keep going down their belief tree until you arrive at a place where you both have the same starting assumptions. Unless you are both starting with the same assumptions any discussion will be pointless.</p>
-                                    <p>Once you identify a common ground for each sides’ stance, that is typically the general area where the discussion’s topic should stay.</p>
-                                    <p>If you can convince someone to change a branch assumption that disagrees with yours by pointing out an error in their reasoning or providing information that they had not considered, all of the “leaves” at the top of their tree that were connected to that branch will follow.</p>
-                                    <p>However, If the root of someone’s stance is a life-assumption (a root assumption) that disagrees with one of yours, then they are not likely to change their view, and further discussion will likely be unfruitful. (Since you cannot come to a place where you have the same starting assumptions.) In these situations, you simply have to agree to disagree.</p>
-                                    <p>The benefit to this approach, even if the discussion ends in disagreement, is that both sides have worked to understand where the other is coming from. So even if they disagree at a root level, they can at least respect the thought process behind the other stance.</p>
-                                    <p>Now obviously if two starting assumptions are contradictory they cannot both be true. Only one (or neither) person is actually correct. But from a purely rational standpoint there is no way to say which is right or wrong, all you can do is point out contradictions.</p>
-                                </article>
+                                <div class="cards">
+                                    <div id="170120" class="card">
+                                        <div class="card-image">
+                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <h3 class="articleHeader">January 20</h3>
+                                        </div>
+                                        <div class="card-copy">
+                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                            <p class="articleSubtitle">Socratic debate</p>
+                                            <p>Many times after an argument, neither side changes their stance and each side wonders how the other could be so stupid.</p>
+                                            <p>This occurs because we can see the reasoning behind our stance, so we assume that the other person is being illogical.</p>
+                                            <p>However, an error in logic is only one reason why people disagree. Many times both sides have a completely valid, logical argument. The only reason that they disagree is because their starting assumptions are different.</p>
+                                            <p>These assumptions can be so foundational to each person that they cannot image anyone not having the same assumptions. That is where the misunderstanding truly takes place.</p>
+                                            <p>Most arguments take place over conclusions at the top of each person’s thought tree. Conclusions that make perfect sense assuming that the person’s starting assumptions are true. To successfully resolve an argument while minimizing conflict, it is important to try to dig down to the roots of someone’s stance early on in the disagreement. Keep going down their belief tree until you arrive at a place where you both have the same starting assumptions. Unless you are both starting with the same assumptions any discussion will be pointless.</p>
+                                            <p>Once you identify a common ground for each sides’ stance, that is typically the general area where the discussion’s topic should stay.</p>
+                                            <p>If you can convince someone to change a branch assumption that disagrees with yours by pointing out an error in their reasoning or providing information that they had not considered, all of the “leaves” at the top of their tree that were connected to that branch will follow.</p>
+                                            <p>However, If the root of someone’s stance is a life-assumption (a root assumption) that disagrees with one of yours, then they are not likely to change their view, and further discussion will likely be unfruitful. (Since you cannot come to a place where you have the same starting assumptions.) In these situations, you simply have to agree to disagree.</p>
+                                            <p>The benefit to this approach, even if the discussion ends in disagreement, is that both sides have worked to understand where the other is coming from. So even if they disagree at a root level, they can at least respect the thought process behind the other stance.</p>
+                                            <p>Now obviously if two starting assumptions are contradictory they cannot both be true. Only one (or neither) person is actually correct. But from a purely rational standpoint there is no way to say which is right or wrong, all you can do is point out contradictions.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <article id="170119" class="row">
                                     <h3 class="articleHeader">January 19</h3>
                                     <img src="img/blog/1701190.jpg"> <!-- http://www.gannett-cdn.com/-mm-/f0d9321cf92a2ab78421a3b017bf9acf8891d2ab/c=17-0-259-182&r=x408&c=540x405/local/-/media/2016/08/30/Cincinnati/Cincinnati/636081778806632925-Cluster-of-Asian-Lady-Beetles.jpg -->

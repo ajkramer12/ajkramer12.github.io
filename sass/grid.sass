@@ -1,0 +1,77 @@
+@import "normalize"
+@import "bourbon"
+@import "neat"
+
+$oneCol: 15.67%
+$twoCol: 32.33%
+$thrCol: 49%
+$forCol: 65.67%
+$fivCol: 82.33%
+$sixCol: 99%
+
+
+.row::after
+    @include clearfix
+    content: ""
+    display: table
+    clear: both
+
+[class*='col-']
+    float: left
+    margin-left: 1%
+    min-height: 1px
+
+.col-1-2-3,
+.col-1-6-6
+    width: $oneCol
+
+.col-2-4-6
+    width: $twoCol
+
+.col-3-6-6
+    width: $thrCol
+
+.col-4-6-6
+    width: $forCol
+
+.col-5-4-6,
+.col-5-6-6
+    width: $fivCol
+
+.col-6-6-6
+    width: $sixCol
+
+
+
+
+
+@media (min-width: 401px) and (max-width: 876px)
+    .col-1-2-3
+        width: $twoCol
+
+    .col-2-4-6,
+    .col-5-4-6
+        width: $forCol
+
+    .col-1-6-6,
+    .col-3-6-6,
+    .col-4-6-6,
+    .col-5-6-6,
+    .col-6-6-6
+        width: $sixCol
+
+
+
+@media (max-width: 400px)
+    .col-1-2-3
+        width: $thrCol
+
+    .col-1-6-6,
+    .col-2-4-6,
+    .col-3-6-6,
+    .col-4-6-6,
+    .col-5-4-6,
+    .col-5-6-6,
+    .col-6-6-6
+        width: $sixCol
+
