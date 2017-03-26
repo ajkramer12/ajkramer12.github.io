@@ -1,19 +1,15 @@
 /* Mixins */
 @mixin fontStyle($section, $alpha: 1)
     @if $section == mainHeader
-        font-family: Cardinal, $georgia
-        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+        @extend .cardinal
     @else if $section == secondaryHeader
-        font-family: Ringbearer, $georgia
-        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+        @extend .ringbearer
     @else if $section == mainNav
-        font-family: Cardinal, $georgia
-        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+        @extend .cardinal
     @else if $section == signature
-        font-family: Imladris, $georgia
-        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+        @extend .imladris
     @else if $section == accent
         color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
     @else
         font-family: $georgia
-        color: rgba(red($fontColor), green($fontColor), blue($fontColor), $alpha)
+        color: rgb(red($fontColor), green($fontColor), blue($fontColor))

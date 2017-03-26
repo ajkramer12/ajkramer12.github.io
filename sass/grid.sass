@@ -10,11 +10,9 @@ $fivCol: 82.33%
 $sixCol: 99%
 
 
-.row::after
+.row
     @include clearfix
-    content: ""
-    display: table
-    clear: both
+
 
 [class*='col-']
     float: left
