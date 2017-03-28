@@ -1,5 +1,5 @@
 /*!normalize.css v2.1.3|MIT License|git.io/normalize*/
-/* line 10, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 10, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 article,
 aside,
 details,
@@ -15,87 +15,87 @@ summary {
   display: block;
 }
 
-/* line 26, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 26, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-/* line 34, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 34, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 41, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 41, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 [hidden],
 template {
   display: none;
 }
 
-/* line 51, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 51, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 57, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 57, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 body {
   margin: 0;
 }
 
-/* line 64, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 64, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 a {
   background: transparent;
 }
 
-/* line 69, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 69, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 74, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 74, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 83, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 83, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 89, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 89, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 94, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 94, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 100, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 100, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 dfn {
   font-style: italic;
 }
 
-/* line 105, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 105, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 111, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 111, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 mark {
   background: #FF0;
   color: #000;
 }
 
-/* line 117, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 117, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 code,
 kbd,
 pre,
@@ -104,22 +104,22 @@ samp {
   font-size: 1em;
 }
 
-/* line 126, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 126, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 pre {
   white-space: pre-wrap;
 }
 
-/* line 131, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 131, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 136, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 136, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 small {
   font-size: 80%;
 }
 
-/* line 141, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 141, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 sub,
 sup {
   font-size: 75%;
@@ -128,45 +128,45 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 148, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 148, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 sup {
   top: -0.5em;
 }
 
-/* line 151, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 151, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 sub {
   bottom: -0.25em;
 }
 
-/* line 158, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 158, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 img {
   border: 0;
 }
 
-/* line 163, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 163, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 170, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 170, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 figure {
   margin: 0;
 }
 
-/* line 177, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 177, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 fieldset {
   border: 1px solid #C0C0C0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 185, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 185, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 193, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 193, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 input,
 select,
@@ -176,19 +176,19 @@ textarea {
   margin: 0;
 }
 
-/* line 204, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 204, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 input {
   line-height: normal;
 }
 
-/* line 213, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 213, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 select {
   text-transform: none;
 }
 
-/* line 223, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 223, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -197,56 +197,56 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 232, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 232, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 239, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 239, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 248, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 248, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-/* line 255, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 255, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 261, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 261, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 269, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 269, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 277, C:/Users/Andrew J. Kramer/Scout-App/scout-files/mixins/_normalize.sass */
+/* line 277, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 4, C:/Users/Andrew J. Kramer/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 4, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 9, C:/Users/Andrew J. Kramer/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 9, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit;
 }
@@ -265,6 +265,24 @@ html {
 @font-face {
   font-family: Imladris;
   src: url(../fonts/elvencommonspeak.ttf);
+}
+
+/* line 23, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_variables.sass */
+.mainNav, h1, h2 {
+  font-family: Cardinal, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #bd0000;
+}
+
+/* line 27, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_variables.sass */
+h3 {
+  font-family: Ringbearer, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #bd0000;
+}
+
+/* line 31, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_variables.sass */
+#signature {
+  font-family: Imladris, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #bd0000;
 }
 
 /* Mixins */
@@ -317,12 +335,6 @@ main {
 /* line 42, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
 .top {
   margin-bottom: 65px;
-}
-
-/* line 46, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
-.mainNav {
-  font-family: Cardinal, "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  color: #bd0000;
 }
 
 /* line 50, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
@@ -403,18 +415,6 @@ footer {
   text-align: center;
 }
 
-/* line 118, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
-h1, h2 {
-  font-family: Cardinal, "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  color: #bd0000;
-}
-
-/* line 121, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
-h3 {
-  font-family: Ringbearer, "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  color: #bd0000;
-}
-
 /* line 124, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
 li {
   color: #bd0000;
@@ -432,12 +432,6 @@ a:hover {
 
 /* line 133, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
 a:visited {
-  color: #bd0000;
-}
-
-/* line 139, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/_main.sass */
-#signature {
-  font-family: Imladris, "Georgia", "Cambria", "Times New Roman", "Times", serif;
   color: #bd0000;
 }
 
@@ -642,29 +636,29 @@ a:visited {
     text-decoration: none;
     text-shadow: 0 -1px 1px black;
   }
-  /* line 210, C:/Users/Andrew J. Kramer/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  /* line 210, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
   #subNavToggle:hover:not(:disabled) {
     background-color: black;
     background-image: -webkit-linear-gradient(top, black 0%, black 50%, black 50%, black 100%);
     background-image: linear-gradient(to bottom,black 0%, black 50%, black 50%, black 100%);
     cursor: pointer;
   }
-  /* line 230, C:/Users/Andrew J. Kramer/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  /* line 230, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
   #subNavToggle:active:not(:disabled), #subNavToggle:focus:not(:disabled) {
     box-shadow: inset 0 0 20px 0 black;
   }
-  /* line 210, C:/Users/Andrew J. Kramer/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  /* line 210, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
   #subNavToggle:hover:not(:disabled) {
     background-color: black;
     background-image: -webkit-linear-gradient(top, black 0%, black 50%, black 50%, black 100%);
     background-image: linear-gradient(to bottom,black 0%, black 50%, black 50%, black 100%);
     cursor: pointer;
   }
-  /* line 230, C:/Users/Andrew J. Kramer/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  /* line 230, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
   #subNavToggle:active:not(:disabled), #subNavToggle:focus:not(:disabled) {
     box-shadow: inset 0 0 20px 0 black;
   }
-  /* line 59, C:/Users/Andrew J. Kramer/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  /* line 59, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
   #subNavToggle:disabled {
     cursor: not-allowed;
     opacity: 0.5;

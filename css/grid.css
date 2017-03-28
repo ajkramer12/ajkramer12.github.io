@@ -297,17 +297,35 @@ html {
   width: 99%;
 }
 
+/* line 43, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+h1 {
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+/* line 46, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+h3 {
+  font-size: 1.3em;
+  line-height: 1.25;
+}
+
+/* line 49, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+h4 {
+  font-size: 1.125em;
+  line-height: 1.25;
+}
+
 @media (min-width: 401px) and (max-width: 876px) {
-  /* line 47, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  /* line 57, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-2-3 {
     width: 32.33%;
   }
-  /* line 50, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  /* line 60, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-2-4-6,
   .col-5-4-6 {
     width: 65.67%;
   }
-  /* line 54, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  /* line 64, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-6-6,
   .col-3-6-6,
   .col-4-6-6,
@@ -315,14 +333,29 @@ html {
   .col-6-6-6 {
     width: 99%;
   }
+  /* line 71, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.25;
+  }
+  /* line 74, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.15;
+  }
+  /* line 77, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.11;
+  }
 }
 
 @media (max-width: 400px) {
-  /* line 64, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  /* line 84, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-2-3 {
     width: 49%;
   }
-  /* line 67, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+  /* line 87, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-6-6,
   .col-2-4-6,
   .col-3-6-6,
@@ -332,6 +365,24 @@ html {
   .col-6-6-6 {
     width: 99%;
   }
+}
+
+/* line 96, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+/* line 99, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+h3 {
+  font-size: 1.2em;
+  line-height: 1.15;
+}
+
+/* line 102, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11;
 }
 
 /*# sourceMappingURL=../css/grid.map */

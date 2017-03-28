@@ -1,13 +1,13 @@
 /* Mixins */
 @mixin fontStyle($section, $alpha: 1)
     @if $section == mainHeader
-        @extend .cardinal
+        @extend %cardinal
     @else if $section == secondaryHeader
-        @extend .ringbearer
+        @extend %ringbearer
     @else if $section == mainNav
-        @extend .cardinal
+        @extend %cardinal
     @else if $section == signature
-        @extend .imladris
+        @extend %imladris
     @else if $section == accent
         color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
     @else
