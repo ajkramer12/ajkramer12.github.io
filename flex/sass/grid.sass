@@ -1,0 +1,112 @@
+@import "normalize"
+@import "bourbon"
+@import "neat"
+
+$oneCol: 15.67%
+$twoCol: 32.33%
+$thrCol: 49%
+$forCol: 65.67%
+$fivCol: 82.33%
+$sixCol: 99%
+
+//$oneCol: 7.67%
+//$twoCol: 16.33%
+//$thrCol: 25%
+//$forCol: 32.67%
+//$fivCol: 41.33%
+//$sixCol: 50%
+
+
+//.container
+.row
+    display: flex
+    flex-flow: row wrap
+    flex: 0 1 auto
+
+
+[class*='col-']
+    margin-left: 1%
+
+.col-1-2-3,
+.col-1-6-6
+    flex: 0 0 $oneCol
+
+.col-2-4-6
+    flex: 0 0 $twoCol
+
+.col-3-6-6
+    flex: 0 0 $thrCol
+
+.col-4-6-6
+    flex: 0 0 $forCol
+
+.col-5-4-6,
+.col-5-6-6
+    flex: 0 0 $fivCol
+
+.col-6-6-6
+    flex: 0 0 $sixCol
+
+
+h1
+    font-size: 3em
+    line-height: 1.05
+h3
+    font-size: 1.3em
+    line-height: 1.25
+h4
+    font-size: 1.125em
+    line-height: 1.25
+
+
+
+
+@media (min-width: 401px) and (max-width: 876px)
+    .col-1-2-3
+        flex: 0 0 $twoCol
+
+    .col-2-4-6,
+    .col-5-4-6
+        flex: 0 0 $forCol
+
+    .col-1-6-6,
+    .col-3-6-6,
+    .col-4-6-6,
+    .col-5-6-6,
+    .col-6-6-6
+        flex: 0 0 $sixCol
+
+    h1
+        font-size: 2.5em
+        line-height: 1.125
+    h3
+        font-size: 1.25em
+        line-height: 1.25
+    h4
+        font-size: 1.125em
+        line-height: 1.11
+
+
+
+@media (max-width: 400px)
+    .col-1-2-3
+        flex: 0 0 $thrCol
+
+    .col-1-6-6,
+    .col-2-4-6,
+    .col-3-6-6,
+    .col-4-6-6,
+    .col-5-4-6,
+    .col-5-6-6,
+    .col-6-6-6
+        flex: 0 0 $sixCol
+
+h1
+    font-size: 2em
+    line-height: 1.25
+h3
+    font-size: 1.2em
+    line-height: 1.15
+h4
+    font-size: 1.125em
+    line-height: 1.11

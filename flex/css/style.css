@@ -1,0 +1,744 @@
+/*!normalize.css v2.1.3|MIT License|git.io/normalize*/
+/* line 10, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 26, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 34, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 41, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 51, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 57, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+body {
+  margin: 0;
+}
+
+/* line 64, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+a {
+  background: transparent;
+}
+
+/* line 69, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 74, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 83, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 89, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 94, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 100, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 105, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 111, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+mark {
+  background: #FF0;
+  color: #000;
+}
+
+/* line 117, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 126, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 131, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 136, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+small {
+  font-size: 80%;
+}
+
+/* line 141, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 148, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 151, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 158, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+img {
+  border: 0;
+}
+
+/* line 163, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 170, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* line 177, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+fieldset {
+  border: 1px solid #C0C0C0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 185, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 193, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 204, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 213, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 223, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 232, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 239, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 248, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 255, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 261, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 269, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 277, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 4, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* Variables */
+@font-face {
+  font-family: Cardinal;
+  src: url(../fonts/Cardinal.ttf);
+}
+
+@font-face {
+  font-family: Ringbearer;
+  src: url(../fonts/RINGM__.TTF);
+}
+
+@font-face {
+  font-family: Imladris;
+  src: url(../fonts/elvencommonspeak.ttf);
+}
+
+/* line 23, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_variables.sass */
+.mainNav, h1, h2 {
+  font-family: Cardinal, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #bd0000;
+}
+
+/* line 27, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_variables.sass */
+h3 {
+  font-family: Ringbearer, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #bd0000;
+}
+
+/* line 31, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_variables.sass */
+#signature {
+  font-family: Imladris, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #bd0000;
+}
+
+/* Mixins */
+/* line 1, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+body {
+  /* Nesting Example */
+  background-color: #000;
+  background-image: url("../img/back.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 10, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  background-image: url("../img/container.jpg");
+  border: 5px #ccc groove;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: #f0eaea;
+}
+
+/* line 21, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+header {
+  background-color: #111;
+  border-bottom: 2px #ccc groove;
+  padding-left: 300px;
+  max-height: 132px;
+}
+
+/* line 28, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+header h3 {
+  padding-left: 50px;
+}
+
+/* line 33, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+main {
+  display: block;
+  padding: 1%;
+  margin-left: 0;
+}
+
+/* line 43, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.top {
+  margin-bottom: 65px;
+}
+
+/* line 51, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.mainNav ul {
+  margin: 0;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
+/* line 56, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.mainNav ul li {
+  margin: 5% 0;
+  padding: 28px 5px;
+  list-style: none;
+  background-image: url("../img/button.png");
+  background-size: 100% 100%;
+}
+
+/* line 64, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.mainNav ul li a {
+  text-decoration: none;
+}
+
+/* line 73, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.intro {
+  background-color: #000;
+}
+
+/* line 81, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.subNav {
+  padding-bottom: 15px;
+}
+
+/* line 84, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+#subNavToggle {
+  display: none;
+}
+
+/* line 90, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.articleHeader {
+  margin: 0;
+}
+
+/* line 93, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.articleTitle {
+  margin-bottom: 0;
+}
+
+/* line 96, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.articleSubtitle {
+  margin: 0 0 32px 0;
+}
+
+/* line 99, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+article img {
+  margin-top: 15px;
+}
+
+/* line 102, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+article {
+  background-color: #000;
+  padding: 5px 15px 15px 15px;
+  margin: 15px 0;
+}
+
+/* line 107, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+footer {
+  background-color: #111;
+  background-image: url("../img/footer.jpg");
+  border-top: 2px #ccc groove;
+  height: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* line 125, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+li {
+  color: #bd0000;
+}
+
+/* line 128, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+a {
+  color: #bd0000;
+}
+
+/* line 131, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+a:hover {
+  color: rgba(189, 0, 0, 0.75);
+}
+
+/* line 134, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+a:visited {
+  color: #bd0000;
+}
+
+/* line 145, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+#mapRow {
+  margin: 25px 0;
+}
+
+/* line 148, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+#mapRow div picture img {
+  width: 100%;
+}
+
+/* Copied from "Refills: Cards" and modified*/
+/* line 155, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 161, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #b3b3b3;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 188, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card .card-image {
+  background-color: #111;
+  height: 150px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+/* line 194, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card .card-image img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+/* line 202, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card .card-header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #000;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 212, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card .card-copy {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+
+/* line 217, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+
+/* line 222, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card:focus, .card:hover {
+  cursor: pointer;
+}
+
+/* line 226, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+
+/* line 231, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card:active {
+  background-color: #1a1a1a;
+}
+
+/* line 234, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.card:active .card-header {
+  background-color: #1a1a1a;
+}
+
+/* End Refill Copy */
+/* Copied from Refills: Scroll on Page and modified */
+/* line 244, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page {
+  display: inline-block;
+}
+
+/* line 254, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page li {
+  list-style: none;
+}
+
+/* line 257, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page a {
+  text-decoration: none;
+}
+
+/* line 268, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page:last-child {
+  margin-bottom: 1.5em;
+}
+
+/* line 274, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page article h4 {
+  margin: 0 0 0.5em 0;
+}
+
+/* line 278, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page article p {
+  color: #f0eaea;
+  line-height: 1.5em;
+}
+
+/* line 283, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_main.sass */
+.scroll-on-page article section p:last-of-type {
+  margin-bottom: 2em;
+}
+
+/* End Refill: Scroll on Page */
+@media (min-width: 877px) {
+  /* line 2, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  header {
+    background-image: url("../img/header.jpg");
+  }
+}
+
+@media (max-width: 876px) {
+  /* line 9, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .mainNav {
+    margin: 0 auto;
+  }
+  /* line 12, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .mainNav ul {
+    padding: 0;
+  }
+  /* line 15, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .mainNav ul li {
+    float: left;
+  }
+  /* line 19, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .subNavCol {
+    background-color: #0c0c0c;
+  }
+  /* line 22, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .subNavTop {
+    height: 60px;
+    background-color: #000;
+  }
+  /* line 26, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  #subNavToggle {
+    display: inline;
+    background-color: #000;
+    background-image: -webkit-linear-gradient(top, #000 0%, black 50%, black 50%, black 100%);
+    background-image: linear-gradient(to bottom,#000 0%, black 50%, black 50%, black 100%);
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #191919;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px black;
+    background-color: #000;
+    background-image: -webkit-linear-gradient(top, #000 0%, black 50%, black 50%, black 100%);
+    background-image: linear-gradient(to bottom,#000 0%, black 50%, black 50%, black 100%);
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #251d0c;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px black;
+  }
+  /* line 210, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  #subNavToggle:hover:not(:disabled) {
+    background-color: black;
+    background-image: -webkit-linear-gradient(top, black 0%, black 50%, black 50%, black 100%);
+    background-image: linear-gradient(to bottom,black 0%, black 50%, black 50%, black 100%);
+    cursor: pointer;
+  }
+  /* line 230, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  #subNavToggle:active:not(:disabled), #subNavToggle:focus:not(:disabled) {
+    box-shadow: inset 0 0 20px 0 black;
+  }
+  /* line 210, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  #subNavToggle:hover:not(:disabled) {
+    background-color: black;
+    background-image: -webkit-linear-gradient(top, black 0%, black 50%, black 50%, black 100%);
+    background-image: linear-gradient(to bottom,black 0%, black 50%, black 50%, black 100%);
+    cursor: pointer;
+  }
+  /* line 230, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  #subNavToggle:active:not(:disabled), #subNavToggle:focus:not(:disabled) {
+    box-shadow: inset 0 0 20px 0 black;
+  }
+  /* line 59, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/bourbon/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+  #subNavToggle:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  /* line 30, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .subNav h4, #subNavToggle {
+    float: right;
+    margin: 0 15px;
+  }
+  /* line 34, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .subNav ul {
+    display: none;
+    list-style: none;
+    list-style-position: inherit;
+  }
+  /* line 40, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .subNav li {
+    float: left;
+    width: 75px;
+    margin: 6px;
+    padding: 15px;
+    background-color: #111;
+    text-align: center;
+  }
+  /* line 48, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .subNav li a {
+    font-size: 125%;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 876px) {
+  /* line 58, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .mainNav ul li.innerLink {
+    margin: 5% 25%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 876px) {
+  /* line 64, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  header {
+    padding-left: 50px;
+    background-image: url("../img/headerSmall.jpg");
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 71, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .mainNav ul li {
+    width: 20%;
+    padding: 28px 0;
+  }
+  /* line 75, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .mainNav ul li.innerLink {
+    margin: 5% 17%;
+  }
+  /* line 79, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  article img {
+    max-width: 49%;
+  }
+}
+
+@media (min-width: 433px) and (max-width: 600px) {
+  /* line 85, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  header h3 {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 91, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .portraitCol {
+    width: 0;
+    margin-left: 0;
+  }
+  /* line 96, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  .intro {
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 432px) {
+  /* line 102, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  header h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 109, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/flex/sass/_mediaQueries.sass */
+  header {
+    padding-left: 0;
+    background-image: url("../img/headerTiny.jpg");
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

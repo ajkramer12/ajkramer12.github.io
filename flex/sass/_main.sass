@@ -1,0 +1,291 @@
+body
+    /* Nesting Example */
+    background:
+        color: $primaryColor
+        image: url("../img/back.jpg") /* http://eskipaper.com/images/mist-photos-1.jpg */
+        size: 100% 100%
+        repeat: no-repeat
+        attachment: fixed
+
+.container
+    max-width: 1200px
+    margin:
+        left: auto
+        right: auto
+    background:
+        color: $primaryColor
+        image: url("../img/container.jpg") /* Personal Creation */
+    border: 5px $accentColor groove
+    @include fontStyle(default)
+
+header
+    background-color: $secondaryColor
+    border-bottom: 2px $accentColor groove
+    padding-left: 300px
+    max-height: 132px
+
+
+header h3
+    padding-left: 50px
+
+
+
+main
+    display: block
+    padding: 1%
+    margin-left: 0
+
+
+.main
+
+
+
+.top
+    margin-bottom: 65px
+
+
+.mainNav
+    @include fontStyle(mainNav)
+
+
+.mainNav ul
+    margin: 0
+    padding: 0 15px 0 15px
+    text-align: center
+
+.mainNav ul li
+    margin: 5% 0
+    padding: 28px 5px
+    list-style: none
+    background:
+        image: url("../img/button.png") /* http://www.clipartkid.com/images/361/gothic-frames-and-borders-BSNAsO-clipart.jpg */
+        size: 100% 100%
+
+.mainNav ul li a
+    text-decoration: none
+
+
+
+
+
+
+
+.intro
+    background-color: $primaryColor
+
+
+
+
+
+
+.subNav
+    padding-bottom: 15px
+
+#subNavToggle
+    display: none
+
+//.subNav ul
+    display: block
+
+.articleHeader
+    margin: 0
+
+.articleTitle
+    margin-bottom: 0
+
+.articleSubtitle
+    margin: 0 0 32px 0
+
+article img
+    margin-top: 15px
+
+article
+    background-color: $primaryColor
+    padding: 5px 15px 15px 15px
+    margin: 15px 0 
+
+footer
+    background:
+        color: $secondaryColor
+        image: url("../img/footer.jpg") /* http://previews.123rf.com/images/elwynn/elwynn1407/elwynn140700395/30177415-Stone-wall-with-green-moss-background--Stock-Photo.jpg */
+    border-top: 2px $accentColor groove
+    height: 50px
+    padding-top: 50px
+    text-align: center
+
+
+
+
+h1, h2
+    @include fontStyle(mainHeader)
+
+h3
+    @include fontStyle(secondaryHeader)
+
+li
+    @include fontStyle(accent)
+
+a
+    @include fontStyle(accent)
+
+a:hover
+    @include fontStyle(accent, 0.75)
+
+a:visited
+    @include fontStyle(accent)
+
+
+
+
+#signature
+    @include fontStyle(signature)
+
+
+
+#mapRow
+    margin: 25px 0
+
+#mapRow div picture img
+    width: 100%
+
+
+
+
+/* Copied from "Refills: Cards" and modified*/
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.card
+    $base-border-color: $primaryColor !default
+    $base-border-radius: 3px !default
+    $base-background-color: $accentColor !default
+    $base-spacing: 1.5em !default
+    $action-color: $headerColor !default
+    $dark-gray: #333 !default
+    $base-font-color: $fontColor !default
+    $card-border-color: $base-border-color
+    $card-border: 1px solid $card-border-color
+    $card-background: lighten($card-border-color, 10%)
+    $card-header-background: $card-background
+    $card-margin: 1em
+    $card-image-hover-opacity: 0.7
+    $card-image-hover-color: $secondaryColor
+
+    background-color: $card-background
+    border: $card-border
+    border-radius: $base-border-radius
+    box-shadow: 0 2px 4px darken($base-background-color, 10%)
+    cursor: pointer
+    flex-basis: 15em
+    flex-grow: 1
+    margin: 0 $card-margin $base-spacing $card-margin
+    position: relative
+    transition: all 0.2s ease-in-out
+
+    .card-image
+        background-color: $card-image-hover-color
+        height: 150px
+        max-height: 150px
+        overflow: hidden
+
+        img
+            @include border-top-radius($base-border-radius)
+            opacity: 1
+            transition: all 0.2s ease-in-out
+            width: 100%
+
+
+
+    .card-header
+        background-color: $card-header-background
+        border-bottom: $card-border
+        border-radius: $base-border-radius $base-border-radius 0 0
+        font-weight: bold
+        line-height: 1.5em
+        padding: ($base-spacing / 3) ($base-spacing / 2)
+        transition: all 0.2s ease-in-out
+
+
+    .card-copy
+        font-size: 0.9em
+        line-height: 1.5em
+        padding: ($base-spacing / 2) ($base-spacing / 2)
+
+        p
+            margin: 0 0 ($base-spacing / 2)
+
+
+
+    &:focus,
+    &:hover
+        cursor: pointer
+
+        img
+            opacity: $card-image-hover-opacity
+
+
+
+    &:active
+        background-color: $card-background
+
+        .card-header
+            background-color: $card-background
+/* End Refill Copy */
+
+
+
+
+
+
+/* Copied from Refills: Scroll on Page and modified */
+.scroll-on-page
+    $base-line-height: 1.5em !default
+    $base-spacing: 1.5em !default
+    $action-color: $headerColor !default
+    $dark-gray: #333 !default
+    $large-screen: 53.75em !default
+    $base-font-color: $fontColor !default
+
+    display: inline-block
+
+    li
+        list-style: none
+
+    a
+        text-decoration: none
+
+
+
+    //.scroll-on-page-link
+        border-bottom: 1px solid transparentize($action-color, 0.8)
+        display: block
+        outline: none
+
+
+    &:last-child
+        margin-bottom: $base-spacing
+
+
+
+    article
+        h4
+            margin: 0 0 0.5em 0
+
+
+        p
+            color: $base-font-color
+            line-height: $base-line-height
+
+
+        section p:last-of-type
+            margin-bottom: 2em
+
+
+
+
+
+// Based on code by http://codepen.io/xmark/
+/* End Refill: Scroll on Page */
