@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <title>eruditus12</title>
     <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Personal Creation -->
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/grid-parallax.min.js"></script>
-    <script src="js/sticky.min.js"></script>
     <script>
         // Picture element HTML5 shiv
         document.createElement("picture");
@@ -18,26 +15,26 @@
 </head>
 <body>
     <div class="container">
-        <header class="uk-grid uk-grid-collapse">
-            <div class="uk-container-center">
+        <header class="row">
+            <div class="col-6-6-6">
                 <h1>eruditus12</h1>
                 <h3>Random thoughts that leaked out of my head</h3>
             </div>
         </header>
 
-        <main class="uk-grid uk-grid-small">
-            <div class="main uk-width-6-6">
-                <div class="top uk-grid uk-grid-small">
-                    <nav class="mainNav uk-width-large-1-6">
+        <main class="row">
+            <div class="main col-6-6-6">
+                <div class="top row">
+                    <nav class="mainNav col-1-6-6">
                         <ul>
                             <li><a href="index.html">Home / Blog</a></li>
                             <li class="innerLink"><a href="nations.html">Tide of Nations</a></li>
                             <li><a href="celestis.html">The Celestis Project</a></li>
                         </ul>
                     </nav>
-                    <div class="uk-width-large-5-6">
-                        <div class="intro uk-grid uk-grid-small">
-                            <div class="portraitCol uk-width-large-1-6 uk-width-medium-2-6 uk-width-small-3-6">
+                    <div class="col-5-6-6">
+                        <div class="intro row">
+                            <div class="portraitCol col-1-2-3">
                                 <picture>
                                     <!--[If IE 9]<video style="display: none;"><![endif]-->
                                     <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
@@ -47,68 +44,19 @@
                                     <img class="portrait" src="img/portraitDark.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
                                 </picture>
                             </div>
-                            <div class="uk-width-large-5-6 uk-width-medium-4-6">
+                            <div class="col-5-4-6">
                                 <h4>Welcome!</h4>
                                 <p>My name is A.J. Kramer: future educator, web developer, swordsman wannabe, Tolkien nerd, amateur philosopher, history buff, and lover of all things related to the pursuit of knowledge.</p>
                                 <p>Here at eruditus12 expect to find a little bit of everything. This will be a repository for all my various projects, and an outlet for the random thoughts that pop into my head during the week.</p>
                                 <p>It's still a work in progress, but I'm always adding something.</p>
-                                <p>Feel free to <a href="#emailForm" data-uk-modal>contact me</a></p>
                                 <p>Enjoy your stay!</p>
                                 <p id="signature">A.J. Kramer</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Sticky Component -->
-                <nav class="uk-navbar uk-hidden-large" data-uk-sticky>
-                    <div class="uk-navbar-flip">
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-parent" data-uk-dropdown>
-                                <a class="uk-navbar-toggle"></a>
-                                <!-- Button Dropdown Style -->
-                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
-                                    <ul class="uk-nav uk-nav-navbar">
-                                        <li><a class="scroll-on-page-link" href="#170310">Mar 10</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170309">Mar 9</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170308">Mar 8</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170307">Mar 7</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170306">Mar 6</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170303">Mar 3</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170301">Mar 1</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170227">Feb 27</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170224">Feb 24</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170223">Feb 23</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170222">Feb 22</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170221">Feb 21</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170217">Feb 17</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170216">Feb 16</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170214">Feb 14</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170213">Feb 13</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170210">Feb 10</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170209">Feb 9</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170208">Feb 8</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170207">Feb 7</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170203">Feb 3</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170202">Feb 2</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170201">Feb 1</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170131">Jan 31</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170130">Jan 30</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170127">Jan 27</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170126">Jan 26</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170125">Jan 25</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170124">Jan 24</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170123">Jan 23</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170120">Jan 20</a></li>
-                                        <li><a class="scroll-on-page-link" href="#170119">Jan 19</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Parallax Grid Component -->
-                <div class="uk-grid uk-grid-small scroll-on-page" data-uk-grid-parallax="{translate:30000}">
-                    <nav class="subNavCol uk-width-large-1-6 uk-hidden-small uk-hidden-medium">
+                <div class="row scroll-on-page">
+                    <nav class="subNavCol col-1-6-6">
                         <nav class="subNav">
                             <div class="subNavTop">
                                 <img id="subNavToggle" src="img/burgerButton.jpg" alt=""> <!-- http://www.flydigital.com.au/wp-content/uploads/2013/06/hamb1.png -->
@@ -150,9 +98,9 @@
                             </ul>
                         </nav>
                     </nav>
-                    <div class="uk-width-large-5-6">
-                        <div class="uk-grid uk-grid-small">
-                            <div class="uk-width-6-6">
+                    <div class="col-5-6-6">
+                        <div class="row">
+                            <div class="col-6-6-6">
                                 <!-- This and other .cards based on the Refill: Cards template -->
                                 <div class="cards">
                                     <div id="170310" class="card">
@@ -173,25 +121,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- UI Kit Panel used for every non-Friday article -->
-                                <article id="170309" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">March 9</h3>
+                                <article id="170309" class="row">
+                                    <h3 class="articleHeader">March 9</h3>
                                     <img src="img/blog/1703090.jpg" alt=""> <!-- http://cdn.movieweb.com/img.news.tops/NEkDe66lUEHEnr_1_b.jpg -->
                                     <p>Movie soundtrack could be considered modern day classical music. Many soundtrack composers follow the style of a certain era of classical music (John Williams of Star Wars fame considers himself a Neoclassical composer.), and a large amount of traditional classical music was written as score for operas and ballets, the movies of that time.</p>
                                 </article>
-                                <article id="170308" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">March 8</h3>
+                                <article id="170308" class="row">
+                                    <h3 class="articleHeader">March 8</h3>
                                     <img src="img/blog/1703080.jpg" alt=""> <!-- https://www.biography.com/.image/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTI2NTgyMzIxOTcyMjU5NDU5/beethoven-600x600jpg.jpg -->
                                     <p>Though technically a Classical era composer, Beethoven is credited with beginning the Romantic movement, and many music historians classify his music as bridging the two eras. Though he still used the rules of the Classical era as a foundation for his compositions, Beethoven dared to bend and break these rules as it suited him, creating powerful music that had a definite structure while evoking strong emotions. One the best examples of this is his masterpiece Symphony No. 5 (Possibly the most famous classical piece ever written, sadly now best recognized as the Judge Judy theme [da da da duh, da da da duuuuh]).</p>
                                     <p>Beethoven’s forward-thinking compositions were sometimes ill-received and classified as avant-garde by his peers, but he was passionately dedicated to his work, in spite of suffering the agony of growing hearing problems throughout his career. Amazingly, Beethoven reportedly wrote (and conducted) his last symphony (Symphony No. 9) while completely deaf.</p>
                                 </article>
-                                <article id="170307" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">March 7</h3>
+                                <article id="170307" class="row">
+                                    <h3 class="articleHeader">March 7</h3>
                                     <img src="img/blog/1703070.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/20/29/bf/2029bfeb806f55465a7206eb033f7b8c.jpg -->
                                     <p>Baroque music is sometimes criticized for sounding tinny and cold in spite of its beauty. As it turns out, there is a reason for that. During the Baroque era, instruments from the brass section of the orchestra were frequently made of wood. These wooden instruments created a sound richer and warmer than their modern counterparts. Recently, music historians have been working to reproduce Baroque music with period-authentic instruments.</p>
                                 </article>
-                                <article id="170306" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">March 6</h3>
+                                <article id="170306" class="row">
+                                    <h3 class="articleHeader">March 6</h3>
                                     <img src="img/blog/1703060.jpg" alt=""> <!-- https://web.csulb.edu/depts/music/images/rotator/baroque-boot-camp.jpg -->
                                     <p>Classical music is some of the oldest music that we can accurately reproduce. Before classical music, there were few if any standards for writing sheet music, and what was written down frequently lacked detail. Outside of sacred pieces commissioned and written by the Church, musical pieces were passed directly from person to person via demonstration, and nearly everyone played by ear. However, this began changing in the 15th century when a method for indicating rhythm in sheet music was invented, and further in the 16th century when a method was developed to print sheet music on a mass scale. By the dawn of the 17th century, the atmosphere was ripe for a new age of musical creativity.</p>
                                     <p>There are three distinct periods of Classical music: Baroque, Classical, and Romantic. The three eras had significant overlap, and categorize the priorities of composers during the time.</p>
@@ -216,15 +163,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170301" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">March 1</h3>
+                                <article id="170301" class="row">
+                                    <h3 class="articleHeader">March 1</h3>
                                     <img src="img/blog/1703010.jpg" alt=""> <!-- https://www.herbalshop.com/blog/wp-content/uploads/2015/01/peach_seed.jpg -->
                                     <p>Cyanide is known as a deadly poison, but you actually have cyanide in your body right now. Cyanide (-CN = a carbon atom and nitrogen atom bonded together with a reactive charge.) is an extremely reactive chemical that is a component of several molecules which are vital for life in the human body. When part of another molecule, cyanide is called a cyano group, and the molecules containing cyanide are called nitriles.</p>
                                     <p>Cyanide is deadly because it is so reactive. It is necessary for life, no doubt, but only in miniscule quantities, and the body is able to produce all that it needs. When one consumes cyanide, the surplus reacts with hemoglobin in the blood, preventing it from effectively transporting oxygen throughout the body. The person typically dies from suffocation, in spite of the fact that they can breathe fine.</p>
                                     <p>On a side note, Cyanide can be found in the bark and seeds of nearly every member of the Prunacae family, including Cherries, Plums, Peaches, and Almonds; though typically not in lethal concentrations. Almonds are the only seeds is this family that are safe to eat, but are remarkably similar to seeds from the other stone fruits. Crack open a peach pit, and two small “almonds” with fall out. These “almonds,” however, are full of cyanide.</p>
                                 </article>
-                                <article id="170227" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 27</h3>
+                                <article id="170227" class="row">
+                                    <h3 class="articleHeader">February 27</h3>
                                     <img src="img/blog/1702270.jpg" alt=""> <!-- http://www.livescience.com/images/i/000/068/518/original/dna-strand.jpeg?interpolation=lanczos-none&downsize=*:1000 -->
                                     <p>2012 was a huge year for geneticists. In that year one of the biggest discoveries in genetics since the discovery of DNA was published.</p>
                                     <p>Most of us are least familiar with the concept of DNA (If nothing else, we know that InGen scientists can use it to make dinosaurs for a theme park island.) DNA (short for 2-Deoxyribonucleic Acid (2 de-OX-y-ri-bo-nu-CLE-ic Acid)) is the “code of life,” and each organism’s DNA contains the blueprint for how that body should be constructed. Sections of DNA code for specific building blocks of the body that can then self-assemble.</p>
@@ -245,16 +192,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170223" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 23</h3>
+                                <article id="170223" class="row">
+                                    <h3 class="articleHeader">February 23</h3>
                                     <img src="img/blog/1702230.jpg" alt=""> <!-- http://clearlyexplained.com/_Media/americium_med_hr.jpeg -->
                                     <img src="img/blog/1702231.jpg" alt=""> <!-- https://www.safety.com/wp-content/uploads/2012/12/smoke-detector-monitoring-system.jpg -->
                                     <p>Did you know that you probably have a highly radioactive substance in your home right now? Americium (A-mer-EE-see-um) is a synthetic element that is comparable in radioactivity to plutonium, and it is the active ingredient in the humble household smoke alarm.</p>
                                     <p>Americium gives off high levels of alpha particle radiation. In smoke alarms, this radiation is directed toward a radiation detector. As long as the detector is receiving a steady stream of radiation, the alarm stays silent. However, when smoke enters the device, the smoke particles block many of the alpha particles. The radiation detector picks up the drop in radiation and triggers the alarm.</p>
                                     <p>Now, no need to go home and rip down your smoke detectors for fear of radiation poisoning. While all radiation can be dangerous in large quantities, the amount given off by the tiny sample of Americium in a smoke detector is insignificant. Furthermore, alpha particle radiation is the easiest to neutralize. Gamma wave radiation is the one you typically hear about – it requires thick lead barriers to be contained – but the chances of any alpha particles escaping the containment inside the smoke detector are astronomically small.</p>
                                 </article>
-                                <article id="170222" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 22</h3>
+                                <article id="170222" class="row">
+                                    <h3 class="articleHeader">February 22</h3>
                                     <img src="img/blog/1702220.jpg" alt=""> <!-- https://expertbeacon.com/sites/default/files/act_quickly_and_calmly_when_suffering_a_boiling_water_burn.jpg -->
                                     <img src="img/blog/1702221.jpg" alt=""> <!-- http://www.fphoto.com/site/asset/slideshow/Fphoto-43349706J-2RMd.jpg -->
                                     <p>Pressure has a large effect on chemical properties. Take boiling water for instance:</p>
@@ -263,8 +210,8 @@
                                     <p>At normal pressure, water boils at 100°C (212°F), but if you increase air pressure, it can take much longer for water to boil. (As more pressure is exerted on the water, more force is needed for the water molecule to break free.)</p>
                                     <p>This works at the opposite end of the spectrum as well. If you decrease the pressure, water can boil much sooner. (If less pressure is exerted on the water, less force is needed for a water molecule to break free.) In fact, water boils immediately in a vacuum, and there is even a certain pressure (612Pa) where water boils at 0°C (32°F). This is called the Triple Point, because in those conditions water can exist as ice, liquid, and steam simultaneously.</p>
                                 </article>
-                                <article id="170221" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 21</h3>
+                                <article id="170221" class="row">
+                                    <h3 class="articleHeader">February 21</h3>
                                     <img src="img/blog/1702210.jpg" alt=""> <!-- https://inuvikphil.files.wordpress.com/2008/06/b-drainage-water.jpg -->
                                     <img src="img/blog/1702211.jpg" alt=""> <!-- http://assets.careerspot.com.au/files/news/corroded-pipe.jpg -->
                                     <p>The chemical Dihydrogen Monoxide has been the topic of several petitions and proposed bans over the past few decades. Reasons to ban the chemical have included points such as: it is highly reactive, it contributes to the greenhouse effect involved in global warming, it can be fatal when ingested at high quantities or inhaled, and it can corrode metal pipes in its purest form. In spite of these dangers there is no regulation of its use, it is frequently added to food, it is the most commonly used fire retardant, and it can even be found in high concentrations in rivers and streams.</p>
@@ -290,8 +237,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170216" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 16</h3>
+                                <article id="170216" class="row">
+                                    <h3 class="articleHeader">February 16</h3>
                                     <img src="img/blog/1702160.jpg" alt=""> <!-- https://i.ytimg.com/vi/cwnGw2dMJfw/maxresdefault.jpg -->
                                     <img src="img/blog/1702161.jpg" alt=""> <!-- http://weknowyourdreams.com/image.php?pic=/images/viking/viking-08.jpg -->
                                     <p>If you were born in the Western Hemisphere, chances are, you are related to a Viking. Though the Viking culture originated in Scandinavia, they soon spread to most of Europe. Once the Roman Empire began to crumble, Viking tribes quickly staked their claims in the wake of the dying behemoth.</p>
@@ -299,8 +246,8 @@
                                     <p>During the colonial period, most of these Western European countries stayed true to their Viking heritage and boarded their ships once more to sail for new lands. Viking blood spread all across the globe as the conquerors intermarried with the conquered, and settled in their new lands.</p>
                                     <p>See you in Valhalla.</p>
                                 </article>
-                                <article id="170214" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 14</h3>
+                                <article id="170214" class="row">
+                                    <h3 class="articleHeader">February 14</h3>
                                     <img src="img/blog/1702140.jpg" alt=""> <!-- https://alaskabibleteacher.files.wordpress.com/2014/09/apple-tree.jpg -->
                                     <img src="img/blog/1702141.jpg" alt=""> <!-- http://badzoot.com/wp-content/uploads/2014/02/GD10019142RoseBush-1.jpg -->
                                     <p>Apples and roses are both symbols of American gardening, but did you know that apple trees are essentially - botanically speaking - tree-versions of roses?</p>
@@ -309,8 +256,8 @@
                                     <p>So then, what part of the rose are we eating when we bite into a Red Delicious? Apples are basically swollen rose hips (The green bulge at the base of a rose). The feathery bits at the base of an apple are where the apple flower was once connected. As it turns out, rose hips are actually edible as well, and a great source of vitamin C. I don't recommend biting into a commercial rose (They are produced with chemicals not suitable for human consumption), but rose hip tea can be purchased at many stores.</p>
                                     <p>So if you're strapped for cash this Valentine's day, forget the bouquet of roses, and go with a bushel of apples instead. I'm sure your sweetheart won't mind. ;-)</p>
                                 </article>
-                                <article id="170213" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 13</h3>
+                                <article id="170213" class="row">
+                                    <h3 class="articleHeader">February 13</h3>
                                     <img src="img/blog/1702130.jpg" alt=""> <!-- http://media.graytvinc.com/images/DRACULA.png -->
                                     <img src="img/blog/1702131.jpg" alt=""> <!-- http://images.gr-assets.com/books/1183752234l/1452319.jpg -->
                                     <p>Early vampire myths were rather varied and contradictory. Bram Stoker is often credited with cannonizing vampire lore with his famous work, Dracula, but this distinction should actually be shared with Sheridan Le Fanu. Le Fanu published his work of Gothic fiction, Carmilla, 26 years before Stoker published Dracula.</p>
@@ -333,23 +280,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170209" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 9</h3>
+                                <article id="170209" class="row">
+                                    <h3 class="articleHeader">February 9</h3>
                                     <img src="img/blog/1702090.jpg" alt=""> <!-- http://image.insider-journeys.com/overview/china.jpg -->
                                     <img src="img/blog/1702091.jpg" alt=""> <!-- https://static01.nyt.com/images/2015/06/21/travel/21BRIEFS1/21BRIEFS1-master1050.jpg -->
                                     <p>The Chinese culture is probably the most resilient culture that has ever existed. Throughout China’s 2,000 year history, its core culture has not changed, in spite of being conquered by foreign powers several times. Unlike most cultures, which blend with or become assimilated into the culture of their conquerors after a few generations, China would actually assimilate their conquerors into the Chinese culture. So the question is, Who conquered whom?</p>
                                     <p>Their government may change hands, but the spirit of the Chinese people never dies.</p>
                                 </article>
-                                <article id="170208" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 8</h3>
+                                <article id="170208" class="row">
+                                    <h3 class="articleHeader">February 8</h3>
                                     <img src="img/blog/1702080.jpg" alt=""> <!-- https://blogs.discovery.wisc.edu/projects/files/2014/02/LeapMotion.jpg -->
                                     <img src="img/blog/1702081.jpg" alt=""> <!-- https://cdn0.vox-cdn.com/thumbor/AB4U1KQMAgxZVSb_OL3g8vDLjUI=/0x72:778x510/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/50031997/magic-leap.0.jpg -->
                                     <p>Computer interaction is about to get a major overhaul thanks to two new technologies:</p>
                                     <p>Leap Motion is a state-of-the-art gesture control system, meaning you can wave your hands about to interact with digital objects. The device is for sale now, but only a very limited number of applications support it so far.</p>
                                     <p>Magic Leap is still under development, but should be released soon. It creates augmented reality (digital images overlaid on the real-world) by shining precise light beams directly into the eye, rather than projecting an image on glasses. This creates the impression the digital item actually exists in reality rather than seeing the image as a display on top of reality.</p>
                                 </article>
-                                <article id="170207" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 7</h3>
+                                <article id="170207" class="row">
+                                    <h3 class="articleHeader">February 7</h3>
                                     <img src="img/blog/1702070.jpg" alt=""> <!-- http://www.oralanswers.com/wp-content/uploads/2011/03/dental_anesthetic_makes_heart_beat_faster_epinephrine.jpg -->
                                     <p>Most of us have either experienced or know someone that has experienced some form of dental anxiety. In fact, it has been said that up to 15% of adults are afraid to go to the dentist, a number reinforced by pop culture. As it turns out, there is a scientific explanation for this fear.</p>
                                     <p>The active ingredient in the numbing shots given by dentist is epinephrine, otherwise known as adrenaline. Epinephrine is produced by the body as a fear response, triggering the fight or flight mechanism. One of the effects of epinephrine <em>is</em> blocking pain (If you’re being chased by wolves, it’s not the time to worry about your sprained ankle), but it also stimulates the regions of the brain that process emotion, instinct, and memory creation.</p>
@@ -375,8 +322,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170202" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 2</h3>
+                                <article id="170202" class="row">
+                                    <h3 class="articleHeader">February 2</h3>
                                     <img src="img/blog/1702020.jpg" alt=""> <!-- https://en.wikipedia.org/wiki/File:Kantaro_Suzuki_suit.jpg -->
                                     <img src="img/blog/1702021.jpg" alt=""> <!-- http://i.dailymail.co.uk/i/pix/2014/07/29/article-2710104-201D4D0D00000578-865_634x386.jpg -->
                                     <p>The dropping of the atomic bombs on Hiroshima and Nagasaki may have been the result of the worst translation mistake in history. To understand why, we need to cover a bit of pre-WWII Japanese culture:</p>
@@ -386,20 +333,20 @@
                                     <p>Whatever was going on behind closed doors in Japan’s government, the Japanese media translated the statement with a nationalistic spin in their international English newspaper, claiming that Japan was ignoring the ultimatum and that they would continue fighting. When the US received no official response from Japan, they looked to the Japanese this media to gauge the atmosphere of the nation. The staunch claims of the newspaper were unintentionally made even more militant when US took “ignore” to mean “reject.”</p>
                                     <p>We’ll likely never know for sure what truly happened, and there are valid arguments both for and against the necessity of the bombings. But if history shows us anything, it’s that nothing is ever as simple as it seems on the surface.</p>
                                 </article>
-                                <article id="170201" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">February 1</h3>
+                                <article id="170201" class="row">
+                                    <h3 class="articleHeader">February 1</h3>
                                     <img src="img/blog/1702010.jpg" alt=""> <!-- https://www.google.com/search?q=elvish&rlz=1C1TSNP_enUS509US509&source=lnms&tbm=isch&sa=X&ved=0ahUKEwis2fjWzJjSAhXj7oMKHWf7C2oQ_AUICCgB&biw=1600&bih=794#tbm=isch&q=touch+screen+lightning&imgrc=lehb_PqzKLYdEM: -->
                                     <p>Cellphone touchscreens work by sending a tiny current of electricity through your fingertip and measuring where on the screen the electricity returns. This is why it is difficult to use a touchscreen if your fingers are very dry: Skin requires moisture to effectively conduct electricity.</p>
                                 </article>
-                                <article id="170131" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 31</h3>
+                                <article id="170131" class="row">
+                                    <h3 class="articleHeader">January 31</h3>
                                     <img src="img/blog/1701310.jpg" alt=""> <!-- http://img00.deviantart.net/7e16/i/2015/073/9/0/elvish_writing_styles_by_nirnaeth_en_ainur-d8lmst9.jpg -->
                                     <img src="img/blog/1701311.jpg" alt=""> <!-- http://eskipaper.com/images/lord-of-the-rings-ring-1.jpg -->
                                     <p>While sitting the trenches during WWI, J.R.R. Tolkien actually invented a complete language for the Elves in The Lord of the Rings and The Hobbit, but he never got around to writing it all down. Now all that fans have to go by are fragments of the language gleaned from Elvish phrases and poems in the books themselves.</p>
                                     <p>The language itself has Welsh and Norse influence, while inspiration for the written characters was draw from Sanskrit and Arabic. Furthermore, much of the Elvish lore has its roots in Norse and Celtic mythology.</p>
                                 </article>
-                                <article id="170130" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 30</h3>
+                                <article id="170130" class="row">
+                                    <h3 class="articleHeader">January 30</h3>
                                     <img src="img/blog/1701300.jpg" alt=""> <!-- http://vignette2.wikia.nocookie.net/hashashin/images/5/54/Flag_of_the_knights_templar_several_resolutions_by_jpviktorjokinen-d5pgsdj.jpg/revision/latest?cb=20151129180018 -->
                                     <img src="img/blog/1701301.jpg" alt=""> <!-- http://veryshorthistory.com/wp-content/uploads/2015/04/knights-templar.jpg -->
                                     <p>The chivalric order of the Knights Templar is credited with creating the first modern banking system. The order was established during the time of the Crusades, and its primary purpose was to provide protection for Christian pilgrims traveling to the Holy Land. However, as they set up posts along the routes from Europe to Jerusalem an important secondary purpose developed.</p>
@@ -426,14 +373,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170126" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 26</h3>
+                                <article id="170126" class="row">
+                                    <h3 class="articleHeader">January 26</h3>
                                     <img src="img/blog/1701260.jpg" alt=""> <!-- http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2013/02/Sorry-FINAL--1600x720.jpg -->
                                     <p>Apologize is an incredibly misused word based on its original meaning. Until about 1725 apologize meant “To make a defense”. If someone were caught doing something wrong or even if there was a simple disagreement of opinions, the offending party would be asked to apologize: to explain the reasoning behind their actions or their beliefs. It had nothing to do with expressing guilt or remorse. (Apologetics is the only modern word I know of that preserves the original meaning of apology.)</p>
                                     <p>So it is the ultimate oxymoron when a parent tells their child, “Stop making excuses and apologize!”</p>
                                 </article>
-                                <article id="170125" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 25</h3>
+                                <article id="170125" class="row">
+                                    <h3 class="articleHeader">January 25</h3>
                                     <img src="img/blog/1701250.jpg" alt=""> <!-- http://static.srcdn.com/wp-content/uploads/Improvised-Movie-Moments-Fellowship-Rings-Knife.jpg -->
                                     <img src="img/blog/1701251.jpg" alt=""> <!-- https://i.ytimg.com/vi/FL0jCRPM0yo/hqdefault.jpg -->
                                     <p>Viggo Mortensen had to give his all for his role of Aragorn in The Lord of the Rings. He was injured (or nearly injured) at least three times during the filming of the movies. In every case, Peter Jackson chose to use the antagonistic takes for the production cuts since Mortensen’s reactions were (obviously) more authentic.</p>
@@ -441,15 +388,15 @@
                                     <p>Later in the battle, an Uruk-Hai throws a knife at Aragorn, which he deflects with his sword. In real life, that was a real knife being thrown by a professional knife thrower. The knife was supposed to be thrown beside Mortensen so that he was never in danger during the shoot, but the knife thrower’s heavy makeup and prosthetics caused him to misjudge his throw, and the knife was throw directly at Mortensen!</p>
                                     <p>The third incident occurs in The Two Towers. In the movie Aragorn finds Pippin’s cloak clasp in a pile of partially cremated Uruk-Hai. Aragorn assumes that the hobbit is dead, and in his frustration kicks a helmet and lets out a heartfelt scream of agony. In real life, Mortensen was actually screaming in agony. No one told the props guy that Aragorn was supposed to kick the helmet, so the prop helmet that Mortenson sends flying through the air was made of solid steel. That cry of agony was due to Mortensen breaking his toe on helmet.</p>
                                 </article>
-                                <article id="170124" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 24</h3>
+                                <article id="170124" class="row">
+                                    <h3 class="articleHeader">January 24</h3>
                                     <img src="img/blog/1701240.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/736x/1e/49/b7/1e49b7903944d276e59754db30e7edce.jpg -->
                                     <img src="img/blog/1701241.jpg" alt=""> <!-- http://vignette2.wikia.nocookie.net/heroes-of-camelot/images/e/e0/Crossbowman.jpg/revision/latest?cb=20140202163403 -->
                                     <p>The Catholic church actually banned crossbow use shortly after they were invented. The reason: They made it too easy for people to kill one another. Unlike other weapons of the time – which took months or years of training before someone could use them effectively – the point-and-shoot approach of the crossbow allowed an untrained rabble to become a deadly supporting force in battles, particularly in siege defense.</p>
                                     <p>Of course this ban did not last long. Most nobles ignored the ban, preferring a tangible edge in battle to escaping potential consequences in the afterlife; and those who adhered to the ban began consistently loosing battles. Eventually the Church realized that, like-it-or-not, the only way the armies of the faithful would have a chance to survive in the age of the crossbow was to adopt its use themselves.</p>
                                 </article>
-                                <article id="170123" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 23</h3>
+                                <article id="170123" class="row">
+                                    <h3 class="articleHeader">January 23</h3>
                                     <img src="img/blog/1701230.jpg" alt=""> <!-- https://certifiedkit.com/wp-content/uploads/2016/01/silica_fracturing_dust_lung.jpg -->
                                     <p>Pneumonoultramicroscopicsilicovolcanoconiosis (Pneumono-ultra-microscopic-silico-volcano-coniosis) is the longest word found in English dictionaries. It refers to a lung disease caused by inhalation of fine particles of volcanic silica dust.</p>
                                 </article>
@@ -477,8 +424,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <article id="170119" class="uk-panel uk-panel-box uk-panel-header">
-                                    <h3 class="uk-panel-title articleHeader">January 19</h3>
+                                <article id="170119" class="row">
+                                    <h3 class="articleHeader">January 19</h3>
                                     <img src="img/blog/1701190.jpg" alt=""> <!-- http://www.gannett-cdn.com/-mm-/f0d9321cf92a2ab78421a3b017bf9acf8891d2ab/c=17-0-259-182&r=x408&c=540x405/local/-/media/2016/08/30/Cincinnati/Cincinnati/636081778806632925-Cluster-of-Asian-Lady-Beetles.jpg -->
                                     <img src="img/blog/1701191.jpg" alt=""> <!-- https://cdn20.patch.com/inline_images/22872998/1482056934.jpg -->
                                     <p>If you visited the rural American Midwest anytime in the early 2000s, you probably saw ladybugs, lots and lots of ladybugs. Whether you were eating out on your patio, moving the lawn, or reading a book on your living room sofa it was not surprising to have a ladybug in your field of vision. And that was in summer.</p>
@@ -494,52 +441,13 @@
             </div>
         </main>
 
-        <footer class="uk-grid uk-grid-collapse">
-            <div class="uk-width-6-6">
+        <footer class="row">
+            <div class="col-6-6-6">
                 <p>Copyright &copy; 2017 Andrew Kramer</p>
             </div>
         </footer>
     </div>
-
-    <!-- UI Kit Form & Modal Window -->
-    <div id="emailForm" class="uk-modal">
-        <div class="uk-modal-dialog">
-            <!-- Close Button Style -->
-            <a class="uk-modal-close uk-close uk-close-alt"></a>
-            <div class="uk-modal-header">
-                <h3>Contact Me</h3>
-            </div>
-            <form class="uk-form uk-form-stacked">
-                <fieldset>
-                    <div class="uk-form-row">
-                        <label for="formName" class="uk-form-label">Name</label>
-                        <input id="formName" class="uk-width-5-6" type="text" placeholder="Name">
-                    </div>
-                    <div class="uk-form-row">
-                        <label for="formEmail" class="uk-form-label">E-mail</label>
-                        <input id="formEmail" class="uk-width-4-6" type="email" placeholder="Email Address">
-                    </div>
-                    <div class="uk-form-row">
-                        <label for="formSelect" class="uk-form-label">How did you find me?</label>
-                        <select id="formSelect" class="uk-width-3-6">
-                            <option>Google</option>
-                            <option>Other Search Engine</option>
-                            <option>Recommended by a Friend</option>
-                            <option>Miskeyed URL</option>
-                        </select>
-                    </div>
-                    <label for="formMessage" class="uk-form-label">Message</label>
-                    <div id="formMessage" class="uk-form-row">
-                        <textarea class="uk-width-6-6" placeholder="Message"></textarea>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="uk-modal-footer uk-text-right">
-                <!-- Button Style -->
-                <button type="submit" class="uk-button uk-button-primary">Send</button>
-            </div>
-        </div>
-    </div>
+    <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

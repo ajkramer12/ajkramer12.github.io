@@ -1,5 +1,4 @@
 /*!normalize.css v2.1.3|MIT License|git.io/normalize*/
-/* line 10, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 article,
 aside,
 details,
@@ -15,87 +14,72 @@ summary {
   display: block;
 }
 
-/* line 26, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-/* line 34, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 41, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 [hidden],
 template {
   display: none;
 }
 
-/* line 51, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 57, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 body {
   margin: 0;
 }
 
-/* line 64, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 a {
   background: transparent;
 }
 
-/* line 69, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 74, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 83, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 89, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 94, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 100, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 dfn {
   font-style: italic;
 }
 
-/* line 105, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 111, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 mark {
   background: #FF0;
   color: #000;
 }
 
-/* line 117, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 code,
 kbd,
 pre,
@@ -104,22 +88,18 @@ samp {
   font-size: 1em;
 }
 
-/* line 126, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 pre {
   white-space: pre-wrap;
 }
 
-/* line 131, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 136, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 small {
   font-size: 80%;
 }
 
-/* line 141, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 sub,
 sup {
   font-size: 75%;
@@ -128,45 +108,37 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 148, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 sup {
   top: -0.5em;
 }
 
-/* line 151, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 sub {
   bottom: -0.25em;
 }
 
-/* line 158, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 img {
   border: 0;
 }
 
-/* line 163, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 170, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 figure {
   margin: 0;
 }
 
-/* line 177, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 fieldset {
   border: 1px solid #C0C0C0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 185, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 193, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 input,
 select,
@@ -176,19 +148,16 @@ textarea {
   margin: 0;
 }
 
-/* line 204, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 input {
   line-height: normal;
 }
 
-/* line 213, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 select {
   text-transform: none;
 }
 
-/* line 223, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -197,135 +166,118 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 232, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 239, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 248, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-/* line 255, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 261, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 269, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 277, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 4, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 9, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit;
 }
 
-/* line 20, C:/Users/Andrew J. Kramer/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "mainNav ";
+}
+
 .row::after {
   clear: both;
   content: "";
   display: block;
 }
 
-/* line 17, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 [class*='col-'] {
   float: left;
   margin-left: 1%;
   min-height: 1px;
 }
 
-/* line 22, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 .col-1-2-3,
 .col-1-6-6 {
   width: 15.67%;
 }
 
-/* line 26, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 .col-2-4-6 {
   width: 32.33%;
 }
 
-/* line 29, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 .col-3-6-6 {
   width: 49%;
 }
 
-/* line 32, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 .col-4-6-6 {
   width: 65.67%;
 }
 
-/* line 35, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 .col-5-4-6,
 .col-5-6-6 {
   width: 82.33%;
 }
 
-/* line 39, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 .col-6-6-6 {
   width: 99%;
 }
 
-/* line 43, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 h1 {
   font-size: 3em;
   line-height: 1.05;
 }
 
-/* line 46, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 h3 {
   font-size: 1.3em;
   line-height: 1.25;
 }
 
-/* line 49, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 h4 {
   font-size: 1.125em;
   line-height: 1.25;
 }
 
 @media (min-width: 401px) and (max-width: 876px) {
-  /* line 57, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-2-3 {
     width: 32.33%;
   }
-  /* line 60, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-2-4-6,
   .col-5-4-6 {
     width: 65.67%;
   }
-  /* line 64, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-6-6,
   .col-3-6-6,
   .col-4-6-6,
@@ -333,17 +285,14 @@ h4 {
   .col-6-6-6 {
     width: 99%;
   }
-  /* line 71, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   h1 {
     font-size: 2.5em;
     line-height: 1.125;
   }
-  /* line 74, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   h3 {
     font-size: 1.25em;
     line-height: 1.25;
   }
-  /* line 77, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   h4 {
     font-size: 1.125em;
     line-height: 1.11;
@@ -351,11 +300,9 @@ h4 {
 }
 
 @media (max-width: 400px) {
-  /* line 84, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-2-3 {
     width: 49%;
   }
-  /* line 87, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
   .col-1-6-6,
   .col-2-4-6,
   .col-3-6-6,
@@ -367,22 +314,17 @@ h4 {
   }
 }
 
-/* line 96, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 h1 {
   font-size: 2em;
   line-height: 1.25;
 }
 
-/* line 99, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 h3 {
   font-size: 1.2em;
   line-height: 1.15;
 }
 
-/* line 102, C:/Users/Andrew J. Kramer/WebstormProjects/eruditus12/ajkramer12.github.io/sass/grid.sass */
 h4 {
   font-size: 1.125em;
   line-height: 1.11;
 }
-
-/*# sourceMappingURL=../css/grid.map */

@@ -1,11 +1,8 @@
-/*
 $(document).ready(function () {
     $("#subNavToggle").click( function () {
         $(".subNav ul").toggle("slow", function(){});
     });
 });
-*/
-
 
 // Copied from Refill: Scroll on Page
 (function (jQuery) {
