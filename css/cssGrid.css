@@ -1,0 +1,86 @@
+.mainNav{
+  grid-area: mainNav;
+}
+
+.intro{
+  grid-area: intro;
+}
+
+.subNav{
+  grid-area: subNav;
+}
+
+.soma{
+  grid-area: soma;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "mainNav intro intro intro intro intro"
+                       "subNav soma soma soma soma soma";
+}
+
+
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.25;
+}
+
+
+
+@media (max-width: 876px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mainNav"
+                         "intro"
+                         "subNav"
+                         "soma";
+  }
+}
+
+@media (min-width: 401px) and (max-width: 876px) {
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+  h3 {
+    font-size: 1.25em;
+    line-height: 1.25;
+  }
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.11;
+  }
+}
+
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.15;
+  }
+
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.11;
+  }
+}

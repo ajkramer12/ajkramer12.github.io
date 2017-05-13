@@ -211,12 +211,6 @@ html {
   box-sizing: inherit;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "mainNav ";
-}
-
 .row::after {
   clear: both;
   content: "";

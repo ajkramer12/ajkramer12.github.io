@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>eruditus12</title>
     <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Personal Creation -->
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/cssGrid.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
         // Picture element HTML5 shiv
@@ -22,425 +22,412 @@
             </div>
         </header>
 
-        <main class="row">
-            <div class="main col-6-6-6">
-                <div class="top row">
-                    <nav class="mainNav col-1-6-6">
-                        <ul>
-                            <li><a href="index.html">Home / Blog</a></li>
-                            <li class="innerLink"><a href="nations.html">Tide of Nations</a></li>
-                            <li><a href="celestis.html">The Celestis Project</a></li>
-                        </ul>
-                    </nav>
-                    <div class="col-5-6-6">
-                        <div class="intro row">
-                            <div class="portraitCol col-1-2-3">
-                                <picture>
-                                    <!--[If IE 9]<video style="display: none;"><![endif]-->
-                                    <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                    <source srcset="img/portraitSmall.jpg" media="(min-width:877px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                    <source srcset="img/portrait.jpg" media="(min-width:481px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                    <!--[If IE 9]</video><![endif]-->
-                                    <img class="portrait" src="img/portraitDark.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                </picture>
-                            </div>
-                            <div class="col-5-4-6">
-                                <h4>Welcome!</h4>
-                                <p>My name is A.J. Kramer: future educator, web developer, swordsman wannabe, Tolkien nerd, amateur philosopher, history buff, and lover of all things related to the pursuit of knowledge.</p>
-                                <p>Here at eruditus12 expect to find a little bit of everything. This will be a repository for all my various projects, and an outlet for the random thoughts that pop into my head during the week.</p>
-                                <p>It's still a work in progress, but I'm always adding something.</p>
-                                <p>Enjoy your stay!</p>
-                                <p id="signature">A.J. Kramer</p>
-                            </div>
-                        </div>
-                    </div>
+        <main class="main">
+            <nav class="mainNav col-1-6-6">
+                <ul>
+                    <li><a href="index.html">Home / Blog</a></li>
+                    <li class="innerLink"><a href="nations.html">Tide of Nations</a></li>
+                    <li><a href="celestis.html">The Celestis Project</a></li>
+                </ul>
+            </nav>
+            <div class="intro row">
+                <div class="portraitCol col-1-2-3">
+                    <picture>
+                        <!--[If IE 9]<video style="display: none;"><![endif]-->
+                        <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                        <source srcset="img/portraitSmall.jpg" media="(min-width:877px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                        <source srcset="img/portrait.jpg" media="(min-width:481px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                        <!--[If IE 9]</video><![endif]-->
+                        <img class="portrait" src="img/portraitDark.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                    </picture>
                 </div>
-                <div class="row scroll-on-page">
-                    <nav class="subNavCol col-1-6-6">
-                        <nav class="subNav">
-                            <div class="subNavTop">
-                                <img id="subNavToggle" src="img/burgerButton.jpg" alt=""> <!-- http://www.flydigital.com.au/wp-content/uploads/2013/06/hamb1.png -->
-                                <h4>Dates</h4>
+                <div class="col-5-4-6">
+                    <h4>Welcome!</h4>
+                    <p>My name is A.J. Kramer: future educator, web developer, swordsman wannabe, Tolkien nerd, amateur philosopher, history buff, and lover of all things related to the pursuit of knowledge.</p>
+                    <p>Here at eruditus12 expect to find a little bit of everything. This will be a repository for all my various projects, and an outlet for the random thoughts that pop into my head during the week.</p>
+                    <p>It's still a work in progress, but I'm always adding something.</p>
+                    <p>Enjoy your stay!</p>
+                    <p id="signature">A.J. Kramer</p>
+                </div>
+            </div>
+            <nav class="subNav">
+                <div class="subNavTop">
+                    <img id="subNavToggle" src="img/burgerButton.jpg" alt=""> <!-- http://www.flydigital.com.au/wp-content/uploads/2013/06/hamb1.png -->
+                    <h4>Dates</h4>
+                </div>
+                <ul id="scroll-on-page-top">
+                    <li><a class="scroll-on-page-link" href="#170310">Mar 10</a></li>
+                    <li><a class="scroll-on-page-link" href="#170309">Mar 9</a></li>
+                    <li><a class="scroll-on-page-link" href="#170308">Mar 8</a></li>
+                    <li><a class="scroll-on-page-link" href="#170307">Mar 7</a></li>
+                    <li><a class="scroll-on-page-link" href="#170306">Mar 6</a></li>
+                    <li><a class="scroll-on-page-link" href="#170303">Mar 3</a></li>
+                    <li><a class="scroll-on-page-link" href="#170301">Mar 1</a></li>
+                    <li><a class="scroll-on-page-link" href="#170227">Feb 27</a></li>
+                    <li><a class="scroll-on-page-link" href="#170224">Feb 24</a></li>
+                    <li><a class="scroll-on-page-link" href="#170223">Feb 23</a></li>
+                    <li><a class="scroll-on-page-link" href="#170222">Feb 22</a></li>
+                    <li><a class="scroll-on-page-link" href="#170221">Feb 21</a></li>
+                    <li><a class="scroll-on-page-link" href="#170217">Feb 17</a></li>
+                    <li><a class="scroll-on-page-link" href="#170216">Feb 16</a></li>
+                    <li><a class="scroll-on-page-link" href="#170214">Feb 14</a></li>
+                    <li><a class="scroll-on-page-link" href="#170213">Feb 13</a></li>
+                    <li><a class="scroll-on-page-link" href="#170210">Feb 10</a></li>
+                    <li><a class="scroll-on-page-link" href="#170209">Feb 9</a></li>
+                    <li><a class="scroll-on-page-link" href="#170208">Feb 8</a></li>
+                    <li><a class="scroll-on-page-link" href="#170207">Feb 7</a></li>
+                    <li><a class="scroll-on-page-link" href="#170203">Feb 3</a></li>
+                    <li><a class="scroll-on-page-link" href="#170202">Feb 2</a></li>
+                    <li><a class="scroll-on-page-link" href="#170201">Feb 1</a></li>
+                    <li><a class="scroll-on-page-link" href="#170131">Jan 31</a></li>
+                    <li><a class="scroll-on-page-link" href="#170130">Jan 30</a></li>
+                    <li><a class="scroll-on-page-link" href="#170127">Jan 27</a></li>
+                    <li><a class="scroll-on-page-link" href="#170126">Jan 26</a></li>
+                    <li><a class="scroll-on-page-link" href="#170125">Jan 25</a></li>
+                    <li><a class="scroll-on-page-link" href="#170124">Jan 24</a></li>
+                    <li><a class="scroll-on-page-link" href="#170123">Jan 23</a></li>
+                    <li><a class="scroll-on-page-link" href="#170120">Jan 20</a></li>
+                    <li><a class="scroll-on-page-link" href="#170119">Jan 19</a></li>
+                </ul>
+            </nav>
+            <div class="row soma">
+                <div class="col-6-6-6">
+                    <!-- This and other .cards based on the Refill: Cards template -->
+                    <div class="cards">
+                        <div id="170310" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
                             </div>
-                            <ul id="scroll-on-page-top">
-                                <li><a class="scroll-on-page-link" href="#170310">Mar 10</a></li>
-                                <li><a class="scroll-on-page-link" href="#170309">Mar 9</a></li>
-                                <li><a class="scroll-on-page-link" href="#170308">Mar 8</a></li>
-                                <li><a class="scroll-on-page-link" href="#170307">Mar 7</a></li>
-                                <li><a class="scroll-on-page-link" href="#170306">Mar 6</a></li>
-                                <li><a class="scroll-on-page-link" href="#170303">Mar 3</a></li>
-                                <li><a class="scroll-on-page-link" href="#170301">Mar 1</a></li>
-                                <li><a class="scroll-on-page-link" href="#170227">Feb 27</a></li>
-                                <li><a class="scroll-on-page-link" href="#170224">Feb 24</a></li>
-                                <li><a class="scroll-on-page-link" href="#170223">Feb 23</a></li>
-                                <li><a class="scroll-on-page-link" href="#170222">Feb 22</a></li>
-                                <li><a class="scroll-on-page-link" href="#170221">Feb 21</a></li>
-                                <li><a class="scroll-on-page-link" href="#170217">Feb 17</a></li>
-                                <li><a class="scroll-on-page-link" href="#170216">Feb 16</a></li>
-                                <li><a class="scroll-on-page-link" href="#170214">Feb 14</a></li>
-                                <li><a class="scroll-on-page-link" href="#170213">Feb 13</a></li>
-                                <li><a class="scroll-on-page-link" href="#170210">Feb 10</a></li>
-                                <li><a class="scroll-on-page-link" href="#170209">Feb 9</a></li>
-                                <li><a class="scroll-on-page-link" href="#170208">Feb 8</a></li>
-                                <li><a class="scroll-on-page-link" href="#170207">Feb 7</a></li>
-                                <li><a class="scroll-on-page-link" href="#170203">Feb 3</a></li>
-                                <li><a class="scroll-on-page-link" href="#170202">Feb 2</a></li>
-                                <li><a class="scroll-on-page-link" href="#170201">Feb 1</a></li>
-                                <li><a class="scroll-on-page-link" href="#170131">Jan 31</a></li>
-                                <li><a class="scroll-on-page-link" href="#170130">Jan 30</a></li>
-                                <li><a class="scroll-on-page-link" href="#170127">Jan 27</a></li>
-                                <li><a class="scroll-on-page-link" href="#170126">Jan 26</a></li>
-                                <li><a class="scroll-on-page-link" href="#170125">Jan 25</a></li>
-                                <li><a class="scroll-on-page-link" href="#170124">Jan 24</a></li>
-                                <li><a class="scroll-on-page-link" href="#170123">Jan 23</a></li>
-                                <li><a class="scroll-on-page-link" href="#170120">Jan 20</a></li>
-                                <li><a class="scroll-on-page-link" href="#170119">Jan 19</a></li>
-                            </ul>
-                        </nav>
-                    </nav>
-                    <div class="col-5-6-6">
-                        <div class="row">
-                            <div class="col-6-6-6">
-                                <!-- This and other .cards based on the Refill: Cards template -->
-                                <div class="cards">
-                                    <div id="170310" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">March 10</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4>Friday Philosophical Musing:</h4>
-                                            <p class="articleSubtitle">The Philosophy of Science:</p>
-                                            <p>As we’ve discussed before, reason cannot determine truth, only what is most likely truth based on an argument’s starting assumptions.</p>
-                                            <p>The only things that logic and reason can absolutely identify are contradictions.</p>
-                                            <p>Incidentally, this is why science can never prove anything to be true: it can only determine our best guess based on current evidence.</p>
-                                            <p>Science can, however, prove things to be false, because it can identify contradictions.</p>
-                                            <p>This is why interviewed scientists can frequently sound vague and noncommittal with their claims (i.e. refusing to give a straightforward yes or no answer, and instead making references such as “studies indicate…” or “there is evidence to support…”). It’s not necessarily that they are trying to evade the question or that they don’t believe in their work, it’s just they realize that no matter how solid a theory is, one new piece of evidence can topple it (Physicists are now questioning the details of the Theory of Gravity due to inconsistencies between its predictions and events observed in deep space; no theory is safe.). Understanding the limitations of reason and the scientific method, they know that it is irresponsible to adamantly claim something as “proven.”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170309" class="row">
-                                    <h3 class="articleHeader">March 9</h3>
-                                    <img src="img/blog/1703090.jpg" alt=""> <!-- http://cdn.movieweb.com/img.news.tops/NEkDe66lUEHEnr_1_b.jpg -->
-                                    <p>Movie soundtrack could be considered modern day classical music. Many soundtrack composers follow the style of a certain era of classical music (John Williams of Star Wars fame considers himself a Neoclassical composer.), and a large amount of traditional classical music was written as score for operas and ballets, the movies of that time.</p>
-                                </article>
-                                <article id="170308" class="row">
-                                    <h3 class="articleHeader">March 8</h3>
-                                    <img src="img/blog/1703080.jpg" alt=""> <!-- https://www.biography.com/.image/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTI2NTgyMzIxOTcyMjU5NDU5/beethoven-600x600jpg.jpg -->
-                                    <p>Though technically a Classical era composer, Beethoven is credited with beginning the Romantic movement, and many music historians classify his music as bridging the two eras. Though he still used the rules of the Classical era as a foundation for his compositions, Beethoven dared to bend and break these rules as it suited him, creating powerful music that had a definite structure while evoking strong emotions. One the best examples of this is his masterpiece Symphony No. 5 (Possibly the most famous classical piece ever written, sadly now best recognized as the Judge Judy theme [da da da duh, da da da duuuuh]).</p>
-                                    <p>Beethoven’s forward-thinking compositions were sometimes ill-received and classified as avant-garde by his peers, but he was passionately dedicated to his work, in spite of suffering the agony of growing hearing problems throughout his career. Amazingly, Beethoven reportedly wrote (and conducted) his last symphony (Symphony No. 9) while completely deaf.</p>
-                                </article>
-                                <article id="170307" class="row">
-                                    <h3 class="articleHeader">March 7</h3>
-                                    <img src="img/blog/1703070.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/20/29/bf/2029bfeb806f55465a7206eb033f7b8c.jpg -->
-                                    <p>Baroque music is sometimes criticized for sounding tinny and cold in spite of its beauty. As it turns out, there is a reason for that. During the Baroque era, instruments from the brass section of the orchestra were frequently made of wood. These wooden instruments created a sound richer and warmer than their modern counterparts. Recently, music historians have been working to reproduce Baroque music with period-authentic instruments.</p>
-                                </article>
-                                <article id="170306" class="row">
-                                    <h3 class="articleHeader">March 6</h3>
-                                    <img src="img/blog/1703060.jpg" alt=""> <!-- https://web.csulb.edu/depts/music/images/rotator/baroque-boot-camp.jpg -->
-                                    <p>Classical music is some of the oldest music that we can accurately reproduce. Before classical music, there were few if any standards for writing sheet music, and what was written down frequently lacked detail. Outside of sacred pieces commissioned and written by the Church, musical pieces were passed directly from person to person via demonstration, and nearly everyone played by ear. However, this began changing in the 15th century when a method for indicating rhythm in sheet music was invented, and further in the 16th century when a method was developed to print sheet music on a mass scale. By the dawn of the 17th century, the atmosphere was ripe for a new age of musical creativity.</p>
-                                    <p>There are three distinct periods of Classical music: Baroque, Classical, and Romantic. The three eras had significant overlap, and categorize the priorities of composers during the time.</p>
-                                    <p>The Baroque era (early-1600s to mid-1700s) was the first era to fully take advantage of the ability to exchange written music on a large scale. With musical knowledge more accessible than ever, creativity exploded. Baroque music is known for its experimentation and ornamentation, though one can still hear its Medieval roots. Bach (Toccata and Fugue in D minor: the standard haunted house organ music [da do da, da do da duuh da]) and Handel (Messiah: The Hallelujah chorus) composed in this style.</p>
-                                    <p>By the Classical era (mid-1700s to early-1800s), many composers were done with mass experimentation and instead focused on standardizing music to meet certain ideals. This era produced some of the most technical music in history. Mozart (The Marriage of Figaro: “Figaro, Figaro, Fiiiigaaarooooo”) composed in this style</p>
-                                    <p>The Romantic era (early-1800s to early-1900s) was born from a belief that the technical correctness of the Classical era had sacrificed the emotional drive of music. One might consider this to be the “hippie” movement of classical music, as all rules and assumptions about how music should sound were thrown away in a quest to create music whose primary goal was to create an emotional response. Tchaikovsky (The Nutcracker Ballet) and Strauss (The Blue Danube: the stereotypical waltz [da do da duh duh, duh duh, duh duh]) composed in this style.</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170303" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">March 3</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4>Friday Philosophical Musing:</h4>
-                                            <p>What is the essence of self?</p>
-                                            <p>If we are more than an animate lump of flesh, what is the soul?</p>
-                                            <p>How does the soul connect to the body?</p>
-                                            <p>Are we our thoughts or something more?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170301" class="row">
-                                    <h3 class="articleHeader">March 1</h3>
-                                    <img src="img/blog/1703010.jpg" alt=""> <!-- https://www.herbalshop.com/blog/wp-content/uploads/2015/01/peach_seed.jpg -->
-                                    <p>Cyanide is known as a deadly poison, but you actually have cyanide in your body right now. Cyanide (-CN = a carbon atom and nitrogen atom bonded together with a reactive charge.) is an extremely reactive chemical that is a component of several molecules which are vital for life in the human body. When part of another molecule, cyanide is called a cyano group, and the molecules containing cyanide are called nitriles.</p>
-                                    <p>Cyanide is deadly because it is so reactive. It is necessary for life, no doubt, but only in miniscule quantities, and the body is able to produce all that it needs. When one consumes cyanide, the surplus reacts with hemoglobin in the blood, preventing it from effectively transporting oxygen throughout the body. The person typically dies from suffocation, in spite of the fact that they can breathe fine.</p>
-                                    <p>On a side note, Cyanide can be found in the bark and seeds of nearly every member of the Prunacae family, including Cherries, Plums, Peaches, and Almonds; though typically not in lethal concentrations. Almonds are the only seeds is this family that are safe to eat, but are remarkably similar to seeds from the other stone fruits. Crack open a peach pit, and two small “almonds” with fall out. These “almonds,” however, are full of cyanide.</p>
-                                </article>
-                                <article id="170227" class="row">
-                                    <h3 class="articleHeader">February 27</h3>
-                                    <img src="img/blog/1702270.jpg" alt=""> <!-- http://www.livescience.com/images/i/000/068/518/original/dna-strand.jpeg?interpolation=lanczos-none&downsize=*:1000 -->
-                                    <p>2012 was a huge year for geneticists. In that year one of the biggest discoveries in genetics since the discovery of DNA was published.</p>
-                                    <p>Most of us are least familiar with the concept of DNA (If nothing else, we know that InGen scientists can use it to make dinosaurs for a theme park island.) DNA (short for 2-Deoxyribonucleic Acid (2 de-OX-y-ri-bo-nu-CLE-ic Acid)) is the “code of life,” and each organism’s DNA contains the blueprint for how that body should be constructed. Sections of DNA code for specific building blocks of the body that can then self-assemble.</p>
-                                    <p>As scientists began to decode this blueprint, they were surprised to discover that only about 1% of an organism’s DNA actually seemed to code for anything. Several theories originated to try to explain the purpose of the noncoding “Junk” DNA, the most popular theory being that it served as a giant buffer so that if a random mutation occurred, there was only a small chance of anything important being affected.</p>
-                                    <p>However, in 2013 a group of over 400 scientists from the ENCODE project simultaneously published 30 papers detailing their research on “Junk” DNA. Their conclusion: the vast majority of “Junk” DNA is not junk at all, but is vital for the function of life. According to this research at least 80%, if not all, of the “junk” of DNA is instructions for when the different sections in the 1% of coding DNA actually get activated. In other words, 1% of DNA codes for life’s building blocks, 79-99% says when each building block actually gets produced, and only 0-20% is still potentially “junk.”</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170224" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">February 24</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4>Friday Philosophical Musing:</h4>
-                                            <p>If we can never fully know truth, how much information is necessary before we make a decision and take action?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170223" class="row">
-                                    <h3 class="articleHeader">February 23</h3>
-                                    <img src="img/blog/1702230.jpg" alt=""> <!-- http://clearlyexplained.com/_Media/americium_med_hr.jpeg -->
-                                    <img src="img/blog/1702231.jpg" alt=""> <!-- https://www.safety.com/wp-content/uploads/2012/12/smoke-detector-monitoring-system.jpg -->
-                                    <p>Did you know that you probably have a highly radioactive substance in your home right now? Americium (A-mer-EE-see-um) is a synthetic element that is comparable in radioactivity to plutonium, and it is the active ingredient in the humble household smoke alarm.</p>
-                                    <p>Americium gives off high levels of alpha particle radiation. In smoke alarms, this radiation is directed toward a radiation detector. As long as the detector is receiving a steady stream of radiation, the alarm stays silent. However, when smoke enters the device, the smoke particles block many of the alpha particles. The radiation detector picks up the drop in radiation and triggers the alarm.</p>
-                                    <p>Now, no need to go home and rip down your smoke detectors for fear of radiation poisoning. While all radiation can be dangerous in large quantities, the amount given off by the tiny sample of Americium in a smoke detector is insignificant. Furthermore, alpha particle radiation is the easiest to neutralize. Gamma wave radiation is the one you typically hear about – it requires thick lead barriers to be contained – but the chances of any alpha particles escaping the containment inside the smoke detector are astronomically small.</p>
-                                </article>
-                                <article id="170222" class="row">
-                                    <h3 class="articleHeader">February 22</h3>
-                                    <img src="img/blog/1702220.jpg" alt=""> <!-- https://expertbeacon.com/sites/default/files/act_quickly_and_calmly_when_suffering_a_boiling_water_burn.jpg -->
-                                    <img src="img/blog/1702221.jpg" alt=""> <!-- http://www.fphoto.com/site/asset/slideshow/Fphoto-43349706J-2RMd.jpg -->
-                                    <p>Pressure has a large effect on chemical properties. Take boiling water for instance:</p>
-                                    <p>Water molecules are constantly moving at high speeds, jostling and bumping into one another. When a molecule escapes the group, that molecule is considered steam. This is difficult to do though, because most of the time as a water molecule is leaving the group, it runs into an air molecule and bounces back into the mass. However, the hotter the water is, the faster the molecules move and the greater chance that they can muscle their way past any air molecules that block their path.</p>
-                                    <p>Boiling occurs when the temperature of the water is high enough that the force of the escaping water molecules is equivalent to the force of the air molecules that block them. At that point the pressure of the air is no longer strong enough to keep the water together, so the water molecules are rapidly assimilated into the surrounding air.</p>
-                                    <p>At normal pressure, water boils at 100°C (212°F), but if you increase air pressure, it can take much longer for water to boil. (As more pressure is exerted on the water, more force is needed for the water molecule to break free.)</p>
-                                    <p>This works at the opposite end of the spectrum as well. If you decrease the pressure, water can boil much sooner. (If less pressure is exerted on the water, less force is needed for a water molecule to break free.) In fact, water boils immediately in a vacuum, and there is even a certain pressure (612Pa) where water boils at 0°C (32°F). This is called the Triple Point, because in those conditions water can exist as ice, liquid, and steam simultaneously.</p>
-                                </article>
-                                <article id="170221" class="row">
-                                    <h3 class="articleHeader">February 21</h3>
-                                    <img src="img/blog/1702210.jpg" alt=""> <!-- https://inuvikphil.files.wordpress.com/2008/06/b-drainage-water.jpg -->
-                                    <img src="img/blog/1702211.jpg" alt=""> <!-- http://assets.careerspot.com.au/files/news/corroded-pipe.jpg -->
-                                    <p>The chemical Dihydrogen Monoxide has been the topic of several petitions and proposed bans over the past few decades. Reasons to ban the chemical have included points such as: it is highly reactive, it contributes to the greenhouse effect involved in global warming, it can be fatal when ingested at high quantities or inhaled, and it can corrode metal pipes in its purest form. In spite of these dangers there is no regulation of its use, it is frequently added to food, it is the most commonly used fire retardant, and it can even be found in high concentrations in rivers and streams.</p>
-                                    <p>Now here is the catch: Dihydrogen Monoxide is the chemical name for water. (Di-hydrogen Mon-oxide = Two Hydrogen One Oxygen = H<sub>2</sub>O) Everything said about water was true (Rusting is a chemical reaction, water vapor is one of many gases that can trap heat in the earth’s atmosphere, consuming gallons of water at a time can be fatal, and pure water can slowly dissolve the metal in the pipes that carry it), but common rhetoric tactics were used to grossly inflate its danger.</p>
-                                    <p>The purposes of the petitions have been varied, from simple jokes to calls for a stronger emphasis on critical thinking in schools.</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170217" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">February 17</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                            <p class="articleSubtitle">Truth outside of ourselves</p>
-                                            <p>Everything that we know outside of our own personal experiences is based on trust. It is easy to makes claims such as "Most people know...," "Everyone is...," or "...is normal"; but where do we get the evidence for these concepts?</p>
-                                            <p>Statistics are obviously one way that a single person can gain a grasp of the masses, and while this method is likely the best way that we have to gain such information, it is prone to considerable bias if done incorrectly (And the sample sizes and randomness that are necessary to run statistics correctly are frequently impractical).</p>
-                                            <p>Projection is another way the we decide what is true on a large scale. It is very easy to take norms that we have seen in our own personal experience and assume the tiny sliver of life which we have experienced is representative of the whole. Perhaps such projections are accurate, perhaps not.</p>
-                                            <p>Without trusting our projections or trusting statistics, we really can know nothing about the world outside our own life experiences. And as we discussed a few weeks ago, even the memories of our own life experiences are subject to bias.</p>
-                                            <p>This all goes back to Plato. There is absolute truth, but our methods are too inferior to truly grasp it. Instead we content ourselves with shadows of this ideal truth. Shadows that too often are morphed to meet our own biases. This shadow realm is the world of Protagoras where, "Man is the measure of all things."</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170216" class="row">
-                                    <h3 class="articleHeader">February 16</h3>
-                                    <img src="img/blog/1702160.jpg" alt=""> <!-- https://i.ytimg.com/vi/cwnGw2dMJfw/maxresdefault.jpg -->
-                                    <img src="img/blog/1702161.jpg" alt=""> <!-- http://weknowyourdreams.com/image.php?pic=/images/viking/viking-08.jpg -->
-                                    <p>If you were born in the Western Hemisphere, chances are, you are related to a Viking. Though the Viking culture originated in Scandinavia, they soon spread to most of Europe. Once the Roman Empire began to crumble, Viking tribes quickly staked their claims in the wake of the dying behemoth.</p>
-                                    <p>The French and Germans are descendants of the Franks and Bavarians. Italians are descendants of the Lombards. Spanish and Portuguese descended from the Visgoths. Even the English (The dominant ancestry of most Americans) came from an assimilation of three Viking tribes: the Angles, the Saxons, and the Normans.</p>
-                                    <p>During the colonial period, most of these Western European countries stayed true to their Viking heritage and boarded their ships once more to sail for new lands. Viking blood spread all across the globe as the conquerors intermarried with the conquered, and settled in their new lands.</p>
-                                    <p>See you in Valhalla.</p>
-                                </article>
-                                <article id="170214" class="row">
-                                    <h3 class="articleHeader">February 14</h3>
-                                    <img src="img/blog/1702140.jpg" alt=""> <!-- https://alaskabibleteacher.files.wordpress.com/2014/09/apple-tree.jpg -->
-                                    <img src="img/blog/1702141.jpg" alt=""> <!-- http://badzoot.com/wp-content/uploads/2014/02/GD10019142RoseBush-1.jpg -->
-                                    <p>Apples and roses are both symbols of American gardening, but did you know that apple trees are essentially - botanically speaking - tree-versions of roses?</p>
-                                    <p>Apples, pears, and roses are all in the family Rosacae. This may seem to be an unusual grouping at first, after all, two are trees and one is a flower! However, most plants have the ability to grow to tree size, but markers in their DNA limit their growth. So size is actually a poor way to group plants.</p>
-                                    <p>If, however, you compare the flowers of the wild rose to the flowers of the apple tree, you will find remarkable similarity. Since flowers are a plants reproductive organs, it actually makes a lot of sense to group plants based on their flowers' reproductive compatibility.</p>
-                                    <p>So then, what part of the rose are we eating when we bite into a Red Delicious? Apples are basically swollen rose hips (The green bulge at the base of a rose). The feathery bits at the base of an apple are where the apple flower was once connected. As it turns out, rose hips are actually edible as well, and a great source of vitamin C. I don't recommend biting into a commercial rose (They are produced with chemicals not suitable for human consumption), but rose hip tea can be purchased at many stores.</p>
-                                    <p>So if you're strapped for cash this Valentine's day, forget the bouquet of roses, and go with a bushel of apples instead. I'm sure your sweetheart won't mind. ;-)</p>
-                                </article>
-                                <article id="170213" class="row">
-                                    <h3 class="articleHeader">February 13</h3>
-                                    <img src="img/blog/1702130.jpg" alt=""> <!-- http://media.graytvinc.com/images/DRACULA.png -->
-                                    <img src="img/blog/1702131.jpg" alt=""> <!-- http://images.gr-assets.com/books/1183752234l/1452319.jpg -->
-                                    <p>Early vampire myths were rather varied and contradictory. Bram Stoker is often credited with cannonizing vampire lore with his famous work, Dracula, but this distinction should actually be shared with Sheridan Le Fanu. Le Fanu published his work of Gothic fiction, Carmilla, 26 years before Stoker published Dracula.</p>
-                                    <p>Carmilla tells the story of a female vampire that befriends her victims before draining their blood. Stoker pulled much of Dracula's lore from Carmilla, even (unintentionally?) copying themes of the story in his own work.</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170210" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">February 10</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4>Friday Philosophical Musing:</h4>
-                                            <p>The terms valid and sound (e.g valid reasoning, sound logic) tend to get thrown around as if they are synonyms, but actually there is a distinct difference between the two when referring to logic and reasoning.</p>
-                                            <p>Valid simply means that no logical errors were made in an argument, while sound means that no logical errors were made and the starting assumptions are correct. So then, all sound logic is also valid, but not all valid logic is sound. Only sound logic is “correct.” As an example:</p>
-                                            <p>The argument, “Chicken tastes like strawberries; I added chicken to my soup; My soup will taste like strawberries,” is actually a perfectly valid argument since the logic behind it is good. However, we know that chicken does not taste like strawberries, so the premise of the argument is wrong, and the argument is not sound.</p>
-                                            <p>Sound, of course, is a relative term, because accepted starting assumptions may differ from circumstance to circumstance. So a practical, general definition for a sound argument is “an argument that follows valid logic based on starting assumptions that do not contradict one another.”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170209" class="row">
-                                    <h3 class="articleHeader">February 9</h3>
-                                    <img src="img/blog/1702090.jpg" alt=""> <!-- http://image.insider-journeys.com/overview/china.jpg -->
-                                    <img src="img/blog/1702091.jpg" alt=""> <!-- https://static01.nyt.com/images/2015/06/21/travel/21BRIEFS1/21BRIEFS1-master1050.jpg -->
-                                    <p>The Chinese culture is probably the most resilient culture that has ever existed. Throughout China’s 2,000 year history, its core culture has not changed, in spite of being conquered by foreign powers several times. Unlike most cultures, which blend with or become assimilated into the culture of their conquerors after a few generations, China would actually assimilate their conquerors into the Chinese culture. So the question is, Who conquered whom?</p>
-                                    <p>Their government may change hands, but the spirit of the Chinese people never dies.</p>
-                                </article>
-                                <article id="170208" class="row">
-                                    <h3 class="articleHeader">February 8</h3>
-                                    <img src="img/blog/1702080.jpg" alt=""> <!-- https://blogs.discovery.wisc.edu/projects/files/2014/02/LeapMotion.jpg -->
-                                    <img src="img/blog/1702081.jpg" alt=""> <!-- https://cdn0.vox-cdn.com/thumbor/AB4U1KQMAgxZVSb_OL3g8vDLjUI=/0x72:778x510/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/50031997/magic-leap.0.jpg -->
-                                    <p>Computer interaction is about to get a major overhaul thanks to two new technologies:</p>
-                                    <p>Leap Motion is a state-of-the-art gesture control system, meaning you can wave your hands about to interact with digital objects. The device is for sale now, but only a very limited number of applications support it so far.</p>
-                                    <p>Magic Leap is still under development, but should be released soon. It creates augmented reality (digital images overlaid on the real-world) by shining precise light beams directly into the eye, rather than projecting an image on glasses. This creates the impression the digital item actually exists in reality rather than seeing the image as a display on top of reality.</p>
-                                </article>
-                                <article id="170207" class="row">
-                                    <h3 class="articleHeader">February 7</h3>
-                                    <img src="img/blog/1702070.jpg" alt=""> <!-- http://www.oralanswers.com/wp-content/uploads/2011/03/dental_anesthetic_makes_heart_beat_faster_epinephrine.jpg -->
-                                    <p>Most of us have either experienced or know someone that has experienced some form of dental anxiety. In fact, it has been said that up to 15% of adults are afraid to go to the dentist, a number reinforced by pop culture. As it turns out, there is a scientific explanation for this fear.</p>
-                                    <p>The active ingredient in the numbing shots given by dentist is epinephrine, otherwise known as adrenaline. Epinephrine is produced by the body as a fear response, triggering the fight or flight mechanism. One of the effects of epinephrine <em>is</em> blocking pain (If you’re being chased by wolves, it’s not the time to worry about your sprained ankle), but it also stimulates the regions of the brain that process emotion, instinct, and memory creation.</p>
-                                    <p>So from the moment you receive a shot at the dentist your body goes into a fear response (regardless of what you tell yourself about the situation) and your brain starts making detailed memories that are deeply connected to that visceral fear. Even if you don’t specifically remember being afraid (since you weren’t necessarily afraid at an intellectual level), your body still associates the event with fear at an instinctual level and presents emotions to discourage you from letting it happen again (Similar to how people tend to avoid foods that they ate right before contracting a stomach virus, whether the food poisoning was involved or not.)</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170203" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">February 3</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                            <p class="articleSubtitle">Parmenides’ Block Universe</p>
-                                            <p>In the 5th century BC, the philosopher Parmenides proposed that that all change was an illusion, that in reality everything was fixed: a single, solid block. Now on the face of it, this sounds totally preposterous, contradicting everything that we see and know. However, as crazy as it sounds, modern physics is beginning to point toward this philosophy.</p>
-                                            <p>Based on our current understanding, when Einstein’s Theory of Relativity is extrapolated out to its fullest, it necessitates the multidimensional universe that we discussed last week, a universe where time is merely another dimension, just as solid and tangible in higher dimensions as height and width are in our familiar three dimensions. If this is the case, then from the perspective of the higher dimensions our reality is a solid, unchanging, incredibly detailed block. Our past, present, and future are all simultaneously in existence when viewed from the higher perspectives, just as the top, middle, and bottom of a three dimensional object are simultaneously in existence from our perspective. Our perception is just moving through time toward a future that already exists.</p>
-                                            <p>Now here is where it gets sticky: If this is true, then what about free will and self-directed choice? If Parmenides and Einstein are correct, it would appear that we are just coasting along on a predetermined path with no say in how we live our lives. However, it is actually possible to have both a set future and a free will; it just all depends on your point of view. The best way to think of this is to think of a book.</p>
-                                            <p>A book is a solid fixed object, with a preset beginning, ending, and complex plot in the middle. Each part of the story exists simultaneously as the book sits on the shelf, and we can open the book to any page to see what is happening in the story at any time, in any order. Now, even though the entire story already exists from our perspective, we still recognize that from the characters’ perspective, the story’s time is very real, and that the characters have no knowledge of future events in their world. The characters are still making choices as their story unfolds; the fact that we know how the story is going to end in no way influences the characters’ free will or the choices they make in their world. We get a glimpse of this when we get totally immersed in a story (essentially putting ourselves in the characters’ dimension): When immersed, we never think that the characters are compelled by an outside force to think or act in a certain way, rather we live their story with them, sometimes even feeling suspense in spite of the fact that we already know how the story ends.</p>
-                                            <p>This is our existence. We are each characters in the story of our universe, whether that story has been authored by a higher being or come together through the laws of physics is another question entirely. We are but specks within the confines of our universe, and our universe is just one book in the vast library of the next dimension, and for all we know, that dimension is just one book in the library of yet a higher dimension.</p>
-                                            <p>Will we ever be able to fully comprehend this? Will we ever be able to transcend this universe and experience a higher dimension? I don’t know, but I do know that the full extent of reality is utterly awe-inspiring.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170202" class="row">
-                                    <h3 class="articleHeader">February 2</h3>
-                                    <img src="img/blog/1702020.jpg" alt=""> <!-- https://en.wikipedia.org/wiki/File:Kantaro_Suzuki_suit.jpg -->
-                                    <img src="img/blog/1702021.jpg" alt=""> <!-- http://i.dailymail.co.uk/i/pix/2014/07/29/article-2710104-201D4D0D00000578-865_634x386.jpg -->
-                                    <p>The dropping of the atomic bombs on Hiroshima and Nagasaki may have been the result of the worst translation mistake in history. To understand why, we need to cover a bit of pre-WWII Japanese culture:</p>
-                                    <p>Japan’s military had a proud history. Until WWII, no foreign power had ever successfully invaded Japan for its entire 1,500 year history. This led to an arrogant spirit in their military ranks: defeat was not an option; suicide was preferred over surrender. Furthermore, for most of Japan’s history, the government was controlled by the military, and the emperor was merely a puppet ruler. It was only in the mid 1800’s that power began to shift back to the imperial courts. This was a slow process, and by WWII the Japanese government still had to act tactfully in its dealings with the military.</p>
-                                    <p>When the Potsdam Ultimatum was made, giving Japan the option of surrender or destruction, this would not have been an easy decision for the Japanese government. The US had gained the upper hand in the Pacific, so the threat was viable, but surrender would not be an option for most of Japan’s military, and a civil war was highly likely if the Japanese government accepted the USA’s terms. Japan’s official response to the States was silence, and their response to the Japanese people was that Japan was treating the ultimatum with <dfn>mokusatsu</dfn>, and reminding them that the only alternative to surrender was to continue fighting.</p>
-                                    <p>This is where things get sketchy. <dfn>Mokusatsu</dfn> is a rather ambiguous word: to treat something with <dfn>mokusatsu</dfn> could either mean that you were ignoring it or that you felt contempt for it. While it is certainly possible that the Japanese government was legitimately ignoring the ultimatum, it is possible that they were publicly expressing their contempt for the order while quietly trying to convince their military that surrender was their best option (Japan asserts that this was the case). If the latter was correct it would make sense that the government would choose a word that the military and general public could choose translate as statement of defiance, while still leaving a backdoor for them to surrender gracefully. (i.e. Something like: “Oh no, we never meant that we were ignoring it. The situation certainly breeds contempt, but we knew all along that we had no choice but to surrender.”)</p>
-                                    <p>Whatever was going on behind closed doors in Japan’s government, the Japanese media translated the statement with a nationalistic spin in their international English newspaper, claiming that Japan was ignoring the ultimatum and that they would continue fighting. When the US received no official response from Japan, they looked to the Japanese this media to gauge the atmosphere of the nation. The staunch claims of the newspaper were unintentionally made even more militant when US took “ignore” to mean “reject.”</p>
-                                    <p>We’ll likely never know for sure what truly happened, and there are valid arguments both for and against the necessity of the bombings. But if history shows us anything, it’s that nothing is ever as simple as it seems on the surface.</p>
-                                </article>
-                                <article id="170201" class="row">
-                                    <h3 class="articleHeader">February 1</h3>
-                                    <img src="img/blog/1702010.jpg" alt=""> <!-- https://www.google.com/search?q=elvish&rlz=1C1TSNP_enUS509US509&source=lnms&tbm=isch&sa=X&ved=0ahUKEwis2fjWzJjSAhXj7oMKHWf7C2oQ_AUICCgB&biw=1600&bih=794#tbm=isch&q=touch+screen+lightning&imgrc=lehb_PqzKLYdEM: -->
-                                    <p>Cellphone touchscreens work by sending a tiny current of electricity through your fingertip and measuring where on the screen the electricity returns. This is why it is difficult to use a touchscreen if your fingers are very dry: Skin requires moisture to effectively conduct electricity.</p>
-                                </article>
-                                <article id="170131" class="row">
-                                    <h3 class="articleHeader">January 31</h3>
-                                    <img src="img/blog/1701310.jpg" alt=""> <!-- http://img00.deviantart.net/7e16/i/2015/073/9/0/elvish_writing_styles_by_nirnaeth_en_ainur-d8lmst9.jpg -->
-                                    <img src="img/blog/1701311.jpg" alt=""> <!-- http://eskipaper.com/images/lord-of-the-rings-ring-1.jpg -->
-                                    <p>While sitting the trenches during WWI, J.R.R. Tolkien actually invented a complete language for the Elves in The Lord of the Rings and The Hobbit, but he never got around to writing it all down. Now all that fans have to go by are fragments of the language gleaned from Elvish phrases and poems in the books themselves.</p>
-                                    <p>The language itself has Welsh and Norse influence, while inspiration for the written characters was draw from Sanskrit and Arabic. Furthermore, much of the Elvish lore has its roots in Norse and Celtic mythology.</p>
-                                </article>
-                                <article id="170130" class="row">
-                                    <h3 class="articleHeader">January 30</h3>
-                                    <img src="img/blog/1701300.jpg" alt=""> <!-- http://vignette2.wikia.nocookie.net/hashashin/images/5/54/Flag_of_the_knights_templar_several_resolutions_by_jpviktorjokinen-d5pgsdj.jpg/revision/latest?cb=20151129180018 -->
-                                    <img src="img/blog/1701301.jpg" alt=""> <!-- http://veryshorthistory.com/wp-content/uploads/2015/04/knights-templar.jpg -->
-                                    <p>The chivalric order of the Knights Templar is credited with creating the first modern banking system. The order was established during the time of the Crusades, and its primary purpose was to provide protection for Christian pilgrims traveling to the Holy Land. However, as they set up posts along the routes from Europe to Jerusalem an important secondary purpose developed.</p>
-                                    <p>All Templars swore an oath of poverty before being initiated into the order, so as European nobles acquired wealth in the Holy Land, they would frequently leave it under the Templars protection. (The same concept as having eunuchs oversee a harem). This eventually led to the Templars being in direct control of vast fortunes that they did not own themselves, fortunes that they would release it to their rightful owners on request.</p>
-                                    <p>The system grew in complexity as the problem of highway robbery increased. Nobles traveling to and from the Holy Land were prime targets for thieves, since the nobles would typically be traveling with large sums of money, either returning home with their conquests or setting forth with their capital. The Templars solved this problem by creating the precursor to wire transfers:</p>
-                                    <p>Before leaving for a journey a noble would deposit a large sum at the local Templar post in exchange for a personalized claim receipt. Once they arrived at their destination, they would visit a Templar post there and exchange their receipt for funds from the local vault.</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170127" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">January 27</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                            <p class="articleSubtitle">Eternalism</p>
-                                            <p>We are three dimensional beings that progress through a fourth dimension, time. The people we were ten years ago and the people we will be ten years from now are just as much us as the people that we are now, but we are only able to be aware of ourselves (and the rest of reality) in the part of time that we call the present.</p>
-                                            <p>Now let’s go a step down and imagine a two dimensional universe where there is no tangible concept of height. The beings in this realm exist in width and depth and move through height like we move through time. As an example, imagine a tiny disk in this realm that steadily grows larger during its “life” until it reaches five inches across and then disappears. From our three dimensional perspective we would see this being as a cone. We could see and interact with any part of the cone; we could even touch multiple parts of the cone simultaneously, but as we changed the location of our fingers it would appear to the two dimensional being that we were interacting at different “times.” For instance, we could have a finger at the top and bottom of the cone at the same time, but to the two dimensional being it would appear that we were there at the beginning, then we would disappear as their perception moved through the gap between our fingers, then as their “time” passed and they reached the top, we would suddenly appear again.</p>
-                                            <p>If we could communicate with this world, it would be difficult to convey to them the concept of tangible height and likely impossible to make them understand time as we know it; even if they could grasp the concept, they would probably never fully understand it. Furthermore, we would probably state things that made no sense to them (Try explaining that the spiral running through their two dimensional universe was actually a single, connected shape rather than a series of disconnected ovals). And to top it all off, we could tell them about their “future,” the heights that they had not yet perceived. In short, we would appear godlike to this realm.</p>
-                                            <p>Now imagine that we were able to ascend to a four dimensional realm where the concept of time was just as tangible as height, width, and depth. We could look down on three dimensional beings and see every detail of their lives at a glance while our lives moved through some unknown fifth dimension. We could exist entirely outside of the three dimensional reality, but still reach down and interact with it, though they would only be able to see a facet of our entirety.</p>
-                                            <p>If a being could exist at that level, they would appear to be godlike to our three dimensional minds. If any of the deities described in world religions exist, perhaps they are simply fourth dimensional beings.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170126" class="row">
-                                    <h3 class="articleHeader">January 26</h3>
-                                    <img src="img/blog/1701260.jpg" alt=""> <!-- http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2013/02/Sorry-FINAL--1600x720.jpg -->
-                                    <p>Apologize is an incredibly misused word based on its original meaning. Until about 1725 apologize meant “To make a defense”. If someone were caught doing something wrong or even if there was a simple disagreement of opinions, the offending party would be asked to apologize: to explain the reasoning behind their actions or their beliefs. It had nothing to do with expressing guilt or remorse. (Apologetics is the only modern word I know of that preserves the original meaning of apology.)</p>
-                                    <p>So it is the ultimate oxymoron when a parent tells their child, “Stop making excuses and apologize!”</p>
-                                </article>
-                                <article id="170125" class="row">
-                                    <h3 class="articleHeader">January 25</h3>
-                                    <img src="img/blog/1701250.jpg" alt=""> <!-- http://static.srcdn.com/wp-content/uploads/Improvised-Movie-Moments-Fellowship-Rings-Knife.jpg -->
-                                    <img src="img/blog/1701251.jpg" alt=""> <!-- https://i.ytimg.com/vi/FL0jCRPM0yo/hqdefault.jpg -->
-                                    <p>Viggo Mortensen had to give his all for his role of Aragorn in The Lord of the Rings. He was injured (or nearly injured) at least three times during the filming of the movies. In every case, Peter Jackson chose to use the antagonistic takes for the production cuts since Mortensen’s reactions were (obviously) more authentic.</p>
-                                    <p>The first two incidents can be seen during the Uruk-Hai ambush at the end of The Fellowship of the Ring. At some point in the battle, Aragorn gets hit in face. Mortensen actually had a tooth knocked out during the filming of this scene.</p>
-                                    <p>Later in the battle, an Uruk-Hai throws a knife at Aragorn, which he deflects with his sword. In real life, that was a real knife being thrown by a professional knife thrower. The knife was supposed to be thrown beside Mortensen so that he was never in danger during the shoot, but the knife thrower’s heavy makeup and prosthetics caused him to misjudge his throw, and the knife was throw directly at Mortensen!</p>
-                                    <p>The third incident occurs in The Two Towers. In the movie Aragorn finds Pippin’s cloak clasp in a pile of partially cremated Uruk-Hai. Aragorn assumes that the hobbit is dead, and in his frustration kicks a helmet and lets out a heartfelt scream of agony. In real life, Mortensen was actually screaming in agony. No one told the props guy that Aragorn was supposed to kick the helmet, so the prop helmet that Mortenson sends flying through the air was made of solid steel. That cry of agony was due to Mortensen breaking his toe on helmet.</p>
-                                </article>
-                                <article id="170124" class="row">
-                                    <h3 class="articleHeader">January 24</h3>
-                                    <img src="img/blog/1701240.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/736x/1e/49/b7/1e49b7903944d276e59754db30e7edce.jpg -->
-                                    <img src="img/blog/1701241.jpg" alt=""> <!-- http://vignette2.wikia.nocookie.net/heroes-of-camelot/images/e/e0/Crossbowman.jpg/revision/latest?cb=20140202163403 -->
-                                    <p>The Catholic church actually banned crossbow use shortly after they were invented. The reason: They made it too easy for people to kill one another. Unlike other weapons of the time – which took months or years of training before someone could use them effectively – the point-and-shoot approach of the crossbow allowed an untrained rabble to become a deadly supporting force in battles, particularly in siege defense.</p>
-                                    <p>Of course this ban did not last long. Most nobles ignored the ban, preferring a tangible edge in battle to escaping potential consequences in the afterlife; and those who adhered to the ban began consistently loosing battles. Eventually the Church realized that, like-it-or-not, the only way the armies of the faithful would have a chance to survive in the age of the crossbow was to adopt its use themselves.</p>
-                                </article>
-                                <article id="170123" class="row">
-                                    <h3 class="articleHeader">January 23</h3>
-                                    <img src="img/blog/1701230.jpg" alt=""> <!-- https://certifiedkit.com/wp-content/uploads/2016/01/silica_fracturing_dust_lung.jpg -->
-                                    <p>Pneumonoultramicroscopicsilicovolcanoconiosis (Pneumono-ultra-microscopic-silico-volcano-coniosis) is the longest word found in English dictionaries. It refers to a lung disease caused by inhalation of fine particles of volcanic silica dust.</p>
-                                </article>
-                                <div class="cards">
-                                    <div id="170120" class="card">
-                                        <div class="card-image">
-                                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-                                        </div>
-                                        <div class="card-header">
-                                            <h3 class="articleHeader">January 20</h3>
-                                        </div>
-                                        <div class="card-copy">
-                                            <h4 class="articleTitle">Friday Philosophical Musing:</h4>
-                                            <p class="articleSubtitle">Socratic debate</p>
-                                            <p>Many times after an argument, neither side changes their stance and each side wonders how the other could be so stupid.</p>
-                                            <p>This occurs because we can see the reasoning behind our stance, so we assume that the other person is being illogical.</p>
-                                            <p>However, an error in logic is only one reason why people disagree. Many times both sides have a completely valid, logical argument. The only reason that they disagree is because their starting assumptions are different.</p>
-                                            <p>These assumptions can be so foundational to each person that they cannot image anyone not having the same assumptions. That is where the misunderstanding truly takes place.</p>
-                                            <p>Most arguments take place over conclusions at the top of each person’s thought tree. Conclusions that make perfect sense assuming that the person’s starting assumptions are true. To successfully resolve an argument while minimizing conflict, it is important to try to dig down to the roots of someone’s stance early on in the disagreement. Keep going down their belief tree until you arrive at a place where you both have the same starting assumptions. Unless you are both starting with the same assumptions any discussion will be pointless.</p>
-                                            <p>Once you identify a common ground for each sides’ stance, that is typically the general area where the discussion’s topic should stay.</p>
-                                            <p>If you can convince someone to change a branch assumption that disagrees with yours by pointing out an error in their reasoning or providing information that they had not considered, all of the “leaves” at the top of their tree that were connected to that branch will follow.</p>
-                                            <p>However, If the root of someone’s stance is a life-assumption (a root assumption) that disagrees with one of yours, then they are not likely to change their view, and further discussion will likely be unfruitful. (Since you cannot come to a place where you have the same starting assumptions.) In these situations, you simply have to agree to disagree.</p>
-                                            <p>The benefit to this approach, even if the discussion ends in disagreement, is that both sides have worked to understand where the other is coming from. So even if they disagree at a root level, they can at least respect the thought process behind the other stance.</p>
-                                            <p>Now obviously if two starting assumptions are contradictory they cannot both be true. Only one (or neither) person is actually correct. But from a purely rational standpoint there is no way to say which is right or wrong, all you can do is point out contradictions.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article id="170119" class="row">
-                                    <h3 class="articleHeader">January 19</h3>
-                                    <img src="img/blog/1701190.jpg" alt=""> <!-- http://www.gannett-cdn.com/-mm-/f0d9321cf92a2ab78421a3b017bf9acf8891d2ab/c=17-0-259-182&r=x408&c=540x405/local/-/media/2016/08/30/Cincinnati/Cincinnati/636081778806632925-Cluster-of-Asian-Lady-Beetles.jpg -->
-                                    <img src="img/blog/1701191.jpg" alt=""> <!-- https://cdn20.patch.com/inline_images/22872998/1482056934.jpg -->
-                                    <p>If you visited the rural American Midwest anytime in the early 2000s, you probably saw ladybugs, lots and lots of ladybugs. Whether you were eating out on your patio, moving the lawn, or reading a book on your living room sofa it was not surprising to have a ladybug in your field of vision. And that was in summer.</p>
-                                    <p>Ladybugs overwinter in huddles in warm locations. In other words, mounds of red and black in people’s homes. Businesses with fluorescent lights would have to regularly clean the covers of dead beetles because they would begin to look like macabre mosaics. Little clusters of lady bugs would gather in the corners of ceilings and kitchen cupboards. Sometimes a lone explorer would leave its group to find another, running into people during its groggy, semi-hibernatic flight. To someone not used to the phenomenon it could feel like a cute, little, red-and-black version of Hitchcock’s “The Birds.”</p>
-                                    <p>Fortunately, this only lasted for a few years. The cause: Ecology.</p>
-                                    <p>Ladybugs are used by farmers for pest control. Normally, birds eat the ladybugs to help keep the population in check. Around year 2000, several farmers imported a bunch of Asian Ladybird Beetles (a lady bug subspecies) to deal with pests. These new lady bugs tasted different than the native lady bugs, so the birds wouldn’t eat them. With no predators, it didn’t take long for the population to explode.</p>
-                                    <p>Eventually the birds acquired a taste for the imports and the population leveled, but the residents of the American Midwest still remember the time when the ladybugs invaded.</p>
-                                </article>
+                            <div class="card-header">
+                                <h3 class="articleHeader">March 10</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4>Friday Philosophical Musing:</h4>
+                                <p class="articleSubtitle">The Philosophy of Science:</p>
+                                <p>As we’ve discussed before, reason cannot determine truth, only what is most likely truth based on an argument’s starting assumptions.</p>
+                                <p>The only things that logic and reason can absolutely identify are contradictions.</p>
+                                <p>Incidentally, this is why science can never prove anything to be true: it can only determine our best guess based on current evidence.</p>
+                                <p>Science can, however, prove things to be false, because it can identify contradictions.</p>
+                                <p>This is why interviewed scientists can frequently sound vague and noncommittal with their claims (i.e. refusing to give a straightforward yes or no answer, and instead making references such as “studies indicate…” or “there is evidence to support…”). It’s not necessarily that they are trying to evade the question or that they don’t believe in their work, it’s just they realize that no matter how solid a theory is, one new piece of evidence can topple it (Physicists are now questioning the details of the Theory of Gravity due to inconsistencies between its predictions and events observed in deep space; no theory is safe.). Understanding the limitations of reason and the scientific method, they know that it is irresponsible to adamantly claim something as “proven.”</p>
                             </div>
                         </div>
                     </div>
+                    <article id="170309" class="row">
+                        <h3 class="articleHeader">March 9</h3>
+                        <img src="img/blog/1703090.jpg" alt=""> <!-- http://cdn.movieweb.com/img.news.tops/NEkDe66lUEHEnr_1_b.jpg -->
+                        <p>Movie soundtrack could be considered modern day classical music. Many soundtrack composers follow the style of a certain era of classical music (John Williams of Star Wars fame considers himself a Neoclassical composer.), and a large amount of traditional classical music was written as score for operas and ballets, the movies of that time.</p>
+                    </article>
+                    <article id="170308" class="row">
+                        <h3 class="articleHeader">March 8</h3>
+                        <img src="img/blog/1703080.jpg" alt=""> <!-- https://www.biography.com/.image/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTI2NTgyMzIxOTcyMjU5NDU5/beethoven-600x600jpg.jpg -->
+                        <p>Though technically a Classical era composer, Beethoven is credited with beginning the Romantic movement, and many music historians classify his music as bridging the two eras. Though he still used the rules of the Classical era as a foundation for his compositions, Beethoven dared to bend and break these rules as it suited him, creating powerful music that had a definite structure while evoking strong emotions. One the best examples of this is his masterpiece Symphony No. 5 (Possibly the most famous classical piece ever written, sadly now best recognized as the Judge Judy theme [da da da duh, da da da duuuuh]).</p>
+                        <p>Beethoven’s forward-thinking compositions were sometimes ill-received and classified as avant-garde by his peers, but he was passionately dedicated to his work, in spite of suffering the agony of growing hearing problems throughout his career. Amazingly, Beethoven reportedly wrote (and conducted) his last symphony (Symphony No. 9) while completely deaf.</p>
+                    </article>
+                    <article id="170307" class="row">
+                        <h3 class="articleHeader">March 7</h3>
+                        <img src="img/blog/1703070.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/20/29/bf/2029bfeb806f55465a7206eb033f7b8c.jpg -->
+                        <p>Baroque music is sometimes criticized for sounding tinny and cold in spite of its beauty. As it turns out, there is a reason for that. During the Baroque era, instruments from the brass section of the orchestra were frequently made of wood. These wooden instruments created a sound richer and warmer than their modern counterparts. Recently, music historians have been working to reproduce Baroque music with period-authentic instruments.</p>
+                    </article>
+                    <article id="170306" class="row">
+                        <h3 class="articleHeader">March 6</h3>
+                        <img src="img/blog/1703060.jpg" alt=""> <!-- https://web.csulb.edu/depts/music/images/rotator/baroque-boot-camp.jpg -->
+                        <p>Classical music is some of the oldest music that we can accurately reproduce. Before classical music, there were few if any standards for writing sheet music, and what was written down frequently lacked detail. Outside of sacred pieces commissioned and written by the Church, musical pieces were passed directly from person to person via demonstration, and nearly everyone played by ear. However, this began changing in the 15th century when a method for indicating rhythm in sheet music was invented, and further in the 16th century when a method was developed to print sheet music on a mass scale. By the dawn of the 17th century, the atmosphere was ripe for a new age of musical creativity.</p>
+                        <p>There are three distinct periods of Classical music: Baroque, Classical, and Romantic. The three eras had significant overlap, and categorize the priorities of composers during the time.</p>
+                        <p>The Baroque era (early-1600s to mid-1700s) was the first era to fully take advantage of the ability to exchange written music on a large scale. With musical knowledge more accessible than ever, creativity exploded. Baroque music is known for its experimentation and ornamentation, though one can still hear its Medieval roots. Bach (Toccata and Fugue in D minor: the standard haunted house organ music [da do da, da do da duuh da]) and Handel (Messiah: The Hallelujah chorus) composed in this style.</p>
+                        <p>By the Classical era (mid-1700s to early-1800s), many composers were done with mass experimentation and instead focused on standardizing music to meet certain ideals. This era produced some of the most technical music in history. Mozart (The Marriage of Figaro: “Figaro, Figaro, Fiiiigaaarooooo”) composed in this style</p>
+                        <p>The Romantic era (early-1800s to early-1900s) was born from a belief that the technical correctness of the Classical era had sacrificed the emotional drive of music. One might consider this to be the “hippie” movement of classical music, as all rules and assumptions about how music should sound were thrown away in a quest to create music whose primary goal was to create an emotional response. Tchaikovsky (The Nutcracker Ballet) and Strauss (The Blue Danube: the stereotypical waltz [da do da duh duh, duh duh, duh duh]) composed in this style.</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170303" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">March 3</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4>Friday Philosophical Musing:</h4>
+                                <p>What is the essence of self?</p>
+                                <p>If we are more than an animate lump of flesh, what is the soul?</p>
+                                <p>How does the soul connect to the body?</p>
+                                <p>Are we our thoughts or something more?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170301" class="row">
+                        <h3 class="articleHeader">March 1</h3>
+                        <img src="img/blog/1703010.jpg" alt=""> <!-- https://www.herbalshop.com/blog/wp-content/uploads/2015/01/peach_seed.jpg -->
+                        <p>Cyanide is known as a deadly poison, but you actually have cyanide in your body right now. Cyanide (-CN = a carbon atom and nitrogen atom bonded together with a reactive charge.) is an extremely reactive chemical that is a component of several molecules which are vital for life in the human body. When part of another molecule, cyanide is called a cyano group, and the molecules containing cyanide are called nitriles.</p>
+                        <p>Cyanide is deadly because it is so reactive. It is necessary for life, no doubt, but only in miniscule quantities, and the body is able to produce all that it needs. When one consumes cyanide, the surplus reacts with hemoglobin in the blood, preventing it from effectively transporting oxygen throughout the body. The person typically dies from suffocation, in spite of the fact that they can breathe fine.</p>
+                        <p>On a side note, Cyanide can be found in the bark and seeds of nearly every member of the Prunacae family, including Cherries, Plums, Peaches, and Almonds; though typically not in lethal concentrations. Almonds are the only seeds is this family that are safe to eat, but are remarkably similar to seeds from the other stone fruits. Crack open a peach pit, and two small “almonds” with fall out. These “almonds,” however, are full of cyanide.</p>
+                    </article>
+                    <article id="170227" class="row">
+                        <h3 class="articleHeader">February 27</h3>
+                        <img src="img/blog/1702270.jpg" alt=""> <!-- http://www.livescience.com/images/i/000/068/518/original/dna-strand.jpeg?interpolation=lanczos-none&downsize=*:1000 -->
+                        <p>2012 was a huge year for geneticists. In that year one of the biggest discoveries in genetics since the discovery of DNA was published.</p>
+                        <p>Most of us are least familiar with the concept of DNA (If nothing else, we know that InGen scientists can use it to make dinosaurs for a theme park island.) DNA (short for 2-Deoxyribonucleic Acid (2 de-OX-y-ri-bo-nu-CLE-ic Acid)) is the “code of life,” and each organism’s DNA contains the blueprint for how that body should be constructed. Sections of DNA code for specific building blocks of the body that can then self-assemble.</p>
+                        <p>As scientists began to decode this blueprint, they were surprised to discover that only about 1% of an organism’s DNA actually seemed to code for anything. Several theories originated to try to explain the purpose of the noncoding “Junk” DNA, the most popular theory being that it served as a giant buffer so that if a random mutation occurred, there was only a small chance of anything important being affected.</p>
+                        <p>However, in 2013 a group of over 400 scientists from the ENCODE project simultaneously published 30 papers detailing their research on “Junk” DNA. Their conclusion: the vast majority of “Junk” DNA is not junk at all, but is vital for the function of life. According to this research at least 80%, if not all, of the “junk” of DNA is instructions for when the different sections in the 1% of coding DNA actually get activated. In other words, 1% of DNA codes for life’s building blocks, 79-99% says when each building block actually gets produced, and only 0-20% is still potentially “junk.”</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170224" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">February 24</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4>Friday Philosophical Musing:</h4>
+                                <p>If we can never fully know truth, how much information is necessary before we make a decision and take action?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170223" class="row">
+                        <h3 class="articleHeader">February 23</h3>
+                        <img src="img/blog/1702230.jpg" alt=""> <!-- http://clearlyexplained.com/_Media/americium_med_hr.jpeg -->
+                        <img src="img/blog/1702231.jpg" alt=""> <!-- https://www.safety.com/wp-content/uploads/2012/12/smoke-detector-monitoring-system.jpg -->
+                        <p>Did you know that you probably have a highly radioactive substance in your home right now? Americium (A-mer-EE-see-um) is a synthetic element that is comparable in radioactivity to plutonium, and it is the active ingredient in the humble household smoke alarm.</p>
+                        <p>Americium gives off high levels of alpha particle radiation. In smoke alarms, this radiation is directed toward a radiation detector. As long as the detector is receiving a steady stream of radiation, the alarm stays silent. However, when smoke enters the device, the smoke particles block many of the alpha particles. The radiation detector picks up the drop in radiation and triggers the alarm.</p>
+                        <p>Now, no need to go home and rip down your smoke detectors for fear of radiation poisoning. While all radiation can be dangerous in large quantities, the amount given off by the tiny sample of Americium in a smoke detector is insignificant. Furthermore, alpha particle radiation is the easiest to neutralize. Gamma wave radiation is the one you typically hear about – it requires thick lead barriers to be contained – but the chances of any alpha particles escaping the containment inside the smoke detector are astronomically small.</p>
+                    </article>
+                    <article id="170222" class="row">
+                        <h3 class="articleHeader">February 22</h3>
+                        <img src="img/blog/1702220.jpg" alt=""> <!-- https://expertbeacon.com/sites/default/files/act_quickly_and_calmly_when_suffering_a_boiling_water_burn.jpg -->
+                        <img src="img/blog/1702221.jpg" alt=""> <!-- http://www.fphoto.com/site/asset/slideshow/Fphoto-43349706J-2RMd.jpg -->
+                        <p>Pressure has a large effect on chemical properties. Take boiling water for instance:</p>
+                        <p>Water molecules are constantly moving at high speeds, jostling and bumping into one another. When a molecule escapes the group, that molecule is considered steam. This is difficult to do though, because most of the time as a water molecule is leaving the group, it runs into an air molecule and bounces back into the mass. However, the hotter the water is, the faster the molecules move and the greater chance that they can muscle their way past any air molecules that block their path.</p>
+                        <p>Boiling occurs when the temperature of the water is high enough that the force of the escaping water molecules is equivalent to the force of the air molecules that block them. At that point the pressure of the air is no longer strong enough to keep the water together, so the water molecules are rapidly assimilated into the surrounding air.</p>
+                        <p>At normal pressure, water boils at 100°C (212°F), but if you increase air pressure, it can take much longer for water to boil. (As more pressure is exerted on the water, more force is needed for the water molecule to break free.)</p>
+                        <p>This works at the opposite end of the spectrum as well. If you decrease the pressure, water can boil much sooner. (If less pressure is exerted on the water, less force is needed for a water molecule to break free.) In fact, water boils immediately in a vacuum, and there is even a certain pressure (612Pa) where water boils at 0°C (32°F). This is called the Triple Point, because in those conditions water can exist as ice, liquid, and steam simultaneously.</p>
+                    </article>
+                    <article id="170221" class="row">
+                        <h3 class="articleHeader">February 21</h3>
+                        <img src="img/blog/1702210.jpg" alt=""> <!-- https://inuvikphil.files.wordpress.com/2008/06/b-drainage-water.jpg -->
+                        <img src="img/blog/1702211.jpg" alt=""> <!-- http://assets.careerspot.com.au/files/news/corroded-pipe.jpg -->
+                        <p>The chemical Dihydrogen Monoxide has been the topic of several petitions and proposed bans over the past few decades. Reasons to ban the chemical have included points such as: it is highly reactive, it contributes to the greenhouse effect involved in global warming, it can be fatal when ingested at high quantities or inhaled, and it can corrode metal pipes in its purest form. In spite of these dangers there is no regulation of its use, it is frequently added to food, it is the most commonly used fire retardant, and it can even be found in high concentrations in rivers and streams.</p>
+                        <p>Now here is the catch: Dihydrogen Monoxide is the chemical name for water. (Di-hydrogen Mon-oxide = Two Hydrogen One Oxygen = H<sub>2</sub>O) Everything said about water was true (Rusting is a chemical reaction, water vapor is one of many gases that can trap heat in the earth’s atmosphere, consuming gallons of water at a time can be fatal, and pure water can slowly dissolve the metal in the pipes that carry it), but common rhetoric tactics were used to grossly inflate its danger.</p>
+                        <p>The purposes of the petitions have been varied, from simple jokes to calls for a stronger emphasis on critical thinking in schools.</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170217" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">February 17</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                <p class="articleSubtitle">Truth outside of ourselves</p>
+                                <p>Everything that we know outside of our own personal experiences is based on trust. It is easy to makes claims such as "Most people know...," "Everyone is...," or "...is normal"; but where do we get the evidence for these concepts?</p>
+                                <p>Statistics are obviously one way that a single person can gain a grasp of the masses, and while this method is likely the best way that we have to gain such information, it is prone to considerable bias if done incorrectly (And the sample sizes and randomness that are necessary to run statistics correctly are frequently impractical).</p>
+                                <p>Projection is another way the we decide what is true on a large scale. It is very easy to take norms that we have seen in our own personal experience and assume the tiny sliver of life which we have experienced is representative of the whole. Perhaps such projections are accurate, perhaps not.</p>
+                                <p>Without trusting our projections or trusting statistics, we really can know nothing about the world outside our own life experiences. And as we discussed a few weeks ago, even the memories of our own life experiences are subject to bias.</p>
+                                <p>This all goes back to Plato. There is absolute truth, but our methods are too inferior to truly grasp it. Instead we content ourselves with shadows of this ideal truth. Shadows that too often are morphed to meet our own biases. This shadow realm is the world of Protagoras where, "Man is the measure of all things."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170216" class="row">
+                        <h3 class="articleHeader">February 16</h3>
+                        <img src="img/blog/1702160.jpg" alt=""> <!-- https://i.ytimg.com/vi/cwnGw2dMJfw/maxresdefault.jpg -->
+                        <img src="img/blog/1702161.jpg" alt=""> <!-- http://weknowyourdreams.com/image.php?pic=/images/viking/viking-08.jpg -->
+                        <p>If you were born in the Western Hemisphere, chances are, you are related to a Viking. Though the Viking culture originated in Scandinavia, they soon spread to most of Europe. Once the Roman Empire began to crumble, Viking tribes quickly staked their claims in the wake of the dying behemoth.</p>
+                        <p>The French and Germans are descendants of the Franks and Bavarians. Italians are descendants of the Lombards. Spanish and Portuguese descended from the Visgoths. Even the English (The dominant ancestry of most Americans) came from an assimilation of three Viking tribes: the Angles, the Saxons, and the Normans.</p>
+                        <p>During the colonial period, most of these Western European countries stayed true to their Viking heritage and boarded their ships once more to sail for new lands. Viking blood spread all across the globe as the conquerors intermarried with the conquered, and settled in their new lands.</p>
+                        <p>See you in Valhalla.</p>
+                    </article>
+                    <article id="170214" class="row">
+                        <h3 class="articleHeader">February 14</h3>
+                        <img src="img/blog/1702140.jpg" alt=""> <!-- https://alaskabibleteacher.files.wordpress.com/2014/09/apple-tree.jpg -->
+                        <img src="img/blog/1702141.jpg" alt=""> <!-- http://badzoot.com/wp-content/uploads/2014/02/GD10019142RoseBush-1.jpg -->
+                        <p>Apples and roses are both symbols of American gardening, but did you know that apple trees are essentially - botanically speaking - tree-versions of roses?</p>
+                        <p>Apples, pears, and roses are all in the family Rosacae. This may seem to be an unusual grouping at first, after all, two are trees and one is a flower! However, most plants have the ability to grow to tree size, but markers in their DNA limit their growth. So size is actually a poor way to group plants.</p>
+                        <p>If, however, you compare the flowers of the wild rose to the flowers of the apple tree, you will find remarkable similarity. Since flowers are a plants reproductive organs, it actually makes a lot of sense to group plants based on their flowers' reproductive compatibility.</p>
+                        <p>So then, what part of the rose are we eating when we bite into a Red Delicious? Apples are basically swollen rose hips (The green bulge at the base of a rose). The feathery bits at the base of an apple are where the apple flower was once connected. As it turns out, rose hips are actually edible as well, and a great source of vitamin C. I don't recommend biting into a commercial rose (They are produced with chemicals not suitable for human consumption), but rose hip tea can be purchased at many stores.</p>
+                        <p>So if you're strapped for cash this Valentine's day, forget the bouquet of roses, and go with a bushel of apples instead. I'm sure your sweetheart won't mind. ;-)</p>
+                    </article>
+                    <article id="170213" class="row">
+                        <h3 class="articleHeader">February 13</h3>
+                        <img src="img/blog/1702130.jpg" alt=""> <!-- http://media.graytvinc.com/images/DRACULA.png -->
+                        <img src="img/blog/1702131.jpg" alt=""> <!-- http://images.gr-assets.com/books/1183752234l/1452319.jpg -->
+                        <p>Early vampire myths were rather varied and contradictory. Bram Stoker is often credited with cannonizing vampire lore with his famous work, Dracula, but this distinction should actually be shared with Sheridan Le Fanu. Le Fanu published his work of Gothic fiction, Carmilla, 26 years before Stoker published Dracula.</p>
+                        <p>Carmilla tells the story of a female vampire that befriends her victims before draining their blood. Stoker pulled much of Dracula's lore from Carmilla, even (unintentionally?) copying themes of the story in his own work.</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170210" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">February 10</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4>Friday Philosophical Musing:</h4>
+                                <p>The terms valid and sound (e.g valid reasoning, sound logic) tend to get thrown around as if they are synonyms, but actually there is a distinct difference between the two when referring to logic and reasoning.</p>
+                                <p>Valid simply means that no logical errors were made in an argument, while sound means that no logical errors were made and the starting assumptions are correct. So then, all sound logic is also valid, but not all valid logic is sound. Only sound logic is “correct.” As an example:</p>
+                                <p>The argument, “Chicken tastes like strawberries; I added chicken to my soup; My soup will taste like strawberries,” is actually a perfectly valid argument since the logic behind it is good. However, we know that chicken does not taste like strawberries, so the premise of the argument is wrong, and the argument is not sound.</p>
+                                <p>Sound, of course, is a relative term, because accepted starting assumptions may differ from circumstance to circumstance. So a practical, general definition for a sound argument is “an argument that follows valid logic based on starting assumptions that do not contradict one another.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170209" class="row">
+                        <h3 class="articleHeader">February 9</h3>
+                        <img src="img/blog/1702090.jpg" alt=""> <!-- http://image.insider-journeys.com/overview/china.jpg -->
+                        <img src="img/blog/1702091.jpg" alt=""> <!-- https://static01.nyt.com/images/2015/06/21/travel/21BRIEFS1/21BRIEFS1-master1050.jpg -->
+                        <p>The Chinese culture is probably the most resilient culture that has ever existed. Throughout China’s 2,000 year history, its core culture has not changed, in spite of being conquered by foreign powers several times. Unlike most cultures, which blend with or become assimilated into the culture of their conquerors after a few generations, China would actually assimilate their conquerors into the Chinese culture. So the question is, Who conquered whom?</p>
+                        <p>Their government may change hands, but the spirit of the Chinese people never dies.</p>
+                    </article>
+                    <article id="170208" class="row">
+                        <h3 class="articleHeader">February 8</h3>
+                        <img src="img/blog/1702080.jpg" alt=""> <!-- https://blogs.discovery.wisc.edu/projects/files/2014/02/LeapMotion.jpg -->
+                        <img src="img/blog/1702081.jpg" alt=""> <!-- https://cdn0.vox-cdn.com/thumbor/AB4U1KQMAgxZVSb_OL3g8vDLjUI=/0x72:778x510/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/50031997/magic-leap.0.jpg -->
+                        <p>Computer interaction is about to get a major overhaul thanks to two new technologies:</p>
+                        <p>Leap Motion is a state-of-the-art gesture control system, meaning you can wave your hands about to interact with digital objects. The device is for sale now, but only a very limited number of applications support it so far.</p>
+                        <p>Magic Leap is still under development, but should be released soon. It creates augmented reality (digital images overlaid on the real-world) by shining precise light beams directly into the eye, rather than projecting an image on glasses. This creates the impression the digital item actually exists in reality rather than seeing the image as a display on top of reality.</p>
+                    </article>
+                    <article id="170207" class="row">
+                        <h3 class="articleHeader">February 7</h3>
+                        <img src="img/blog/1702070.jpg" alt=""> <!-- http://www.oralanswers.com/wp-content/uploads/2011/03/dental_anesthetic_makes_heart_beat_faster_epinephrine.jpg -->
+                        <p>Most of us have either experienced or know someone that has experienced some form of dental anxiety. In fact, it has been said that up to 15% of adults are afraid to go to the dentist, a number reinforced by pop culture. As it turns out, there is a scientific explanation for this fear.</p>
+                        <p>The active ingredient in the numbing shots given by dentist is epinephrine, otherwise known as adrenaline. Epinephrine is produced by the body as a fear response, triggering the fight or flight mechanism. One of the effects of epinephrine <em>is</em> blocking pain (If you’re being chased by wolves, it’s not the time to worry about your sprained ankle), but it also stimulates the regions of the brain that process emotion, instinct, and memory creation.</p>
+                        <p>So from the moment you receive a shot at the dentist your body goes into a fear response (regardless of what you tell yourself about the situation) and your brain starts making detailed memories that are deeply connected to that visceral fear. Even if you don’t specifically remember being afraid (since you weren’t necessarily afraid at an intellectual level), your body still associates the event with fear at an instinctual level and presents emotions to discourage you from letting it happen again (Similar to how people tend to avoid foods that they ate right before contracting a stomach virus, whether the food poisoning was involved or not.)</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170203" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">February 3</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                <p class="articleSubtitle">Parmenides’ Block Universe</p>
+                                <p>In the 5th century BC, the philosopher Parmenides proposed that that all change was an illusion, that in reality everything was fixed: a single, solid block. Now on the face of it, this sounds totally preposterous, contradicting everything that we see and know. However, as crazy as it sounds, modern physics is beginning to point toward this philosophy.</p>
+                                <p>Based on our current understanding, when Einstein’s Theory of Relativity is extrapolated out to its fullest, it necessitates the multidimensional universe that we discussed last week, a universe where time is merely another dimension, just as solid and tangible in higher dimensions as height and width are in our familiar three dimensions. If this is the case, then from the perspective of the higher dimensions our reality is a solid, unchanging, incredibly detailed block. Our past, present, and future are all simultaneously in existence when viewed from the higher perspectives, just as the top, middle, and bottom of a three dimensional object are simultaneously in existence from our perspective. Our perception is just moving through time toward a future that already exists.</p>
+                                <p>Now here is where it gets sticky: If this is true, then what about free will and self-directed choice? If Parmenides and Einstein are correct, it would appear that we are just coasting along on a predetermined path with no say in how we live our lives. However, it is actually possible to have both a set future and a free will; it just all depends on your point of view. The best way to think of this is to think of a book.</p>
+                                <p>A book is a solid fixed object, with a preset beginning, ending, and complex plot in the middle. Each part of the story exists simultaneously as the book sits on the shelf, and we can open the book to any page to see what is happening in the story at any time, in any order. Now, even though the entire story already exists from our perspective, we still recognize that from the characters’ perspective, the story’s time is very real, and that the characters have no knowledge of future events in their world. The characters are still making choices as their story unfolds; the fact that we know how the story is going to end in no way influences the characters’ free will or the choices they make in their world. We get a glimpse of this when we get totally immersed in a story (essentially putting ourselves in the characters’ dimension): When immersed, we never think that the characters are compelled by an outside force to think or act in a certain way, rather we live their story with them, sometimes even feeling suspense in spite of the fact that we already know how the story ends.</p>
+                                <p>This is our existence. We are each characters in the story of our universe, whether that story has been authored by a higher being or come together through the laws of physics is another question entirely. We are but specks within the confines of our universe, and our universe is just one book in the vast library of the next dimension, and for all we know, that dimension is just one book in the library of yet a higher dimension.</p>
+                                <p>Will we ever be able to fully comprehend this? Will we ever be able to transcend this universe and experience a higher dimension? I don’t know, but I do know that the full extent of reality is utterly awe-inspiring.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170202" class="row">
+                        <h3 class="articleHeader">February 2</h3>
+                        <img src="img/blog/1702020.jpg" alt=""> <!-- https://en.wikipedia.org/wiki/File:Kantaro_Suzuki_suit.jpg -->
+                        <img src="img/blog/1702021.jpg" alt=""> <!-- http://i.dailymail.co.uk/i/pix/2014/07/29/article-2710104-201D4D0D00000578-865_634x386.jpg -->
+                        <p>The dropping of the atomic bombs on Hiroshima and Nagasaki may have been the result of the worst translation mistake in history. To understand why, we need to cover a bit of pre-WWII Japanese culture:</p>
+                        <p>Japan’s military had a proud history. Until WWII, no foreign power had ever successfully invaded Japan for its entire 1,500 year history. This led to an arrogant spirit in their military ranks: defeat was not an option; suicide was preferred over surrender. Furthermore, for most of Japan’s history, the government was controlled by the military, and the emperor was merely a puppet ruler. It was only in the mid 1800’s that power began to shift back to the imperial courts. This was a slow process, and by WWII the Japanese government still had to act tactfully in its dealings with the military.</p>
+                        <p>When the Potsdam Ultimatum was made, giving Japan the option of surrender or destruction, this would not have been an easy decision for the Japanese government. The US had gained the upper hand in the Pacific, so the threat was viable, but surrender would not be an option for most of Japan’s military, and a civil war was highly likely if the Japanese government accepted the USA’s terms. Japan’s official response to the States was silence, and their response to the Japanese people was that Japan was treating the ultimatum with <dfn>mokusatsu</dfn>, and reminding them that the only alternative to surrender was to continue fighting.</p>
+                        <p>This is where things get sketchy. <dfn>Mokusatsu</dfn> is a rather ambiguous word: to treat something with <dfn>mokusatsu</dfn> could either mean that you were ignoring it or that you felt contempt for it. While it is certainly possible that the Japanese government was legitimately ignoring the ultimatum, it is possible that they were publicly expressing their contempt for the order while quietly trying to convince their military that surrender was their best option (Japan asserts that this was the case). If the latter was correct it would make sense that the government would choose a word that the military and general public could choose translate as statement of defiance, while still leaving a backdoor for them to surrender gracefully. (i.e. Something like: “Oh no, we never meant that we were ignoring it. The situation certainly breeds contempt, but we knew all along that we had no choice but to surrender.”)</p>
+                        <p>Whatever was going on behind closed doors in Japan’s government, the Japanese media translated the statement with a nationalistic spin in their international English newspaper, claiming that Japan was ignoring the ultimatum and that they would continue fighting. When the US received no official response from Japan, they looked to the Japanese this media to gauge the atmosphere of the nation. The staunch claims of the newspaper were unintentionally made even more militant when US took “ignore” to mean “reject.”</p>
+                        <p>We’ll likely never know for sure what truly happened, and there are valid arguments both for and against the necessity of the bombings. But if history shows us anything, it’s that nothing is ever as simple as it seems on the surface.</p>
+                    </article>
+                    <article id="170201" class="row">
+                        <h3 class="articleHeader">February 1</h3>
+                        <img src="img/blog/1702010.jpg" alt=""> <!-- https://www.google.com/search?q=elvish&rlz=1C1TSNP_enUS509US509&source=lnms&tbm=isch&sa=X&ved=0ahUKEwis2fjWzJjSAhXj7oMKHWf7C2oQ_AUICCgB&biw=1600&bih=794#tbm=isch&q=touch+screen+lightning&imgrc=lehb_PqzKLYdEM: -->
+                        <p>Cellphone touchscreens work by sending a tiny current of electricity through your fingertip and measuring where on the screen the electricity returns. This is why it is difficult to use a touchscreen if your fingers are very dry: Skin requires moisture to effectively conduct electricity.</p>
+                    </article>
+                    <article id="170131" class="row">
+                        <h3 class="articleHeader">January 31</h3>
+                        <img src="img/blog/1701310.jpg" alt=""> <!-- http://img00.deviantart.net/7e16/i/2015/073/9/0/elvish_writing_styles_by_nirnaeth_en_ainur-d8lmst9.jpg -->
+                        <img src="img/blog/1701311.jpg" alt=""> <!-- http://eskipaper.com/images/lord-of-the-rings-ring-1.jpg -->
+                        <p>While sitting the trenches during WWI, J.R.R. Tolkien actually invented a complete language for the Elves in The Lord of the Rings and The Hobbit, but he never got around to writing it all down. Now all that fans have to go by are fragments of the language gleaned from Elvish phrases and poems in the books themselves.</p>
+                        <p>The language itself has Welsh and Norse influence, while inspiration for the written characters was draw from Sanskrit and Arabic. Furthermore, much of the Elvish lore has its roots in Norse and Celtic mythology.</p>
+                    </article>
+                    <article id="170130" class="row">
+                        <h3 class="articleHeader">January 30</h3>
+                        <img src="img/blog/1701300.jpg" alt=""> <!-- http://vignette2.wikia.nocookie.net/hashashin/images/5/54/Flag_of_the_knights_templar_several_resolutions_by_jpviktorjokinen-d5pgsdj.jpg/revision/latest?cb=20151129180018 -->
+                        <img src="img/blog/1701301.jpg" alt=""> <!-- http://veryshorthistory.com/wp-content/uploads/2015/04/knights-templar.jpg -->
+                        <p>The chivalric order of the Knights Templar is credited with creating the first modern banking system. The order was established during the time of the Crusades, and its primary purpose was to provide protection for Christian pilgrims traveling to the Holy Land. However, as they set up posts along the routes from Europe to Jerusalem an important secondary purpose developed.</p>
+                        <p>All Templars swore an oath of poverty before being initiated into the order, so as European nobles acquired wealth in the Holy Land, they would frequently leave it under the Templars protection. (The same concept as having eunuchs oversee a harem). This eventually led to the Templars being in direct control of vast fortunes that they did not own themselves, fortunes that they would release it to their rightful owners on request.</p>
+                        <p>The system grew in complexity as the problem of highway robbery increased. Nobles traveling to and from the Holy Land were prime targets for thieves, since the nobles would typically be traveling with large sums of money, either returning home with their conquests or setting forth with their capital. The Templars solved this problem by creating the precursor to wire transfers:</p>
+                        <p>Before leaving for a journey a noble would deposit a large sum at the local Templar post in exchange for a personalized claim receipt. Once they arrived at their destination, they would visit a Templar post there and exchange their receipt for funds from the local vault.</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170127" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">January 27</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                <p class="articleSubtitle">Eternalism</p>
+                                <p>We are three dimensional beings that progress through a fourth dimension, time. The people we were ten years ago and the people we will be ten years from now are just as much us as the people that we are now, but we are only able to be aware of ourselves (and the rest of reality) in the part of time that we call the present.</p>
+                                <p>Now let’s go a step down and imagine a two dimensional universe where there is no tangible concept of height. The beings in this realm exist in width and depth and move through height like we move through time. As an example, imagine a tiny disk in this realm that steadily grows larger during its “life” until it reaches five inches across and then disappears. From our three dimensional perspective we would see this being as a cone. We could see and interact with any part of the cone; we could even touch multiple parts of the cone simultaneously, but as we changed the location of our fingers it would appear to the two dimensional being that we were interacting at different “times.” For instance, we could have a finger at the top and bottom of the cone at the same time, but to the two dimensional being it would appear that we were there at the beginning, then we would disappear as their perception moved through the gap between our fingers, then as their “time” passed and they reached the top, we would suddenly appear again.</p>
+                                <p>If we could communicate with this world, it would be difficult to convey to them the concept of tangible height and likely impossible to make them understand time as we know it; even if they could grasp the concept, they would probably never fully understand it. Furthermore, we would probably state things that made no sense to them (Try explaining that the spiral running through their two dimensional universe was actually a single, connected shape rather than a series of disconnected ovals). And to top it all off, we could tell them about their “future,” the heights that they had not yet perceived. In short, we would appear godlike to this realm.</p>
+                                <p>Now imagine that we were able to ascend to a four dimensional realm where the concept of time was just as tangible as height, width, and depth. We could look down on three dimensional beings and see every detail of their lives at a glance while our lives moved through some unknown fifth dimension. We could exist entirely outside of the three dimensional reality, but still reach down and interact with it, though they would only be able to see a facet of our entirety.</p>
+                                <p>If a being could exist at that level, they would appear to be godlike to our three dimensional minds. If any of the deities described in world religions exist, perhaps they are simply fourth dimensional beings.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170126" class="row">
+                        <h3 class="articleHeader">January 26</h3>
+                        <img src="img/blog/1701260.jpg" alt=""> <!-- http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2013/02/Sorry-FINAL--1600x720.jpg -->
+                        <p>Apologize is an incredibly misused word based on its original meaning. Until about 1725 apologize meant “To make a defense”. If someone were caught doing something wrong or even if there was a simple disagreement of opinions, the offending party would be asked to apologize: to explain the reasoning behind their actions or their beliefs. It had nothing to do with expressing guilt or remorse. (Apologetics is the only modern word I know of that preserves the original meaning of apology.)</p>
+                        <p>So it is the ultimate oxymoron when a parent tells their child, “Stop making excuses and apologize!”</p>
+                    </article>
+                    <article id="170125" class="row">
+                        <h3 class="articleHeader">January 25</h3>
+                        <img src="img/blog/1701250.jpg" alt=""> <!-- http://static.srcdn.com/wp-content/uploads/Improvised-Movie-Moments-Fellowship-Rings-Knife.jpg -->
+                        <img src="img/blog/1701251.jpg" alt=""> <!-- https://i.ytimg.com/vi/FL0jCRPM0yo/hqdefault.jpg -->
+                        <p>Viggo Mortensen had to give his all for his role of Aragorn in The Lord of the Rings. He was injured (or nearly injured) at least three times during the filming of the movies. In every case, Peter Jackson chose to use the antagonistic takes for the production cuts since Mortensen’s reactions were (obviously) more authentic.</p>
+                        <p>The first two incidents can be seen during the Uruk-Hai ambush at the end of The Fellowship of the Ring. At some point in the battle, Aragorn gets hit in face. Mortensen actually had a tooth knocked out during the filming of this scene.</p>
+                        <p>Later in the battle, an Uruk-Hai throws a knife at Aragorn, which he deflects with his sword. In real life, that was a real knife being thrown by a professional knife thrower. The knife was supposed to be thrown beside Mortensen so that he was never in danger during the shoot, but the knife thrower’s heavy makeup and prosthetics caused him to misjudge his throw, and the knife was throw directly at Mortensen!</p>
+                        <p>The third incident occurs in The Two Towers. In the movie Aragorn finds Pippin’s cloak clasp in a pile of partially cremated Uruk-Hai. Aragorn assumes that the hobbit is dead, and in his frustration kicks a helmet and lets out a heartfelt scream of agony. In real life, Mortensen was actually screaming in agony. No one told the props guy that Aragorn was supposed to kick the helmet, so the prop helmet that Mortenson sends flying through the air was made of solid steel. That cry of agony was due to Mortensen breaking his toe on helmet.</p>
+                    </article>
+                    <article id="170124" class="row">
+                        <h3 class="articleHeader">January 24</h3>
+                        <img src="img/blog/1701240.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/736x/1e/49/b7/1e49b7903944d276e59754db30e7edce.jpg -->
+                        <img src="img/blog/1701241.jpg" alt=""> <!-- http://vignette2.wikia.nocookie.net/heroes-of-camelot/images/e/e0/Crossbowman.jpg/revision/latest?cb=20140202163403 -->
+                        <p>The Catholic church actually banned crossbow use shortly after they were invented. The reason: They made it too easy for people to kill one another. Unlike other weapons of the time – which took months or years of training before someone could use them effectively – the point-and-shoot approach of the crossbow allowed an untrained rabble to become a deadly supporting force in battles, particularly in siege defense.</p>
+                        <p>Of course this ban did not last long. Most nobles ignored the ban, preferring a tangible edge in battle to escaping potential consequences in the afterlife; and those who adhered to the ban began consistently loosing battles. Eventually the Church realized that, like-it-or-not, the only way the armies of the faithful would have a chance to survive in the age of the crossbow was to adopt its use themselves.</p>
+                    </article>
+                    <article id="170123" class="row">
+                        <h3 class="articleHeader">January 23</h3>
+                        <img src="img/blog/1701230.jpg" alt=""> <!-- https://certifiedkit.com/wp-content/uploads/2016/01/silica_fracturing_dust_lung.jpg -->
+                        <p>Pneumonoultramicroscopicsilicovolcanoconiosis (Pneumono-ultra-microscopic-silico-volcano-coniosis) is the longest word found in English dictionaries. It refers to a lung disease caused by inhalation of fine particles of volcanic silica dust.</p>
+                    </article>
+                    <div class="cards">
+                        <div id="170120" class="card">
+                            <div class="card-image">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                            </div>
+                            <div class="card-header">
+                                <h3 class="articleHeader">January 20</h3>
+                            </div>
+                            <div class="card-copy">
+                                <h4 class="articleTitle">Friday Philosophical Musing:</h4>
+                                <p class="articleSubtitle">Socratic debate</p>
+                                <p>Many times after an argument, neither side changes their stance and each side wonders how the other could be so stupid.</p>
+                                <p>This occurs because we can see the reasoning behind our stance, so we assume that the other person is being illogical.</p>
+                                <p>However, an error in logic is only one reason why people disagree. Many times both sides have a completely valid, logical argument. The only reason that they disagree is because their starting assumptions are different.</p>
+                                <p>These assumptions can be so foundational to each person that they cannot image anyone not having the same assumptions. That is where the misunderstanding truly takes place.</p>
+                                <p>Most arguments take place over conclusions at the top of each person’s thought tree. Conclusions that make perfect sense assuming that the person’s starting assumptions are true. To successfully resolve an argument while minimizing conflict, it is important to try to dig down to the roots of someone’s stance early on in the disagreement. Keep going down their belief tree until you arrive at a place where you both have the same starting assumptions. Unless you are both starting with the same assumptions any discussion will be pointless.</p>
+                                <p>Once you identify a common ground for each sides’ stance, that is typically the general area where the discussion’s topic should stay.</p>
+                                <p>If you can convince someone to change a branch assumption that disagrees with yours by pointing out an error in their reasoning or providing information that they had not considered, all of the “leaves” at the top of their tree that were connected to that branch will follow.</p>
+                                <p>However, If the root of someone’s stance is a life-assumption (a root assumption) that disagrees with one of yours, then they are not likely to change their view, and further discussion will likely be unfruitful. (Since you cannot come to a place where you have the same starting assumptions.) In these situations, you simply have to agree to disagree.</p>
+                                <p>The benefit to this approach, even if the discussion ends in disagreement, is that both sides have worked to understand where the other is coming from. So even if they disagree at a root level, they can at least respect the thought process behind the other stance.</p>
+                                <p>Now obviously if two starting assumptions are contradictory they cannot both be true. Only one (or neither) person is actually correct. But from a purely rational standpoint there is no way to say which is right or wrong, all you can do is point out contradictions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <article id="170119" class="row">
+                        <h3 class="articleHeader">January 19</h3>
+                        <img src="img/blog/1701190.jpg" alt=""> <!-- http://www.gannett-cdn.com/-mm-/f0d9321cf92a2ab78421a3b017bf9acf8891d2ab/c=17-0-259-182&r=x408&c=540x405/local/-/media/2016/08/30/Cincinnati/Cincinnati/636081778806632925-Cluster-of-Asian-Lady-Beetles.jpg -->
+                        <img src="img/blog/1701191.jpg" alt=""> <!-- https://cdn20.patch.com/inline_images/22872998/1482056934.jpg -->
+                        <p>If you visited the rural American Midwest anytime in the early 2000s, you probably saw ladybugs, lots and lots of ladybugs. Whether you were eating out on your patio, moving the lawn, or reading a book on your living room sofa it was not surprising to have a ladybug in your field of vision. And that was in summer.</p>
+                        <p>Ladybugs overwinter in huddles in warm locations. In other words, mounds of red and black in people’s homes. Businesses with fluorescent lights would have to regularly clean the covers of dead beetles because they would begin to look like macabre mosaics. Little clusters of lady bugs would gather in the corners of ceilings and kitchen cupboards. Sometimes a lone explorer would leave its group to find another, running into people during its groggy, semi-hibernatic flight. To someone not used to the phenomenon it could feel like a cute, little, red-and-black version of Hitchcock’s “The Birds.”</p>
+                        <p>Fortunately, this only lasted for a few years. The cause: Ecology.</p>
+                        <p>Ladybugs are used by farmers for pest control. Normally, birds eat the ladybugs to help keep the population in check. Around year 2000, several farmers imported a bunch of Asian Ladybird Beetles (a lady bug subspecies) to deal with pests. These new lady bugs tasted different than the native lady bugs, so the birds wouldn’t eat them. With no predators, it didn’t take long for the population to explode.</p>
+                        <p>Eventually the birds acquired a taste for the imports and the population leveled, but the residents of the American Midwest still remember the time when the ladybugs invaded.</p>
+                    </article>
                 </div>
             </div>
         </main>
-
         <footer class="row">
             <div class="col-6-6-6">
                 <p>Copyright &copy; 2017 Andrew Kramer</p>
