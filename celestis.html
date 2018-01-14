@@ -4,222 +4,58 @@
     <meta charset="UTF-8">
     <title>eruditus12</title>
     <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Personal Creation -->
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
     <script>
         // Picture element HTML5 shiv
         document.createElement("picture");
+        document.createElement('main');
     </script>
     <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
 <div class="container">
     <header class="row">
-        <div class="col-6-6-6">
+        <div class="col-sm-12">
             <h1>eruditus12</h1>
             <h3>Random thoughts that leaked out of my head</h3>
         </div>
     </header>
 
-    <main class="row">
-        <div class="main col-6-6-6">
-            <div class="top row">
-                <nav class="mainNav col-1-6-6">
-                    <ul>
-                        <li class="mainNavButton"><a href="index.html">Home / Blog</a></li>
-                        <li class="mainNavButton innerLink"><a href="nations.html">Tide of Nations</a></li>
-                        <li class="mainNavButton"><a href="celestis.html">The Celestis Project</a></li>
-                    </ul>
-                </nav>
-                <div class="col-5-6-6">
-                    <div class="intro row">
-                        <div class="portraitCol col-1-2-3">
-                            <picture>
-                                <!--[If IE 9]<video style="display: none;"><![endif]-->
-                                <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                <source srcset="img/portraitSmall.jpg" media="(min-width:877px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                <source srcset="img/portrait.jpg" media="(min-width:481px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                                <!--[If IE 9]</video><![endif]-->
-                                <img class="portrait" src="img/portraitDark.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
-                            </picture>
-                        </div>
-                        <div class="col-5-4-6">
-                            <h2 class="title">The Celestis Project</h2>
-                            <p>Okay, so I’m not just a Tolkien nerd; I’m a straight-up nerd when it comes to just about any Sci-Fi or Fantasy work. I also like finding hidden connections between things, whether they were originally intended to be connected or not. (I’m a synesthete, go figure.)</p>
-                            <p>Enter, The Celestis Project.</p>
-                            <p>As is turns out storytellers are not always very creative, and many Sci-Fi and Fantasy works have nearly identical motifs and character archetypes. There is enough similarity that a strong argument can be made that several popular franchises exist in the same universe, our universe. (Think, The Pixar Theory on steroids)</p>
-                            <p>The Celestis Project will be web library written from the perspective of a conspiracy theorist that has stumbled across evidence that Star Wars, Stargate, Lord of the Rings, Assassin’s Creed, and a smattering of other franchises are all historical accounts of real events that took place in within our universe; that human’s originated in another galaxy where they were cared for by a superior race until that race enslaved us and an alien resistance brought us here by way of the Star Wars galaxy, all the while being pursued by mercenaries or betrayed by their own kind.</p>
-                            <p>The glue that holds this concept together is the premise that the Ancients of Stargate, the Celestials of Star Wars, the Valar and Elves of Lord of the Rings, and the Precursors of Assassin’s Creed are all the same species, a superior species that has a natural ability to manipulate energy.</p>
-                            <p>Don’t believe me? Consider this: They are all highly advanced races that are torn between protecting and enslaving humans, yet even those helping humans typically take an aloof and distant stance; All build technological masterpieces that last for millennia; All show at least some ability of heightened mental awareness and manipulation, including, but not limited to telekinesis; All have some way in which they can remove themselves from the plane of human existence, and All use rings and fire throughout their creations and symbolism.</p>
-                            <p>I have the primary mental model complete, but I’m still working on finalizing some research and writing down the timeline (Yes, even the timelines mesh, so well it is uncanny). The final product will center around a D3 visualization that allows users to explore the timeline. I hope to have a rudimentary version of the project up by Spring.</p>
-                        </div>
-                    </div>
-                </div>
+    <main class="main">
+        <nav class="mainNav col-sm-12 col-md-2">
+            <ul>
+                <li><a href="index.html">Home / Blog</a></li>
+                <li class="innerLink"><a href="nations.html">Tide of Nations</a></li>
+                <li><a href="celestis.html">The Celestis Project</a></li>
+            </ul>
+        </nav>
+        <div class="intro row">
+            <div class="portraitCol col-sm-6 col-md-2">
+                <picture>
+                    <!--[If IE 9]<video style="display: none;"><![endif]-->
+                    <source srcset="img/portrait.jpg" media="(min-width:1045px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                    <source srcset="img/portraitSmall.jpg" media="(min-width:877px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                    <source srcset="img/portrait.jpg" media="(min-width:481px)"> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                    <!--[If IE 9]</video><![endif]-->
+                    <img class="portrait" src="img/portraitDark.jpg" alt=""> <!-- https://s-media-cache-ak0.pinimg.com/originals/23/09/d9/2309d9c77a3047b12dc802a96f4b6a4b.jpg -->
+                </picture>
             </div>
-            <div class="badges col-6-6-6">
-                <svg id="badgesSVG" x="0px" y="0px" width="100%" height="300px" >
-                    <g id="lordOfTheRingsBadge">
-                        <path id="lordOfTheRingsBadge0" fill-rule="evenodd" clip-rule="evenodd" d="M137.636,176.298c-1.019-1.412-2.117-2.77-3.035-4.239
-                            c-2.052-3.286-2.602-6.812-1.338-10.531c0.254-0.747,0.646-1.448,1.063-2.366c-3.007-0.867-5.361,0.485-7.045,2.269
-                            c-2.387,2.528-4.868,5.324-6.114,8.479c-1.338,3.386,0.224,6.633,3.673,8.599c-3.109,0.09-3.663-2.572-4.735-4.895
-                            c-4.517,3.925-4.882,12.005-12.784,11.62c6.674-0.885,8.167-6.553,10.101-11.439c1.985-5.018,4.635-9.389,8.614-13.008
-                            c6.831-6.214,16.54-6.605,25.013-0.46c-0.655-1.727-0.881-2.98-1.535-3.942c-5.963-8.778-13.05-11.672-23.426-9.467
-                            c-3.094,0.657-6.125,1.657-9.131,2.661c-5.753,1.922-9.398,6.459-13.281,10.758c-2.794,3.094-5.568,6.433-8.998,8.671
-                            c-4.609,3.009-4.68,6.925-3.988,11.431c0.028,0.183,0.004,0.375,0.004,0.585c-2.188-1.773-2.463-3.075-1.817-7.251
-                            c-4.867-1.715-9.531-3.662-14.373-4.915c-1.98-0.514-4.615-0.02-6.439,0.965c-1.066,0.575-1.121,3.025-1.535,4.334
-                            c-2.48-2.335-1.506-5.433,3.37-7.676c-0.372-0.98-0.833-1.957-1.103-2.983c-0.232-0.887-0.246-1.831-0.181-2.76
-                            c3.385,6.683,12.337,11.225,17.787,8.605c-4.163-2.065-6.512-5.322-7.015-9.768c-0.141-1.251,0.131-2.543,0.075-3.81
-                            c-0.177-3.94-0.421-7.877-0.692-12.771c1.304,3.655,2.324,6.517,3.333,9.349c1.763-0.223,3.412-0.432,5.061-0.641
-                            c0.117,0.316,0.233,0.631,0.35,0.946c-4.08,0.036-6.411,1.904-6.754,5.878c-0.484,5.607,5.74,10.355,11.219,8.378
-                            c4.062-1.466,7.577-3.679,10.252-7.351c2.656-3.648,5.927-6.849,9.213-10.567c-7.972-3.061-16.679-4.763-22.531-12.47
-                            c-5.673-7.47-6.96-16.009-8.149-24.82c2.196,6.71,4.392,13.42,6.587,20.131c0.301-0.048,0.602-0.095,0.903-0.143
-                            c0.208-1.971,0.095-4.047,0.69-5.894c1.305-4.051,3.147-7.931,4.42-11.991c0.762-2.429,1.091-5.055,1.198-7.611
-                            c0.115-2.742-0.926-5.075-4.077-6.048c5.06-0.294,6.24,3.917,4.226,14.582c2.967-0.139,6.364-1.484,8.275,1.94
-                            c0.728,1.304,0.768,2.992,0.705,4.626c-0.607-2.634-1.399-4.981-4.405-5.653c-2.325-0.52-5.48,1.153-6.973,3.812
-                            c-3.188,5.679-3.33,16.699,5.263,21.218c3.098,1.629,6.355,2.958,9.969,4.05c-3.898-6.236-1.118-10.767,2.574-15.318
-                            c2.213-2.728,1.58-9.416-1.28-13.562c1.035,0.732,1.642,0.929,1.785,1.302c0.74,1.934,1.577,3.872,1.958,5.888
-                            c0.326,1.722-0.208,3.618,0.18,5.313c0.338,1.479,1.431,2.785,2.289,4.347c-3.01-1.039-6.122-0.378-7.149,1.373
-                            c-1.34,2.283-0.578,6.887,1.459,8.98c3.376,3.47,7.483,4.347,12.075,3.36c2.34-0.503,4.649-1.152,6.97-1.744
-                            c5.974-1.523,11.46-0.171,16.661,2.83c1.788,1.032,3.549,2.111,5.596,3.331c0.072-0.466,0.299-1.058,0.229-1.611
-                            c-1.263-9.948-7.331-15.641-16.26-19.41c-6.556-2.767-13.367-5.805-17.427-12.071c-2.495-3.851-4.25-8.292-5.699-12.68
-                            c-1.609-4.871-2.494-9.981-3.548-14.376c5.863,4.958,3.14,14.317,8.487,20.649c2.252-4.344,4.599-8.315,6.387-12.524
-                            c1.073-2.526,0.674-5.16-0.842-7.839c-2.091-3.697-2.621-7.841-0.493-12.604c0,2.617-0.214,4.618,0.067,6.547
-                            c0.233,1.596,0.772,3.32,1.724,4.569c0.507,0.665,2.252,0.789,3.311,0.561c3.889-0.835,5.285-0.304,7.488,3.358
-                            c-1.119-0.669-2.167-1.536-3.371-1.967c-3.312-1.185-5.881,0.49-6.007,3.974c-0.144,3.951-1.123,7.475-3.316,10.881
-                            c-3.374,5.24-3.354,10.528-0.21,13.211c2.486,2.124,5.159,4.109,7.994,5.727c4.845,2.766,9.905,5.152,14.827,7.786
-                            c2.06,1.103,3.999,2.431,6.488,3.96c0.44-9.866-1.722-18.29-7.637-25.432c-1.021-1.232-3.624-1.921-5.305-1.654
-                            c-2.352,0.373-4.06,4.18-3.692,6.712c0.065,0.448,0.248,0.88,0.617,2.147c-2.486-4.094-2.396-7.554-0.239-9.372
-                            c3.104-2.617,6.21-2.906,9.097-0.12c2.838,2.739,5.16,6.014,7.995,9.395c-0.348-3.412-0.446-6.887-1.095-10.256
-                            c-1.753-9.118-8.027-15.784-12.941-23.183c-2.321-3.495-5.025-6.851-6.654-10.656c-1.351-3.154-1.885-6.869-0.087-10.924
-                            c0.256,2.798,0.341,5.071,0.706,7.298c0.286,1.745,0.702,3.534,1.449,5.121c0.885,1.88,2.017,2.265,3.382,0.072
-                            c0.687-1.103,2.126-1.737,3.789-3.017c-1.342,2.704-2.964,4.502-2.898,6.236c0.07,1.85,1.512,3.812,2.75,5.42
-                            c3.485,4.528,7.172,8.9,11.285,13.954c0.104-2.106,0.243-3.438,0.225-4.769c-0.09-6.383,1.545-12.895-1.312-19.08
-                            c-1.481-3.206-3.128-6.338-4.51-9.584c-0.914-2.145-1.491-4.434-1.909-6.74c3.659,6.68,7.317,13.36,10.798,19.716
-                            c3.369-6.042,6.865-12.312,10.361-18.581c0.159,0.041,0.319,0.082,0.479,0.124c-0.677,1.919-1.28,3.868-2.044,5.752
-                            c-1.755,4.332-4.423,8.489-5.188,12.978c-1.077,6.322-0.767,12.881-1.049,19.337c0.265,0.129,0.529,0.258,0.793,0.387
-                            c1.125-1.078,2.386-2.046,3.349-3.252c3.049-3.823,6.034-7.699,8.955-11.621c2.935-3.942,2.558-6.238-1.287-8.906
-                            c2.559-0.582,2.939-0.376,5.846,3.242c4.419-4.087,2.132-10.022,4.011-14.824c1.395,8.41-0.823,15.295-6.504,21.742
-                            c-4.491,5.098-7.488,11.499-11.262,17.246c-3.5,5.328-2.779,11.355-2.927,17.357c1.283-2.115,2.557-4.235,3.852-6.342
-                            c2.453-3.989,6.072-6.054,9.2-5.268c4.813,1.21,6.44,5.089,4.484,8.802c-0.889-1.703-1.592-4.31-3.259-5.917
-                            c-1.972-1.901-5.082-1.131-6.717,1.225c-3.941,5.682-6.741,11.832-7.081,18.896c-0.089,1.861-0.361,3.714-0.639,6.444
-                            c3.513-2.037,6.357-3.759,9.272-5.354c2.167-1.186,4.51-2.063,6.625-3.328c4.428-2.648,8.895-5.27,13.083-8.27
-                            c3.249-2.328,4.003-5.568,2.532-9.327c-1.149-2.94-2.812-5.678-4.028-8.596c-0.558-1.337-0.465-2.931-0.892-4.342
-                            c-0.637-2.104-0.906-5.09-2.372-5.971c-1.668-1.003-4.479-0.105-6.28-0.049c1.192-2.05,2.911-2.714,6.309-1.764
-                            c3.494,0.977,4.431,0.551,4.913-3.17c0.364-2.811,0.072-5.707,0.072-8.901c2.082,3.858,2.051,7.555,0.497,11.157
-                            c-2.242,5.195-1.65,10.064,1.005,14.884c1.281,2.327,2.434,4.725,4.47,7.208c2.356-6.913,4.712-13.826,7.067-20.739
-                            c0.312,0.094,0.622,0.189,0.934,0.284c-0.903,3.397-1.823,6.791-2.7,10.195c-0.306,1.186-0.466,2.408-0.759,3.597
-                            c-1.733,7.03-4.509,13.655-10.502,17.979c-4.404,3.179-9.354,5.763-14.363,7.903c-8.058,3.442-12.877,9.232-14.715,17.673
-                            c-0.105,0.484-0.104,0.998-0.101,1.497c0.002,0.39,0.083,0.778,0.141,1.263c3.243-1.81,6.274-3.847,9.572-5.266
-                            c6.569-2.827,13.101-1.104,19.604,0.699c6.018,1.669,11.905-0.789,13.708-5.936c1.434-4.094,0.824-7.815-3.662-8.264
-                            c-1.148-0.114-2.357,0.389-3.992,0.692c3.416-2.484,2.249-6.039,2.787-9.221c0.408-2.415,1.471-4.719,2.241-7.072
-                            c0.366,0.122,0.731,0.244,1.097,0.365c-0.587,1.565-1.385,3.087-1.719,4.705c-0.716,3.474,0.319,6.579,2.363,9.447
-                            c2.878,4.037,4.709,8.245,0.711,13.219c4.615,0.092,8.084-1.546,11.216-3.688c7.402-5.061,7.65-14.6,4.952-20.099
-                            c-0.825-1.682-2.408-3.242-4.026-4.233c-3.351-2.053-6.019-0.338-7.703,4.589c-0.795-5.267,2.298-7.498,8.813-6.021
-                            c-0.774-4.919-2.496-9.945,1.377-14.204c0.532-0.584,1.703-0.588,2.636-0.669c-3.18,1.99-4.886,5.668-3.873,9.506
-                            c0.837,3.171,1.896,6.316,3.207,9.32c1.794,4.111,3.601,8.156,2.802,13.662c5.307-6.723,4.934-14.753,8.593-21.182
-                            c-1.135,5.33-1.854,10.797-3.554,15.94c-1.104,3.34-3.645,6.204-5.529,9.289c-4.481,7.333-12.271,9.053-19.595,11.566
-                            c-0.986,0.338-1.968,0.69-2.629,0.923c3.259,3.801,6.428,7.341,9.416,11.028c2.806,3.464,6.448,5.737,10.522,7.094
-                            c5.732,1.908,11.718-3.804,10.46-9.677c-0.718-3.357-2.185-4.472-6.216-4.723c0.026-0.275,0.053-0.553,0.079-0.829
-                            c1.654,0.158,3.309,0.316,5.118,0.489c0.769-2.379,1.635-5.061,2.501-7.742c0.094,0.064,0.188,0.129,0.281,0.193
-                            c0,4.506,0.15,9.018-0.041,13.517c-0.208,4.91-2.363,8.774-7.1,10.926c5.025,3.067,14.019-1.676,18.189-9.072
-                            c-0.494,2.088-0.989,4.176-1.502,6.334c4.658,2.684,5.481,5.2,2.37,8.502c1.391-2.311,0.934-4.649-1.194-5.501
-                            c-2.021-0.808-4.682-0.896-6.817-0.35c-4.46,1.142-8.758,2.911-13.35,4.501c-0.207,1.916-0.498,4.615-0.788,7.313
-                            c-0.363-0.038-0.726-0.076-1.088-0.114c0.062-0.832,0.048-1.678,0.196-2.494c1.042-5.726-3.143-8.253-6.687-11.31
-                            c-2.625-2.264-5.191-4.695-7.324-7.412c-8.55-10.893-19.876-14.483-33.141-12.697c-2.293,0.309-4.781,1.783-6.459,3.445
-                            c-2.687,2.662-5.862,5.182-6.986,9.58c2.17-1.105,3.835-2.164,5.643-2.84c8.309-3.107,15.413-0.932,21.001,5.64
-                            c2.568,3.022,4.407,6.691,6.399,10.169c1.233,2.152,2.064,4.53,3.2,6.743c1.476,2.875,3.508,5.113,7.148,5.178
-                            c-0.157,0.298-0.314,0.596-0.473,0.895c-1.745-0.841-3.904-1.293-5.142-2.61c-2.021-2.151-3.213-5.072-5.186-7.284
-                            c-1.733-1.944-2.339-4.033-2.91-6.474c-1.28-5.463-7.713-10.539-12.857-10.299c2.971,6.503,1.13,12.051-4.065,16.699
-                            c0.802-1.798,1.314-3.811,2.463-5.35c2.762-3.699,2.146-10.023-1.448-12.145c-2.414-1.426-7.561,0.035-10.131,2.564
-                            c-3.771,3.709-3.438,8.469-3.433,13.034c0.013,10.352,0.236,20.704,0.535,31.052c0.242,8.382,0.767,16.755,1.07,25.135
-                            c0.131,3.605-0.336,7.262,0.092,10.82c1.023,8.527,1.819,17.155,3.832,25.47c1.914,7.906,11.43,14.725,21.238,15.281
-                            c6.186,0.351,12.362,1.97,18.376,3.625c2.174,0.598,4.14,2.726,5.698,4.578c1.815,2.157,0.671,3.966-2.211,4.203
-                            c0.231-1.113,0.887-2.379,0.594-3.36c-0.329-1.103-1.362-2.167-2.356-2.868c-3.946-2.781-11.125-4.173-19.222-3.745
-                            c1.141,0.993,1.924,1.61,2.631,2.306c0.972,0.955,2.164,1.823,2.771,2.984c1.537,2.941,0.451,4.364-2.958,4.182
-                            c2.435-2.107,1.748-5.583-1.958-7.329c-4.283-2.018-8.959-2.391-14.206-1.818c2.165,2.516,5.049,4.354,3.592,7.775
-                            c-0.337,0.792-1.52,1.225-2.543,1.63c0.881-2.083,1.089-3.573-0.647-5.458c-3.523-3.827-7.789-5.565-12.785-5.545
-                            c-5.007,0.021-10.104-0.101-14.982,0.806c-2.788,0.518-5.471,2.674-7.7,4.657c-1.055,0.938-0.934,3.198-1.415,5.139
-                            c-2.331,0.164-3.684-2.854-1.554-5.782c0.77-1.059,1.922-1.836,3.575-3.368c-6.123-0.125-11.359-0.319-15.976,2.804
-                            c-2.743,1.855-2.927,4.334-1.047,6.976c-1.04-0.496-2.731-0.787-2.968-1.536c-0.351-1.112,0.102-2.654,0.641-3.814
-                            c0.433-0.932,1.463-1.612,2.299-2.322c0.811-0.689,1.712-1.272,2.987-2.204c-7.088-0.543-13.501,0.137-19.376,3.494
-                            c-3.125,1.785-3.463,3.505-1.758,6.243c-2.773-0.001-3.796-1.772-2.272-4.183c2.428-3.84,6.351-5.421,10.536-6.176
-                            c5.397-0.975,10.843-1.813,16.305-2.274c9.04-0.762,17.813-9.975,19.834-19.329c3.284-15.194,2.049-30.486,2.739-45.729
-                            c0.488-10.801,0.421-21.625,0.67-32.437c0.111-4.8,0.743-9.612,0.505-14.388c-0.308-6.179-1.291-8.764-8.197-11.263
-                            c-2.437-0.882-4.728-0.913-6.47,1.44c-1.752,2.367-2.084,6.524-1.064,8.611c1.192,2.44,2.059,5.042,3.005,7.596
-                            C137.891,176.038,137.58,176.468,137.636,176.298z"/>
-                        <path id="lordOfTheRingsBadge1"  fill-rule="evenodd" clip-rule="evenodd" d="M97.225,65.761c1.144,1.571,2.7,3.709,4.099,5.633
-                            c-1.301,1.398-2.962,3.185-4.31,4.633c-1.038-1.324-2.487-3.174-3.667-4.679C94.495,69.696,95.909,67.658,97.225,65.761z"/>
-                        <path id="lordOfTheRingsBadge2"  fill-rule="evenodd" clip-rule="evenodd" d="M211.458,75.434c-0.049-0.425-0.128-1.11-0.157-1.359
-                            c-1.761-0.974-3.234-1.789-4.981-2.754c2.107-1.616,4.096-3.141,5.659-4.34c0.941,1.063,2.497,2.817,3.481,3.928
-                            c-0.402,0.669-0.908,1.78-1.664,2.681C213.172,74.333,212.251,74.827,211.458,75.434z"/>
-                        <path id="lordOfTheRingsBadge3"  fill-rule="evenodd" clip-rule="evenodd" d="M242.436,102.869c1.347-1.637,2.868-3.486,4.305-5.231
-                            c0.08,0.463,0.248,1.426,0.354,2.027c1.58,1.088,2.925,2.015,4.502,3.102c-1.483,1.072-2.732,1.973-4.611,3.331
-                            c-0.014,0.08-0.188,1.037-0.227,1.252C245.442,105.984,243.851,104.335,242.436,102.869z"/>
-                        <path id="lordOfTheRingsBadge4"  fill-rule="evenodd" clip-rule="evenodd" d="M126.785,41.687c1.265-1.47,2.825-3.284,4.083-4.745
-                            c1.357,1.468,3.089,3.343,4.603,4.98c-0.926,0.558-2.316,1.397-4.101,2.473c-0.05,0.443-0.158,1.405-0.195,1.731
-                            C129.812,44.749,128.175,43.092,126.785,41.687z"/>
-                        <path id="lordOfTheRingsBadge5"  fill-rule="evenodd" clip-rule="evenodd" d="M173.728,41.657c1.221-1.493,2.913-3.562,4.418-5.402c0,0.524,0,1.514,0,2.175
-                            c1.599,1.207,2.969,2.241,3.912,2.952c-1.587,1.667-3.13,3.289-4.225,4.438C176.771,44.743,175.079,43.026,173.728,41.657z"/>
-                        <path id="lordOfTheRingsBadge6"  fill-rule="evenodd" clip-rule="evenodd" d="M57.328,102.933c1.641-1.424,3.39-2.941,5.021-4.356
-                            c1.052,1.17,2.512,2.792,3.963,4.406c-1.312,1.083-2.844,2.349-4.143,3.423C60.667,105.328,58.972,104.112,57.328,102.933z"/>
-                        <path id="lordOfTheRingsBadge7"  fill-rule="evenodd" clip-rule="evenodd" d="M150.307,20.907c1.431-1.636,2.987-3.417,4.087-4.676
-                            c0.916,1.213,2.304,3.053,3.774,5.004c-0.541,0.447-1.631,1.348-2.721,2.249c-0.171-0.146-0.341-0.292-0.511-0.438
-                            c-0.115,0.854-0.229,1.708-0.281,2.088C153.264,23.781,151.674,22.234,150.307,20.907z"/>
-                    </g>
-                    <g id="stargateBadge">
-                        <path id="stargateBadge0"  fill-rule="evenodd" clip-rule="evenodd" d="M32.812,295.444C72.658,222.73,112.199,150.57,152.135,77.692
-                            c40.057,72.98,79.695,145.201,119.584,217.876c-19.669,0-38.689,0-58.316,0c3.639-8.789,6.613-17.426,10.736-25.474
-                            c3.359-6.559,2.502-11.549-1.111-17.817c-22.841-39.625-45.205-79.525-67.735-119.331c-0.846-1.495-1.785-2.936-2.993-4.912
-                            c-0.886,1.255-1.601,2.075-2.104,3.01c-22.911,42.566-45.83,85.129-68.596,127.774c-0.826,1.547-0.808,4.214-0.052,5.829
-                            c4.766,10.201,9.852,20.253,15.051,30.796C75.215,295.444,54.334,295.444,32.812,295.444z"/>
-                        <path id="stargateBadge1"  fill-rule="evenodd" clip-rule="evenodd" d="M151.755,60.392c-15.607-0.423-27.193-12.556-26.84-28.107
-                            c0.337-14.877,12.81-27.086,27.478-26.898c15.06,0.194,27.751,13.134,27.449,27.988C179.532,48.659,166.906,60.804,151.755,60.392z
-                             M152.35,17.917c-8.509-0.078-15.072,6.436-15.104,14.989c-0.032,8.748,6.744,15.675,15.201,15.541
-                            c8.162-0.129,15.074-7.179,15.112-15.414C167.598,24.838,160.713,17.994,152.35,17.917z"/>
-                    </g>
-                    <g id="starWarsBadge">
-                        <path id="starWarsBadge0"  fill-rule="evenodd" clip-rule="evenodd" d="M88.514,48.022c-3.051,4.156-5.887,7.744-8.428,11.531
-                            c-8.534,12.721-14.914,26.393-17.563,41.593c-4.095,23.504,2.509,43.713,19.554,60.25c6.75,6.548,15.07,10.793,24.815,10.691
-                            c9.199-0.097,16.359-4.513,20.868-12.371c8.485-14.79,8.796-30.519,3.858-46.459c-2.942-9.501-6.674-18.762-14.779-25.224
-                            c-4.03-3.213-8.528-5.84-12.939-8.817c4.077-4.501,8.427-9.38,12.915-14.13c0.406-0.43,1.865-0.337,2.547,0.037
-                            c6.947,3.809,12.674,9.042,17.46,15.331c0.55,0.722,1.099,1.444,1.688,2.219c1.54-5.893-3.155-19.711-10.214-30.014
-                            c7.201-8.17,14.449-16.394,21.923-24.875c7.31,8.285,14.5,16.436,21.662,24.554c-7.549,13.597-10.231,21.352-10.553,31.026
-                            c6.067-8.066,12.938-14.513,21.654-19.148c4.535,5.094,9.035,10.149,13.696,15.385c-6.249,2.697-11.406,6.455-15.899,11.176
-                            c-6.826,7.171-10.396,15.945-12.509,25.397c-2.849,12.737-3.357,25.448,1.562,37.851c3.595,9.063,9.54,15.811,19.545,17.841
-                            c6.786,1.376,13.118-0.323,19.151-3.512c11.689-6.177,19.092-16.191,24.502-27.801c9.36-20.09,8.5-40.28-0.148-60.379
-                            c-4.782-11.115-11.496-21.008-19.287-30.208c-0.407-0.481-0.798-0.976-0.882-1.859c1.188,0.825,2.395,1.625,3.561,2.479
-                            c12.17,8.913,23.56,18.646,32.563,30.899c10.685,14.542,17.045,30.889,19.99,48.583c5.831,35.011-1.471,67.233-21.705,96.271
-                            c-15.368,22.052-36.622,36.256-62.581,42.851c-35.164,8.935-68.652,4.745-99.302-15.407
-                            c-27.634-18.169-44.739-43.866-52.167-76.029c-2.683-11.616-3.452-23.438-2.478-35.279c1.991-24.184,10.482-45.927,25.477-65.058
-                            c8.666-11.056,18.949-20.382,30.584-28.232C87.108,48.88,87.578,48.606,88.514,48.022z"/>
-                    </g>
-                    <g id="assassinsCreedBadge">
-                        <path id="assassinsCreedBadge0"  fill-rule="evenodd" clip-rule="evenodd" d="M113.106,263.006c-6.277-2.286-12.801-4.064-18.776-6.971
-                            c-9.895-4.812-19.391-10.43-27.547-17.976c-2.05-1.897-3.705-4.23-5.802-6.063c-5.654-4.941-10.316-6.201-20.088-5.749
-                            c4.926-16.357,5.628-32.568-1.667-48.717c2.566,0.325,4.909,0.635,7.254,0.919c12.006,1.454,23.198-0.754,33.146-7.819
-                            c6.176-4.387,10.291-10.675,13.375-17.352c5.475-11.855,10.444-23.953,15.335-36.065c11.034-27.327,21.894-54.725,32.819-82.096
-                            c2.918-7.311,5.82-14.628,9.125-22.938c1.02,1.73,1.829,2.769,2.295,3.944c7.142,18.038,14.142,36.131,21.371,54.133
-                            c7.617,18.966,15.491,37.829,23.152,56.778c2.604,6.444,4.727,13.085,7.376,19.51c4.862,11.795,11.777,21.974,23.583,27.929
-                            c10.002,5.044,20.486,5.532,31.244,3.071c0.962-0.22,1.934-0.388,3.091-0.618c-6.744,16.975-7.113,27.388-1.878,48.469
-                            c-4.311,0.766-8.685,1.304-12.927,2.362c-4.286,1.069-7.512,3.382-10.267,7.329c-2.749,3.938-7.145,6.869-11.174,9.743
-                            c-9.935,7.087-20.58,12.87-32.399,16.257c-0.982,0.282-1.964,0.569-3.262,0.946c4.468-3.81,8.553-7.517,12.87-10.931
-                            c10.25-8.105,12.837-19.054,11.257-31.22c-1.273-9.798-6.335-18.366-10.229-27.29c-5.89-13.498-11.925-26.939-17.509-40.564
-                            c-11.806-28.808-23.36-57.718-35.029-86.582c-0.109-0.27-0.381-0.473-0.989-1.2c-1.689,3.803-3.34,7.29-4.806,10.852
-                            c-12.757,30.998-25.375,62.053-38.266,92.995c-5.506,13.217-11.644,26.169-17.337,39.31c-4.71,10.871-6.611,22.01-0.605,32.99
-                            c4.775,8.729,11.663,15.59,20.522,20.326c0.995,0.533,2.016,1.016,3.025,1.521C113.295,262.496,113.2,262.751,113.106,263.006z"/>
-                        <path id="assassinsCreedBadge1"  fill-rule="evenodd" clip-rule="evenodd" d="M57.65,256.145c7.093,4.488,13.273,8.682,19.716,12.421
-                            c15.303,8.879,31.539,14.843,49.547,14.475c3.715-0.076,7.484-0.469,11.11-1.261c4.954-1.082,9.418-3.277,12.34-7.916
-                            c8.958,9.778,20.601,9.831,32.313,9.005c17.356-1.225,32.6-8.375,46.982-17.637c4.963-3.195,9.798-6.588,14.667-9.873
-                            c-5.854,12.001-48.313,32.006-73.545,35.985C129.237,297.896,76.492,278.336,57.65,256.145z"/>
-                    </g>
-                </svg>
+            <div class="col-sm-12 col-md-7">
+                <h2 class="title">The Celestis Project</h2>
+                <p>Okay, so I’m not just a Tolkien nerd; I’m a straight-up nerd when it comes to just about any Sci-Fi or Fantasy work. I also like finding hidden connections between things, whether they were originally intended to be connected or not. (I’m a synesthete, go figure.)</p>
+                <p>Enter, The Celestis Project.</p>
+                <p>As is turns out storytellers are not always very creative, and many Sci-Fi and Fantasy works have nearly identical motifs and character archetypes. There is enough similarity that a strong argument can be made that several popular franchises exist in the same universe, our universe. (Think, The Pixar Theory on steroids)</p>
+                <p>The Celestis Project will be web library written from the perspective of a conspiracy theorist that has stumbled across evidence that Star Wars, Stargate, Lord of the Rings, Assassin’s Creed, and a smattering of other franchises are all historical accounts of real events that took place in within our universe; that human’s originated in another galaxy where they were cared for by a superior race until that race enslaved us and an alien resistance brought us here by way of the Star Wars galaxy, all the while being pursued by mercenaries or betrayed by their own kind.</p>
+                <p>The glue that holds this concept together is the premise that the Ancients of Stargate, the Celestials of Star Wars, the Valar and Elves of Lord of the Rings, and the Precursors of Assassin’s Creed are all the same species, a superior species that has a natural ability to manipulate energy.</p>
+                <p>Don’t believe me? Consider this: They are all highly advanced races that are torn between protecting and enslaving humans, yet even those helping humans typically take an aloof and distant stance; All build technological masterpieces that last for millennia; All show at least some ability of heightened mental awareness and manipulation, including, but not limited to telekinesis; All have some way in which they can remove themselves from the plane of human existence, and All use rings and fire throughout their creations and symbolism.</p>
+                <p>I have the primary mental model complete, but I’m still working on finalizing some research and writing down the timeline (Yes, even the timelines mesh, so well it is uncanny). The final product will center around a D3 visualization that allows users to explore the timeline. I hope to have a rudimentary version of the project up by Spring.</p>
             </div>
         </div>
     </main>
     <footer class="row">
-        <div class="col-6-6-6">
-            <p>Copyright &copy; 2017 Andrew Kramer</p>
+        <div class="col-sm-12">
+            <p>Copyright &copy; 2018 Andrew Kramer</p>
         </div>
     </footer>
 </div>

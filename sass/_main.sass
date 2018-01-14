@@ -27,6 +27,7 @@ header
 
 header h3
     padding-left: 50px
+    font-size: 1.4em
 
 
 
@@ -49,7 +50,7 @@ main
 
 .mainNav ul
     margin: 0
-    padding: 0 15px 0 15px
+    padding: 0 15px 0 0
     text-align: center
 
 .mainNav ul li
@@ -75,7 +76,8 @@ main
 
 
 
-
+.blog
+    margin-top: 15px
 
 .subNav
     padding-bottom: 15px
@@ -109,7 +111,7 @@ footer
         image: url("../img/footer.jpg") /* http://previews.123rf.com/images/elwynn/elwynn1407/elwynn140700395/30177415-Stone-wall-with-green-moss-background--Stock-Photo.jpg */
     border-top: 2px $accentColor groove
     height: 50px
-    padding-top: 50px
+    padding-top: 20px
     text-align: center
 
 
@@ -191,7 +193,7 @@ a:visited
         overflow: hidden
 
         img
-            @include border-top-radius($base-border-radius)
+            border-radius: $base-border-radius
             opacity: 1
             transition: all 0.2s ease-in-out
             width: 100%

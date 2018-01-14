@@ -1,0 +1,15 @@
+/* Mixins */
+@mixin fontStyle($section, $alpha: 1)
+    @if $section == mainHeader
+        @extend %cardinal
+    @else if $section == secondaryHeader
+        @extend %ringbearer
+    @else if $section == mainNav
+        @extend %cardinal
+    @else if $section == signature
+        @extend %imladris
+    @else if $section == accent
+        color: rgba(red($headerColor), green($headerColor), blue($headerColor), $alpha)
+    @else
+        font-family: $georgia
+        color: rgb(red($fontColor), green($fontColor), blue($fontColor))

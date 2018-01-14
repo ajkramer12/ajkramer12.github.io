@@ -1,0 +1,33 @@
+/* Variables */
+$primaryColor: #000
+$secondaryColor: #111
+$accentColor: #ccc
+
+$headerColor: #bd0000
+$fontColor: #f0eaea
+
+
+@font-face
+    font-family: Cardinal
+    src: url(../fonts/Cardinal.ttf)         /* http://www.dafont.com/cardinal.font Free for private use */
+
+@font-face
+    font-family: Ringbearer
+    src: url(../fonts/RINGM__.TTF)          /* http://www.thehutt.de/tolkien/fonts.html Free for private use */
+
+@font-face
+    font-family: Imladris
+    src: url(../fonts/elvencommonspeak.ttf) /* http://www.thehutt.de/tolkien/fonts.html Free for private use (implied) */
+
+
+%cardinal
+    font-family: Cardinal, $georgia
+    color: rgb(red($headerColor), green($headerColor), blue($headerColor))
+
+%ringbearer
+    font-family: Ringbearer, $georgia
+    color: rgb(red($headerColor), green($headerColor), blue($headerColor))
+
+%imladris
+    font-family: Imladris, $georgia
+    color: rgb(red($headerColor), green($headerColor), blue($headerColor))
