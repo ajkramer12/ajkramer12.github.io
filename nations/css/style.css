@@ -330,6 +330,11 @@ html, body {
     box-shadow: 0 0 20px black;
     z-index: 3;
 }
+#characterSummaryContainer {
+    height: 50px;
+    width: 50px;
+    overflow: auto;
+}
 #characterSummaryBoxToggle {
     position: relative;
     left: -17px;

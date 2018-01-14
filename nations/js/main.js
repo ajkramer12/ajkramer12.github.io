@@ -632,10 +632,16 @@ var characterSummaryBoxHeight = primaryMapHeight * 0.95;
 var characterSummaryBoxOffset = primaryMapHeight * 0.025;
 
 
-// Initialize Character Summary Box
+// Initialize Character Summary Box & Container
 var characterSummaryBox = d3.select("#characterSummaryBox")
     .style("width", "10vw")
     .style("height", characterSummaryBoxHeight + "px")
+    .style("top", characterSummaryBoxOffset + "px")
+    .style("left", primaryMapWidth-5 + "px");
+
+var characterSummaryContainer = d3.select("#characterSummaryContainer")
+    .style("width", "10vw")
+    .style("height", (characterSummaryBoxHeight - d3.select("#characterSummaryBoxToggle").style("height").slice(0, -2) - 10) + "px")
     .style("top", characterSummaryBoxOffset + "px")
     .style("left", primaryMapWidth-5 + "px");
 
@@ -783,13 +789,15 @@ function updateEraMap(){
 }
 
 function triggerEvents(){
-    d3.select(".eventNotification").remove();
+    d3.selectAll(".eventNotification").remove();
 
     var eventCount = 0;
+    var boxCount = [0,0];
 
     for(var i = 0; i < eventTable.length && eventTable[i].era <= currentEra; i++){
         if(eventTable[i].era == currentEra){
             eventCount++;
+            boxCount[eventTable[i].col]++;
             var eventData = eventTable[i];
             var event = d3.select("#pageContainer").append("div")
                 .attr("id", function(){ return "event" + eventData.id;})
@@ -797,7 +805,7 @@ function triggerEvents(){
                 .style("height", "8vh")
                 .style("width", "8vh")
                 .style("top", function(){return primaryMapHeight/-10 + "px";})
-                .style("left", "0.5vh")
+                .style("left", function(){return (eventTable[i].col*8.5 + 0.5) + "vh"})
                 .style("background-image", "url(img/event"+eventTable[i].type+".jpg)")
                 /*
                 * battle: http://cdn.pcwallart.com/images/fantasy-medieval-battle-art-wallpaper-3.jpg
@@ -839,7 +847,7 @@ function triggerEvents(){
                 .duration(eraChangeDuration/1.5)
                 .ease("linear")
                 .style("top", function(){
-                    return (80 - 8*eventCount)+"vh"
+                    return (80 - 8*boxCount[eventTable[i].col])+"vh"
                 });
         }
     }
@@ -890,7 +898,7 @@ function updateCharacters(){
 
         }
         if (characterTable[i].startEra == currentEra) {
-            var addedCharacter = d3.select("#characterSummaryBox").append("div")
+            var addedCharacter = d3.select("#characterSummaryContainer").append("div")
                 .attr("id", function(){ return "character" + characterData.id;})
                 .attr("class", function(){return "characterThumbnailBox";})
                 .style("margin-bottom", characterSummaryBoxWidth*0.1 + "px")
@@ -921,13 +929,13 @@ function updateCharacters(){
                 .append("div")
                 .attr("id", "characterThumbnail"+characterData.id)
                 .attr("class", "characterThumbnail " + characterData.culture)
-                .style("height", characterSummaryBoxWidth*0.8 + "px")
-                .style("width", characterSummaryBoxWidth*0.8 + "px")
+                .style("height", characterSummaryBoxWidth*0.65 + "px")
+                .style("width", characterSummaryBoxWidth*0.65 + "px")
                 .style("background-image", "url(img/"+characterTable[i].image);
             addedCharacter
                 .append("div")
                 .attr("class", "characterLabel")
-                .style("width", characterSummaryBoxWidth*0.8 + "px")
+                .style("width", characterSummaryBoxWidth*0.65 + "px")
                 .text(characterTable[i].name);
             addedCharacter
                 .transition()
