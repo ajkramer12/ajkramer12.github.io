@@ -71,6 +71,8 @@
                 </div>
                 <ul id="scroll-on-page-top">
                     <li><a class="scroll-on-page-link" href="#180126">Jan 26</a></li>
+                    <li><a class="scroll-on-page-link" href="#180125">Jan 25</a></li>
+                    <li><a class="scroll-on-page-link" href="#180124">Jan 24</a></li>
                 </ul>
             </nav>
             <div class="col-sm-12 col-md-10">
@@ -84,16 +86,57 @@
                             <h3 class="articleHeader">January 26</h3>
                         </div>
                         <div class="card-copy">
-                            <h4 class="articleTitle">First Post:</h4>
-                            <p class="articleSubtitle">In the Beginning</p>
-                            <p>Blog</p>
+                            <h4 class="articleTitle">It Begins</h4>
+                            <p>Ah, the semester begins, the semester that will bring the completion of phase 1 of, Tide of Nations, my favorite personal project.</p>
+                            <p>I first conceived of Tide of Nations back in 2014, after reading Colin McEvedy’s <i>The New Penguin Atlas of Medieval History</i>. I was incredibly impressed with the way that McEvedy was able to make the many simultaneous events of the history story tangible by showing their interconnectedness, and his illustrations of national boundaries gave a realness and excitement to the words on the page.</p>
+                            <p>While studying McEvedy’s illustrations, my mind would frequently go back to documentaries I had seen in the past; documentaries that animated changing borders or territories. My mind would also jump to territory control games (Risk or SEGA’s Total War franchise) I had played, and everything started coming together. Why couldn’t all of history be represented with the conciseness and accuracy of McEvedy with the visual appeal of the Discovery Channel, and the engagement and immersion of Total War? Education is my passion, and this rudiment of a plan felt like a way to get students interested in a traditionally boring subject, while pulling history out of its typically siloed teaching approach.</p>
+                            <p>I thought about the project periodically for about a year and a half, and finally began working on it in summer 2016. Over the course of the summer I planned the details of the project, created a foundational engine for the project and began plugging in territory data. I added enough user interaction and fluff to make it presentation worthy, but by the end of the summer I had a very pretty model that was full of holes, bugs, and incompletion. Not the best project management, but I had to give a presentation on this rudimentary application for a class, so it was not a typical development environment.</p>
+                            <p>Other responsibilities put the project on hold for year, but I began working on it again after my capstone proposal was accepted. Since November, I’ve added more data to the application, began cleaning up the code a bit, and focused on finishing the Historical Figure display (the slide-out on the right) and the events dropdowns (little boxes on the left).</p>
+                            <p>The Historical Figure display had two primary issues. First there was a bug where the images were not displayed properly at times, and second there was no way to handle more images than would fit in the box. I fixed the bug and set the overflow to display a scroll bar when more images exist than will fit. The latter proved to be a bit challenging. First, I had to adjust the image size so that the scroll bar would not partially cut them off. Second, this fix negated a CSS trick I was using to create the tab on the left of box. That tab technically overflows the box, so it became hidden whenever the scroll bar appeared. I had to create a new div to contain the images inside of the box that did not contain the tab. I then applied the scroll bar to that div.</p>
+                            <p>The events boxes had a few enhancements needed. The application required the user to click through every box in order to close them; meaning that if they ignored the boxes and navigated to the next era, that era’s boxes would just stack on top of the previous era’s boxes, completely hidden. I added a trigger to the era advance button that cleared all events. Second, there was a bug that caused the boxes to stop advancing if one was clicked before all boxes had descended. I fixed this bug. Lastly, realizing how many event boxes there would be on completion of the entire project (every country in the world), I decided to have the boxes fall in two columns, with each column containing only certain event types. The most important categories would be in the column closer to the center of the screen. I completed the code and made the change, but quickly realized that was a very bad aesthetic choice for the limited data that the application currently contains. I commented the relevant code so that I could easily re-add it once I had more data in the system.</p>
+                            <p>Next week I plan to add the ability for a user to navigate backward through time, instead of merely advancing. By the 9th, I plan to have worked out some bugs in the map engine (overlapping layers, hidden or misplaced labels, etc.). By the 16th, I will have added a new feature to the application so that it displays historically significant landmarks. The 23th should mark the completion of adding the display of historically significant cities. And finally, during the 24th through the 2nd I will work on reworking the map navigation so that users can click and drag the map rather than using the trigger points on the edge of the screen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div id="180125" class="card">
+                        <div class="card-header">
+                            <h3 class="articleHeader">January 25</h3>
+                        </div>
+                        <div class="card-copy">
+                            <h4 class="articleTitle">Project Milestones</h4>
+                            <p>At this point I have completed much of the foundational work for the project, such as acquiring a domain and hosting, and creating a working application engine. The remainder of the project will involve fixing bugs and adding functionality. Below are my estimated completion dates for the remaining milestones of Tide of Nations.</p>
+                            <ul>
+                                <li>Feb 2 - Add reverse time navigation</li>
+                                <li>Feb 9 - Finalize map engine</li>
+                                <li>Feb 16 - Add support for Landmark display</li>
+                                <li>Feb 23 - Add support for City display</li>
+                                <li>Mar 2 - Finalize map navigation</li>
+                                <li>Mar 9 - Finalize Interface</li>
+                                <li>Mar 23 - Add training indicators to interface</li>
+                                <li>Mar 6 - Finalize Cross Browser Compatability</li>
+                                <li>Apr 13 - Finish Data Input for ad362</li>
+                                <li>Apr 27 - Finish Data Input for ad406</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div id="180124" class="card">
+                        <div class="card-header">
+                            <h3 class="articleHeader">January 24</h3>
+                        </div>
+                        <div class="card-copy">
+                            <h4 class="articleTitle">Capstone Proposal</h4>
+                            <p>I'll be using this blog to post my progress on Tide of Nations for my capstone. Here is a link to my proposal.</p>
+                            <a href="files/proposal.pdf" target="_blank">Proposal</a>
                         </div>
                     </div>
                 </div>
     </main>
     <footer class="row">
         <div class="col-sm-12">
-            <p>Copyright &copy; 2018 Andrew Kramer</p>
+            <p>Copyright &copy; 2018 AJ Kramer</p>
         </div>
     </footer>
 </div>
