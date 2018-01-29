@@ -509,6 +509,15 @@ d3.select("#statsBox")
     .style("top", "10px")
     .style("right", "10px")
     .style("height", "25%");
+d3.select("#statsBox")
+    .append("img")
+    .attr("id", "backArrow")
+    .attr("src", "img/backArrow.png") // http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/antique-glowing-copper-orbs-icons-media/001362-antique-glowing-copper-orb-icon-media-a-media22-arrow-forward1.png
+    .style("position", "absolute")
+    .style("top", "10px")
+    .style("right", "50px")
+    .style("height", "25%");
+
 
 // Called in initialize map and update era
 function calculateRegionAreas(){
@@ -680,26 +689,30 @@ function toggleCharacterSummaryBox(){
  **** Dynamic Era Information
  ****/
 d3.select("#nextArrow")
-    .on("click", function(){updateEra();});
+    .on("click", function(){updateEra(currentEra, currentEra+1);});
+d3.select("#backArrow")
+    .on("click", function(){updateEra(currentEra, currentEra-1);});
 
-
-function updateEra(){
-
+function updateEra(current, goal){
     nextEraAudio.play();
-    updateEraMap();
+    var direction = 0;
 
-
-    previousEraBoundaries = currentEraBoundaries;
-    currentEraBoundaries = previousEraBoundaries;
+    if(current <= goal){
+        direction = 1;
+        updateEraMap(currentEraBoundaries, nextEraBoundaries);
+    } else {
+        direction = -1;
+        updateEraMap(currentEraBoundaries, previousEraBoundaries);
+    }
 
     setTimeout(calculateRegionAreas, eraChangeDuration);
 
-    currentEra++;
+    currentEra = goal;
 
     queue()
-        .defer(d3.json, "data/" + getJsonFilename(1) + ".json")
-        .await(updateEraMapWrapup);
-
+        .defer(d3.json, "data/" + getJsonFilename(direction) + ".json")
+        .await(updateEraMapWrapup(direction));
+//*********************^********************************
 
     updateEraDate();
     updateEraName();
@@ -710,11 +723,31 @@ function updateEra(){
 
 
 }
-function updateEraMapWrapup(error, nextData){
-    nextEraBoundaries = nextData;
-    nextEraBoundaries = homogenizeNodeCount(nextEraBoundaries.features);
+function updateEraMapWrapup(direction) {
+    return function(error, newData) {
+        if(direction < 0){
+            //nextEraBoundaries = currentEraBoundaries;
+            ////currentEraBoundaries = previousEraBoundaries;
+            previousEraBoundaries = newData;
+            previousEraBoundaries = homogenizeNodeCount(previousEraBoundaries.features);
+        } else {
+            console.log("Before");
+            console.log(previousEraBoundaries.length);
+            console.log(currentEraBoundaries.length);
+            previousEraBoundaries = currentEraBoundaries;
+            ////currentEraBoundaries = nextEraBoundaries;
+            console.log("After");
+            console.log(previousEraBoundaries.length);
+            console.log(currentEraBoundaries.length);
+            nextEraBoundaries = newData;
+            nextEraBoundaries = homogenizeNodeCount(nextEraBoundaries.features);
+        }
+        console.log(currentEra);
+        console.log(previousEraBoundaries.length);
+        console.log(currentEraBoundaries.length);
+        console.log(nextEraBoundaries.length);
+    };
 }
-
 function updateEraDate(){
     eraDateSpan.text(eraTable[currentEra].date);
 }
@@ -726,28 +759,28 @@ function updateEraSummary(){
 }
 
 
-function updateEraMap(){
+function updateEraMap(currentBoundaries, goalBoundaries){
     var i, j;
     var found = false;
 
-    for(i=0; i < currentEraBoundaries.length; i++){
-        for(j=0; j < nextEraBoundaries.length && !found; j++){
-            if(currentEraBoundaries[i].id == nextEraBoundaries[j].id){
+    for(i=0; i < currentBoundaries.length; i++){
+        for(j=0; j < goalBoundaries.length && !found; j++){
+            if(currentBoundaries[i].id == goalBoundaries[j].id){
 
                 /* This won't work here because the data is already homogenized, but I need it to work somewhere to test
                 ** for conquered nations.
 
                 if(nextEraBoundaries[j].geometry.coordinates[0].length == 3){
-                    d3.select("#region"+currentEraBoundaries[i].id)
+                    d3.select("#region"+currentBoundaries[i].id)
                         .classed("conquered", true);
                 }
                 */
-                currentEraBoundaries[i].geometry.coordinates[0] = nextEraBoundaries[j].geometry.coordinates[0];
+                currentBoundaries[i].geometry.coordinates[0] = goalBoundaries[j].geometry.coordinates[0];
                 found = true;
             }
         }
         if(!found){
-            d3.select("#region"+currentEraBoundaries[i].id)
+            d3.select("#region"+currentBoundaries[i].id)
                 .classed("transitioned", true)
                 .transition()
                 .duration(eraChangeDuration)
@@ -756,16 +789,16 @@ function updateEraMap(){
         found = false;
     }
 
-    for(i=0; i < nextEraBoundaries.length; i++){
-        for(j=0; j < currentEraBoundaries.length && !found; j++){
-            if(nextEraBoundaries[i].id == currentEraBoundaries[j].id){
+    for(i=0; i < goalBoundaries.length; i++){
+        for(j=0; j < currentBoundaries.length && !found; j++){
+            if(goalBoundaries[i].id == currentBoundaries[j].id){
                 found = true;
             }
         }
         if(!found){
-            currentEraBoundaries.push(nextEraBoundaries[i]);
+            currentBoundaries.push(goalBoundaries[i]);
             primaryMap.selectAll("path")
-                .data(currentEraBoundaries)
+                .data(currentBoundaries)
                 .enter().append("path")
                 .attr("d", path)
                 .attr("id", function(d){ return "region" + d.id;})
