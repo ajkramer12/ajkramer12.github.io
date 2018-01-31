@@ -11,9 +11,10 @@ var currentEra = 0;
 // Declare Map Path Variables
 var world;
 var previousEraBoundaries;
-var currentEraBoundaries;
+var presentEraBoundaries;
 var nextEraBoundaries;
 
+var currentEraBoundaries;
 
 // Set Primary Attributes
 var primaryMapWidth = d3.select("#primaryMapColumn").style("width").slice(0, -2);
@@ -98,17 +99,18 @@ function loadInitialMapData(error, nationData, eraData, eventData, characterData
         .await(initializeD3Map);
 }
 function getJsonFilename(direction){
+    console.log(currentEra);
     switch(direction){
-        case -1: if(currentEra == 0){
-                    return eraTable[currentEra].filename;
+        case -1: if(currentEra <= 0){
+                    return eraTable[0].filename;
                 } else {
                     return eraTable[currentEra-1].filename;
                 }
                 break;
         case 0: return eraTable[currentEra].filename;
                 break;
-        case 1: if(currentEra == eraTable.length-1){
-                    return eraTable[currentEra].filename;
+        case 1: if(currentEra >= eraTable.length-1){
+                    return eraTable[eraTable.length-1].filename;
                 } else {
                     return eraTable[currentEra+1].filename;
                 }
@@ -119,8 +121,10 @@ function getJsonFilename(direction){
 function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
 
     previousEraBoundaries = homogenizeNodeCount(previousMapData.features);
-    currentEraBoundaries = homogenizeNodeCount(currentMapData.features);
+    presentEraBoundaries = homogenizeNodeCount(currentMapData.features);
     nextEraBoundaries = homogenizeNodeCount(nextMapData.features);
+
+    currentEraBoundaries = homogenizeNodeCount(currentMapData.features);
 
     // Render map
     primaryMap.selectAll("path")
@@ -695,57 +699,57 @@ d3.select("#backArrow")
 
 function updateEra(current, goal){
     nextEraAudio.play();
-    var direction = 0;
 
-    if(current <= goal){
-        direction = 1;
-        updateEraMap(currentEraBoundaries, nextEraBoundaries);
-    } else {
-        direction = -1;
-        updateEraMap(currentEraBoundaries, previousEraBoundaries);
+    if(goal >= 0 && goal <= eraTable.length-1) {
+        var direction = 0;
+
+        if(current <= goal){
+            direction = 1;
+            updateEraMap(currentEraBoundaries, nextEraBoundaries);
+        } else {
+            direction = -1;
+            updateEraMap(currentEraBoundaries, previousEraBoundaries);
+        }
+
+        setTimeout(calculateRegionAreas, eraChangeDuration);
+
+        currentEra = goal;
+
+        queue()
+            .defer(d3.json, "data/" + getJsonFilename(direction) + ".json")
+            .await(updateEraMapWrapup(direction));
+
+        updateEraDate();
+        updateEraName();
+        updateEraSummary();
+        updateRegionStats(0);
+        updateCharacters();
+        triggerEvents();
+
     }
-
-    setTimeout(calculateRegionAreas, eraChangeDuration);
-
-    currentEra = goal;
-
-    queue()
-        .defer(d3.json, "data/" + getJsonFilename(direction) + ".json")
-        .await(updateEraMapWrapup(direction));
-//*********************^********************************
-
-    updateEraDate();
-    updateEraName();
-    updateEraSummary();
-    updateRegionStats(0);
-    updateCharacters();
-    triggerEvents();
-
 
 }
 function updateEraMapWrapup(direction) {
     return function(error, newData) {
         if(direction < 0){
-            //nextEraBoundaries = currentEraBoundaries;
-            ////currentEraBoundaries = previousEraBoundaries;
+            nextEraBoundaries = presentEraBoundaries;
+            presentEraBoundaries = previousEraBoundaries;
+
             previousEraBoundaries = newData;
             previousEraBoundaries = homogenizeNodeCount(previousEraBoundaries.features);
         } else {
-            console.log("Before");
-            console.log(previousEraBoundaries.length);
-            console.log(currentEraBoundaries.length);
-            previousEraBoundaries = currentEraBoundaries;
-            ////currentEraBoundaries = nextEraBoundaries;
-            console.log("After");
-            console.log(previousEraBoundaries.length);
-            console.log(currentEraBoundaries.length);
+            previousEraBoundaries = presentEraBoundaries;
+            presentEraBoundaries = nextEraBoundaries;
+
             nextEraBoundaries = newData;
             nextEraBoundaries = homogenizeNodeCount(nextEraBoundaries.features);
         }
         console.log(currentEra);
         console.log(previousEraBoundaries.length);
-        console.log(currentEraBoundaries.length);
+        console.log(presentEraBoundaries.length);
         console.log(nextEraBoundaries.length);
+        console.log("\n"+currentEraBoundaries.length);
+
     };
 }
 function updateEraDate(){
