@@ -70,6 +70,7 @@
                     <h4>Dates</h4>
                 </div>
                 <ul id="scroll-on-page-top">
+                    <li><a class="scroll-on-page-link" href="#180202">Feb 2</a></li>
                     <li><a class="scroll-on-page-link" href="#180126">Jan 26</a></li>
                     <li><a class="scroll-on-page-link" href="#180125">Jan 25</a></li>
                     <li><a class="scroll-on-page-link" href="#180124">Jan 24</a></li>
@@ -78,6 +79,25 @@
             </nav>
             <div class="col-sm-12 col-md-10">
                 <!-- This and other .cards based on the Refill: Cards template -->
+                <div class="cards">
+                    <div id="180202" class="card">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="articleHeader">February 2</h3>
+                        </div>
+                        <div class="card-copy">
+                            <h4 class="articleTitle">Flux Capacitors and other challenges</h4>
+                            <p>This week I tackled time travel. Specifically, I added the ability to navigate backward in time in Tide of Nations. In the initial version of the application, time navigation was handled by increasing a “currentEra” variable as the next era button was clicked. In addition to updating the currentEra, the button click triggered a sequence of events that pulled information relevant to the new era from the various tables on the back-end. Most of these processes required no work for reverse navigation: Simply add a new button that decreases currentEra instead increasing it and done. However, updating the map was the tricky part.</p>
+                            <p>The coordinates of the map layers are stored in various JSON files, one for each era. Initially, on program load I would read in the file for the current era and preload the one for the next era. When the next era button was clicked the coordinates in the preloaded file were compared to those in the current file, and the current file was modified to match the preloaded file. Then D3’s transition function would handle the map animations of updating the screen to match the new current coordinates. While all of this was happening the new next era file would preload.</p>
+                            <p>So essentially, I had one object that kept track of the current state of the map, and one that was just sitting there, waiting to be used to update the first object. It worked pretty nicely and quickly, but it only worked in one direction.</p>
+                            <p>I had already written the code to keep track of a previous era object that could be used like the next era object, so I thought all I would have to do is add some test for navigation direction and reference the appropriate file. I envisioned a sequence of three objects that would copy in tandem forward or backward depending on the direction of navigation. However, I overlooked the logic that my current era file was constantly being modified. This initially caused some interesting errors where countries would swap boundaries and change colors. Pretty, avant-garde, and somewhat psychedelic; but not the effect I was going for.</p>
+                            <p>I fixed this error by creating a fourth object. Now I have three JSON objects that exist for the sole purpose of acting as blueprints for the fourth, which is the one that holds the current state of the map. As forward or back is clicked, the fourth object is compared and updated to match the previous or next object, depending on what is required. Then the sequence of three blueprint objects shifts forward or backward and the exposed endcap is filled with a new preloaded object. (e.g. Moving forward in time: Present is copied to Previous, Next is copied to Present, and Next preloaded with a new JSON file.) This updated method worked beautifully, but I wasn’t quite out of the woods yet.</p>
+                            <p>There a bug that caused the currentEra variable to continue increasing if the user tried to go beyond the available eras by continuing to press Forward or Backward once an end was reached. Previously I had created a quick hack that prevented the map from updating if this happened, but now that dual-direction navigation was possible it caused some errors, so I added a boundary check to the whole update process to ensure that nothing occurred if there was no data to be displayed. I just thought though, I should have the button make a different sound if it is clicked at a data endcap…</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="cards">
                     <div id="180126" class="card">
                         <div class="card-image">
