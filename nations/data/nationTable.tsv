@@ -4,7 +4,7 @@ id	name	culture	description	religion	yearFounded	nation	nodes
 2	Frisians	teutonic	Germanic Tribe	Pagan	0	1	24
 3	Franks	teutonic	Germanic Tribe	Pagan	0	1	96
 4	Saxons	teutonic	Germanic Tribe	Pagan	0	1	48
-5	Lombards	teutonic	Germanic Tribe	Pagan	0	1	24
+5	Lombards	teutonic	Germanic Tribe	Pagan	0	1	48
 6	Burgundians	teutonic	Germanic Tribe	Pagan	0	1	48
 7	Thuringians	teutonic	Germanic Tribe	Pagan	0	1	84
 8	Alemanni	teutonic	Germanic Tribe	Pagan	0	1	48
@@ -15,7 +15,7 @@ id	name	culture	description	religion	yearFounded	nation	nodes
 13	Gepids	teutonic	Germanic Tribe	Pagan	0	1	60
 14	Rugians	teutonic	Germanic Tribe	Pagan	0	1	108
 15	Visgoths	teutonic	Germanic Tribe	Pagan	0	1	84
-16	Ostrogoths	teutonic	Germanic Tribe	Pagan	0	1	204
+16	Ostrogoths	teutonic	Germanic Tribe	Pagan	0	1	216
 17	Danes	teutonic	Germanic Tribe	Pagan	0	1	36
 18	Getes	teutonic	Germanic Tribe	Pagan	0	1	36
 19	Swedes	teutonic	Germanic Tribe	Pagan	0	1	48
@@ -43,10 +43,10 @@ id	name	culture	description	religion	yearFounded	nation	nodes
 41	Khwarizm	iranian	People near a lake	Pagan	0	1	24
 42	Brahui	elamoDravidian	Last bastion of the Elamo-Dravidian culture group	Pagan	0	1	36
 43	Vandals	teutonic	Germanic Tribe	Pagan	2	1	96
-44	Suevi	teutonic	A coalition of Marco-manni and Quadi tribes	Pagan	3	1	24
+44	Suevi	teutonic	A coalition of Marco-manni and Quadi tribes	Pagan	3	1	36
 45	Bretons	celtic	Fleeing Celts	Catholic	3	1	48
 46	Anglo-Saxons	teutonic	Exploratory coalition of Angles & Saxons	Pagan	3	1	48
 47	Odoacer	teutonic	Overthrew Rome	Catholic	4	1	96
 48	Basques	misc	Indegenous people	Pagan	4	1	24
-49	Bavarians	teutonic    Took the place of the Rugians	Pagan	5	1	108
+49	Bavarians	teutonic	Took the place of the Rugians	Pagan	5	1	48
 

@@ -785,7 +785,7 @@ function updateEraMap(currentBoundaries, goalBoundaries){
         }
         if(!found){
             d3.select("#region"+currentBoundaries[i].id)
-                .classed("transitioned", true)
+                //.classed("transitioned", true)
                 .transition()
                 .duration(eraChangeDuration)
                 .style("opacity", 0);
@@ -807,20 +807,20 @@ function updateEraMap(currentBoundaries, goalBoundaries){
                 .attr("d", path)
                 .attr("id", function(d){ return "region" + d.id;})
                 .attr("class", function(d){return "primaryMapRegion " + nationTable[d.id].culture})
-                .style("opacity","0")
+                .style("opacity", 0)
                 .on("click", function(d){updateRegionStats(d);});
         }
         found = false;
     }
 
-
+    console.log(currentBoundaries);
 
     // Redraw map
     primaryMap.selectAll("path:not(.transitioned)")
         .transition()
         .duration(eraChangeDuration)
         .attr("d", path)
-        .style("opacity", "0.5");
+        .style("opacity", 0.5);
     labelRegions(eraChangeDuration);
 
 }

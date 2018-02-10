@@ -70,6 +70,7 @@
                     <h4>Dates</h4>
                 </div>
                 <ul id="scroll-on-page-top">
+                    <li><a class="scroll-on-page-link" href="#180209">Feb 9</a></li>
                     <li><a class="scroll-on-page-link" href="#180202">Feb 2</a></li>
                     <li><a class="scroll-on-page-link" href="#180126">Jan 26</a></li>
                     <li><a class="scroll-on-page-link" href="#180125">Jan 25</a></li>
@@ -79,6 +80,23 @@
             </nav>
             <div class="col-sm-12 col-md-10">
                 <!-- This and other .cards based on the Refill: Cards template -->
+                <div class="cards">
+                    <div id="180209" class="card">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="articleHeader">February 9</h3>
+                        </div>
+                        <div class="card-copy">
+                            <h4 class="articleTitle">Missing Coordinates</h4>
+                            <p>This week I worked on clearing out some bugs in the map display. First I dealt with an issue with the nation labels. There were times that when a nation appeared, its label would fly in from the top-left of the screen instead of growing in place as it was supposed to do. I realized that this only occurred for a few nations. After a bit of troubleshooting, I realized that the issue was not with the code, but with the data. The way the program is written, any new nations are supposed to be “primed” in the era before they actually appear. This means a tiny polygon is created as a placeholder so that the nation’s animation grows from the correct location and (apparently) so that the labels have an anchor. I added the priming polygons for the affected nations, and the issue was resolved.</p>
+                            <p>The next bug was a very quick fix. I noticed that the Bavarians’ opacity increased during one of the era animations; that is never supposed to happen for any nation. It turned out that this was another data era. The Rugians layer was supposed to be replaced by the Bavarians in the given era, but I failed to remove the Rugians from the dataset, so the two layers were superimposed. I modified the Rugians’ coordinates to shrink to a pinpoint polygon as the Bavarians layer increased in size, and the problem was resolved.</p>
+                            <p>Then for the real issue for the week. After adding reverse time navigation last week, I realized that in many instances nations would simply disappear as the user navigated back and forth through time. The issue only affected specific countries, but I didn’t see a single pattern as to when the errors occurred. After significant troubleshooting, I realized that part of the problem was, again, missing data. Many nations did not have the priming polygons that I mentioned earlier, but were too small to have labels, so I didn’t notice at first. However, when traveling backward in time, those priming polygons were also what caused the nations to remove themselves from the map. Without the polygons, the nations were removed from the dataset completely.</p>
+                            <p>This fix still left several issues though due to a bug in the code itself. In an earlier version of the application, I had nations appearing and disappearing via opacity changes, instead of growing and shrinking. It turns out I failed to remove the code which modified opacity when a nation was removed from the map, so those nations remained invisible. Removing that code fixed the issue. Oddly enough, fixing this problem caused the Bavarians / Rugians problem to flare up again. Back to troubleshooting…</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="cards">
                     <div id="180202" class="card">
                         <div class="card-image">
@@ -169,7 +187,7 @@
     </main>
     <footer class="row">
         <div class="col-sm-12">
-            <p>Copyright &copy; 2018 AJ Kramer</p>
+            <p>Copyright &copy; 2018 Amber Kramer</p>
         </div>
     </footer>
 </div>
