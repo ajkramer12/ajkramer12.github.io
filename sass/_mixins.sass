@@ -13,3 +13,11 @@
     @else
         font-family: georgia
         color: rgb(red($fontColor), green($fontColor), blue($fontColor))
+
+@mixin clearfix()
+    &:before,
+    &:after
+        content: ""
+        display: table
+    &:after
+        clear: both
