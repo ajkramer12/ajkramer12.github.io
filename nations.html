@@ -70,6 +70,7 @@
                     <h4>Dates</h4>
                 </div>
                 <ul id="scroll-on-page-top">
+                    <li><a class="scroll-on-page-link" href="#180216">Feb 16</a></li>
                     <li><a class="scroll-on-page-link" href="#180209">Feb 9</a></li>
                     <li><a class="scroll-on-page-link" href="#180202">Feb 2</a></li>
                     <li><a class="scroll-on-page-link" href="#180126">Jan 26</a></li>
@@ -80,6 +81,31 @@
             </nav>
             <div class="col-sm-12 col-md-10">
                 <!-- This and other .cards based on the Refill: Cards template -->
+                <div class="cards">
+                    <div id="180216" class="card">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="articleHeader">February 16</h3>
+                        </div>
+                        <div class="card-copy">
+                            <h4 class="articleTitle">Into the Pan, a Trial by Fire</h4>
+                            <p>Updating the map navigation from side-bump movement to panning has proved to be tricky. My initial thought was simply to unlock panning on the Google Map and send the new coordinates to my D3 map, but communication with the Google Map is one way: I can give it commands, but it won’t communicate with my program. Still though, I thought creating my own pan function would be rather straightforward:</p>
+                            <ul>
+                                <li>Gather coordinates of mousedown</li>
+                                <li>Gather coordinates of mouseup</li>
+                                <li>Calculate difference</li>
+                                <li>Convert to a lat/long difference</li>
+                                <li>Adjust the center of the map by that difference</li>
+                            </ul>
+                            <p>But alas the problem was much deeper than I anticipated.</p>
+                            <p>First the obvious issue. By only capturing mouse down and mouse up, I was not defining a continuous pan. The user would drag, nothing would happen, they would let go, then suddenly the map would snap to a new position. This would be a bad affordance and jarring experience, so I used D3’s drag function instead to capture continuous x/y coordinates. Problem solved! Not quite.</p>
+                            <p>For the most part, this logic worked fine, the map did move as I panned, but there were two glaring problems. One, after beginning a drag, if I moved my mouse back the way that I came, the map still moved in the initial direction until my cursor crossed the point of mousedown. Two, the further I moved away from the point of mousedown, the faster the map moved. I could only pan in about a 50px box before the map was moving so fast it was out of the screen!</p>
+                            <p>I’ve improved the issue by grabbing new coordinates every pixel, so that there is not a compounded change, but the pan is still very weird to use. Then it dawned on me, I’m trying to calculate the lat/long equivalent of a pixel coordinate delta, but that conversion will be different depending on where I click on the map (i.e. It takes a lot more pixels to fill a degree of latitude in Greenland than in Europe.) So I’m going to have to tap further into the projection algorithm to make this work…</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="cards">
                     <div id="180209" class="card">
                         <div class="card-image">
