@@ -48,6 +48,7 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
                 updateRegionStats(-1);
             }
         });
+        //.call(primaryMapDrag);
 
     labelRegions(0);
     calculateRegionAreas();

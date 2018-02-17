@@ -105,6 +105,12 @@ var panLeftTrigger = d3.select("#panLeftTrigger")
 
 
 
+//var primaryMapPanOrigin = [];
+// Create the pan behavior for the main map
+//var primaryMapDrag = d3.behavior.drag()
+//    .on("dragstart", setPrimaryMapPanOrigin)
+//    .on("drag", primaryMapPan);
+
 
 /* User Triggers & Functions */
 var zoomLock = false;

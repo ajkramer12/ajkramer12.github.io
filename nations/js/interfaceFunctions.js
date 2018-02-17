@@ -133,6 +133,73 @@ function travel(direction){
 
 
 /*
+ *** Move both the Google Map and the D3 map when when panned
+ */
+function primaryMapPan() {
+
+    /*
+    projection of origin
+    projection of current
+
+    */
+
+    console.log(getPrimaryMapPanDeltaX(d3.event.x) + ", " + getPrimaryMapPanDeltaY(d3.event.y));
+    var pCenter = projection.invert([getPrimaryMapPanDeltaX(d3.event.x), getPrimaryMapPanDeltaY(d3.event.y)]);
+    primaryMapPanOrigin = [d3.event.x, d3.event.y];
+    //var vCenter = projection.invert([d3.event.sourceEvent.offsetX, d3.event.sourceEvent.offsetY]);
+    //var vCenter = projection.invert([longitude, latitude]);
+   //console.log(vCenter);
+
+    var pCenter = projection.center();
+
+    projection.center([pCenter[0]+travelSpeed,pCenter[1]]);
+
+    googleMap.setCenter({lat: pCenter[1], lng: pCenter[0]});
+
+    updateMap(0);
+}
+
+
+
+
+/*
+ *** Get the delta X of the current pan
+ */
+function getPrimaryMapPanDeltaX(panX) {
+    return projection(projection.center())[0] - (panX - primaryMapPanOrigin[0]);
+}
+
+
+/*
+ *** Get the delta Y of the current pan
+ */
+function getPrimaryMapPanDeltaY(panY) {
+    return projection(projection.center())[1] - (panY - primaryMapPanOrigin[1]);
+}
+
+
+
+
+/*
+ *** Set the origin of the map pan action
+ */
+function setPrimaryMapPanOrigin() {
+    primaryMapPanOrigin = [d3.event.sourceEvent.x, d3.event.sourceEvent.y];
+    console.log(primaryMapPanOrigin);
+
+    //var vCenter = projection.invert([d3.event.sourceEvent.offsetX, d3.event.sourceEvent.offsetY]);
+    //console.log(vCenter);
+    //console.log(projection.center());
+    //projection.center(vCenter);
+    //updateMap(0);
+}
+
+
+
+
+
+
+/*
  *** Move the minimap view box when dragged
  */
 function viewBoxDragBehavior() {

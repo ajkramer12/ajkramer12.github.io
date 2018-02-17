@@ -4,8 +4,10 @@ $(document).ready(function () {
 
 
 function cardToggle() {
-    $(".subNav ul").toggle("slow", function(){});
-    $("article, .cards").fadeToggle("slow", function(){});
+    if($("#subNavToggle").css("display") != "none"){
+        $(".subNav ul").toggle("slow", function(){});
+        $("article, .cards").fadeToggle("slow", function(){});
+    }
 }
 
 
