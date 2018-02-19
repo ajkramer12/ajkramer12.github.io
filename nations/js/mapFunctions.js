@@ -33,7 +33,12 @@ function homogenizeNodeCount(mapData){
     var homogenizedMapData = mapData;
 
     for(var region = 0; region < mapData.length; region++){
-        var regionData = mapData[region].geometry.coordinates[0];
+        var regionData;
+        if(currentEra < 5){
+            regionData = mapData[region].geometry.coordinates[0];
+        } else {
+            regionData = mapData[region].geometry.coordinates[0].reverse();
+        }
         var currentRegionNodeNumber = regionData.length;
         var targetRegionNodeNumber = nationTable[mapData[region].id].nodes;
         var homogenizedRegionData = regionData;
