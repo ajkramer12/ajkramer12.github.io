@@ -128,13 +128,16 @@ h3
 li
     @include fontStyle(accent)
 
-a
+a:link
     @include fontStyle(accent)
 
 a:hover
     @include fontStyle(accent, 0.75)
 
 a:visited
+    @include fontStyle(accent)
+
+a:active
     @include fontStyle(accent)
 
 
@@ -223,6 +226,9 @@ a:visited
         font-size: 0.9em
         line-height: 1.5em
         padding: ($base-spacing / 2) ($base-spacing / 2)
+
+        h4
+            margin-bottom: 15px
 
         p
             margin: 0 0 ($base-spacing / 2)

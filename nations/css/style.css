@@ -251,6 +251,10 @@ html, body {
     border-left: 5px groove saddlebrown;
     border-right: 5px groove saddlebrown;
 }
+#selectedRegionDescription {
+    height: 10vh;
+    overflow: auto;
+}
 #selectedRegionName {
     margin: 2vh 0 1vh 0;
     font-family: "Charlemagne", serif;
