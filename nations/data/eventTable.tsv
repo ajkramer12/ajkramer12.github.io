@@ -1,23 +1,21 @@
-id	era	col	type	image	title	subTitle	description
-0	1	0	War	eventWar.jpg	War!	The Hun Invasion	"When the Ostrogoths try to expand their territory into regions controlled by the Huns, the Huns respond by exploding into Eastern Europe. Most of the Teutonic tribes are enslaved, forced to give up land, or flee to Rome for sanctuary."
-1	1	0	Conquer	eventConquer.jpg	A loss	Alans	Enslaved by the Huns
-2	1	0	Conquer	eventConquer.jpg	A loss	Ostrogoths	Enslaved by the Huns
-3	1	0	Vassal	eventVassal.jpg	Vassalage	Visgoths	"The Visgoths are granted land in Rome as they flee the Huns. However, they soon become unhappy with the arrangments..."
-4	1	0	Conquer	eventConquer.jpg	A loss	Gepids	Enslaved by the Huns
-5	1	0	Conquer	eventConquer.jpg	A loss	Khwarizm	Enslaved by the White Huns
-6	1	0	Conquer	eventConquer.jpg	A loss	Brahui	Enslaved by the White Huns
-7	1	0	Coalition	eventCoalition.jpg	Coalition	The Suevi & Vandals	"Pursued by the Huns, the Marco-manni, Quadi, & Siling and Asing Vandals join forces before fleeing to Rome"
-8	1	0	Vassal	eventVassal.jpg	Vassalage	The Suevi & Vandals	"Unable to stop the onslaught of the Huns, the Suvei & Vandal coalition appeal to Rome for sanctuary."
-9	1	0	Battle	eventBattle.jpg	Battle of Adrianople		"The combined Visgoth and remnant Ostrogoth cavalries crush the Roman legions, marking the end of Rome's military dominance in Europe"
-10	1	0	Resurface	eventResurface.jpg	Resurgance!	British	The British peoples regain their political identity as Rome begins to pull out of Brittania.
-11	1	0	Independence	eventIndependence.jpg	Independence!	Kingdom of Iberia	To ease conflicts with Persia in order to respond to events in the North; Rome agrees to give the Kingdom of Iberia its independence.
-12	1	0	Independence	eventIndependence.jpg	Independence!	Kingdom of Armenia	To ease conflicts with Persia in order to respond to events in the North; Rome agrees to give the Kingdom of Armenia its independence.
-13	1	0	War	eventWar.jpg	War!	Slavic Expansion	"As the Huns overrun the Teutonic world, the Slavs edge westward, taking advantage of the chaos"
-14	1	0	Conquer	eventConquer.jpg	A loss	Lombards	Overrun by the Slavs
-15	2	0	War	eventWar.jpg	War!	The Germanic Expansion	Under pressure by the Huns, many Germanic tribes begin expanding their borders into Roman lands. Rome's armies are only strong enough to slow them down. Germanic vassals of Rome take to opportunity to claim their own pieces of Rome's territory.
-16	2	0	Independence	eventIndependence.jpg	Independence!	The Suevi & Vandals	With Rome's armies too weakened to stop them, the Suevi & Vandal tribes settle in modern Spain.
-17	2	0	Execution	eventExecution.jpg	Execution	Stilicho the Vandal	Stilicho the Vandal is executed by Emperor Honorius out of fear of his growing influence. Stilicho's death weakened Rome and emboldened the Germanic invaders.
-18	2	0	Destruction	eventDestruction.jpg		The Sack of Rome	With Stilicho dead and Emperor Honorius unwilling to defend the city, King Aleric of the Visgoths marches on Rome, sacking the city and defacing Rome's reputation.
-19	2	0	Independence	eventIndependence.jpg	Independence!	Visgoths	After a decade of nomadic raiding and pillaging of Rome, the Visgoths settle in modern-day Western France.
-
-
+id	era	col	type	image	title	subTitle	description	location
+0	1	0	War	eventWar.jpg	War!	The Hun Invasion	"When the Ostrogoths try to expand their territory into regions controlled by the Huns, the Huns respond by exploding into Eastern Europe. Most of the Teutonic tribes are enslaved, forced to give up land, or flee to Rome for sanctuary."	48.6700797,44.2265288
+1	1	0	Conquer	eventConquer.jpg	A loss	Alans	Enslaved by the Huns	46.8516705,44.7916293
+2	1	0	Conquer	eventConquer.jpg	A loss	Ostrogoths	Enslaved by the Huns	51.2130126,30.5634376
+3	1	0	Vassal	eventVassal.jpg	Vassalage	Visgoths	"The Visgoths are granted land in Rome as they flee the Huns. However, they soon become unhappy with the arrangments..."	47.8027887,12.9863904
+4	1	0	Conquer	eventConquer.jpg	A loss	Gepids	Enslaved by the Huns	46.7833643,23.5464728
+5	1	0	Conquer	eventConquer.jpg	A loss	Khwarizm	Enslaved by the White Huns	42.4164097,59.4154995
+6	1	0	Conquer	eventConquer.jpg	A loss	Brahui	Enslaved by the White Huns	31.6083037,64.3141342
+7	1	0	Coalition	eventCoalition.jpg	Coalition	The Suevi & Vandals	"Pursued by the Huns, the Marco-manni, Quadi, & Siling and Asing Vandals join forces before fleeing to Rome"	49.970649,9.0890847
+8	1	0	Vassal	eventVassal.jpg	Vassalage	The Suevi & Vandals	"Unable to stop the onslaught of the Huns, the Suvei & Vandal coalition appeal to Rome for sanctuary."	49.970649,9.0890847
+9	1	0	Battle	eventBattle.jpg	Battle of Adrianople		"The combined Visgoth and remnant Ostrogoth cavalries crush the Roman legions, marking the end of Rome's military dominance in Europe"	41.6756451,26.5662887
+10	1	0	Resurface	eventResurface.jpg	Resurgance!	British	The British peoples regain their political identity as Rome begins to pull out of Brittania.	55.6222415,-3.5308201
+11	1	0	Independence	eventIndependence.jpg	Independence!	Kingdom of Iberia	To ease conflicts with Persia in order to respond to events in the North; Rome agrees to give the Kingdom of Iberia its independence.	41.7323742,44.6987693
+12	1	0	Independence	eventIndependence.jpg	Independence!	Kingdom of Armenia	To ease conflicts with Persia in order to respond to events in the North; Rome agrees to give the Kingdom of Armenia its independence.	39.7219677,43.0001231
+13	1	0	War	eventWar.jpg	War!	Slavic Expansion	"As the Huns overrun the Teutonic world, the Slavs edge westward, taking advantage of the chaos"	52.0873776,23.6377469
+14	1	0	Conquer	eventConquer.jpg	A loss	Lombards	Overrun by the Slavs	52.7777257,13.210719
+15	2	0	War	eventWar.jpg	War!	The Germanic Expansion	Under pressure by the Huns, many Germanic tribes begin expanding their borders into Roman lands. Rome's armies are only strong enough to slow them down. Germanic vassals of Rome take to opportunity to claim their own pieces of Rome's territory.	48.2992216,8.096313
+16	2	0	Independence	eventIndependence.jpg	Independence!	The Suevi & Vandals	With Rome's armies too weakened to stop them, the Suevi & Vandal tribes settle in modern Spain.	42.5241454,-7.5333288
+17	2	0	Execution	eventExecution.jpg	Execution	Stilicho the Vandal	Stilicho the Vandal is executed by Emperor Honorius out of fear of his growing influence. Stilicho's death weakened Rome and emboldened the Germanic invaders.	44.4123367,12.1654898
+18	2	0	Destruction	eventDestruction.jpg		The Sack of Rome	With Stilicho dead and Emperor Honorius unwilling to defend the city, King Aleric of the Visgoths marches on Rome, sacking the city and defacing Rome's reputation.	41.9028,12.4964
+19	2	0	Independence	eventIndependence.jpg	Independence!	Visgoths	After a decade of nomadic raiding and pillaging of Rome, the Visgoths settle in modern-day Western France.	45.1816646,0.0993741
