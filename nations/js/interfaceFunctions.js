@@ -6,19 +6,19 @@ function updateRegionStats(d){
         d3.select("#selectedRegionName").attr("regionId", -1);
         d3.select("#selectedRegionName").text("");
         d3.select("#selectedRegionStats").html("");
-        d3.select("#selectedRegionDescription").text("");
+        d3.select("#selectedRegionDescription").html("");
     } else if(d == 0){
         var regionId = d3.select("#selectedRegionName").attr("regionId");
         if(regionId > -1){
             d3.select("#selectedRegionName").text(nationTable[regionId].name);
             d3.select("#selectedRegionStats").html("<li>Culture: " + nationTable[regionId].culture.charAt(0).toUpperCase() + nationTable[regionId].culture.slice(1) + "</li><li>Religion: " + nationTable[regionId].religion + "</li><li>Eras in Existence: " + (currentEra - nationTable[regionId].yearFounded) + "</li>");
-            d3.select("#selectedRegionDescription").text(nationTable[regionId].description);
+            d3.select("#selectedRegionDescription").html(nationTable[regionId].description);
         }
     } else {
         d3.select("#selectedRegionName").attr("regionId", d.id);
         d3.select("#selectedRegionName").text(nationTable[d.id].name);
         d3.select("#selectedRegionStats").html("<li>Culture: " + nationTable[d.id].culture.charAt(0).toUpperCase() + nationTable[d.id].culture.slice(1) + "</li><li>Religion: " + nationTable[d.id].religion + "</li><li>Eras in Existence: " + (currentEra - nationTable[d.id].yearFounded) + "</li>");
-        d3.select("#selectedRegionDescription").text(nationTable[d.id].description);
+        d3.select("#selectedRegionDescription").html(nationTable[d.id].description);
     }
 }
 

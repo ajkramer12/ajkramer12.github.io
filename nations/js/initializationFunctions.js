@@ -42,13 +42,15 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
         .attr("class", function(d){return "primaryMapRegion " + nationTable[d.id].culture})
         .on("click", function(d){updateRegionStats(d);});
 
+
     d3.select("#primaryMap")
         .on("click", function(){
             if(d3.event.path[0].id == "primaryMap"){
                 updateRegionStats(-1);
             }
-        });
-        //.call(primaryMapDrag);
+        })
+        .call(primaryMapDrag);
+
 
     labelRegions(0);
     calculateRegionAreas();

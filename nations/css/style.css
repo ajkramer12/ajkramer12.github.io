@@ -321,6 +321,9 @@ html, body {
 #eraSummary{
     margin: 0 10px 5px 10px;
     color: #ddddbb;
+    height: 50px;
+    width: 50px;
+    overflow: auto;
 }
 
 #characterSummaryBox {

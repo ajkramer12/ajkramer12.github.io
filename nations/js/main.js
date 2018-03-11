@@ -105,11 +105,11 @@ var panLeftTrigger = d3.select("#panLeftTrigger")
 
 
 
-//var primaryMapPanOrigin = [];
+var primaryMapPanOrigin = [];
 // Create the pan behavior for the main map
-//var primaryMapDrag = d3.behavior.drag()
-//    .on("dragstart", setPrimaryMapPanOrigin)
-//    .on("drag", primaryMapPan);
+var primaryMapDrag = d3.behavior.drag()
+    .on("dragstart", setPrimaryMapPanOrigin)
+    .on("drag", primaryMapPan);
 
 
 /* User Triggers & Functions */
@@ -222,8 +222,13 @@ var eraSummaryBox = d3.select("#eraSummaryBox")
     .style("top", primaryMapHeight + "px")
     .style("left", eraSummaryBoxOffset + "px");
 
-
 var eraSummaryBoxHeight = eraSummaryBox.style("height").slice(0, -2);
+
+var eraSummary = d3.select("#eraSummary")
+    .style("width", (eraSummaryBoxWidth - 30) + "px")
+    .style("height", (eraSummaryBoxHeight - 20) + "px")
+    .style("top", primaryMapHeight + "px")
+    .style("left", eraSummaryBoxOffset + "px");
 
 var eraSummaryBoxToggle = d3.select("#eraSummaryBoxToggle")
     .style("left", eraSummaryBoxWidth/2-(d3.select("#eraSummaryBoxToggle").style("width").slice(0, -2)/2) + "px")
@@ -247,14 +252,13 @@ var characterSummaryBox = d3.select("#characterSummaryBox")
     .style("top", characterSummaryBoxOffset + "px")
     .style("left", primaryMapWidth-5 + "px");
 
+var characterSummaryBoxWidth = characterSummaryBox.style("width").slice(0, -2);
+
 var characterSummaryContainer = d3.select("#characterSummaryContainer")
     .style("width", "10vw")
     .style("height", (characterSummaryBoxHeight - d3.select("#characterSummaryBoxToggle").style("height").slice(0, -2) - 10) + "px")
     .style("top", characterSummaryBoxOffset + "px")
     .style("left", primaryMapWidth-5 + "px");
-
-
-var characterSummaryBoxWidth = characterSummaryBox.style("width").slice(0, -2);
 
 var characterSummaryBoxToggle = d3.select("#characterSummaryBoxToggle")
     .style("top", characterSummaryBoxHeight/2-(d3.select("#characterSummaryBoxToggle").style("height").slice(0, -2)/2) + "px")

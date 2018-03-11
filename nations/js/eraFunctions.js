@@ -92,7 +92,7 @@ function updateEraName(){
  *** Load the new era's text summary
  */
 function updateEraSummary(){
-    d3.select("#eraSummary").text(eraTable[currentEra].summary);
+    d3.select("#eraSummary").html(eraTable[currentEra].summary);
 }
 
 

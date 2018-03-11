@@ -14,3 +14,10 @@ id	era	col	type	image	title	subTitle	description
 12	1	0	Independence	eventIndependence.jpg	Independence!	Kingdom of Armenia	To ease conflicts with Persia in order to respond to events in the North; Rome agrees to give the Kingdom of Armenia its independence.
 13	1	0	War	eventWar.jpg	War!	Slavic Expansion	"As the Huns overrun the Teutonic world, the Slavs edge westward, taking advantage of the chaos"
 14	1	0	Conquer	eventConquer.jpg	A loss	Lombards	Overrun by the Slavs
+15	2	0	War	eventWar.jpg	War!	The Germanic Expansion	Under pressure by the Huns, many Germanic tribes begin expanding their borders into Roman lands. Rome's armies are only strong enough to slow them down. Germanic vassals of Rome take to opportunity to claim their own pieces of Rome's territory.
+16	2	0	Independence	eventIndependence.jpg	Independence!	The Suevi & Vandals	With Rome's armies too weakened to stop them, the Suevi & Vandal tribes settle in modern Spain.
+17	2	0	Execution	eventExecution.jpg	Execution	Stilicho the Vandal	Stilicho the Vandal is executed by Emperor Honorius out of fear of his growing influence. Stilicho's death weakened Rome and emboldened the Germanic invaders.
+18	2	0	Destruction	eventDestruction.jpg		The Sack of Rome	With Stilicho dead and Emperor Honorius unwilling to defend the city, King Aleric of the Visgoths marches on Rome, sacking the city and defacing Rome's reputation.
+19	2	0	Independence	eventIndependence.jpg	Independence!	Visgoths	After a decade of nomadic raiding and pillaging of Rome, the Visgoths settle in modern-day Western France.
+
+
