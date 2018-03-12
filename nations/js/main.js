@@ -302,3 +302,11 @@ d3.select("#detailsWindowCloseButton").on("click", function(){
         });
     }
 });
+
+d3.select("#detailsWindowGoToRegion").on("click", function(){
+    var coordinates = d3.select("#detailsWindowGoToRegion").attr("location").split(",");
+    projection.center([Number(coordinates[1]), Number(coordinates[0])]);
+    googleMap.setCenter({lat: Number(coordinates[0]), lng: Number(coordinates[1])});
+    // Update D3 map position
+    updateMap(0);
+});

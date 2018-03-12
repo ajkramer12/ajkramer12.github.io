@@ -227,6 +227,7 @@ function triggerEvents(){
                     } else if(eventTable[eventId].type == "Conquer") {
                         eventConquerAudio.play();
                     }
+                    d3.select("#detailsWindowGoToRegion").attr("location", eventTable[eventId].location);
                 });
             event
                 .transition()
@@ -292,6 +293,7 @@ function updateCharacters(){
                     d3.select("#detailsWindowTitle").html("");
                     d3.select("#detailsWindowSubTitle").html(characterTable[characterId].name);
                     d3.select("#detailsWindowDescription").html(characterTable[characterId].description);
+                    d3.select("#detailsWindowGoToRegion").attr("location", characterTable[characterId].location);
                     $('#detailsModal').modal('show');
                 });
             addedCharacter

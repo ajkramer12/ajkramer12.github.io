@@ -436,6 +436,14 @@ html, body {
     text-align: center;
     font-size: large;
 }
-
+#detailsWindowFooter {
+    text-align: right;
+    font-family: "Camelot", serif;
+    font-size: large;
+}
+#detailsWindowGoToRegion {
+    height: 5vh;
+    width: 5vh;
+}
 
 

@@ -70,6 +70,7 @@
                     <h4>Dates</h4>
                 </div>
                 <ul id="scroll-on-page-top">
+                    <li><a class="scroll-on-page-link" href="#180311">Mar 11</a></li>
                     <li><a class="scroll-on-page-link" href="#180223">Feb 23</a></li>
                     <li><a class="scroll-on-page-link" href="#180218">Feb 18</a></li>
                     <li><a class="scroll-on-page-link" href="#180216">Feb 16</a></li>
@@ -83,6 +84,21 @@
             </nav>
             <div class="col-sm-12 col-md-10">
                 <!-- This and other .cards based on the Refill: Cards template -->
+                <div class="cards">
+                    <div id="180311" class="card">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="articleHeader">March 11</h3>
+                        </div>
+                        <div class="card-copy">
+                            <h4 class="articleTitle">From Tales to Teleportation</h4>
+                            <p>Sorry for the delay all: life outside of school has been crazy! The past two weeks I’ve finished adding data to the application (It is soooo far from complete, but I have enough now for adequate user testing.)</p>
+                            <p>I’ve also added the Go To Region function to the Events and Characters. It proved to be rather simple actually. I simply added a location column to the Event and Character tables. I did research to determine the approximate latitude and longitude most relevant to the Event or Character, and added those to the location columns. Once the data was there, I created a Go to Region button in the details modal, and set it so that the location data would be passed to that button’s location attribute. When the button is clicked, d3 grabs the location data from the attribute and sets the center of D3 map to the location coordinates. The Google map is updated in a similar manner.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="cards">
                     <div id="180223" class="card">
                         <div class="card-image">
