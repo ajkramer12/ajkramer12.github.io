@@ -119,8 +119,11 @@ function travel(direction){
 
     // Update D3 map position
     updateMap(0);
+    updateMiniMap();
+}
 
-    //Redraw minimap viewbox
+//Redraw minimap viewbox
+function updateMiniMap() {
     miniMapSizeConversion = miniProjection.scale()/projection.scale();
     viewBox
         .attr("x", miniProjection(projection.center())[0] - primaryMapWidth * miniMapSizeConversion/2)
@@ -157,6 +160,7 @@ function primaryMapPan() {
     googleMap.setCenter({lat: pCenter[1], lng: pCenter[0]});
 
     updateMap(0);
+    updateMiniMap();
 }
 
 
@@ -342,5 +346,19 @@ function toggleCharacterSummaryBox(){
             .style("left", (primaryMapWidth - characterSummaryBoxWidth) + "px");
         setTimeout(function(){characterSummaryBoxToggle.html("<span class='glyphicon glyphicon-chevron-right'></span>");}, 1500);
         characterSummaryBoxOpen = true;
+    }
+}
+
+
+
+
+
+function toggleSound() {
+    if(backgroundMusic.paused == true){
+        backgroundMusic.play();
+        d3.select("#mute").attr("src", "img/audio.png");
+    } else {
+        backgroundMusic.pause();
+        d3.select("#mute").attr("src", "img/audioMute.png");
     }
 }

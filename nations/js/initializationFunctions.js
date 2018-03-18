@@ -72,6 +72,9 @@ function loadAudio(callback) {
     nextEraAudio = new Audio('audio/nextEra.mp3'); // https://www.youtube.com/watch?v=aEaniKgfRRY
     eventBattleAudio = new Audio('audio/eventBattle.mp3'); // https://www.youtube.com/watch?v=rhFkafqZj58
     eventConquerAudio = new Audio('audio/eventConquer.mp3'); // https://www.youtube.com/watch?v=JSNlNMnsPn0
+    eventExecutionAudio = new Audio('audio/eventExecution.wav'); // https://www.youtube.com/watch?v=-9tI2GcRf6c
+    eventFireAudio = new Audio('audio/eventFire.wav'); // https://www.youtube.com/watch?v=dRilRgvJ0-k
+    eventIndependenceAudio = new Audio('audio/eventIndependence.wav'); // https://www.youtube.com/watch?v=tq-Bp_2FOGA
 
     callback(null);
 }

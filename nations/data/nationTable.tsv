@@ -17,7 +17,7 @@ id	name	culture	religion	yearFounded	nation	nodes	description
 15	Visgoths	teutonic	Pagan	0	1	84	<p>One of the most successful Germanic tribes, the Visigoths began their long history on the coast of the Black Sea were they periodically harassed Rome. However, when the Huns invaded Europe, the Gothic tribe fled to Rome for sanctuary. The Romans weren't very hospitable to their new refugees though, so soon after they arrived, the Goths revolted, crushing the Roman army in the Battle of Adrianople with the help of the Ostrogoths. Their king, Alaric, then led them on the beginning of a forty year migration all along the northern coast of the Mediterranean where the Visigoths ravaged the Empire, even sacking Rome itself. Eventually the Visigoths settled in Spain, where they became one of the primary ancestors of the Spanish. Their story ended when they were conquered by the Umayyad Caliphate.</p>
 16	Ostrogoths	teutonic	Pagan	0	1	216	<p>One of the most successful Germanic tribes, the Ostrogoths created one of the first Germanic empires, stretching from the Baltic to the Black Sea. Their cavalry were second to none in the early European Dark Ages, and though they were overrun by the Huns, the nomadic horsemen respected the Goths' skill on horseback so much that the Ostrogoths would frequently ride with the Huns in raids. The Ostrogoth cavalry was a significant cause of the Gothic victory at the Battle of Adrianople, and it was the Ostrogothic King Theodoric that defeated King Odoacer to make the Ostrogoths one of only two Germanic nations to ever successfully claim Rome while the Roman Empire was still in power. Ironically, it was Emperor Justinian's re-expansion of Rome that ultimately ended the Ostrogoth's proud history.</p>
 17	Danes	teutonic	Pagan	0	1	36	Germanic Tribe
-18	Getes	teutonic	Pagan	0	1	36	<p>An early name for the Goths, the Getes were the people of the Visigoths and the Ostrogoths before the two nations crossed the Baltic Sea. Some of these Goths remain in Scandinavia though and continued as a distinct nation until they were conquered by the Swedes.</p>
+18	Getes	teutonic	Pagan	0	1	36	<p>An early name for the Goths, the Getes were the tribe of the Visigoths and the Ostrogoths before the two nations crossed the Baltic Sea. Some of these Goths remain in their Scandinavian homeland though and continued as a distinct nation until they were conquered by the Swedes.</p>
 19	Swedes	teutonic	Pagan	0	1	48	Germanic Tribe
 20	Norse	teutonic	Pagan	0	1	60	Germanic Tribe
 21	Lapps	misc	Pagan	0	0	108	Ancient nomadic people
@@ -33,7 +33,7 @@ id	name	culture	religion	yearFounded	nation	nodes	description
 31	Kingdom of Armenia	misc	Catholic	0	1	48	Caucasian Kingdom
 32	Berbers	afroAsiatic	Pagan	0	1	48	North Saharan Tribes
 33	Arabs	afroAsiatic	Pagan	0	0	84	Arabian Tribes
-34	Persian Empire	iranian	Zoroastrian	0	1	120	Rome's primary rival
+34	Persian Empire	iranian	Zoroastrian	0	1	144	Rome's primary rival
 35	Alans	iranian	Pagan	0	1	60	A resiliant culture similar to Persia
 36	Kushan Principalities	iranian	Buddhist	0	1	72	An ancient culture that bridged the East and the West
 37	Huns	altaian	Pagan	0	1	240	Fierce nomadic warrior tribes

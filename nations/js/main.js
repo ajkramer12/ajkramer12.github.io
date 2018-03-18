@@ -48,7 +48,9 @@ var backgroundMusic;
 var nextEraAudio;
 var eventBattleAudio;
 var eventConquerAudio;
-
+var eventExecutionAudio;
+var eventFireAudio;
+var eventIndependenceAudio;
 
 
 
@@ -197,6 +199,15 @@ d3.select("#statsBox")
     .style("top", "10px")
     .style("right", "50px")
     .style("height", "25%");
+d3.select("#statsBox")
+    .append("img")
+    .attr("id", "mute")
+    .attr("src", "img/audio.png") // https://cdn1.iconfinder.com/data/icons/medieval-cartoon/512/sim2313-512.png
+    .style("position", "absolute")
+    .style("bottom", "5px")
+    .style("right", "10px")
+    .style("height", "15%")
+    .on("click", toggleSound);
 
 
 
@@ -309,4 +320,45 @@ d3.select("#detailsWindowGoToRegion").on("click", function(){
     googleMap.setCenter({lat: Number(coordinates[0]), lng: Number(coordinates[1])});
     // Update D3 map position
     updateMap(0);
+    updateMiniMap();
 });
+
+
+
+
+
+
+var timeline = d3.select("#timeline")
+    .attr("class", "slider")
+    .append("g");
+
+var x = d3.scaleLinear()
+    .domain([0, 180])
+    .range([0, width])
+    .clamp(true);
+
+timeline.append("line")
+    .attr("class", "track")
+    .attr("x1", x.range()[0])
+    .attr("x2", x.range()[1])
+    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-inset")
+    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-overlay")
+    .call(d3.drag()
+        .on("start.interrupt", function() { slider.interrupt(); })
+        .on("start drag", function() { hue(x.invert(d3.event.x)); }));
+
+timeline.insert("g", ".track-overlay")
+    .attr("class", "ticks")
+    .attr("transform", "translate(0," + 18 + ")")
+    .selectAll("text")
+    .data(x.ticks(10))
+    .enter().append("text")
+    .attr("x", x)
+    .attr("text-anchor", "middle")
+    .text(function(d) { return d + "°"; });
+
+var handle = timeline.insert("circle", ".track-overlay")
+    .attr("class", "handle")
+    .attr("r", 9);

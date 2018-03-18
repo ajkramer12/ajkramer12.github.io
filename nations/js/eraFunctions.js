@@ -222,11 +222,36 @@ function triggerEvents(){
                     d3.select("#detailsWindowSubTitle").html(eventTable[eventId].subTitle);
                     d3.select("#detailsWindowDescription").html(eventTable[eventId].description);
                     $('#detailsModal').modal('show');
-                    if(eventTable[eventId].type == "Battle"){
+                    switch (eventTable[eventId].type) {
+                        case "Battle":
+                            eventBattleAudio.play();
+                            break;
+                        case "Conquer":
+                            eventConquerAudio.play();
+                            break;
+                        case "Execution":
+                            eventExecutionAudio.play();
+                            break;
+                        case "Destruction":
+                            eventFireAudio.play();
+                            break;
+                        case "Independence":
+                            eventIndependenceAudio.play();
+                            break;
+                        default:
+                            break;
+                    }
+                    /*if(eventTable[eventId].type == "Battle"){
                         eventBattleAudio.play();
                     } else if(eventTable[eventId].type == "Conquer") {
                         eventConquerAudio.play();
-                    }
+                    } else if(eventTable[eventId].type == "Execution") {
+                        eventExecutionAudio.play();
+                    } else if(eventTable[eventId].type == "Destruction") {
+                        eventFireAudio.play();
+                    } else if(eventTable[eventId].type == "Independence") {
+                        eventIndependenceAudio.play();
+                    }*/
                     d3.select("#detailsWindowGoToRegion").attr("location", eventTable[eventId].location);
                 });
             event

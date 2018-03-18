@@ -391,6 +391,15 @@ html, body {
     z-index: 5;
 }
 
+#timeline {
+    position: absolute;
+    height: 5vh;
+    width: 33vh;
+    top: 0;
+    left: 33vh;
+    z-index: 5;
+}
+
 
 .eventNotification{
     position: absolute;
