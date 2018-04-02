@@ -104,4 +104,94 @@ function updateMap(duration){
         .duration(duration)
         .attr("d", path);
     labelRegions(duration);
+    updateCities(duration);
+}
+
+
+
+/*
+ *** Add Cities to the map, adjusting size according to the size of the city
+ */
+function updateCities(duration){
+
+    primaryMap.selectAll(".city")
+        .transition()
+        .duration(duration)
+        .attr("cx", function(d) { return projection(cityTable[d.id].location.split(",").reverse())[0]; })
+        .attr("cy", function(d) { return projection(cityTable[d.id].location.split(",").reverse())[1]; })
+        .attr("r", function(d){
+            console.log("City: " + d["e"+currentEra]);
+            if(d["e"+currentEra] > 0){
+                return calculateCityRadius(cityTable[d.id]["e"+currentEra]) + "px";
+            } else {
+                return "0";
+            }
+        });
+
+    labelCities(duration);
+}
+
+function calculateCityRadius(population){
+    var zoomMod = (1+currentZoom)/3;
+    if(population <= 1875){
+        return 1 * zoomMod;
+    } else if (population <= 3750){
+        return 2 * zoomMod;
+    } else if (population <= 7500){
+        return 3 * zoomMod;
+    } else if (population <= 15000){
+        return 4 * zoomMod;
+    } else if (population <= 30000){
+        return 5 * zoomMod;
+    } else if (population <= 60000){
+        return 6 * zoomMod;
+    } else if (population <= 90000){
+        return 6.5 * zoomMod;
+    } else if (population <= 125000){
+        return 7 * zoomMod;
+    } else if (population <= 250000){
+        return 8 * zoomMod;
+    } else if (population <= 500000){
+        return 9 * zoomMod;
+    } else if (population <= 1000000){
+        return 10 * zoomMod;
+    } else {
+        return 11 * zoomMod;
+    }
+}
+
+
+/*
+ *** Add Labels to the nations on the map, adjusting font size according to the size of the nation
+ */
+function labelCities(duration){
+
+    // Data Join
+    var currentLabels = primaryMap.selectAll(".cityLabel")
+        .data(cityTable);
+
+    currentLabels
+        .enter().append("text")
+        .attr("class", "cityLabel");
+    currentLabels
+        .attr("id", function(d){ return "cityLabel" + d.id;})
+        .text(function(d){ return cityTable[d.id].name; })
+        .transition()
+        .duration(duration)
+        .attr("transform", function(d) {
+            var circleRadius = d3.select("#city"+ d.id)[0][0].r.baseVal.value;
+            var textWidth = d3.select("#cityLabel"+ d.id)[0][0].clientWidth;
+            return "translate(" + projection(cityTable[d.id].location.split(",").reverse())[0] + "," + (projection(cityTable[d.id].location.split(",").reverse())[1]-circleRadius) + ")";
+        })
+        .attr("font-size", function(d){
+            var circleRadius = d3.select("#city"+ d.id)[0][0].r.baseVal.value;
+            var fontSize = circleRadius*2;
+            if(fontSize >= (fontThreshold/(1+currentZoom*3))){
+                return fontSize + "px";
+            } else {
+                return "0";
+            }
+        });
+
+    currentLabels.exit().remove();
 }

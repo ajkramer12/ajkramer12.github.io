@@ -6,6 +6,7 @@ var nationTable;
 var eraTable;
 var eventTable;
 var characterTable;
+var cityTable;
 var currentEra = 0;
 
 // Declare Map Path Variables
@@ -76,6 +77,7 @@ queue()
     .defer(d3.tsv, "data/eraTable.tsv")
     .defer(d3.tsv, "data/eventTable.tsv")
     .defer(d3.tsv, "data/characterTable.tsv")
+    .defer(d3.tsv, "data/cityTable.tsv")
     .await(loadInitialMapData);
 
 
@@ -332,9 +334,9 @@ var timeline = d3.select("#timeline")
     .attr("class", "slider")
     .append("g");
 
-var x = d3.scaleLinear()
-    .domain([0, 180])
-    .range([0, width])
+var x = d3.scale.linear()
+    .domain([0, 6])
+    .range([0, 12])
     .clamp(true);
 
 timeline.append("line")
@@ -344,20 +346,20 @@ timeline.append("line")
     .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
     .attr("class", "track-inset")
     .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
-    .attr("class", "track-overlay")
-    .call(d3.drag()
-        .on("start.interrupt", function() { slider.interrupt(); })
-        .on("start drag", function() { hue(x.invert(d3.event.x)); }));
+    .attr("class", "track-overlay");
+    //.call(d3.behavior.drag()
+    //    .on("start.interrupt", function() { slider.interrupt(); })
+    //    .on("start drag", function() { hue(x.invert(d3.event.x)); }));
 
 timeline.insert("g", ".track-overlay")
     .attr("class", "ticks")
     .attr("transform", "translate(0," + 18 + ")")
     .selectAll("text")
-    .data(x.ticks(10))
+    .data(x.ticks(6))
     .enter().append("text")
     .attr("x", x)
     .attr("text-anchor", "middle")
-    .text(function(d) { return d + "°"; });
+    .text(function(d) { return d; });
 
 var handle = timeline.insert("circle", ".track-overlay")
     .attr("class", "handle")

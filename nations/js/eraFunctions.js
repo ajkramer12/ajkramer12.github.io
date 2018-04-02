@@ -27,6 +27,7 @@ function updateEra(current, goal){
         updateEraName();
         updateEraSummary();
         updateRegionStats(0);
+        updateCities(eraChangeDuration);
         updateCharacters();
         triggerEvents();
 

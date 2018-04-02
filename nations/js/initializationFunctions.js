@@ -1,11 +1,13 @@
 /*
  *** Initialize map variables & load initial JS files
  */
-function loadInitialMapData(error, nationData, eraData, eventData, characterData){
+function loadInitialMapData(error, nationData, eraData, eventData, characterData, cityData){
     nationTable = nationData;
     eraTable = eraData;
     eventTable = eventData;
     characterTable = characterData;
+    cityTable = cityData;
+    console.log(cityTable);
     updateEraDate();
     updateEraName();
     updateEraSummary();
@@ -17,6 +19,8 @@ function loadInitialMapData(error, nationData, eraData, eventData, characterData
         .defer(d3.json, "data/" + getJsonFilename(0) + ".json")
         .defer(d3.json, "data/" + getJsonFilename(1) + ".json")
         .await(initializeD3Map);
+
+    initializeCities();
 }
 
 
@@ -48,8 +52,8 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
             if(d3.event.path[0].id == "primaryMap"){
                 updateRegionStats(-1);
             }
-        })
-        .call(primaryMapDrag);
+        });
+        //.call(primaryMapDrag);
 
 
     labelRegions(0);
@@ -59,6 +63,33 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
     queue()
         .defer(loadAudio)
         .await(startPage);
+}
+
+
+
+function initializeCities(){
+    // add circles to svg
+    primaryMap.selectAll("circle")
+        .data(cityTable).enter()
+        .append("circle")
+        .attr("id", function(d){ return "city"+ d.id; })
+        .attr("class", "city")
+        .attr("cx", function (d) {
+            return projection(d.location.split(",").reverse())[0];
+        })
+        .attr("cy", function (d) {
+            return projection(d.location.split(",").reverse())[1]; })
+        .attr("r", function (d){
+            console.log(d["e"+currentEra]);
+            if(d["e"+currentEra] > 0){
+                return calculateCityRadius(d["e"+currentEra]) + "px";
+            } else {
+                return "0";
+            }
+        })
+        .attr("fill", "black");
+
+    labelCities(eraChangeDuration);
 }
 
 
