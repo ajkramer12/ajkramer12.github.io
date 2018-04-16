@@ -31,7 +31,7 @@ id	name	culture	religion	yearFounded	nation	nodes	description
 29	Kingdom of Lazica	misc	Catholic	0	1	24	Caucasian Kingdom
 30	Kingdom of Iberia	misc	Catholic	0	1	36	Caucasian Kingdom
 31	Kingdom of Armenia	misc	Catholic	0	1	48	Caucasian Kingdom
-32	Berbers	afroAsiatic	Pagan	0	1	48	North Saharan Tribes
+32	Berbers	afroAsiatic	Pagan	0	1	60	North Saharan Tribes
 33	Arabs	afroAsiatic	Pagan	0	0	84	Arabian Tribes
 34	Persian Empire	iranian	Zoroastrian	0	1	144	Rome's primary rival
 35	Alans	iranian	Pagan	0	1	60	A resiliant culture similar to Persia

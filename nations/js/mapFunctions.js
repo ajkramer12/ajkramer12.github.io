@@ -32,6 +32,13 @@ function homogenizeNodeCount(mapData){
 
     var homogenizedMapData = mapData;
 
+    homogenizedMapData = homogenizedMapData.sort(
+        function(a,b){
+            return path.area(b) - path.area(a);
+        }
+    );
+    console.log(homogenizedMapData);
+
     for(var region = 0; region < mapData.length; region++){
         var regionData;
         if(currentEra < 5){
@@ -106,6 +113,80 @@ function updateMap(duration){
     labelRegions(duration);
     updateCities(duration);
 }
+
+
+
+/*
+ *** Calulate the current era's largest nations
+ *** Called by initialize map and update era
+ */
+
+function calculateRegionAreas(){
+    for(var i = 0; i < 5; i++){
+        largestRegions[i].size = 0;
+    }
+
+    currentEraBoundaries.forEach(function(d){
+        var regionSize = path.area(d);
+        if(regionSize > largestRegions[0].size && nationTable[d.id].nation == 1){
+
+            largestRegions[4].name = largestRegions[3].name;
+            largestRegions[4].size = largestRegions[3].size;
+
+            largestRegions[3].name = largestRegions[2].name;
+            largestRegions[3].size = largestRegions[2].size;
+
+            largestRegions[2].name = largestRegions[1].name;
+            largestRegions[2].size = largestRegions[1].size;
+
+            largestRegions[1].name = largestRegions[0].name;
+            largestRegions[1].size = largestRegions[0].size;
+
+            largestRegions[0].name = nationTable[d.id].name;
+            largestRegions[0].size = regionSize;
+
+        } else if(regionSize > largestRegions[1].size && nationTable[d.id].nation == 1){
+            largestRegions[4].name = largestRegions[3].name;
+            largestRegions[4].size = largestRegions[3].size;
+
+            largestRegions[3].name = largestRegions[2].name;
+            largestRegions[3].size = largestRegions[2].size;
+
+            largestRegions[2].name = largestRegions[1].name;
+            largestRegions[2].size = largestRegions[1].size;
+
+            largestRegions[1].name = nationTable[d.id].name;
+            largestRegions[1].size = regionSize;
+
+        } else if(regionSize > largestRegions[2].size && nationTable[d.id].nation == 1){
+            largestRegions[4].name = largestRegions[3].name;
+            largestRegions[4].size = largestRegions[3].size;
+
+            largestRegions[3].name = largestRegions[2].name;
+            largestRegions[3].size = largestRegions[2].size;
+
+            largestRegions[2].name = nationTable[d.id].name;
+            largestRegions[2].size = regionSize;
+
+        } else if(regionSize > largestRegions[3].size && nationTable[d.id].nation == 1){
+            largestRegions[4].name = largestRegions[3].name;
+            largestRegions[4].size = largestRegions[3].size;
+
+            largestRegions[3].name = nationTable[d.id].name;
+            largestRegions[3].size = regionSize;
+
+        } else if(regionSize > largestRegions[4].size && nationTable[d.id].nation == 1){
+            largestRegions[4].name = nationTable[d.id].name;
+            largestRegions[4].size = regionSize;
+        }
+
+        for(i = 0; i < 5; i++){
+            d3.select("#nationSize" + i).text(largestRegions[i].name);
+        }
+    });
+}
+
+
 
 
 

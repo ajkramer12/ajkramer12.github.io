@@ -46,15 +46,15 @@ function updateEraMapWrapup(direction) {
             nextEraBoundaries = presentEraBoundaries;
             presentEraBoundaries = previousEraBoundaries;
 
-            previousEraBoundaries = newData;
-            //previousEraBoundaries = homogenizeNodeCount(previousEraBoundaries.features);
-            previousEraBoundaries = previousEraBoundaries.features;
+            var previousEraBoundariesData = newData;
+            previousEraBoundaries = homogenizeNodeCount(previousEraBoundariesData.features);
+            //previousEraBoundaries = previousEraBoundaries.features;
         } else {
             previousEraBoundaries = presentEraBoundaries;
             presentEraBoundaries = nextEraBoundaries;
 
-            nextEraBoundaries = newData;
-            nextEraBoundaries = homogenizeNodeCount(nextEraBoundaries.features);
+            var nextEraBoundariesData = newData;
+            nextEraBoundaries = homogenizeNodeCount(nextEraBoundariesData.features);
             //nextEraBoundaries = nextEraBoundaries.features;
         }
         console.log(currentEra);
