@@ -289,3 +289,20 @@ function toggleSound() {
         d3.select("#mute").attr("src", "img/audioMute.png");
     }
 }
+
+
+
+
+$("body").keydown(function(event){
+    switch(event.which){
+        case 38: travel(0);
+                 break;
+        case 39: travel(1);
+            break;
+        case 40: travel(2);
+            break;
+        case 37: travel(3);
+            break;
+        default: break;
+    }
+});

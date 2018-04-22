@@ -456,3 +456,40 @@ html, body {
 }
 
 
+
+#trainingWindow {
+    border: 7px groove grey;
+    background-color: #000000;
+    background-image: url(../img/commandBoxBack.jpg);
+    box-shadow: 0 0 20px black;
+    background-size: cover;
+}
+#trainingWindowClose {
+    text-align: right;
+}
+#trainingWindowCloseButton {
+    height: 3vh;
+    width: 3vh;
+}
+#trainingWindowTitle {
+    margin: 0 10% 5px 10%;
+    text-align: center;
+    font-size: x-large;
+    color: silver;
+}
+#trainingWindowText {
+    margin: 0 10% 0 10%;
+    text-align: center;
+    font-size: large;
+    color: silver;
+}
+#trainingWindowFooter {
+    text-align: right;
+    font-family: "Camelot", serif;
+    font-size: large;
+    color: silver;
+}
+#trainingWindowNext {
+    height: 3vh;
+    width: 3vh;
+}

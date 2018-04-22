@@ -126,6 +126,7 @@ function startPage(error){
     backgroundMusic.play();
     setTimeout(function(){
         d3.select("#loadScreen").remove();
+        $('#trainingModal').modal('show');
     }, 4000);
 }
 
@@ -179,3 +180,27 @@ function initializeMiniMap(error, mapData) {
 
 }
 
+var trainingPage = 0;
+$("#trainingWindowNext").click(function(){
+    switch(trainingPage){
+        case 0: $("#trainingWindowTitle").text("Navigation");
+                $("#trainingWindowText").html("<p>Zoom in and out with your mouse wheel.</p><p>Pan the map by moving your mouse to the edge of the screen or using your keyboard arrow keys.</p><p>Click and drag the red box in the mini map to go directly to a location.</p>");
+                trainingPage++;
+                break;
+        case 1: $("#trainingWindowTitle").text("Time Machine");
+                $("#trainingWindowText").html("<p>The hallmark of Tide of Nations is its display of changes in the world over time. Use the arrow buttons at the bottom-right of the screen to move forward or backward in time.</p><p>As you move from one year to the next, event boxes will fall at the left of the screen to reveal important events that occurred in the interim.</p>");
+                trainingPage++;
+                break;
+        case 2: $("#trainingWindowTitle").text("Dive Deeper");
+                $("#trainingWindowText").html("<p>Click on the nations on the map, the character portraits, or the event boxes for more details about that item.</p>");
+                trainingPage++;
+                break;
+        case 3: $("#trainingWindowTitle").text("Focus");
+                $("#trainingWindowText").html("<p>Click the tabs on the informational boxes at the bottom and right of the map to hide them if you want more map space.</p>");
+                $("#trainingWindowNextText").text("Begin");
+                trainingPage++;
+                break;
+        case 4: $('#trainingModal').modal('hide');
+        default: break;
+    }
+});

@@ -194,7 +194,6 @@ function calculateRegionAreas(){
  *** Add Cities to the map, adjusting size according to the size of the city
  */
 function updateCities(duration){
-
     primaryMap.selectAll(".city")
         .transition()
         .duration(duration)
@@ -209,7 +208,7 @@ function updateCities(duration){
             }
         });
 
-    labelCities(duration);
+    labelCities(duration)
 }
 
 function calculateCityRadius(population){
