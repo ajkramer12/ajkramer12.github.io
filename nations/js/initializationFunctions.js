@@ -204,3 +204,8 @@ $("#trainingWindowNext").click(function(){
         default: break;
     }
 });
+
+
+$("#trainingWindowClose").click(function(){
+    $('#trainingModal').modal('hide');
+});
