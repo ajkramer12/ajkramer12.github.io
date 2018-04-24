@@ -44,6 +44,12 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
         .attr("d", path)
         .attr("id", function(d){ return "region" + d.id;})
         .attr("class", function(d){return "primaryMapRegion " + nationTable[d.id].culture})
+        .on("mouseover", function(d){
+            d3.select(this).style("opacity", "0.7");
+        })
+        .on("mouseout", function(d){
+            d3.select(this).style("opacity", "0.5");
+        })
         .on("click", function(d){updateRegionStats(d);});
 
 
@@ -181,31 +187,43 @@ function initializeMiniMap(error, mapData) {
 }
 
 var trainingPage = 0;
-$("#trainingWindowNext").click(function(){
-    switch(trainingPage){
-        case 0: $("#trainingWindowTitle").text("Navigation");
-                $("#trainingWindowText").html("<p>Zoom in and out with your mouse wheel.</p><p>Pan the map by moving your mouse to the edge of the screen or using your keyboard arrow keys.</p><p>Click and drag the red box in the mini map to go directly to a location.</p>");
-                trainingPage++;
-                break;
-        case 1: $("#trainingWindowTitle").text("Time Machine");
-                $("#trainingWindowText").html("<p>The hallmark of Tide of Nations is its display of changes in the world over time. Use the arrow buttons at the bottom-right of the screen to move forward or backward in time.</p><p>As you move from one year to the next, event boxes will fall at the left of the screen to reveal important events that occurred in the interim.</p>");
-                trainingPage++;
-                break;
-        case 2: $("#trainingWindowTitle").text("Dive Deeper");
-                $("#trainingWindowText").html("<p>Click on the nations on the map, the character portraits, or the event boxes for more details about that item.</p>");
-                trainingPage++;
-                break;
-        case 3: $("#trainingWindowTitle").text("Focus");
-                $("#trainingWindowText").html("<p>Click the tabs on the informational boxes at the bottom and right of the map to hide them if you want more map space.</p>");
-                $("#trainingWindowNextText").text("Begin");
-                trainingPage++;
-                break;
-        case 4: $('#trainingModal').modal('hide');
-        default: break;
-    }
-});
+$("#trainingWindowNext")
+    .on("mouseover", function(){
+        d3.select(this)
+        .style("border-radius", "50%")
+        .style("box-shadow", "0 0 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); })
+    .click(function(){
+        switch(trainingPage){
+            case 0: $("#trainingWindowTitle").text("Navigation");
+                    $("#trainingWindowText").html("<p>Zoom in and out with your mouse wheel.</p><p>Pan the map by moving your mouse to the edge of the screen or using your keyboard arrow keys.</p><p>Click and drag the red box in the mini map to go directly to a location.</p>");
+                    trainingPage++;
+                    break;
+            case 1: $("#trainingWindowTitle").text("Time Machine");
+                    $("#trainingWindowText").html("<p>The hallmark of Tide of Nations is its display of changes in the world over time. Use the arrow buttons at the bottom-right of the screen to move forward or backward in time.</p><p>As you move from one year to the next, event boxes will fall at the left of the screen to reveal important events that occurred in the interim.</p>");
+                    trainingPage++;
+                    break;
+            case 2: $("#trainingWindowTitle").text("Dive Deeper");
+                    $("#trainingWindowText").html("<p>Click on the nations on the map, the character portraits, or the event boxes for more details about that item.</p>");
+                    trainingPage++;
+                    break;
+            case 3: $("#trainingWindowTitle").text("Focus");
+                    $("#trainingWindowText").html("<p>Click the tabs on the informational boxes at the bottom and right of the map to hide them if you want more map space.</p>");
+                    $("#trainingWindowNextText").text("Begin");
+                    trainingPage++;
+                    break;
+            case 4: $('#trainingModal').modal('hide');
+            default: break;
+        }
+    });
 
 
-$("#trainingWindowClose").click(function(){
-    $('#trainingModal').modal('hide');
-});
+$("#trainingWindowCloseButton")
+    .on("mouseover", function(){
+        d3.select(this)
+            .style("border-radius", "50%")
+            .style("box-shadow", "0 0 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); })
+    .click(function(){ $('#trainingModal').modal('hide'); });

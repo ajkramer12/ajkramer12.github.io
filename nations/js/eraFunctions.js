@@ -205,6 +205,12 @@ function triggerEvents(){
                  * war: http://us.123rf.com/450wm/andreykuzmin/andreykuzmin1502/andreykuzmin150200118/37177744-medieval-knight-shield-and-crossed-swords-on-wooden-gate.jpg?ver=6
                  * */
                 .style("background-size", "contain")
+                .on("mouseover", function(d){
+                    d3.select(this).style("box-shadow", "0 0 5px #fff");
+                })
+                .on("mouseout", function(d){
+                    d3.select(this).style("box-shadow", "0 0 0 #fff");
+                })
                 .on("click", function(d, i){
                     var eventId = d3.event.srcElement.id.slice(5);
                     d3.select("#detailsWindowCloseButton").attr("eventId", "event"+eventId);
@@ -328,7 +334,13 @@ function updateCharacters(){
                 .attr("class", "characterThumbnail " + characterData.culture)
                 .style("height", characterSummaryBoxWidth*0.65 + "px")
                 .style("width", characterSummaryBoxWidth*0.65 + "px")
-                .style("background-image", "url(img/"+characterTable[i].image);
+                .style("background-image", "url(img/"+characterTable[i].image)
+                .on("mouseover", function(d){
+                    d3.select(this).style("box-shadow", "0 0 5px #fff");
+                })
+                .on("mouseout", function(d){
+                    d3.select(this).style("box-shadow", "0 0 0 #fff");
+                });
             addedCharacter
                 .append("div")
                 .attr("class", "characterLabel")

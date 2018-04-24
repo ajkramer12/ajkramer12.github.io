@@ -192,7 +192,13 @@ d3.select("#statsBox")
     .style("position", "absolute")
     .style("top", "10px")
     .style("right", "10px")
-    .style("height", "25%");
+    .style("height", "25%")
+    .on("mouseover", function(){
+        d3.select(this)
+        .style("border-radius", "50%")
+        .style("box-shadow", "0 0 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); });
 d3.select("#statsBox")
     .append("img")
     .attr("id", "backArrow")
@@ -200,7 +206,13 @@ d3.select("#statsBox")
     .style("position", "absolute")
     .style("top", "10px")
     .style("right", "50px")
-    .style("height", "25%");
+    .style("height", "25%")
+    .on("mouseover", function(){
+        d3.select(this)
+            .style("border-radius", "50%")
+            .style("box-shadow", "0 0 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); });
 d3.select("#statsBox")
     .append("img")
     .attr("id", "mute")
@@ -209,6 +221,8 @@ d3.select("#statsBox")
     .style("bottom", "5px")
     .style("right", "10px")
     .style("height", "15%")
+    .on("mouseover", function(){ d3.select(this).style("box-shadow", "0 0 5px #fff"); })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); })
     .on("click", toggleSound);
 
 
@@ -245,6 +259,11 @@ var eraSummary = d3.select("#eraSummary")
 
 var eraSummaryBoxToggle = d3.select("#eraSummaryBoxToggle")
     .style("left", eraSummaryBoxWidth/2-(d3.select("#eraSummaryBoxToggle").style("width").slice(0, -2)/2) + "px")
+    .on("mouseover", function(){
+        d3.select(this)
+            .style("text-shadow", "0 0 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("text-shadow", "0 0"); })
     .on("click", toggleEraSummaryBox);
 
 
@@ -275,6 +294,11 @@ var characterSummaryContainer = d3.select("#characterSummaryContainer")
 
 var characterSummaryBoxToggle = d3.select("#characterSummaryBoxToggle")
     .style("top", characterSummaryBoxHeight/2-(d3.select("#characterSummaryBoxToggle").style("height").slice(0, -2)/2) + "px")
+    .on("mouseover", function(){
+        d3.select(this)
+            .style("text-shadow", "0 0 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("text-shadow", "0 0"); })
     .on("click", toggleCharacterSummaryBox);
 
 
@@ -293,37 +317,50 @@ d3.select("#backArrow")
 
 
 
-d3.select("#detailsWindowCloseButton").on("click", function(){
-    $('#detailsModal').modal('hide');
-    var closedElementId = d3.select("#detailsWindowCloseButton").attr("eventId");
-    if(closedElementId.slice(0, 5) == "event") {
-        d3.select("#" + closedElementId).remove();
-        var shiftedEvents = 0;
-        d3.selectAll(".eventNotification")[0].forEach(function (event) {
-            if (+event.id.slice(5) > +closedElementId.slice(5)) {
-                shiftedEvents++;
-                var eventSelect = d3.select("#" + event.id);
-                eventSelect
-                    .transition()
-                    .delay(100 * shiftedEvents)
-                    .duration(eraChangeDuration / 15)
-                    .ease("linear")
-                    .style("top", function () {
-                        return (Math.floor(eventSelect.style("top").slice(0, -2)) + Math.floor(eventSelect.style("height").slice(0, -2))) + "px";
-                    });
-            }
-        });
-    }
-});
+d3.select("#detailsWindowCloseButton")
+    .on("mouseover", function(){
+        d3.select(this)
+            .style("border-radius", "50%")
+            .style("box-shadow", "0 0 10px 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); })
+    .on("click", function(){
+        $('#detailsModal').modal('hide');
+        var closedElementId = d3.select("#detailsWindowCloseButton").attr("eventId");
+        if(closedElementId.slice(0, 5) == "event") {
+            d3.select("#" + closedElementId).remove();
+            var shiftedEvents = 0;
+            d3.selectAll(".eventNotification")[0].forEach(function (event) {
+                if (+event.id.slice(5) > +closedElementId.slice(5)) {
+                    shiftedEvents++;
+                    var eventSelect = d3.select("#" + event.id);
+                    eventSelect
+                        .transition()
+                        .delay(100 * shiftedEvents)
+                        .duration(eraChangeDuration / 15)
+                        .ease("linear")
+                        .style("top", function () {
+                            return (Math.floor(eventSelect.style("top").slice(0, -2)) + Math.floor(eventSelect.style("height").slice(0, -2))) + "px";
+                        });
+                }
+            });
+    }});
 
-d3.select("#detailsWindowGoToRegion").on("click", function(){
-    var coordinates = d3.select("#detailsWindowGoToRegion").attr("location").split(",");
-    projection.center([Number(coordinates[1]), Number(coordinates[0])]);
-    googleMap.setCenter({lat: Number(coordinates[0]), lng: Number(coordinates[1])});
-    // Update D3 map position
-    updateMap(0);
-    updateMiniMap();
-});
+d3.select("#detailsWindowGoToRegion")
+    .on("mouseover", function(){
+        d3.select(this)
+        .style("border-radius", "75%")
+        .style("box-shadow", "0 0 15px 5px #fff");
+    })
+    .on("mouseout", function(){ d3.select(this).style("box-shadow", "0 0 0 #fff"); })
+    .on("click", function(){
+        var coordinates = d3.select("#detailsWindowGoToRegion").attr("location").split(",");
+        projection.center([Number(coordinates[1]), Number(coordinates[0])]);
+        googleMap.setCenter({lat: Number(coordinates[0]), lng: Number(coordinates[1])});
+        // Update D3 map position
+        updateMap(0);
+        updateMiniMap();
+    });
 
 
 
