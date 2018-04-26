@@ -75,7 +75,8 @@ function labelRegions(duration){
 
     currentLabels
         .enter().append("text")
-        .attr("class", "regionLabel");
+        .attr("class", "regionLabel")
+        .on("click", function(d){updateRegionStats(d);});
 
     currentLabels
         .attr("id", function(d){ return "label" + d.id;})
@@ -95,6 +96,7 @@ function labelRegions(duration){
                 return "0";
             }
         });
+
 
     currentLabels.exit().remove();
 }
