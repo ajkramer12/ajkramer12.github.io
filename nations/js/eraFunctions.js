@@ -47,21 +47,17 @@ function updateEraMapWrapup(direction) {
             presentEraBoundaries = previousEraBoundaries;
 
             var previousEraBoundariesData = newData;
-            previousEraBoundaries = homogenizeNodeCount(previousEraBoundariesData.features);
+            previousEraBoundaries = homogenizeNodeCount(previousEraBoundariesData.features, direction);
             //previousEraBoundaries = previousEraBoundaries.features;
         } else {
             previousEraBoundaries = presentEraBoundaries;
             presentEraBoundaries = nextEraBoundaries;
 
             var nextEraBoundariesData = newData;
-            nextEraBoundaries = homogenizeNodeCount(nextEraBoundariesData.features);
+            nextEraBoundaries = homogenizeNodeCount(nextEraBoundariesData.features, direction);
             //nextEraBoundaries = nextEraBoundaries.features;
         }
         console.log(currentEra);
-        console.log(previousEraBoundaries.length);
-        console.log(presentEraBoundaries.length);
-        console.log(nextEraBoundaries.length);
-        console.log("\n"+currentEraBoundaries.length);
 
     };
 }
@@ -118,12 +114,6 @@ function updateEraMap(currentBoundaries, goalBoundaries){
                  .classed("conquered", true);
                  }
                  */
-                if(currentBoundaries[i].id == 49){
-                    console.log("Coor");
-                    console.log(currentBoundaries[i].geometry.coordinates[0]);
-                    console.log(goalBoundaries[j].geometry.coordinates[0]);
-                    console.log("end");
-                }
                 currentBoundaries[i].geometry.coordinates[0] = goalBoundaries[j].geometry.coordinates[0];
                 found = true;
             }
@@ -158,7 +148,6 @@ function updateEraMap(currentBoundaries, goalBoundaries){
         found = false;
     }
 
-    console.log(currentBoundaries);
 
     // Redraw map
     primaryMap.selectAll("path:not(.transitioned)")

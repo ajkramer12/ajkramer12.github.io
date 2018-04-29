@@ -31,11 +31,11 @@ function loadInitialMapData(error, nationData, eraData, eventData, characterData
  */
 function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
 
-    previousEraBoundaries = homogenizeNodeCount(previousMapData.features);
-    presentEraBoundaries = homogenizeNodeCount(currentMapData.features);
-    nextEraBoundaries = homogenizeNodeCount(nextMapData.features);
+    previousEraBoundaries = homogenizeNodeCount(previousMapData.features, 0);
+    presentEraBoundaries = homogenizeNodeCount(currentMapData.features, 0);
+    nextEraBoundaries = homogenizeNodeCount(nextMapData.features, 0);
 
-    currentEraBoundaries = homogenizeNodeCount(currentMapData.features);
+    currentEraBoundaries = homogenizeNodeCount(currentMapData.features, 0);
 
     // Render map
     primaryMap.selectAll("path")

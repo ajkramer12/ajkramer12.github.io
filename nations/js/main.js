@@ -364,7 +364,7 @@ d3.select("#detailsWindowGoToRegion")
 
 
 
-
+/*
 var timeline = d3.select("timeline"),
     smargin = {right: 50, left: 50},
     swidth = 960,
@@ -416,3 +416,4 @@ function hue(h) {
     handle.attr("cx", x(h));
     timeline.style("background-color", d3.hsl(h, 0.8, 0.8));
 }
+    */

@@ -28,7 +28,7 @@ function getJsonFilename(direction){
 /*
  *** Increase the number of a nations Lat/Long nodes to a set value to avoid animation artifacts
  */
-function homogenizeNodeCount(mapData){
+function homogenizeNodeCount(mapData, direction){
 
     var homogenizedMapData = mapData;
 
@@ -37,11 +37,11 @@ function homogenizeNodeCount(mapData){
             return path.area(b) - path.area(a);
         }
     );
-    console.log(homogenizedMapData);
+
 
     for(var region = 0; region < mapData.length; region++){
         var regionData;
-        if(currentEra < 5){
+        if((currentEra < 5 && direction >= 0) || (currentEra < 6 && direction < 0)){
             regionData = mapData[region].geometry.coordinates[0];
         } else {
             regionData = mapData[region].geometry.coordinates[0].reverse();
@@ -202,7 +202,6 @@ function updateCities(duration){
         .attr("cx", function(d) { return projection(cityTable[d.id].location.split(",").reverse())[0]; })
         .attr("cy", function(d) { return projection(cityTable[d.id].location.split(",").reverse())[1]; })
         .attr("r", function(d){
-            console.log("City: " + d["e"+currentEra]);
             if(d["e"+currentEra] > 0){
                 return calculateCityRadius(cityTable[d.id]["e"+currentEra]) + "px";
             } else {
