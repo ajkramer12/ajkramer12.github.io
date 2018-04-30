@@ -2,7 +2,6 @@
  *** Load the next JSON file for lazy loading
  */
 function getJsonFilename(direction){
-    console.log(currentEra);
     switch(direction){
         case -1: if(currentEra <= 0){
             return eraTable[0].filename;
@@ -114,6 +113,7 @@ function updateMap(duration){
         .attr("d", path);
     labelRegions(duration);
     updateCities(duration);
+    labelCities(duration);
 }
 
 
@@ -208,8 +208,6 @@ function updateCities(duration){
                 return "0";
             }
         });
-
-    labelCities(duration)
 }
 
 function calculateCityRadius(population){
@@ -260,12 +258,12 @@ function labelCities(duration){
         .transition()
         .duration(duration)
         .attr("transform", function(d) {
-            var circleRadius = d3.select("#city"+ d.id)[0][0].r.baseVal.value;
-            var textWidth = d3.select("#cityLabel"+ d.id)[0][0].clientWidth;
+            var circleRadius = calculateCityRadius(cityTable[d.id]["e"+currentEra]); //d3.select("#city"+ d.id)[0][0].r.baseVal.value;
+            //var textWidth = d3.select("#cityLabel"+ d.id)[0][0].clientWidth;
             return "translate(" + projection(cityTable[d.id].location.split(",").reverse())[0] + "," + (projection(cityTable[d.id].location.split(",").reverse())[1]-circleRadius) + ")";
         })
         .attr("font-size", function(d){
-            var circleRadius = d3.select("#city"+ d.id)[0][0].r.baseVal.value;
+            var circleRadius = calculateCityRadius(cityTable[d.id]["e"+currentEra]); //d3.select("#city"+ d.id)[0][0].r.baseVal.value;
             var fontSize = circleRadius*2;
             if(fontSize >= (fontThreshold/(1+currentZoom*3))){
                 return fontSize + "px";

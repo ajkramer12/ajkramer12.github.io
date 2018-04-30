@@ -7,11 +7,10 @@ function loadInitialMapData(error, nationData, eraData, eventData, characterData
     eventTable = eventData;
     characterTable = characterData;
     cityTable = cityData;
-    console.log(cityTable);
     updateEraDate();
     updateEraName();
     updateEraSummary();
-    updateCharacters();
+    updateCharacters(0);
 
 
     queue()
@@ -86,7 +85,6 @@ function initializeCities(){
         .attr("cy", function (d) {
             return projection(d.location.split(",").reverse())[1]; })
         .attr("r", function (d){
-            console.log(d["e"+currentEra]);
             if(d["e"+currentEra] > 0){
                 return calculateCityRadius(d["e"+currentEra]) + "px";
             } else {

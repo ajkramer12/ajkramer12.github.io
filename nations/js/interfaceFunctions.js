@@ -146,12 +146,10 @@ function primaryMapPan() {
 
     */
 
-    console.log(getPrimaryMapPanDeltaX(d3.event.x) + ", " + getPrimaryMapPanDeltaY(d3.event.y));
     var pCenter = projection.invert([getPrimaryMapPanDeltaX(d3.event.x), getPrimaryMapPanDeltaY(d3.event.y)]);
     primaryMapPanOrigin = [d3.event.x, d3.event.y];
     //var vCenter = projection.invert([d3.event.sourceEvent.offsetX, d3.event.sourceEvent.offsetY]);
     //var vCenter = projection.invert([longitude, latitude]);
-   //console.log(vCenter);
 
     var pCenter = projection.center();
 
@@ -189,11 +187,8 @@ function getPrimaryMapPanDeltaY(panY) {
  */
 function setPrimaryMapPanOrigin() {
     primaryMapPanOrigin = [d3.event.sourceEvent.x, d3.event.sourceEvent.y];
-    console.log(primaryMapPanOrigin);
 
     //var vCenter = projection.invert([d3.event.sourceEvent.offsetX, d3.event.sourceEvent.offsetY]);
-    //console.log(vCenter);
-    //console.log(projection.center());
     //projection.center(vCenter);
     //updateMap(0);
 }

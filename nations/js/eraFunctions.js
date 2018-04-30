@@ -27,8 +27,7 @@ function updateEra(current, goal){
         updateEraName();
         updateEraSummary();
         updateRegionStats(0);
-        updateCities(eraChangeDuration);
-        updateCharacters();
+        updateCharacters(direction);
         triggerEvents();
 
     }
@@ -57,7 +56,6 @@ function updateEraMapWrapup(direction) {
             nextEraBoundaries = homogenizeNodeCount(nextEraBoundariesData.features, direction);
             //nextEraBoundaries = nextEraBoundaries.features;
         }
-        console.log(currentEra);
 
     };
 }
@@ -156,6 +154,10 @@ function updateEraMap(currentBoundaries, goalBoundaries){
         .attr("d", path)
         .style("opacity", 0.5);
     labelRegions(eraChangeDuration);
+
+    updateCities(eraChangeDuration);
+    labelCities(eraChangeDuration);
+
 
 }
 
@@ -271,13 +273,13 @@ function triggerEvents(){
 /*
  *** Update character box for the new era
  */
-function updateCharacters(){
+function updateCharacters(direction){
 
-    for(var i = 0; i < characterTable.length && characterTable[i].startEra <= currentEra; i++) {
+    for(var i = 0; i < characterTable.length; i++) {
         var characterData = characterTable[i];
         var character;
 
-        if (characterTable[i].endEra == currentEra) {
+        if ((direction >= 0 && characterTable[i].endEra == currentEra) || (direction < 0 && characterTable[i].startEra == (currentEra+1))) {
             var killedCharacter = d3.select("#character" + characterData.id)
                 .transition()
                 .duration(500)
@@ -288,7 +290,7 @@ function updateCharacters(){
             setTimeout(function(){killedCharacter.remove();}, 500);
 
         }
-        if (characterTable[i].startEra == currentEra) {
+        if ((direction >= 0 && characterTable[i].startEra == currentEra) || (direction < 0 && characterTable[i].endEra == (currentEra+1))) {
             var addedCharacter = d3.select("#characterSummaryContainer").append("div")
                 .attr("id", function(){ return "character" + characterData.id;})
                 .attr("class", function(){return "characterThumbnailBox";})
