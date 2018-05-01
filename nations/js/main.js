@@ -39,9 +39,13 @@ var largestRegions = [{name: "test", size: 0},{name: "test", size: 0},{name: "te
 // Declare/Initialize map variables
 var primaryMap = d3.select("#primaryMap")
                 .attr("width", primaryMapWidth)
-                .attr("height", primaryMapHeight)
-                .append("g");
+                .attr("height", primaryMapHeight);
+var regionMap = d3.select("#regionGroup");
+var cityMap = d3.select("#cityGroup");
+
 var googleMap;
+
+
 
 
 // Declare Audio

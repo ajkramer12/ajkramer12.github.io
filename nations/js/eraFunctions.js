@@ -134,7 +134,7 @@ function updateEraMap(currentBoundaries, goalBoundaries){
         }
         if(!found){
             currentBoundaries.push(goalBoundaries[i]);
-            primaryMap.selectAll("path")
+            regionMap.selectAll("path")
                 .data(currentBoundaries)
                 .enter().append("path")
                 .attr("d", path)
@@ -148,7 +148,7 @@ function updateEraMap(currentBoundaries, goalBoundaries){
 
 
     // Redraw map
-    primaryMap.selectAll("path:not(.transitioned)")
+    regionMap.selectAll("path:not(.transitioned)")
         .transition()
         .duration(eraChangeDuration)
         .attr("d", path)

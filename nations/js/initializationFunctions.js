@@ -37,7 +37,7 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
     currentEraBoundaries = homogenizeNodeCount(currentMapData.features, 0);
 
     // Render map
-    primaryMap.selectAll("path")
+    regionMap.selectAll("path")
         .data(currentEraBoundaries)
         .enter().append("path")
         .attr("d", path)
@@ -74,7 +74,7 @@ function initializeD3Map(error, previousMapData, currentMapData, nextMapData) {
 
 function initializeCities(){
     // add circles to svg
-    primaryMap.selectAll("circle")
+    cityMap.selectAll("circle")
         .data(cityTable).enter()
         .append("circle")
         .attr("id", function(d){ return "city"+ d.id; })
@@ -91,7 +91,26 @@ function initializeCities(){
                 return "0";
             }
         })
-        .attr("fill", "black");
+        .attr("fill", "black")
+        .on("mouseover", function(d){
+            d3.select(this).style("opacity", "0.9");
+        })
+        .on("mouseout", function(d){
+            d3.select(this).style("opacity", "0.5");
+        })
+        .on("click", function(d, i){
+            var cityId = d.id;
+            d3.select("#detailsWindowCloseButton").attr("eventId", "city"+cityId);
+            d3.select("#detailsWindowImage")
+                .style("height", "0")
+                .style("border", "0")
+                .style("background-image", "none");
+            d3.select("#detailsWindowTitle").html("");
+            d3.select("#detailsWindowSubTitle").html(cityTable[cityId].name);
+            d3.select("#detailsWindowDescription").html(cityTable[cityId].location);
+            d3.select("#detailsWindowGoToRegion").attr("location", cityTable[cityId].location);
+            $('#detailsModal').modal('show');
+        });
 
     labelCities(eraChangeDuration);
 }

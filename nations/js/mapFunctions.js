@@ -69,7 +69,7 @@ function homogenizeNodeCount(mapData, direction){
 function labelRegions(duration){
 
     // Data Join
-    var currentLabels = primaryMap.selectAll(".regionLabel")
+    var currentLabels = regionMap.selectAll(".regionLabel")
         .data(currentEraBoundaries);
 
     currentLabels
@@ -107,7 +107,7 @@ function labelRegions(duration){
  *** Move the nation map as the Google map is moved
  */
 function updateMap(duration){
-    primaryMap.selectAll("path")
+    regionMap.selectAll("path")
         .transition()
         .duration(duration)
         .attr("d", path);
@@ -196,7 +196,7 @@ function calculateRegionAreas(){
  *** Add Cities to the map, adjusting size according to the size of the city
  */
 function updateCities(duration){
-    primaryMap.selectAll(".city")
+    cityMap.selectAll(".city")
         .transition()
         .duration(duration)
         .attr("cx", function(d) { return projection(cityTable[d.id].location.split(",").reverse())[0]; })
@@ -246,7 +246,7 @@ function calculateCityRadius(population){
 function labelCities(duration){
 
     // Data Join
-    var currentLabels = primaryMap.selectAll(".cityLabel")
+    var currentLabels = cityMap.selectAll(".cityLabel")
         .data(cityTable);
 
     currentLabels

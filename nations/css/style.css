@@ -214,6 +214,14 @@ html, body {
 }
 
 
+/*
+** City Styling
+*/
+.city{
+    opacity: 0.5;
+}
+
+
 
 /*
 ** Command Box Styling
