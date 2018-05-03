@@ -1,19 +1,19 @@
-id	name	foundedEra	razedEra	location	e0	e1	e2	e3	e4	e5	e6
-0	Milan	0	42	"45.4627124,9.1076926"	15000	15000	15000	15000	15000	15000	15000
-1	Ravenna	0	42	"44.4123367,12.1654898"	0	0	0	0	0	15000	15000
-2	Rome	0	42	"41.909986,12.3959143"	125000	125000	125000	125000	125000	90000	90000
-3	Carthage	0	42	"36.8592395,10.3137703"	30000	30000	30000	30000	30000	30000	30000
-4	Salonika	0	42	"40.6212229,22.9061482"	15000	15000	15000	15000	15000	30000	30000
-5	Constantinople	0	42	"41.0049823,28.7319963"	30000	30000	30000	30000	30000	60000	60000
-6	Sardis	0	42	"38.4972591,28.0347712"	0	0	0	0	0	15000	15000
-7	Smyrna	0	42	"38.4175917,26.9396331"	15000	15000	15000	15000	15000	15000	15000
-8	Ephesus	0	42	"37.9489313,27.3654521"	15000	15000	15000	15000	15000	30000	30000
-9	Miletus	0	42	"37.530595,27.2738704"	0	0	0	0	0	15000	15000
-10	Antioch	0	42	"36.2818588,36.0700867"	30000	30000	30000	30000	30000	60000	60000
-11	Caesarea	0	42	"32.4962712,34.8849741"	15000	15000	15000	15000	15000	15000	15000
-12	Alexandria	0	42	"31.2240919,29.8848458"	60000	60000	60000	60000	60000	60000	60000
-13	Ctesiphon	0	42	"33.0936665,44.5787296"	15000	15000	15000	15000	15000	30000	30000
-14	Hamadan	0	42	"34.8123087,48.4400275"	0	0	0	0	0	15000	15000
-15	Rayy	0	42	"35.5725851,51.4408747"	0	0	0	0	0	15000	15000
-16	Istakhr	0	42	"29.9808323,52.9006892"	0	0	0	0	0	15000	15000
-17	Tyre	0	42	"33.2673974,35.2011688"	15000	15000	15000	15000	15000	0	0
+id	name	foundedEra	razedEra	location	e0	e1	e2	e3	e4	e5	e6	summary
+0	Milan	0	42	"45.4627124,9.1076926"	15000	15000	15000	15000	15000	15000	15000	Roman City
+1	Ravenna	0	42	"44.4123367,12.1654898"	0	0	0	0	0	15000	15000	Roman City
+2	Rome	0	42	"41.909986,12.3959143"	125000	125000	125000	125000	125000	90000	90000	Arguably the most important city in Western culture, for most of Rome’s nearly 3000 year history it was one of the major seats of power in the world. From the courts of the Caesars to the Vatican, Rome’s influence on the world has been undeniable in virtually every field from politics and region to science and the arts.
+3	Carthage	0	42	"36.8592395,10.3137703"	30000	30000	30000	30000	30000	30000	30000	Founded around the 9th century bc, Carthage was a prosperous city that began its history as its own city state, and was home to figures such as Hannibal. Once conquered by Rome, the city was responsible for providing most of the grain to feed the Empire. In fact, briefly losing Carthage to the Visgoths was part of the reason for Rome’s decline. After captured from Rome by the Umayyad Caliphate, Carthage’s economic and political importance began to decline.
+4	Salonika	0	42	"40.6212229,22.9061482"	15000	15000	15000	15000	15000	30000	30000	Roman City
+5	Constantinople	0	42	"41.0049823,28.7319963"	30000	30000	30000	30000	30000	60000	60000	Constantinople was founded by Constantine the Great in the 4th century and quickly grew to be one of the most important cities in Europe and the seat of the Orthodox Church. It was the eastern capital of the Roman Empire, and was the largest city in the Western Hemisphere for most of the Middle Ages. Constantinople’s defenses were legendary, and it was famed to be impenetrable. While such statements were not completely accurate, the city was the last part of Rome to fall, and it was never invaded or successfully besieged until its downfall at the hands of the Ottoman Empire in the 15th century.
+6	Sardis	0	42	"38.4972591,28.0347712"	0	0	0	0	0	15000	15000	Roman City
+7	Smyrna	0	42	"38.4175917,26.9396331"	15000	15000	15000	15000	15000	15000	15000	Roman City
+8	Ephesus	0	42	"37.9489313,27.3654521"	15000	15000	15000	15000	15000	30000	30000	Roman City
+9	Miletus	0	42	"37.530595,27.2738704"	0	0	0	0	0	15000	15000	Roman City
+10	Antioch	0	42	"36.2818588,36.0700867"	30000	30000	30000	30000	30000	60000	60000	Roman City
+11	Caesarea	0	42	"32.4962712,34.8849741"	15000	15000	15000	15000	15000	15000	15000	Roman City
+12	Alexandria	0	42	"31.2240919,29.8848458"	60000	60000	60000	60000	60000	60000	60000	Roman City
+13	Ctesiphon	0	42	"33.0936665,44.5787296"	15000	15000	15000	15000	15000	30000	30000	Persian City
+14	Hamadan	0	42	"34.8123087,48.4400275"	0	0	0	0	0	15000	15000	Persian City
+15	Rayy	0	42	"35.5725851,51.4408747"	0	0	0	0	0	15000	15000	Persian City
+16	Istakhr	0	42	"29.9808323,52.9006892"	0	0	0	0	0	15000	15000	Persian City
+17	Tyre	0	42	"33.2673974,35.2011688"	15000	15000	15000	15000	15000	0	0	Roman City

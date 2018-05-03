@@ -107,7 +107,7 @@ function initializeCities(){
                 .style("background-image", "none");
             d3.select("#detailsWindowTitle").html("");
             d3.select("#detailsWindowSubTitle").html(cityTable[cityId].name);
-            d3.select("#detailsWindowDescription").html(cityTable[cityId].location);
+            d3.select("#detailsWindowDescription").html(cityTable[cityId].summary);
             d3.select("#detailsWindowGoToRegion").attr("location", cityTable[cityId].location);
             $('#detailsModal').modal('show');
         });
